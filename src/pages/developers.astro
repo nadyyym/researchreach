@@ -1,0 +1,198 @@
+---
+import Base from "../layouts/Base.astro";
+import WaitlistForm from "../components/WaitlistForm.astro";
+import "../styles/global.css";
+
+const sampleResponse = {
+  "id": "orcid:0000-0002-1234-5678",
+  "name": "Dr. Sarah Chen",
+  "email": "s.chen@stanford.edu",
+  "email_confidence": "high",
+  "institution": "Stanford University",
+  "department": "Department of Chemical Engineering",
+  "position": "Associate Professor",
+  "h_index": 32,
+  "citation_count": 4821,
+  "publication_count": 67,
+  "recent_publications": [
+    {
+      "title": "CRISPR-based gene regulation in mammalian cells",
+      "doi": "10.1038/s41587-024-01234-5",
+      "year": 2024,
+      "journal": "Nature Biotechnology"
+    }
+  ],
+  "grants": [
+    {
+      "source": "NIH",
+      "type": "R01",
+      "title": "Precision genome editing for therapeutic applications",
+      "amount_usd": 2100000,
+      "active": true,
+      "end_date": "2027-06-30"
+    }
+  ],
+  "industry_signals": {
+    "patent_count": 4,
+    "startup_affiliations": ["CRISPRx Bio (SAB)"],
+    "industry_funding": true,
+    "industry_coauthorships": 12
+  },
+  "last_updated": "2026-04-01T00:00:00Z"
+};
+---
+
+<Base
+  title="Developers API — ResearchReach"
+  description="ResearchReach REST API for programmatic access to the researcher graph. Integrate researcher contact intelligence into your CRM, data pipeline, or application."
+>
+  <main>
+    <header class="border-b border-navy-600 bg-navy/90 backdrop-blur-sm sticky top-0 z-40">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="/" class="font-display font-bold text-lg text-white no-underline">
+          Research<span class="text-electric">Reach</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="/#how-it-works" class="text-slate text-sm hover:text-white no-underline transition-colors">How it works</a>
+          <a href="/use-cases" class="text-slate text-sm hover:text-white no-underline transition-colors">Use cases</a>
+          <a href="/developers" class="text-slate text-sm font-semibold text-white no-underline transition-colors">Developers</a>
+          <a href="/#waitlist" class="px-4 py-2 bg-electric text-white text-sm font-semibold rounded-lg no-underline hover:bg-electric-dim transition-colors">Join waitlist</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="bg-navy py-20 md:py-28">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="mb-16">
+          <div class="inline-flex items-center gap-2 bg-navy-700 border border-navy-600 rounded-full px-4 py-2 mb-8">
+            <span class="font-mono text-electric text-xs">API v1</span>
+            <span class="w-px h-3 bg-navy-600"></span>
+            <span class="text-xs text-slate">Early Access</span>
+          </div>
+          <h1 class="font-display text-[clamp(36px,5vw,64px)] font-black leading-tight mb-6">
+            ResearchReach API
+          </h1>
+          <p class="text-slate-light text-xl leading-relaxed max-w-2xl">
+            Programmatic access to the researcher graph. Build contact intelligence into your CRM, data pipeline, or scientific application.
+          </p>
+        </div>
+
+        <!-- Sample API Response -->
+        <div class="mb-16">
+          <h2 class="font-display text-2xl font-bold text-white mb-4">Sample response</h2>
+          <p class="text-slate text-base mb-6">
+            A single researcher record contains identity, contact, publication metrics, funding, and industry bridge signals.
+          </p>
+          <div class="bg-navy-800 border border-navy-600 rounded-xl overflow-hidden">
+            <div class="flex items-center gap-3 px-4 py-3 border-b border-navy-600 bg-navy-700">
+              <div class="flex gap-1.5">
+                <div class="w-3 h-3 rounded-full bg-red-500/60"></div>
+                <div class="w-3 h-3 rounded-full bg-yellow-500/60"></div>
+                <div class="w-3 h-3 rounded-full bg-green-500/60"></div>
+              </div>
+              <span class="font-mono text-xs text-slate">GET /v1/researchers/{"{id}"}</span>
+            </div>
+            <pre class="p-6 text-sm font-mono text-slate-light overflow-x-auto leading-relaxed whitespace-pre-wrap">{JSON.stringify(sampleResponse, null, 2)}</pre>
+          </div>
+        </div>
+
+        <!-- Endpoints -->
+        <div class="mb-16">
+          <h2 class="font-display text-2xl font-bold text-white mb-6">Core endpoints</h2>
+          <div class="space-y-4">
+            <div class="bg-navy-700 border border-navy-600 rounded-xl p-6">
+              <div class="flex items-center gap-3 mb-3">
+                <span class="font-mono text-xs bg-electric/20 text-electric px-2 py-1 rounded">GET</span>
+                <code class="font-mono text-sm text-slate-light">/v1/researchers/search</code>
+              </div>
+              <p class="text-slate text-sm leading-relaxed">Search the researcher graph by field, institution, grant type, H-index range, and industry signals. Returns paginated results.</p>
+            </div>
+            <div class="bg-navy-700 border border-navy-600 rounded-xl p-6">
+              <div class="flex items-center gap-3 mb-3">
+                <span class="font-mono text-xs bg-electric/20 text-electric px-2 py-1 rounded">GET</span>
+                <code class="font-mono text-sm text-slate-light">/v1/researchers/{"{id}"}</code>
+              </div>
+              <p class="text-slate text-sm leading-relaxed">Retrieve a full researcher profile by ORCID, ResearchReach ID, or email. Includes contact data, publication metrics, and funding.</p>
+            </div>
+            <div class="bg-navy-700 border border-navy-600 rounded-xl p-6">
+              <div class="flex items-center gap-3 mb-3">
+                <span class="font-mono text-xs bg-mint/20 text-mint px-2 py-1 rounded">POST</span>
+                <code class="font-mono text-sm text-slate-light">/v1/lists/export</code>
+              </div>
+              <p class="text-slate text-sm leading-relaxed">Bulk export a list of researcher profiles. Accepts a list of IDs or a search query. Returns a CSV or JSON payload.</p>
+            </div>
+            <div class="bg-navy-700 border border-navy-600 rounded-xl p-6">
+              <div class="flex items-center gap-3 mb-3">
+                <span class="font-mono text-xs bg-electric/20 text-electric px-2 py-1 rounded">GET</span>
+                <code class="font-mono text-sm text-slate-light">/v1/grants/search</code>
+              </div>
+              <p class="text-slate text-sm leading-relaxed">Search active NIH and NSF grants by PI, institution, keyword, or funding amount. Useful for intent-based targeting.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pricing Tiers -->
+        <div class="mb-16">
+          <h2 class="font-display text-2xl font-bold text-white mb-8">API pricing tiers</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-navy-700 border border-navy-600 rounded-xl p-8">
+              <p class="font-mono text-sm text-slate uppercase tracking-widest mb-4">Free</p>
+              <p class="font-display text-4xl font-black text-white mb-2">$0</p>
+              <p class="text-slate text-sm mb-6">/ month</p>
+              <ul class="space-y-3 mb-8 text-slate text-sm">
+                <li class="flex items-start gap-2"><span class="text-mint mt-0.5">✓</span> 100 API requests / month</li>
+                <li class="flex items-start gap-2"><span class="text-mint mt-0.5">✓</span> Basic researcher search</li>
+                <li class="flex items-start gap-2"><span class="text-mint mt-0.5">✓</span> Public grant data</li>
+                <li class="flex items-start gap-2"><span class="text-slate mt-0.5">—</span> Contact data (emails)</li>
+                <li class="flex items-start gap-2"><span class="text-slate mt-0.5">—</span> Industry signals</li>
+              </ul>
+              <a href="#dev-waitlist" class="block w-full text-center py-3 border border-navy-600 text-slate text-sm rounded-lg no-underline hover:border-electric hover:text-white transition-colors">
+                Request access
+              </a>
+            </div>
+            <div class="bg-navy-700 border border-electric rounded-xl p-8 relative">
+              <div class="absolute -top-3 left-1/2 -translate-x-1/2">
+                <span class="bg-electric text-white text-xs font-semibold px-3 py-1 rounded-full">Most popular</span>
+              </div>
+              <p class="font-mono text-sm text-electric uppercase tracking-widest mb-4">Pro</p>
+              <p class="font-display text-4xl font-black text-white mb-2">TBD</p>
+              <p class="text-slate text-sm mb-6">pricing at launch</p>
+              <ul class="space-y-3 mb-8 text-slate text-sm">
+                <li class="flex items-start gap-2"><span class="text-mint mt-0.5">✓</span> 10,000 API requests / month</li>
+                <li class="flex items-start gap-2"><span class="text-mint mt-0.5">✓</span> Full researcher search</li>
+                <li class="flex items-start gap-2"><span class="text-mint mt-0.5">✓</span> Contact data (verified emails)</li>
+                <li class="flex items-start gap-2"><span class="text-mint mt-0.5">✓</span> Industry bridge signals</li>
+                <li class="flex items-start gap-2"><span class="text-mint mt-0.5">✓</span> Bulk export endpoint</li>
+              </ul>
+              <a href="#dev-waitlist" class="block w-full text-center py-3 bg-electric text-white text-sm font-semibold rounded-lg no-underline hover:bg-electric-dim transition-colors">
+                Join waitlist
+              </a>
+            </div>
+            <div class="bg-navy-700 border border-navy-600 rounded-xl p-8">
+              <p class="font-mono text-sm text-slate uppercase tracking-widest mb-4">Enterprise</p>
+              <p class="font-display text-4xl font-black text-white mb-2">Custom</p>
+              <p class="text-slate text-sm mb-6">contact us</p>
+              <ul class="space-y-3 mb-8 text-slate text-sm">
+                <li class="flex items-start gap-2"><span class="text-mint mt-0.5">✓</span> Unlimited requests</li>
+                <li class="flex items-start gap-2"><span class="text-mint mt-0.5">✓</span> Dedicated support</li>
+                <li class="flex items-start gap-2"><span class="text-mint mt-0.5">✓</span> Custom data pipelines</li>
+                <li class="flex items-start gap-2"><span class="text-mint mt-0.5">✓</span> SLA + uptime guarantee</li>
+                <li class="flex items-start gap-2"><span class="text-mint mt-0.5">✓</span> Python + Node.js SDKs</li>
+              </ul>
+              <a href="#dev-waitlist" class="block w-full text-center py-3 border border-navy-600 text-slate text-sm rounded-lg no-underline hover:border-electric hover:text-white transition-colors">
+                Contact us
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <WaitlistForm
+          id="dev-waitlist"
+          heading="Request API early access"
+          subheading="We're onboarding developers in waves. Select 'Scientific Software' as your use case for fastest track."
+        />
+      </div>
+    </section>
+  </main>
+</Base>

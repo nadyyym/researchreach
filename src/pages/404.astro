@@ -1,0 +1,36 @@
+---
+import Base from "../layouts/Base.astro";
+import "../styles/global.css";
+---
+
+<Base
+  title="404 — Page Not Found | ResearchReach"
+  description="Page not found."
+  robots="noindex"
+>
+  <main class="screen flex items-center justify-center bg-navy">
+    <div class="max-w-lg mx-auto px-6 py-24 text-center">
+      <div class="font-mono text-electric text-8xl font-black mb-6 opacity-30">404</div>
+      <h1 class="font-display text-4xl font-bold text-white mb-4">
+        Researcher not found.
+      </h1>
+      <p class="text-slate-light text-lg mb-10 leading-relaxed">
+        This page doesn't exist — but the researcher graph does. Head back to the homepage and find the scientists you're actually looking for.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="/"
+          class="px-6 py-3 bg-electric text-white font-semibold rounded-lg no-underline hover:bg-electric-dim transition-colors"
+        >
+          ← Back to home
+        </a>
+        <a
+          href="/#waitlist"
+          class="px-6 py-3 border border-navy-600 text-slate-light text-sm rounded-lg no-underline hover:border-electric hover:text-white transition-colors"
+        >
+          Join the waitlist
+        </a>
+      </div>
+    </div>
+  </main>
+</Base>

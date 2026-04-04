@@ -1,0 +1,116 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+  robots?: string;
+  isHome?: boolean;
+}
+
+const {
+  title = "ResearchReach — The Researcher Graph. Finally Searchable.",
+  description = "Contact intelligence for academic researchers. Find pharma PIs, biotech consultants, and industry-adjacent scientists. Built on OpenAlex, ORCID, NIH Reporter, and PubMed.",
+  robots = "index, follow",
+  isHome = false,
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImageURL = new URL("/og-image.png", Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="robots" content={robots} />
+
+    <link rel="canonical" href={canonicalURL.href} />
+    <link rel="alternate" hreflang="en" href={canonicalURL.href} />
+    <link rel="alternate" hreflang="x-default" href={canonicalURL.href} />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImageURL.href} />
+    <meta property="og:url" content={canonicalURL.href} />
+    <meta property="og:site_name" content="ResearchReach" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageURL.href} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body class="bg-navy text-white font-body overflow-x-hidden leading-normal">
+    <slot />
+
+    <footer class="bg-navy-800 border-t border-navy-600">
+      <div class="max-w-6xl mx-auto px-6 py-12 md:py-16">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+          <div class="md:col-span-2">
+            <a href="/" class="font-display text-xl font-bold text-white no-underline">
+              Research<span class="text-electric">Reach</span>
+            </a>
+            <p class="text-slate text-sm mt-3 max-w-xs leading-relaxed">
+              The researcher graph. Finally searchable. Contact intelligence for the scientific workforce.
+            </p>
+            <div class="mt-4 flex gap-3">
+              <span class="text-xs font-mono bg-navy-600 text-electric px-2 py-1 rounded">Beta</span>
+              <span class="text-xs font-mono bg-navy-600 text-slate px-2 py-1 rounded">200+ teams waiting</span>
+            </div>
+          </div>
+          <div>
+            <p class="text-xs uppercase tracking-widest text-slate mb-4 font-semibold">Product</p>
+            <nav class="flex flex-col gap-3">
+              <a href="/#how-it-works" class="text-slate-light hover:text-white text-sm no-underline transition-colors">How it works</a>
+              <a href="/use-cases" class="text-slate-light hover:text-white text-sm no-underline transition-colors">Use cases</a>
+              <a href="/developers" class="text-slate-light hover:text-white text-sm no-underline transition-colors">Developers API</a>
+              <a href="/#faq" class="text-slate-light hover:text-white text-sm no-underline transition-colors">FAQ</a>
+            </nav>
+          </div>
+          <div>
+            <p class="text-xs uppercase tracking-widest text-slate mb-4 font-semibold">Company</p>
+            <nav class="flex flex-col gap-3">
+              <a href="/about" class="text-slate-light hover:text-white text-sm no-underline transition-colors">About</a>
+              <a href="/privacy" class="text-slate-light hover:text-white text-sm no-underline transition-colors">Privacy</a>
+              <a href="/terms" class="text-slate-light hover:text-white text-sm no-underline transition-colors">Terms</a>
+            </nav>
+          </div>
+        </div>
+        <div class="border-t border-navy-600 pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+          <p class="text-slate text-xs">&copy; 2026 ResearchReach. All rights reserved.</p>
+          <p class="text-slate text-xs">Data sources: OpenAlex · ORCID · PubMed · NIH Reporter · Semantic Scholar</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Sticky mobile CTA -->
+    <div class="fixed bottom-0 left-0 right-0 bg-navy-800 border-t border-navy-600 z-50 px-4 py-3 md:hidden">
+      <a
+        href="#waitlist"
+        class="block w-full text-center py-3 font-display text-sm font-bold tracking-wide uppercase bg-electric text-white rounded-lg no-underline hover:bg-electric-dim transition-colors"
+      >
+        Join the Waitlist →
+      </a>
+    </div>
+  </body>
+</html>

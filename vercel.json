@@ -1,0 +1,13 @@
+{
+  "framework": "astro",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{"type": "host", "value": "researchreach.io"}],
+      "destination": "https://www.researchreach.io/$1",
+      "permanent": true
+    }
+  ]
+}
