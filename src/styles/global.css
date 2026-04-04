@@ -15,9 +15,9 @@
   --color-white: #ffffff;
   --color-off-white: #f0f4ff;
 
-  --font-family-display: "Inter", system-ui, sans-serif;
-  --font-family-mono: "JetBrains Mono", "Fira Code", "Courier New", monospace;
-  --font-family-body: "Inter", system-ui, sans-serif;
+  --font-display: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", "Courier New", monospace;
+  --font-body: "Inter", system-ui, sans-serif;
 }
 
 .screen {
