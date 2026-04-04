@@ -1,0 +1,187 @@
+---
+import Base from "../../layouts/Base.astro";
+import universities from "../../data/universities.json";
+
+const pageTitle = "Find Academic Researchers by University & Institution — ResearchReach";
+const pageDesc = "Search and contact researchers at 100+ top universities worldwide. Filter by institution, department, funding, and industry signals.";
+
+const usRegion = universities.filter((u) => u.country === "US");
+const euRegion = universities.filter((u) =>
+  ["UK", "DE", "CH", "SE", "BE", "FR", "NL", "DK", "IE", "PL"].includes(u.country)
+);
+const restRegion = universities.filter((u) =>
+  !["US", "UK", "DE", "CH", "SE", "BE", "FR", "NL", "DK", "IE", "PL"].includes(u.country)
+);
+
+const useCaseLabel: Record<string, string> = {
+  pharma: "Pharma & Biotech",
+  recruiting: "Talent Recruiting",
+  software: "Research Software",
+  vc: "VC & Investing",
+};
+
+const useCaseColor: Record<string, string> = {
+  pharma: "text-blue-400",
+  recruiting: "text-green-400",
+  software: "text-purple-400",
+  vc: "text-amber-400",
+};
+---
+
+<Base title={pageTitle} description={pageDesc}>
+  <!-- ── NAV ── -->
+  <header class="sticky top-0 z-40 bg-navy/95 backdrop-blur border-b border-navy-600">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="font-display text-lg font-bold text-white no-underline">
+        Research<span class="text-electric">Reach</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="/#how-it-works" class="text-slate-light hover:text-white text-sm no-underline transition-colors">How it works</a>
+        <a href="/use-cases" class="text-slate-light hover:text-white text-sm no-underline transition-colors">Use cases</a>
+        <a href="/researchers" class="text-electric text-sm no-underline font-medium">Browse Institutions</a>
+        <a
+          href="/#waitlist"
+          class="px-4 py-2 bg-electric text-white font-display text-sm font-bold tracking-wide uppercase rounded-lg no-underline hover:bg-electric-dim transition-colors"
+        >
+          Join Waitlist
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="bg-navy pt-16 pb-12 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-navy-700 border border-navy-500 mb-6">
+        <span class="w-2 h-2 rounded-full bg-electric inline-block"></span>
+        <span class="text-xs font-mono text-electric uppercase tracking-widest">{universities.length} institutions indexed</span>
+      </div>
+      <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 leading-tight">
+        Browse Researchers<br /><span class="text-electric">by Institution</span>
+      </h1>
+      <p class="text-slate-light text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+        Search and contact researchers at 100+ top universities worldwide. Filter by department, H-index, funding, and industry bridge signals.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-4 justify-center text-sm text-slate">
+        <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-blue-400 inline-block"></span> Pharma & Biotech</span>
+        <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-green-400 inline-block"></span> Talent Recruiting</span>
+        <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span> Research Software</span>
+        <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-amber-400 inline-block"></span> VC & Investing</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── US REGION ── -->
+  <section class="bg-navy-800 border-t border-navy-600 py-14 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex items-center gap-3 mb-8">
+        <span class="text-2xl">🇺🇸</span>
+        <div>
+          <h2 class="font-display text-2xl font-bold text-white">United States</h2>
+          <p class="text-slate text-sm">{usRegion.length} institutions · {usRegion.reduce((a, u) => a + u.researcherCount, 0).toLocaleString()}+ researchers</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        {usRegion.map((uni) => (
+          <a
+            href={`/researchers/${uni.slug}`}
+            class="block bg-navy-700 border border-navy-600 rounded-xl p-5 no-underline hover:border-electric transition-colors group"
+          >
+            <div class="flex items-start justify-between mb-3">
+              <span class={`text-xs font-medium ${useCaseColor[uni.useCaseType]}`}>{useCaseLabel[uni.useCaseType]}</span>
+              <span class="text-xs text-electric opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+            </div>
+            <h3 class="text-white font-semibold text-sm mb-1 group-hover:text-electric transition-colors leading-tight">{uni.shortName}</h3>
+            <p class="text-slate text-xs mb-4 leading-relaxed line-clamp-2">{uni.name}</p>
+            <div class="flex items-center justify-between pt-3 border-t border-navy-600">
+              <span class="text-xs font-mono text-electric">{uni.researcherCount.toLocaleString()}+</span>
+              <span class="text-xs text-slate">{uni.city}</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EUROPE ── -->
+  <section class="bg-navy border-t border-navy-600 py-14 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex items-center gap-3 mb-8">
+        <span class="text-2xl">🇪🇺</span>
+        <div>
+          <h2 class="font-display text-2xl font-bold text-white">Europe</h2>
+          <p class="text-slate text-sm">{euRegion.length} institutions · {euRegion.reduce((a, u) => a + u.researcherCount, 0).toLocaleString()}+ researchers</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        {euRegion.map((uni) => (
+          <a
+            href={`/researchers/${uni.slug}`}
+            class="block bg-navy-700 border border-navy-600 rounded-xl p-5 no-underline hover:border-electric transition-colors group"
+          >
+            <div class="flex items-start justify-between mb-3">
+              <span class={`text-xs font-medium ${useCaseColor[uni.useCaseType]}`}>{useCaseLabel[uni.useCaseType]}</span>
+              <span class="text-xs text-electric opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+            </div>
+            <h3 class="text-white font-semibold text-sm mb-1 group-hover:text-electric transition-colors leading-tight">{uni.shortName}</h3>
+            <p class="text-slate text-xs mb-4 leading-relaxed line-clamp-2">{uni.name}</p>
+            <div class="flex items-center justify-between pt-3 border-t border-navy-600">
+              <span class="text-xs font-mono text-electric">{uni.researcherCount.toLocaleString()}+</span>
+              <span class="text-xs text-slate">{uni.city}</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── REST OF WORLD ── -->
+  <section class="bg-navy-800 border-t border-navy-600 py-14 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex items-center gap-3 mb-8">
+        <span class="text-2xl">🌏</span>
+        <div>
+          <h2 class="font-display text-2xl font-bold text-white">Rest of World</h2>
+          <p class="text-slate text-sm">{restRegion.length} institutions · {restRegion.reduce((a, u) => a + u.researcherCount, 0).toLocaleString()}+ researchers</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        {restRegion.map((uni) => (
+          <a
+            href={`/researchers/${uni.slug}`}
+            class="block bg-navy-700 border border-navy-600 rounded-xl p-5 no-underline hover:border-electric transition-colors group"
+          >
+            <div class="flex items-start justify-between mb-3">
+              <span class={`text-xs font-medium ${useCaseColor[uni.useCaseType]}`}>{useCaseLabel[uni.useCaseType]}</span>
+              <span class="text-xs text-electric opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+            </div>
+            <h3 class="text-white font-semibold text-sm mb-1 group-hover:text-electric transition-colors leading-tight">{uni.shortName}</h3>
+            <p class="text-slate text-xs mb-4 leading-relaxed line-clamp-2">{uni.name}</p>
+            <div class="flex items-center justify-between pt-3 border-t border-navy-600">
+              <span class="text-xs font-mono text-electric">{uni.researcherCount.toLocaleString()}+</span>
+              <span class="text-xs text-slate">{uni.city}</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section class="bg-navy border-t border-navy-600 py-20 px-6 text-center">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-white mb-4">
+        Ready to search the researcher graph?
+      </h2>
+      <p class="text-slate-light text-lg mb-8">
+        Join 200+ pharma, biotech, and recruiting teams already on the waitlist.
+      </p>
+      <a
+        href="/#waitlist"
+        class="inline-flex items-center gap-2 px-8 py-4 bg-electric text-white font-display font-bold text-base tracking-wide uppercase rounded-xl no-underline hover:bg-electric-dim transition-colors"
+      >
+        Join the Waitlist →
+      </a>
+    </div>
+  </section>
+</Base>

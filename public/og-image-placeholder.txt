@@ -1,0 +1,9 @@
+TODO: Replace this with proper OG image (1200x630px)
+
+The SVG at og-image.svg can be converted to PNG using:
+- ImageMagick: convert -background none -size 1200x630 og-image.svg og-image.png
+- Online tool: cloudconvert.com or similar
+- Design tool: Figma/Canva export
+
+For now, copy the selltostate og-image.png or use the HTML template at /tmp/og-template.html
+and screenshot it at 1200x630px.
