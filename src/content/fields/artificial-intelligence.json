@@ -1,0 +1,9 @@
+{
+  "name": "Artificial Intelligence",
+  "subfields": ["Natural Language Processing", "Computer Vision", "Reinforcement Learning", "Knowledge Representation", "AI Safety"],
+  "keyTechnologies": ["Transformer Models", "Deep Neural Networks", "GPUs/TPUs", "Diffusion Models", "Large Language Models"],
+  "topInstitutions": ["Stanford", "MIT", "Carnegie Mellon", "University of Toronto", "Tsinghua University"],
+  "researcherCount": 95000,
+  "avgFunding": "$680K",
+  "description": "Artificial intelligence research aims to create systems that can perceive, reason, learn, and act. The field has experienced explosive growth driven by deep learning breakthroughs and is reshaping virtually every domain of science and industry."
+}

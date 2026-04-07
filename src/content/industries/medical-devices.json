@@ -1,0 +1,8 @@
+{
+  "name": "Medical Devices",
+  "companies": ["Medtronic", "Abbott Laboratories", "Boston Scientific", "Stryker", "Edwards Lifesciences", "Intuitive Surgical", "Siemens Healthineers", "Becton Dickinson"],
+  "targetResearchers": "Biomedical engineers, clinical researchers, materials scientists, and neuroscientists developing implantable devices, diagnostics, and imaging technologies",
+  "marketSize": "$595B",
+  "useCases": ["Clinical evaluation partnerships", "Materials and biocompatibility research", "AI-enabled diagnostic development", "Surgical robotics R&D", "Wearable sensor innovation", "Point-of-care testing"],
+  "description": "The medical device industry develops instruments, implants, and diagnostics that improve patient outcomes. It relies heavily on academic research in biomedical engineering, materials science, and clinical medicine to drive innovation."
+}

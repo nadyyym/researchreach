@@ -1,0 +1,93 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import TerminalMockup from '../../components/TerminalMockup.astro';
+import BottomCTA from '../../components/BottomCTA.astro';
+import '../../styles/global.css';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('agencies');
+  return entries.map((entry) => ({
+    params: { id: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const d = entry.data;
+
+const pageTitle = `${d.name} — Funding Agency — Sci-Buy`;
+const pageDesc = `${d.name}: ${d.type} funding agency in ${d.country}. Budget: ${d.budget}. ${d.programs.length} programs. Find researchers funded by ${d.name}.`;
+---
+
+<Base title={pageTitle} description={pageDesc}>
+  <Breadcrumb items={[
+    { name: 'Agencies', url: '/agencies/' },
+    { name: d.name, url: `/agencies/${entry.id}/` },
+  ]} />
+
+  <!-- HERO -->
+  <section class="border-b border-line">
+    <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr] grid-lines">
+      <div class="p-8 md:p-12">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted">{d.type.toUpperCase()}</span>
+          <span class="w-px h-3 bg-line-accent"></span>
+          <span class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted">{d.country}</span>
+        </div>
+        <h1 class="text-3xl md:text-4xl font-light text-text-bright tracking-tight mb-3">
+          {d.name}
+        </h1>
+        <p class="text-[13px] text-text leading-relaxed max-w-[520px]">
+          {d.description}
+        </p>
+      </div>
+      <div class="p-8 md:p-12 accent-top-blue">
+        <div class="space-y-6">
+          <div>
+            <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-1">BUDGET</p>
+            <p class="text-2xl font-light text-text-bright">{d.budget}</p>
+          </div>
+          <div>
+            <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-1">TYPE</p>
+            <p class="text-lg font-light text-text-bright capitalize">{d.type}</p>
+          </div>
+          <div>
+            <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-1">COUNTRY</p>
+            <p class="text-lg font-light text-text-bright">{d.country}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section class="border-b border-line p-8 md:p-12">
+    <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-6">PROGRAMS</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-px bg-line">
+      {d.programs.map((program, i) => (
+        <div class="bg-bg p-4 flex items-center gap-4">
+          <span class="font-mono text-[10px] text-text-muted w-6 flex-shrink-0">{String(i + 1).padStart(2, '0')}</span>
+          <p class="text-[13px] text-text">{program}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- TERMINAL -->
+  <section class="border-b border-line p-8 md:p-12">
+    <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-6">TRY IT</p>
+    <TerminalMockup
+      lines={[
+        { type: 'prompt', text: `sci-buy search --funder "${d.name}"` },
+        { type: 'blank', text: '' },
+        { type: 'output', text: `Searching researchers funded by ${d.name}...` },
+        { type: 'success', text: `Found grants across ${d.programs.length} programs` },
+        { type: 'output', text: `Budget: ${d.budget} | Country: ${d.country} | Type: ${d.type}` },
+      ]}
+    />
+  </section>
+
+  <BottomCTA />
+</Base>

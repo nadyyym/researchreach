@@ -1,0 +1,9 @@
+{
+  "name": "Epidemiology",
+  "subfields": ["Infectious Disease Epidemiology", "Chronic Disease Epidemiology", "Genetic Epidemiology", "Environmental Epidemiology", "Pharmacoepidemiology"],
+  "keyTechnologies": ["Statistical Modeling", "GIS Mapping", "Electronic Health Records", "Wastewater Surveillance", "Genomic Surveillance"],
+  "topInstitutions": ["Johns Hopkins", "Harvard", "Oxford", "Imperial College London", "London School of Hygiene"],
+  "researcherCount": 45000,
+  "avgFunding": "$380K",
+  "description": "Epidemiology studies the distribution and determinants of disease in populations. It provides the evidence base for public health interventions and is critical to pandemic preparedness, chronic disease prevention, and health equity."
+}

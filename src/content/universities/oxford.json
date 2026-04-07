@@ -1,0 +1,12 @@
+{
+  "name": "University of Oxford",
+  "country": "United Kingdom",
+  "city": "Oxford",
+  "type": "public",
+  "researcherCount": 5200,
+  "avgHindex": 48,
+  "grantCount": 3500,
+  "departments": ["Biochemistry", "Clinical Medicine", "Computer Science", "Engineering Science", "Chemistry", "Physics", "Zoology", "Pharmacology"],
+  "topFields": ["Drug Discovery", "Immunology", "Epidemiology", "Materials Science", "Artificial Intelligence"],
+  "description": "The University of Oxford is one of the world's oldest and most prestigious universities. Its medical sciences division is one of the largest in Europe, and its research in vaccinology, structural biology, and AI ethics has had a transformative global impact."
+}

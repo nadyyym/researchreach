@@ -1,0 +1,8 @@
+{
+  "name": "National Institutes of Health (NIH)",
+  "country": "United States",
+  "type": "government",
+  "budget": "$47B",
+  "programs": ["R01 Research Grants", "R21 Exploratory Grants", "K Awards (Career Development)", "T32 Training Grants", "U01 Cooperative Agreements", "SBIR/STTR"],
+  "description": "The NIH is the largest public funder of biomedical research in the world, supporting over 300,000 researchers at more than 2,500 institutions. Its 27 institutes and centers fund research across every area of medicine and life sciences."
+}

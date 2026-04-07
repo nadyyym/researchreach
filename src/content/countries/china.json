@@ -1,0 +1,9 @@
+{
+  "name": "China",
+  "code": "CN",
+  "topInstitutions": ["Tsinghua University", "Peking University", "Chinese Academy of Sciences", "Zhejiang University", "Fudan University"],
+  "topAgencies": ["NSFC", "MOST", "CAS", "CAMS"],
+  "researchOutput": 580000,
+  "topFields": ["Artificial Intelligence", "Materials Science", "Nanotechnology", "Quantum Computing", "Genomics"],
+  "description": "China has become the world's largest producer of scientific publications and is rapidly closing the gap in citation impact. Massive government investment in AI, quantum science, and biotechnology has created a formidable research infrastructure."
+}

@@ -1,0 +1,147 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import TerminalMockup from '../../components/TerminalMockup.astro';
+import BottomCTA from '../../components/BottomCTA.astro';
+import '../../styles/global.css';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('universities');
+  return entries.map((entry) => ({
+    params: { id: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const d = entry.data;
+
+const logoDomains: Record<string, string> = {
+  'mit': 'mit.edu', 'stanford': 'stanford.edu', 'harvard': 'harvard.edu',
+  'caltech': 'caltech.edu', 'oxford': 'ox.ac.uk', 'cambridge': 'cam.ac.uk',
+  'eth-zurich': 'ethz.ch', 'uc-berkeley': 'berkeley.edu', 'johns-hopkins': 'jhu.edu',
+  'princeton': 'princeton.edu', 'yale': 'yale.edu', 'columbia': 'columbia.edu',
+  'university-of-tokyo': 'u-tokyo.ac.jp', 'nus': 'nus.edu.sg', 'tsinghua': 'tsinghua.edu.cn',
+  'imperial-college': 'imperial.ac.uk', 'max-planck': 'mpg.de', 'karolinska': 'ki.se',
+  'epfl': 'epfl.ch', 'university-of-toronto': 'utoronto.ca',
+};
+const logoDomain = logoDomains[entry.id];
+
+const pageTitle = `${d.name} — Research Intelligence — Sci-Buy`;
+const pageDesc = `Search ${d.researcherCount.toLocaleString()} researchers at ${d.name}. Average H-index ${d.avgHindex}, ${d.grantCount.toLocaleString()} active grants. Filter by department, field, and industry signals.`;
+---
+
+<Base title={pageTitle} description={pageDesc}>
+  <Breadcrumb items={[
+    { name: 'Universities', url: '/universities/' },
+    { name: d.name, url: `/universities/${entry.id}/` },
+  ]} />
+
+  <!-- HERO -->
+  <section class="border-b border-line">
+    <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr] grid-lines">
+      <div class="p-8 md:p-12">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted">{d.type.toUpperCase()} INSTITUTION</span>
+          <span class="w-px h-3 bg-line-accent"></span>
+          <span class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted">{d.country}</span>
+        </div>
+        <div class="flex items-center gap-4 mb-1">
+          {logoDomain && (
+            <img
+              src={`https://cdn.brandfetch.io/${logoDomain}/w/48/h/48?c=1id_MZGCfZ8PwGRsnR9`}
+              alt={d.name}
+              width="36"
+              height="36"
+              class="opacity-80"
+            />
+          )}
+          <h1 class="text-3xl md:text-4xl font-light text-text-bright tracking-tight">
+            {d.name}
+          </h1>
+        </div>
+        <p class="text-[13px] text-text-dim leading-relaxed max-w-[520px] mb-4">
+          {d.city}, {d.country}
+        </p>
+        <p class="text-[13px] text-text leading-relaxed max-w-[520px]">
+          {d.description}
+        </p>
+      </div>
+      <div class="p-8 md:p-12 accent-top-blue">
+        <div class="space-y-6">
+          <div>
+            <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-1">RESEARCHERS</p>
+            <p class="text-2xl font-light text-text-bright">{d.researcherCount.toLocaleString()}</p>
+          </div>
+          <div>
+            <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-1">AVG H-INDEX</p>
+            <p class="text-2xl font-light text-text-bright">{d.avgHindex}</p>
+          </div>
+          <div>
+            <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-1">ACTIVE GRANTS</p>
+            <p class="text-2xl font-light text-text-bright">{d.grantCount.toLocaleString()}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS GRID -->
+  <section class="border-b border-line">
+    <div class="grid grid-cols-3 grid-lines">
+      <div class="p-6 text-center accent-top-red">
+        <p class="text-2xl font-light text-text-bright">{d.researcherCount.toLocaleString()}</p>
+        <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mt-1">RESEARCHERS</p>
+      </div>
+      <div class="p-6 text-center accent-top-yellow">
+        <p class="text-2xl font-light text-text-bright">{d.avgHindex}</p>
+        <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mt-1">AVG H-INDEX</p>
+      </div>
+      <div class="p-6 text-center accent-top-blue">
+        <p class="text-2xl font-light text-text-bright">{d.grantCount.toLocaleString()}</p>
+        <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mt-1">ACTIVE GRANTS</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPARTMENTS -->
+  <section class="border-b border-line p-8 md:p-12">
+    <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-6">DEPARTMENTS</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-line">
+      {d.departments.map((dept) => (
+        <div class="bg-bg p-4">
+          <p class="text-[13px] text-text">{dept}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- TOP FIELDS -->
+  <section class="border-b border-line p-8 md:p-12">
+    <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-6">TOP RESEARCH FIELDS</p>
+    <div class="flex flex-wrap gap-2">
+      {d.topFields.map((field) => (
+        <span class="px-3 py-1.5 bg-bg-raised border border-line text-[12px] text-text font-mono">
+          {field}
+        </span>
+      ))}
+    </div>
+  </section>
+
+  <!-- TERMINAL -->
+  <section class="border-b border-line p-8 md:p-12">
+    <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-6">TRY IT</p>
+    <TerminalMockup
+      lines={[
+        { type: 'prompt', text: `sci-buy search --institution "${d.name}"` },
+        { type: 'blank', text: '' },
+        { type: 'output', text: `Searching ${d.researcherCount.toLocaleString()} researchers at ${d.name}...` },
+        { type: 'success', text: `Found ${d.researcherCount.toLocaleString()} researchers across ${d.departments.length} departments` },
+        { type: 'output', text: `Top field: ${d.topFields[0]} | Avg H-index: ${d.avgHindex}` },
+      ]}
+    />
+  </section>
+
+  <BottomCTA />
+</Base>

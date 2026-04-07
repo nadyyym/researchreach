@@ -1,0 +1,45 @@
+---
+import Base from "../../layouts/Base.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
+import BottomCTA from "../../components/BottomCTA.astro";
+import "../../styles/global.css";
+---
+
+<Base
+  title="Blog — Sci-Buy"
+  description="Insights on selling to scientists, research intelligence, and the academic-to-industry pipeline. Coming soon."
+>
+  <main>
+    <Breadcrumb items={[{ name: "Blog", url: "/blog" }]} />
+
+    <!-- HERO -->
+    <section class="border-b border-line">
+      <div class="px-6 py-16 md:px-12 md:py-24 max-w-4xl">
+        <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-6 block">Blog</span>
+        <h1 class="text-3xl md:text-4xl font-light text-text-bright tracking-tight mb-4 leading-[1.2]">
+          Research <strong class="font-semibold">intelligence</strong><br />
+          insights.
+        </h1>
+        <p class="text-[13px] text-text-dim leading-relaxed max-w-[480px]">
+          Thoughts on selling to scientists, navigating the research graph, and building the academic-to-industry pipeline.
+        </p>
+      </div>
+    </section>
+
+    <!-- COMING SOON -->
+    <section class="border-b border-line">
+      <div class="px-6 py-20 md:px-12 md:py-32 flex flex-col items-center text-center">
+        <span class="font-mono text-[48px] text-line-accent block mb-6">--</span>
+        <h2 class="text-xl font-light text-text-bright mb-3">
+          <strong class="font-semibold">Coming soon.</strong>
+        </h2>
+        <p class="text-[13px] text-text-dim leading-relaxed max-w-[360px]">
+          We are preparing our first articles on research intelligence, academic outreach strategy, and the science of selling to scientists. Join the waitlist to be notified.
+        </p>
+      </div>
+    </section>
+
+    <!-- BOTTOM CTA -->
+    <BottomCTA />
+  </main>
+</Base>

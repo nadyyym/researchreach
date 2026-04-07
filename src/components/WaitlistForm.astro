@@ -1,91 +1,129 @@
 ---
 interface Props {
   id?: string;
-  heading?: string;
-  subheading?: string;
+  compact?: boolean;
 }
-
-const {
-  id = "waitlist",
-  heading = "Get early access",
-  subheading = "Join 200+ teams already on the waitlist. We're onboarding in waves.",
-} = Astro.props;
+const { id = 'waitlist', compact = false } = Astro.props;
 ---
 
-<div id={id} class="bg-navy-700 border border-navy-600 rounded-2xl p-8 md:p-10 w-full">
-  <h3 class="font-display text-2xl md:text-3xl font-bold text-white mb-2">{heading}</h3>
-  <p class="text-slate text-sm md:text-base mb-8">{subheading}</p>
-
-  <form
-    class="flex flex-col gap-4"
-    action="https://formspree.io/f/placeholder"
-    method="POST"
-  >
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <div>
-        <label for={`${id}-name`} class="block text-xs uppercase tracking-widest text-slate mb-2 font-semibold">Full name</label>
-        <input
-          type="text"
-          id={`${id}-name`}
-          name="name"
-          required
-          placeholder="Dr. Jane Smith"
-          autocomplete="name"
-          class="w-full px-4 py-3 bg-navy-800 border border-navy-600 text-white placeholder-slate text-sm rounded-lg outline-none focus:border-electric focus:ring-1 focus:ring-electric transition-colors font-body"
-        />
-      </div>
-      <div>
-        <label for={`${id}-email`} class="block text-xs uppercase tracking-widest text-slate mb-2 font-semibold">Work email</label>
-        <input
-          type="email"
-          id={`${id}-email`}
-          name="email"
-          required
-          placeholder="you@company.com"
-          autocomplete="email"
-          class="w-full px-4 py-3 bg-navy-800 border border-navy-600 text-white placeholder-slate text-sm rounded-lg outline-none focus:border-electric focus:ring-1 focus:ring-electric transition-colors font-body"
-        />
-      </div>
-    </div>
-
-    <div>
-      <label for={`${id}-company`} class="block text-xs uppercase tracking-widest text-slate mb-2 font-semibold">Company</label>
-      <input
-        type="text"
-        id={`${id}-company`}
-        name="company"
-        placeholder="Pfizer, Benchling, Andreessen Horowitz..."
-        class="w-full px-4 py-3 bg-navy-800 border border-navy-600 text-white placeholder-slate text-sm rounded-lg outline-none focus:border-electric focus:ring-1 focus:ring-electric transition-colors font-body"
-      />
-    </div>
-
-    <div>
-      <label for={`${id}-usecase`} class="block text-xs uppercase tracking-widest text-slate mb-2 font-semibold">Use case</label>
-      <select
-        id={`${id}-usecase`}
-        name="use_case"
-        required
-        class="w-full px-4 py-3 bg-navy-800 border border-navy-600 text-white text-sm rounded-lg outline-none focus:border-electric focus:ring-1 focus:ring-electric transition-colors font-body appearance-none cursor-pointer"
-      >
-        <option value="" disabled selected>Select your use case</option>
-        <option value="pharma_biotech">Pharma / Biotech outreach</option>
-        <option value="scientific_software">Scientific software sales</option>
-        <option value="recruiting">Deep tech recruiting</option>
-        <option value="vc_investing">VC / Investing</option>
-        <option value="other">Other</option>
-      </select>
-    </div>
-
+{compact ? (
+  <form class="flex gap-0" data-waitlist-form>
+    <input
+      type="email"
+      name="email"
+      required
+      placeholder="your@company.com"
+      class="bg-bg-raised border border-line border-r-0 text-text py-2.5 px-3.5 text-xs font-body w-[220px] outline-none focus:border-accent-dim transition-colors placeholder:text-text-muted"
+    />
     <button
       type="submit"
-      class="w-full py-4 px-8 bg-electric text-white font-display font-bold text-sm tracking-wide uppercase rounded-lg hover:bg-electric-dim transition-colors mt-2 cursor-pointer"
+      class="bg-red text-text-bright border border-red-btn py-2.5 px-5 font-semibold text-[11px] uppercase tracking-[1px] cursor-pointer font-body hover:bg-red-btn transition-colors"
     >
-      Join the Waitlist →
+      Notify Me
     </button>
-
-    <p class="text-xs text-slate text-center">
-      No spam. GDPR-compliant.
-      <a href="/privacy" class="text-electric-bright hover:text-white no-underline hover:underline transition-colors">Privacy Policy</a> applies.
-    </p>
+    <input type="hidden" name="source" value="selltoscientists" />
   </form>
-</div>
+) : (
+  <div id={id} class="bg-bg-raised border border-line p-8">
+    <form class="flex flex-col gap-4" data-waitlist-form>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-[9px] uppercase tracking-[2px] text-text-muted mb-1.5 font-semibold">Full name</label>
+          <input
+            type="text"
+            name="name"
+            required
+            placeholder="Dr. Jane Smith"
+            class="w-full px-3.5 py-2.5 bg-bg border border-line text-text placeholder:text-text-muted text-sm outline-none focus:border-accent-dim transition-colors font-body"
+          />
+        </div>
+        <div>
+          <label class="block text-[9px] uppercase tracking-[2px] text-text-muted mb-1.5 font-semibold">Work email</label>
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="you@company.com"
+            class="w-full px-3.5 py-2.5 bg-bg border border-line text-text placeholder:text-text-muted text-sm outline-none focus:border-accent-dim transition-colors font-body"
+          />
+        </div>
+      </div>
+      <div>
+        <label class="block text-[9px] uppercase tracking-[2px] text-text-muted mb-1.5 font-semibold">Company</label>
+        <input
+          type="text"
+          name="company"
+          placeholder="Pfizer, Benchling, Andreessen Horowitz..."
+          class="w-full px-3.5 py-2.5 bg-bg border border-line text-text placeholder:text-text-muted text-sm outline-none focus:border-accent-dim transition-colors font-body"
+        />
+      </div>
+      <div>
+        <label class="block text-[9px] uppercase tracking-[2px] text-text-muted mb-1.5 font-semibold">Use case</label>
+        <select
+          name="use_case"
+          required
+          class="w-full px-3.5 py-2.5 bg-bg border border-line text-text text-sm outline-none focus:border-accent-dim transition-colors font-body appearance-none cursor-pointer"
+        >
+          <option value="" disabled selected>Select your use case</option>
+          <option value="pharma_biotech">Pharma / Biotech outreach</option>
+          <option value="scientific_software">Scientific software sales</option>
+          <option value="recruiting">Deep tech recruiting</option>
+          <option value="vc_investing">VC / Investing</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <input type="hidden" name="source" value="selltoscientists" />
+      <button
+        type="submit"
+        class="w-full py-3.5 bg-red text-text-bright font-semibold text-[11px] tracking-[1.5px] uppercase hover:bg-red-btn transition-colors cursor-pointer border border-red-btn"
+      >
+        Join the Waitlist →
+      </button>
+      <p class="text-[10px] text-text-muted text-center">
+        No spam. GDPR-compliant.
+        <a href="/privacy" class="text-accent hover:text-text-bright no-underline transition-colors">Privacy Policy</a>.
+      </p>
+    </form>
+  </div>
+)}
+
+<script>
+  import { trackEvent } from '../lib/posthog';
+  import { submitLead } from '../lib/supabase';
+
+  document.querySelectorAll('[data-waitlist-form]').forEach(form => {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = (e.target as HTMLFormElement).querySelector('button[type="submit"]') as HTMLButtonElement;
+      if (btn) {
+        btn.textContent = 'Submitting...';
+        btn.disabled = true;
+      }
+
+      const fd = new FormData(e.target as HTMLFormElement);
+      const data = {
+        email: fd.get('email') as string,
+        name: (fd.get('name') as string) || undefined,
+        company: (fd.get('company') as string) || undefined,
+        use_case: (fd.get('use_case') as string) || undefined,
+      };
+
+      // Always track in PostHog (works even without Supabase)
+      trackEvent('waitlist_submit', { ...data, source: 'selltoscientists' });
+
+      // Try Supabase, but don't block on it
+      let supabaseOk = false;
+      try {
+        const { error } = await submitLead(data);
+        supabaseOk = !error;
+      } catch {
+        // Supabase not configured — that's ok
+      }
+
+      if (btn) {
+        btn.textContent = 'You\'re on the list ✓';
+        btn.style.opacity = '0.7';
+      }
+    });
+  });
+</script>

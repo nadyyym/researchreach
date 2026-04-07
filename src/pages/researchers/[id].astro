@@ -1,0 +1,119 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import TerminalMockup from '../../components/TerminalMockup.astro';
+import BottomCTA from '../../components/BottomCTA.astro';
+import '../../styles/global.css';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('researchers');
+  return entries.map((entry) => ({
+    params: { id: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const d = entry.data;
+
+const pageTitle = `${d.name} — ${d.institution} — Sci-Buy`;
+const pageDesc = `${d.name} at ${d.institution}. H-index ${d.hindex}, ${d.publications} publications, ${d.grantCount} grants, ${d.patents} patents. Research in ${d.field}.`;
+---
+
+<Base title={pageTitle} description={pageDesc}>
+  <Breadcrumb items={[
+    { name: 'Researchers', url: '/researchers/' },
+    { name: d.name, url: `/researchers/${entry.id}/` },
+  ]} />
+
+  <!-- HERO -->
+  <section class="border-b border-line">
+    <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr] grid-lines">
+      <div class="p-8 md:p-12">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted">{d.field}</span>
+          <span class="w-px h-3 bg-line-accent"></span>
+          <span class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted">{d.institution}</span>
+        </div>
+        <h1 class="text-3xl md:text-4xl font-light text-text-bright tracking-tight mb-3">
+          {d.name}
+        </h1>
+        <p class="text-[13px] text-text-dim mb-4">{d.institution}</p>
+        <p class="text-[13px] text-text leading-relaxed max-w-[520px]">
+          {d.description}
+        </p>
+      </div>
+      <div class="p-8 md:p-12 accent-top-red">
+        <div class="space-y-6">
+          <div>
+            <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-1">H-INDEX</p>
+            <p class="text-2xl font-light text-text-bright">{d.hindex}</p>
+          </div>
+          <div>
+            <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-1">PUBLICATIONS</p>
+            <p class="text-2xl font-light text-text-bright">{d.publications}</p>
+          </div>
+          <div>
+            <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-1">FIELD</p>
+            <p class="text-lg font-light text-text-bright">{d.field}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS GRID -->
+  <section class="border-b border-line">
+    <div class="grid grid-cols-2 md:grid-cols-4 grid-lines">
+      <div class="p-6 text-center accent-top-blue">
+        <p class="text-2xl font-light text-text-bright">{d.hindex}</p>
+        <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mt-1">H-INDEX</p>
+      </div>
+      <div class="p-6 text-center accent-top-yellow">
+        <p class="text-2xl font-light text-text-bright">{d.publications}</p>
+        <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mt-1">PUBLICATIONS</p>
+      </div>
+      <div class="p-6 text-center accent-top-red">
+        <p class="text-2xl font-light text-text-bright">{d.grantCount}</p>
+        <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mt-1">GRANTS</p>
+      </div>
+      <div class="p-6 text-center accent-top-blue">
+        <p class="text-2xl font-light text-text-bright">{d.patents}</p>
+        <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mt-1">PATENTS</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRY TIES -->
+  {d.industryTies.length > 0 && (
+    <section class="border-b border-line p-8 md:p-12">
+      <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-6">INDUSTRY TIES</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-line">
+        {d.industryTies.map((tie) => (
+          <div class="bg-bg p-4">
+            <p class="text-[13px] text-text">{tie}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- TERMINAL -->
+  <section class="border-b border-line p-8 md:p-12">
+    <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-6">TRY IT</p>
+    <TerminalMockup
+      lines={[
+        { type: 'prompt', text: `sci-buy lookup "${d.name}"` },
+        { type: 'blank', text: '' },
+        { type: 'output', text: `Looking up ${d.name}...` },
+        { type: 'success', text: `Found: ${d.name} — ${d.institution}` },
+        { type: 'output', text: `H-index: ${d.hindex} | Pubs: ${d.publications} | Grants: ${d.grantCount} | Patents: ${d.patents}` },
+        { type: 'output', text: `Field: ${d.field}` },
+        { type: 'output', text: `Industry ties: ${d.industryTies.length > 0 ? d.industryTies.join(', ') : 'None detected'}` },
+      ]}
+    />
+  </section>
+
+  <BottomCTA />
+</Base>

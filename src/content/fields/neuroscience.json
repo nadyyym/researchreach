@@ -1,0 +1,9 @@
+{
+  "name": "Neuroscience",
+  "subfields": ["Computational Neuroscience", "Cognitive Neuroscience", "Neurogenetics", "Neuroimaging", "Behavioral Neuroscience"],
+  "keyTechnologies": ["fMRI", "Optogenetics", "Electrophysiology", "Two-Photon Microscopy", "Brain-Computer Interfaces"],
+  "topInstitutions": ["MIT", "Stanford", "Harvard", "UCL", "Max Planck Society"],
+  "researcherCount": 72000,
+  "avgFunding": "$520K",
+  "description": "Neuroscience investigates the structure and function of the nervous system, from molecular mechanisms of synaptic transmission to the neural basis of consciousness and behavior. It bridges biology, psychology, and computer science."
+}

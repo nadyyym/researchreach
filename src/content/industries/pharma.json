@@ -1,0 +1,8 @@
+{
+  "name": "Pharmaceuticals",
+  "companies": ["Roche", "Pfizer", "Novartis", "Merck & Co.", "AstraZeneca", "Johnson & Johnson", "Eli Lilly", "Sanofi", "GSK", "Bristol-Myers Squibb"],
+  "targetResearchers": "Biomedical researchers in drug discovery, immunology, oncology, and clinical sciences with translational research experience and strong publication records",
+  "marketSize": "$1.5T",
+  "useCases": ["Academic licensing deals", "Sponsored research agreements", "KOL identification and engagement", "Clinical trial site selection", "Scientific advisory board recruitment"],
+  "description": "The pharmaceutical industry is the largest commercial consumer of academic research, investing over $200 billion annually in R&D. Companies actively seek academic collaborations for early-stage drug discovery, biomarker validation, and clinical expertise."
+}

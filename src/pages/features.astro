@@ -1,0 +1,216 @@
+---
+import Base from "../layouts/Base.astro";
+import Breadcrumb from "../components/Breadcrumb.astro";
+import TerminalMockup from "../components/TerminalMockup.astro";
+import BottomCTA from "../components/BottomCTA.astro";
+import "../styles/global.css";
+
+const searchLines = [
+  { type: 'prompt' as const, text: 'sci-buy search "CRISPR therapeutics" --grants NIH --min-hindex 20' },
+  { type: 'blank' as const, text: '' },
+  { type: 'output' as const, text: '<span class="text-text-muted">Querying OpenAlex + NIH Reporter...</span>' },
+  { type: 'success' as const, text: '124 researchers matched' },
+  { type: 'blank' as const, text: '' },
+  { type: 'output' as const, text: '<span class="text-accent">01</span>  Dr. Sarah Chen · Stanford · H-index: 32' },
+  { type: 'output' as const, text: '    <span class="text-text-muted">CRISPR gene editing · NIH R01 · $2.1M</span>' },
+  { type: 'output' as const, text: '<span class="text-accent">02</span>  Prof. James Liu · MIT · H-index: 41' },
+  { type: 'output' as const, text: '    <span class="text-text-muted">Gene therapy delivery · NIH R01 · $1.8M</span>' },
+];
+
+const mapLines = [
+  { type: 'prompt' as const, text: 'sci-buy map --field "CRISPR" --signals patents,startups' },
+  { type: 'blank' as const, text: '' },
+  { type: 'output' as const, text: '<span class="text-text-muted">Mapping industry bridge signals...</span>' },
+  { type: 'success' as const, text: '38 researchers with industry ties found' },
+  { type: 'blank' as const, text: '' },
+  { type: 'output' as const, text: '<span class="text-accent">SIGNAL</span>        <span class="text-text-muted">COUNT</span>' },
+  { type: 'output' as const, text: 'Patent holders    22' },
+  { type: 'output' as const, text: 'Startup SAB       14' },
+  { type: 'output' as const, text: 'Industry funded   31' },
+  { type: 'output' as const, text: 'Co-authors (ind)  18' },
+];
+
+const exportLines = [
+  { type: 'prompt' as const, text: 'sci-buy export --list "crispr-leads" --format csv' },
+  { type: 'blank' as const, text: '' },
+  { type: 'output' as const, text: '<span class="text-text-muted">Verifying emails against recent publications...</span>' },
+  { type: 'success' as const, text: 'Exported 124 contacts to crispr-leads.csv' },
+  { type: 'blank' as const, text: '' },
+  { type: 'output' as const, text: '<span class="text-text-muted">Fields: name, email, institution, h_index,</span>' },
+  { type: 'output' as const, text: '<span class="text-text-muted">        grants, patents, industry_signals</span>' },
+  { type: 'output' as const, text: '<span class="text-text-muted">Email confidence: 89% high, 8% likely, 3% unverified</span>' },
+];
+---
+
+<Base
+  title="Features — Sci-Buy CLI"
+  description="Three commands, full pipeline. Search 250M+ papers, map industry bridge signals, and export verified researcher contacts from your terminal."
+>
+  <main>
+    <Breadcrumb items={[{ name: "Features", url: "/features" }]} />
+
+    <!-- HERO -->
+    <section class="border-b border-line">
+      <div class="px-6 py-16 md:px-12 md:py-24 max-w-4xl">
+        <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-6 block">CLI Features</span>
+        <h1 class="text-3xl md:text-4xl font-light text-text-bright tracking-tight mb-4 leading-[1.2]">
+          Three commands.<br />
+          <strong class="font-semibold">Full pipeline.</strong>
+        </h1>
+        <p class="text-[13px] text-text-dim leading-relaxed max-w-[480px]">
+          Search the research graph, map industry signals, and export verified contacts. All from your terminal, in seconds.
+        </p>
+      </div>
+    </section>
+
+    <!-- FEATURE 1: SEARCH -->
+    <section class="border-b border-line">
+      <div class="bg-red-dim px-6 py-3 md:px-12">
+        <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-dim">01 / Search</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 grid-lines">
+        <div class="bg-bg p-8 md:p-12 flex flex-col justify-center">
+          <h2 class="text-2xl font-light text-text-bright tracking-tight mb-3">
+            <strong class="font-semibold">Search</strong> the research graph
+          </h2>
+          <p class="text-[13px] text-text-dim leading-relaxed mb-6 max-w-[380px]">
+            Query 250M+ papers across every discipline. Filter by field, institution, funding source, H-index, publication recency, and more.
+          </p>
+          <div class="space-y-3">
+            <div class="flex items-start gap-3">
+              <span class="font-mono text-[10px] text-accent mt-0.5">--</span>
+              <p class="text-[12px] text-text leading-relaxed">Full-text search across paper titles, abstracts, and keywords</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="font-mono text-[10px] text-accent mt-0.5">--</span>
+              <p class="text-[12px] text-text leading-relaxed">Filter by active NIH, NSF, and international grant funding</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="font-mono text-[10px] text-accent mt-0.5">--</span>
+              <p class="text-[12px] text-text leading-relaxed">Scope to specific institutions, countries, or departments</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="font-mono text-[10px] text-accent mt-0.5">--</span>
+              <p class="text-[12px] text-text leading-relaxed">H-index and citation count thresholds for quality filtering</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-bg p-8 md:p-12 flex items-center">
+          <TerminalMockup lines={searchLines} />
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE 2: MAP -->
+    <section class="border-b border-line">
+      <div class="bg-accent-dim px-6 py-3 md:px-12" style="background-color: var(--color-accent-dim);">
+        <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-dim">02 / Map</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 grid-lines">
+        <div class="bg-bg p-8 md:p-12 flex items-center order-2 md:order-1">
+          <TerminalMockup lines={mapLines} />
+        </div>
+        <div class="bg-bg p-8 md:p-12 flex flex-col justify-center order-1 md:order-2">
+          <h2 class="text-2xl font-light text-text-bright tracking-tight mb-3">
+            <strong class="font-semibold">Map</strong> industry signals
+          </h2>
+          <p class="text-[13px] text-text-dim leading-relaxed mb-6 max-w-[380px]">
+            Surface researchers with one foot in industry. Detect patent holders, startup founders, SAB members, and recent academia-to-industry transitions.
+          </p>
+          <div class="space-y-3">
+            <div class="flex items-start gap-3">
+              <span class="font-mono text-[10px] text-accent mt-0.5">--</span>
+              <p class="text-[12px] text-text leading-relaxed">Patent filing detection via USPTO cross-reference</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="font-mono text-[10px] text-accent mt-0.5">--</span>
+              <p class="text-[12px] text-text leading-relaxed">Startup affiliation and SAB membership signals</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="font-mono text-[10px] text-accent mt-0.5">--</span>
+              <p class="text-[12px] text-text leading-relaxed">Industry co-authorship tracking across publications</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="font-mono text-[10px] text-accent mt-0.5">--</span>
+              <p class="text-[12px] text-text leading-relaxed">Co-author network mapping for community discovery</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE 3: EXPORT -->
+    <section class="border-b border-line">
+      <div class="bg-yellow-dim px-6 py-3 md:px-12" style="background-color: var(--color-yellow-dim);">
+        <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-dim">03 / Export</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 grid-lines">
+        <div class="bg-bg p-8 md:p-12 flex flex-col justify-center">
+          <h2 class="text-2xl font-light text-text-bright tracking-tight mb-3">
+            <strong class="font-semibold">Export</strong> verified contacts
+          </h2>
+          <p class="text-[13px] text-text-dim leading-relaxed mb-6 max-w-[380px]">
+            Get institutional emails verified against recent publications. Export to CSV, JSON, or pipe directly to your CRM.
+          </p>
+          <div class="space-y-3">
+            <div class="flex items-start gap-3">
+              <span class="font-mono text-[10px] text-accent mt-0.5">--</span>
+              <p class="text-[12px] text-text leading-relaxed">Email verification against publications from last 24 months</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="font-mono text-[10px] text-accent mt-0.5">--</span>
+              <p class="text-[12px] text-text leading-relaxed">Confidence scoring: high, likely, or unverified</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="font-mono text-[10px] text-accent mt-0.5">--</span>
+              <p class="text-[12px] text-text leading-relaxed">CSV, JSON, and JSONL output formats</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="font-mono text-[10px] text-accent mt-0.5">--</span>
+              <p class="text-[12px] text-text leading-relaxed">ORCID, H-index, grants, and citations included per record</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-bg p-8 md:p-12 flex items-center">
+          <TerminalMockup lines={exportLines} />
+        </div>
+      </div>
+    </section>
+
+    <!-- DATA SOURCES -->
+    <section class="border-b border-line">
+      <div class="px-6 py-10 md:px-12 md:py-14 border-b border-line">
+        <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted">Data Sources</span>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 grid-lines">
+        <div class="bg-bg p-6 text-center">
+          <p class="font-mono text-[13px] text-text-bright mb-1">OpenAlex</p>
+          <p class="text-[11px] text-text-muted">250M+ papers</p>
+        </div>
+        <div class="bg-bg p-6 text-center">
+          <p class="font-mono text-[13px] text-text-bright mb-1">ORCID</p>
+          <p class="text-[11px] text-text-muted">20M+ researcher IDs</p>
+        </div>
+        <div class="bg-bg p-6 text-center">
+          <p class="font-mono text-[13px] text-text-bright mb-1">PubMed</p>
+          <p class="text-[11px] text-text-muted">36M+ biomedical</p>
+        </div>
+        <div class="bg-bg p-6 text-center">
+          <p class="font-mono text-[13px] text-text-bright mb-1">NIH Reporter</p>
+          <p class="text-[11px] text-text-muted">Active grant data</p>
+        </div>
+        <div class="bg-bg p-6 text-center">
+          <p class="font-mono text-[13px] text-text-bright mb-1">Semantic Scholar</p>
+          <p class="text-[11px] text-text-muted">Citation intelligence</p>
+        </div>
+        <div class="bg-bg p-6 text-center">
+          <p class="font-mono text-[13px] text-text-bright mb-1">USPTO</p>
+          <p class="text-[11px] text-text-muted">Patent filings</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOTTOM CTA -->
+    <BottomCTA />
+  </main>
+</Base>

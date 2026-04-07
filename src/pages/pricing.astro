@@ -1,0 +1,156 @@
+---
+import Base from "../layouts/Base.astro";
+import Breadcrumb from "../components/Breadcrumb.astro";
+import BottomCTA from "../components/BottomCTA.astro";
+import "../styles/global.css";
+
+const tiers = [
+  {
+    name: "Free",
+    price: "$0",
+    period: "/ month",
+    accent: "accent-top-blue",
+    featured: false,
+    items: [
+      { included: true, text: "100 searches / month" },
+      { included: true, text: "Basic researcher profiles" },
+      { included: true, text: "Public grant data" },
+      { included: false, text: "Contact data (emails)" },
+      { included: false, text: "Industry bridge signals" },
+      { included: false, text: "Bulk export" },
+    ],
+    cta: "Get started free",
+    ctaHref: "#waitlist",
+  },
+  {
+    name: "Pro",
+    price: "$15",
+    period: "/ month — early bird (first 6 months)",
+    accent: "accent-top-red",
+    featured: true,
+    items: [
+      { included: true, text: "10,000 searches / month" },
+      { included: true, text: "Full researcher profiles" },
+      { included: true, text: "Verified email contacts" },
+      { included: true, text: "Industry bridge signals" },
+      { included: true, text: "CSV + JSON export" },
+      { included: true, text: "API access (REST)" },
+    ],
+    cta: "Lock in $15/mo →",
+    ctaHref: "#waitlist",
+  },
+  {
+    name: "Enterprise",
+    price: "Custom",
+    period: "contact us",
+    accent: "accent-top-yellow",
+    featured: false,
+    items: [
+      { included: true, text: "Unlimited searches" },
+      { included: true, text: "Dedicated support" },
+      { included: true, text: "Custom data pipelines" },
+      { included: true, text: "SLA + uptime guarantee" },
+      { included: true, text: "Python + Node.js SDKs" },
+      { included: true, text: "CRM integration" },
+    ],
+    cta: "Contact us",
+    ctaHref: "/contact",
+  },
+];
+---
+
+<Base
+  title="Pricing — Sci-Buy CLI"
+  description="Sci-Buy pricing tiers. Free tier for exploration, Pro for teams selling to scientists, Enterprise for custom pipelines and unlimited access."
+>
+  <main>
+    <Breadcrumb items={[{ name: "Pricing", url: "/pricing" }]} />
+
+    <!-- HERO -->
+    <section class="border-b border-line">
+      <div class="px-6 py-16 md:px-12 md:py-24 max-w-4xl">
+        <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-6 block">Pricing</span>
+        <h1 class="text-3xl md:text-4xl font-light text-text-bright tracking-tight mb-4 leading-[1.2]">
+          Start free.<br />
+          <strong class="font-semibold">Scale when ready.</strong>
+        </h1>
+        <p class="text-[13px] text-text-dim leading-relaxed max-w-[480px]">
+          Explore the research graph at no cost. Upgrade for verified contacts, industry signals, and bulk export.
+        </p>
+      </div>
+    </section>
+
+    <!-- PRICING GRID -->
+    <section class="border-b border-line">
+      <div class="grid grid-cols-1 md:grid-cols-3 grid-lines">
+        {tiers.map(tier => (
+          <div class:list={['bg-bg p-8 md:p-10 flex flex-col', tier.accent]}>
+            <div class="mb-8">
+              <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted block mb-4">{tier.name}</span>
+              <span class="text-3xl font-light text-text-bright">{tier.price}</span>
+              <span class="text-[12px] text-text-muted ml-2">{tier.period}</span>
+            </div>
+            {tier.featured && (
+              <div class="border border-red-dim px-3 py-1.5 mb-6 inline-block self-start">
+                <span class="font-mono text-[9px] tracking-[2px] uppercase text-red">Most Popular</span>
+              </div>
+            )}
+            <ul class="space-y-3 mb-8 flex-1">
+              {tier.items.map(item => (
+                <li class="flex items-start gap-2.5 text-[12px]">
+                  <span class:list={['font-mono text-[10px] mt-0.5', item.included ? 'text-accent' : 'text-text-muted']}>
+                    {item.included ? '+' : '-'}
+                  </span>
+                  <span class:list={[item.included ? 'text-text' : 'text-text-muted']}>
+                    {item.text}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <a
+              href={tier.ctaHref}
+              class:list={[
+                'block text-center py-3 font-mono text-[10px] tracking-[1.5px] uppercase no-underline transition-colors',
+                tier.featured
+                  ? 'bg-red text-text-bright border border-red-btn hover:bg-red-btn'
+                  : 'border border-line text-text-dim hover:border-accent-dim hover:text-text-bright'
+              ]}
+            >
+              {tier.cta}
+            </a>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="border-b border-line">
+      <div class="px-6 py-10 md:px-12 md:py-14 border-b border-line">
+        <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted">Frequently Asked</span>
+      </div>
+      <div class="max-w-3xl px-6 md:px-12 py-10">
+        <div class="space-y-8">
+          <div>
+            <h3 class="text-[13px] text-text-bright font-semibold mb-2">When will Pro pricing be announced?</h3>
+            <p class="text-[12px] text-text-dim leading-relaxed">We are finalizing pricing. Waitlist members will lock in launch pricing. Join the waitlist to be first to know.</p>
+          </div>
+          <div class="border-t border-line pt-8">
+            <h3 class="text-[13px] text-text-bright font-semibold mb-2">Is there a credit-based model?</h3>
+            <p class="text-[12px] text-text-dim leading-relaxed">Pro will use a credit-based system: pay per exported contact. Monthly subscriptions include a credit allocation. Unused credits do not roll over.</p>
+          </div>
+          <div class="border-t border-line pt-8">
+            <h3 class="text-[13px] text-text-bright font-semibold mb-2">Can I try the CLI before committing?</h3>
+            <p class="text-[12px] text-text-dim leading-relaxed">Yes. The Free tier lets you search the research graph and view basic profiles with no account required. Run <code class="font-mono text-accent text-[11px]">npx sci-buy@latest</code> to start.</p>
+          </div>
+          <div class="border-t border-line pt-8">
+            <h3 class="text-[13px] text-text-bright font-semibold mb-2">Is API access separate from CLI access?</h3>
+            <p class="text-[12px] text-text-dim leading-relaxed">Pro and Enterprise tiers include both CLI and REST API access. The Free tier is CLI-only. See the <a href="/developers" class="text-accent hover:text-text-bright no-underline transition-colors">Developers page</a> for API details.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOTTOM CTA -->
+    <BottomCTA />
+  </main>
+</Base>

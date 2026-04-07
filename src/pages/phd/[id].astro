@@ -1,0 +1,116 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import TerminalMockup from '../../components/TerminalMockup.astro';
+import BottomCTA from '../../components/BottomCTA.astro';
+import '../../styles/global.css';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('phd');
+  return entries.map((entry) => ({
+    params: { id: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const d = entry.data;
+
+const pageTitle = `${d.name} — PhD at ${d.institution} — Sci-Buy`;
+const pageDesc = `${d.name}, PhD candidate at ${d.institution} in ${d.field}. Advisor: ${d.advisor}. ${d.publications} publications. Skills: ${d.skills.slice(0, 3).join(', ')}.`;
+---
+
+<Base title={pageTitle} description={pageDesc}>
+  <Breadcrumb items={[
+    { name: 'PhD & Postdocs', url: '/phd/' },
+    { name: d.name, url: `/phd/${entry.id}/` },
+  ]} />
+
+  <!-- HERO -->
+  <section class="border-b border-line">
+    <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr] grid-lines">
+      <div class="p-8 md:p-12">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted">{d.field}</span>
+          <span class="w-px h-3 bg-line-accent"></span>
+          <span class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted">{d.institution}</span>
+        </div>
+        <h1 class="text-3xl md:text-4xl font-light text-text-bright tracking-tight mb-3">
+          {d.name}
+        </h1>
+        <p class="text-[13px] text-text-dim mb-2">{d.institution} / {d.field}</p>
+        <p class="text-[13px] text-text-dim mb-4">Advisor: {d.advisor}</p>
+        <p class="text-[13px] text-text leading-relaxed max-w-[520px]">
+          {d.description}
+        </p>
+      </div>
+      <div class="p-8 md:p-12 accent-top-yellow">
+        <div class="space-y-6">
+          <div>
+            <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-1">PUBLICATIONS</p>
+            <p class="text-2xl font-light text-text-bright">{d.publications}</p>
+          </div>
+          <div>
+            <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-1">SKILLS</p>
+            <p class="text-2xl font-light text-text-bright">{d.skills.length}</p>
+          </div>
+          <div>
+            <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-1">ADVISOR</p>
+            <p class="text-sm font-light text-text-bright">{d.advisor}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THESIS -->
+  <section class="border-b border-line p-8 md:p-12">
+    <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-4">THESIS TOPIC</p>
+    <p class="text-[15px] text-text-bright leading-relaxed max-w-[680px]">{d.thesis}</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="border-b border-line p-8 md:p-12">
+    <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-6">SKILLS</p>
+    <div class="flex flex-wrap gap-2">
+      {d.skills.map((skill) => (
+        <span class="px-3 py-1.5 bg-bg-raised border border-line text-[12px] text-text font-mono">
+          {skill}
+        </span>
+      ))}
+    </div>
+  </section>
+
+  <!-- TRANSITION SIGNALS -->
+  {d.transitionSignals.length > 0 && (
+    <section class="border-b border-line p-8 md:p-12">
+      <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-6">TRANSITION SIGNALS</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-px bg-line">
+        {d.transitionSignals.map((signal) => (
+          <div class="bg-bg p-4 flex items-center gap-3">
+            <span class="w-1.5 h-1.5 bg-accent flex-shrink-0"></span>
+            <p class="text-[13px] text-text">{signal}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- TERMINAL -->
+  <section class="border-b border-line p-8 md:p-12">
+    <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-6">TRY IT</p>
+    <TerminalMockup
+      lines={[
+        { type: 'prompt', text: `sci-buy search --career-stage phd --field "${d.field}"` },
+        { type: 'blank', text: '' },
+        { type: 'output', text: `Searching PhD candidates in ${d.field}...` },
+        { type: 'success', text: `Found: ${d.name} — ${d.institution}` },
+        { type: 'output', text: `Advisor: ${d.advisor} | Pubs: ${d.publications}` },
+        { type: 'output', text: `Transition signals: ${d.transitionSignals.length} detected` },
+      ]}
+    />
+  </section>
+
+  <BottomCTA />
+</Base>

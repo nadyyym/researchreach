@@ -1,0 +1,11 @@
+{
+  "name": "David Kim",
+  "institution": "UC Berkeley",
+  "field": "Machine Learning",
+  "advisor": "Dr. Pieter Abbeel",
+  "thesis": "Sample-efficient reinforcement learning for robotic manipulation via world models",
+  "publications": 12,
+  "skills": ["PyTorch", "TensorFlow", "Reinforcement Learning", "Computer Vision", "Distributed Systems", "C++"],
+  "transitionSignals": ["Interned at Google DeepMind", "Multiple offers from AI labs", "Open-source project with 5K+ GitHub stars"],
+  "description": "David is a final-year PhD student whose work on model-based reinforcement learning has achieved state-of-the-art results in robotic manipulation tasks. His open-source contributions have made him well-known in the robotics ML community."
+}

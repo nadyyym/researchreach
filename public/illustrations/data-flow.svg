@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200" fill="none">
+  <!-- Data pipeline flow — constructivist style -->
+  <rect width="800" height="200" fill="#101520"/>
+
+  <!-- Three stages connected by lines -->
+  <!-- Stage 1: Search -->
+  <rect x="40" y="60" width="180" height="80" fill="none" stroke="#a05060" stroke-width="1" opacity="0.3"/>
+  <rect x="40" y="60" width="4" height="80" fill="#a05060" opacity="0.4"/>
+  <text x="65" y="95" font-family="monospace" font-size="9" fill="#7a8296" letter-spacing="2">SEARCH</text>
+  <text x="65" y="120" font-family="monospace" font-size="8" fill="#4f576b">250M+ papers</text>
+
+  <!-- Connector -->
+  <line x1="220" y1="100" x2="310" y2="100" stroke="#232a3c" stroke-width="1"/>
+  <circle cx="265" cy="100" r="2" fill="#5a8bc2" opacity="0.3"/>
+
+  <!-- Stage 2: Map -->
+  <rect x="310" y="60" width="180" height="80" fill="none" stroke="#5a8bc2" stroke-width="1" opacity="0.3"/>
+  <rect x="310" y="60" width="4" height="80" fill="#5a8bc2" opacity="0.4"/>
+  <text x="335" y="95" font-family="monospace" font-size="9" fill="#7a8296" letter-spacing="2">MAP</text>
+  <text x="335" y="120" font-family="monospace" font-size="8" fill="#4f576b">Cross-reference</text>
+
+  <!-- Connector -->
+  <line x1="490" y1="100" x2="580" y2="100" stroke="#232a3c" stroke-width="1"/>
+  <circle cx="535" cy="100" r="2" fill="#a09050" opacity="0.3"/>
+
+  <!-- Stage 3: Export -->
+  <rect x="580" y="60" width="180" height="80" fill="none" stroke="#a09050" stroke-width="1" opacity="0.3"/>
+  <rect x="580" y="60" width="4" height="80" fill="#a09050" opacity="0.4"/>
+  <text x="605" y="95" font-family="monospace" font-size="9" fill="#7a8296" letter-spacing="2">EXPORT</text>
+  <text x="605" y="120" font-family="monospace" font-size="8" fill="#4f576b">Verified contacts</text>
+
+  <!-- Subtle diagonal -->
+  <line x1="0" y1="180" x2="800" y2="20" stroke="#a05060" stroke-width="1" opacity="0.04"/>
+</svg>

@@ -1,0 +1,9 @@
+{
+  "name": "Machine Learning",
+  "subfields": ["Deep Learning", "Bayesian Methods", "Federated Learning", "AutoML", "Interpretable ML"],
+  "keyTechnologies": ["Neural Networks", "Gradient Boosting", "Transformer Architectures", "PyTorch/TensorFlow", "Distributed Training"],
+  "topInstitutions": ["Stanford", "MIT", "University of Toronto", "Carnegie Mellon", "UC Berkeley"],
+  "researcherCount": 110000,
+  "avgFunding": "$620K",
+  "description": "Machine learning develops algorithms that improve through experience without being explicitly programmed. It is the engine behind modern AI applications in vision, language, scientific discovery, and autonomous systems."
+}

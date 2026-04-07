@@ -1,0 +1,9 @@
+{
+  "name": "Genomics",
+  "subfields": ["Functional Genomics", "Comparative Genomics", "Metagenomics", "Pharmacogenomics", "Single-Cell Genomics"],
+  "keyTechnologies": ["Next-Generation Sequencing", "CRISPR Screens", "Microarrays", "Long-Read Sequencing", "Spatial Transcriptomics"],
+  "topInstitutions": ["Broad Institute", "Sanger Institute", "BGI Genomics", "Stanford", "University of Washington"],
+  "researcherCount": 58000,
+  "avgFunding": "$510K",
+  "description": "Genomics encompasses the study of entire genomes, including their structure, function, evolution, and clinical applications. It underpins precision medicine, agricultural biotechnology, and our understanding of biodiversity."
+}

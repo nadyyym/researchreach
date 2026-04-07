@@ -1,0 +1,12 @@
+{
+  "name": "University of Toronto",
+  "country": "Canada",
+  "city": "Toronto",
+  "type": "public",
+  "researcherCount": 4600,
+  "avgHindex": 42,
+  "grantCount": 3500,
+  "departments": ["Computer Science", "Molecular Genetics", "Chemistry", "Immunology", "Physics", "Cell and Systems Biology", "Electrical and Computer Engineering", "Pharmacology and Toxicology"],
+  "topFields": ["Machine Learning", "Stem Cell Research", "Genomics", "Neuroscience", "Drug Discovery"],
+  "description": "The University of Toronto is Canada's largest and most research-intensive university. It is the birthplace of deep learning through the pioneering work of Geoffrey Hinton and houses world-leading programs in stem cell biology, regenerative medicine, and AI."
+}

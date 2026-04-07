@@ -1,0 +1,8 @@
+{
+  "name": "NVIDIA",
+  "industry": "Scientific Software",
+  "rdSpend": "$8.7B",
+  "academicCollabs": 450,
+  "patents": 14000,
+  "description": "NVIDIA's research division drives advances in AI, computational biology, and scientific computing. Its GPUs power the majority of deep learning training worldwide, and its Clara platform provides accelerated computing tools for genomics, drug discovery, and medical imaging."
+}

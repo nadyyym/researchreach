@@ -1,0 +1,112 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import TerminalMockup from '../../components/TerminalMockup.astro';
+import BottomCTA from '../../components/BottomCTA.astro';
+import '../../styles/global.css';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('fields');
+  return entries.map((entry) => ({
+    params: { id: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const d = entry.data;
+
+const pageTitle = `${d.name} Research — Scientists, Institutions & Funding — Sci-Buy`;
+const pageDesc = `Explore ${d.name} research: ${d.researcherCount.toLocaleString()} researchers, top institutions, key technologies, and funding sources. ${d.avgFunding} average funding.`;
+---
+
+<Base title={pageTitle} description={pageDesc}>
+  <Breadcrumb items={[
+    { name: 'Fields', url: '/fields/' },
+    { name: d.name, url: `/fields/${entry.id}/` },
+  ]} />
+
+  <!-- HERO -->
+  <section class="border-b border-line">
+    <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr] grid-lines">
+      <div class="p-8 md:p-12">
+        <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-4">RESEARCH FIELD</p>
+        <h1 class="text-3xl md:text-4xl font-light text-text-bright tracking-tight mb-3">
+          {d.name}
+        </h1>
+        <p class="text-[13px] text-text leading-relaxed max-w-[520px]">
+          {d.description}
+        </p>
+      </div>
+      <div class="p-8 md:p-12 accent-top-yellow">
+        <div class="space-y-6">
+          <div>
+            <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-1">RESEARCHERS</p>
+            <p class="text-2xl font-light text-text-bright">{d.researcherCount.toLocaleString()}</p>
+          </div>
+          <div>
+            <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-1">AVG FUNDING</p>
+            <p class="text-2xl font-light text-text-bright">{d.avgFunding}</p>
+          </div>
+          <div>
+            <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-1">SUBFIELDS</p>
+            <p class="text-2xl font-light text-text-bright">{d.subfields.length}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOP INSTITUTIONS -->
+  <section class="border-b border-line p-8 md:p-12">
+    <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-6">TOP INSTITUTIONS</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-line">
+      {d.topInstitutions.map((inst) => (
+        <div class="bg-bg p-4">
+          <p class="text-[13px] text-text">{inst}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- SUBFIELDS -->
+  <section class="border-b border-line p-8 md:p-12">
+    <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-6">SUBFIELDS</p>
+    <div class="flex flex-wrap gap-2">
+      {d.subfields.map((sub) => (
+        <span class="px-3 py-1.5 bg-bg-raised border border-line text-[12px] text-text font-mono">
+          {sub}
+        </span>
+      ))}
+    </div>
+  </section>
+
+  <!-- KEY TECHNOLOGIES -->
+  <section class="border-b border-line p-8 md:p-12">
+    <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-6">KEY TECHNOLOGIES</p>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-px bg-line">
+      {d.keyTechnologies.map((tech) => (
+        <div class="bg-bg p-4">
+          <p class="text-[12px] text-text font-mono">{tech}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- TERMINAL -->
+  <section class="border-b border-line p-8 md:p-12">
+    <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-6">TRY IT</p>
+    <TerminalMockup
+      lines={[
+        { type: 'prompt', text: `sci-buy search --field "${d.name}"` },
+        { type: 'blank', text: '' },
+        { type: 'output', text: `Searching ${d.researcherCount.toLocaleString()} researchers in ${d.name}...` },
+        { type: 'success', text: `Found ${d.researcherCount.toLocaleString()} researchers across ${d.topInstitutions.length} top institutions` },
+        { type: 'output', text: `Avg funding: ${d.avgFunding} | ${d.subfields.length} subfields indexed` },
+      ]}
+    />
+  </section>
+
+  <BottomCTA />
+</Base>

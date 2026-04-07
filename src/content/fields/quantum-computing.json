@@ -1,0 +1,9 @@
+{
+  "name": "Quantum Computing",
+  "subfields": ["Quantum Error Correction", "Quantum Algorithms", "Topological Quantum Computing", "Quantum Simulation", "Quantum Cryptography"],
+  "keyTechnologies": ["Superconducting Qubits", "Trapped Ions", "Photonic Quantum Processors", "Quantum Annealing", "Cryogenic Systems"],
+  "topInstitutions": ["MIT", "Caltech", "ETH Zurich", "University of Waterloo", "TU Delft"],
+  "researcherCount": 18000,
+  "avgFunding": "$720K",
+  "description": "Quantum computing leverages quantum mechanical phenomena such as superposition and entanglement to perform computations that are intractable for classical computers. Applications include cryptography, drug design, optimization, and materials simulation."
+}

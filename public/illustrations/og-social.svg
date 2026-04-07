@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#101520"/>
+
+  <!-- Mondrian grid -->
+  <line x1="400" y1="0" x2="400" y2="630" stroke="#232a3c" stroke-width="1"/>
+  <line x1="0" y1="315" x2="1200" y2="315" stroke="#232a3c" stroke-width="1"/>
+
+  <!-- Color blocks -->
+  <rect x="0" y="0" width="400" height="315" fill="#2e4f78" opacity="0.06"/>
+  <rect x="400" y="315" width="800" height="315" fill="#4a2530" opacity="0.04"/>
+
+  <!-- Logo mark -->
+  <rect x="80" y="180" width="24" height="24" fill="#a05060" opacity="0.6" transform="rotate(12, 92, 192)"/>
+
+  <!-- Title -->
+  <text x="120" y="200" font-family="monospace" font-size="42" fill="#eef0f5" font-weight="bold" letter-spacing="-1">SCI-BUY</text>
+
+  <!-- Subtitle -->
+  <text x="80" y="260" font-family="sans-serif" font-size="24" fill="#d4d8e3" font-weight="300">Find the scientists</text>
+  <text x="80" y="295" font-family="sans-serif" font-size="24" fill="#5a8bc2" font-weight="600">who need your product.</text>
+
+  <!-- Bottom info -->
+  <text x="80" y="480" font-family="monospace" font-size="12" fill="#4f576b" letter-spacing="3">RESEARCH INTELLIGENCE CLI</text>
+  <text x="80" y="510" font-family="monospace" font-size="11" fill="#4f576b">selltoscientists.com</text>
+
+  <!-- Diagonal -->
+  <line x1="600" y1="630" x2="1200" y2="0" stroke="#a05060" stroke-width="1" opacity="0.08"/>
+
+  <!-- Network nodes -->
+  <circle cx="800" cy="200" r="6" fill="#5a8bc2" opacity="0.25"/>
+  <circle cx="900" cy="150" r="4" fill="#a05060" opacity="0.2"/>
+  <circle cx="1000" cy="250" r="5" fill="#5a8bc2" opacity="0.2"/>
+  <circle cx="850" cy="300" r="3" fill="#a09050" opacity="0.15"/>
+  <line x1="800" y1="200" x2="900" y2="150" stroke="#5a8bc2" stroke-width="1" opacity="0.1"/>
+  <line x1="800" y1="200" x2="1000" y2="250" stroke="#232a3c" stroke-width="1" opacity="0.1"/>
+  <line x1="900" y1="150" x2="1000" y2="250" stroke="#232a3c" stroke-width="1" opacity="0.08"/>
+</svg>

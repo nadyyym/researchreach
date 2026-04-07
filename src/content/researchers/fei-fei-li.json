@@ -1,0 +1,12 @@
+{
+  "name": "Fei-Fei Li",
+  "institution": "Stanford University",
+  "field": "Artificial Intelligence",
+  "hindex": 120,
+  "grantCount": 36,
+  "patents": 6,
+  "publications": 380,
+  "orcid": "0000-0002-2445-1690",
+  "industryTies": ["Google Cloud (former VP/Chief Scientist)", "Twitter Board", "World Innovation Lab"],
+  "description": "Fei-Fei Li is a computer scientist who created ImageNet, the large-scale visual database that catalyzed the deep learning revolution in computer vision. She is a leading voice in human-centered AI and AI ethics."
+}

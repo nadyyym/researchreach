@@ -1,0 +1,101 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import BottomCTA from '../../components/BottomCTA.astro';
+import '../../styles/global.css';
+
+const entries = await getCollection('universities');
+const pageTitle = 'Top Research Universities — Sci-Buy';
+const pageDesc = `Browse ${entries.length} leading research universities. Search researchers by institution, department, H-index, and grant activity.`;
+
+const logoDomains: Record<string, string> = {
+  'mit': 'mit.edu',
+  'stanford': 'stanford.edu',
+  'harvard': 'harvard.edu',
+  'caltech': 'caltech.edu',
+  'oxford': 'ox.ac.uk',
+  'cambridge': 'cam.ac.uk',
+  'eth-zurich': 'ethz.ch',
+  'uc-berkeley': 'berkeley.edu',
+  'johns-hopkins': 'jhu.edu',
+  'princeton': 'princeton.edu',
+  'yale': 'yale.edu',
+  'columbia': 'columbia.edu',
+  'university-of-tokyo': 'u-tokyo.ac.jp',
+  'nus': 'nus.edu.sg',
+  'tsinghua': 'tsinghua.edu.cn',
+  'imperial-college': 'imperial.ac.uk',
+  'max-planck': 'mpg.de',
+  'karolinska': 'ki.se',
+  'epfl': 'epfl.ch',
+  'university-of-toronto': 'utoronto.ca',
+};
+---
+
+<Base title={pageTitle} description={pageDesc}>
+  <Breadcrumb items={[{ name: 'Universities', url: '/universities/' }]} />
+
+  <!-- HERO -->
+  <section class="border-b border-line">
+    <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr] grid-lines">
+      <div class="p-8 md:p-12">
+        <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-4">INSTITUTION INDEX</p>
+        <h1 class="text-3xl md:text-4xl font-light text-text-bright tracking-tight mb-3">
+          Research <strong class="font-semibold">Universities</strong>
+        </h1>
+        <p class="text-[13px] text-text-dim leading-relaxed max-w-[520px]">
+          Explore the world's top research institutions. Each profile includes researcher counts,
+          average H-index, active grants, key departments, and top research fields.
+        </p>
+      </div>
+      <div class="p-8 md:p-12 flex items-center justify-center accent-top-red">
+        <div class="text-center">
+          <p class="text-4xl font-light text-text-bright">{entries.length}</p>
+          <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mt-1">INSTITUTIONS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRID -->
+  <section class="p-6 md:p-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-lines">
+      {entries.map((entry) => (
+        <a
+          href={`/universities/${entry.id}/`}
+          class="block p-6 hover:bg-bg-raised transition-colors no-underline group"
+        >
+          <div class="flex items-center gap-3 mb-3">
+            {logoDomains[entry.id] && (
+              <img
+                src={`https://cdn.brandfetch.io/${logoDomains[entry.id]}/w/32/h/32?c=1id_MZGCfZ8PwGRsnR9`}
+                alt={entry.data.name}
+                width="20"
+                height="20"
+                class="opacity-70"
+                loading="lazy"
+              />
+            )}
+            <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted">
+              {entry.data.country} / {entry.data.city}
+            </p>
+          </div>
+          <h2 class="text-[15px] font-semibold text-text-bright mb-2 group-hover:text-accent transition-colors">
+            {entry.data.name}
+          </h2>
+          <p class="text-[12px] text-text-dim leading-relaxed line-clamp-2 mb-4">
+            {entry.data.description}
+          </p>
+          <div class="flex items-center gap-4 text-[11px] font-mono text-text-muted">
+            <span>{entry.data.researcherCount.toLocaleString()} researchers</span>
+            <span>h{entry.data.avgHindex} avg</span>
+            <span>{entry.data.grantCount.toLocaleString()} grants</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <BottomCTA />
+</Base>

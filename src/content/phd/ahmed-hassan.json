@@ -1,0 +1,11 @@
+{
+  "name": "Ahmed Hassan",
+  "institution": "Johns Hopkins University",
+  "field": "Epidemiology",
+  "advisor": "Dr. Maria Kaori Hayashi",
+  "thesis": "Wastewater-based epidemiology for real-time surveillance of antimicrobial resistance in urban populations",
+  "publications": 6,
+  "skills": ["Epidemiological Modeling", "R", "Python", "GIS", "Metagenomic Sequencing", "Statistical Analysis"],
+  "transitionSignals": ["Consulting for WHO working group", "Published op-ed in The Lancet", "Attending public health policy conferences"],
+  "description": "Ahmed is a 5th-year PhD candidate developing wastewater surveillance systems that can detect emerging antimicrobial resistance patterns before clinical cases surge. His work has been piloted in three US cities."
+}

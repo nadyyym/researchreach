@@ -1,0 +1,11 @@
+{
+  "name": "Elena Rodriguez",
+  "institution": "Harvard University",
+  "field": "Neuroscience",
+  "advisor": "Dr. Catherine Bhatt",
+  "thesis": "Neural circuit dynamics underlying decision-making in prefrontal cortex using two-photon calcium imaging",
+  "publications": 5,
+  "skills": ["Two-Photon Microscopy", "Optogenetics", "Python", "MATLAB", "Electrophysiology", "Data Analysis"],
+  "transitionSignals": ["Networking with neurotech startups", "Enrolled in business of science course", "Attending BIO conference"],
+  "description": "Elena is a 4th-year PhD student mapping neural circuits involved in complex decision-making. Her expertise in advanced imaging techniques positions her well for roles in brain-computer interface companies."
+}

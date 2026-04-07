@@ -1,0 +1,12 @@
+{
+  "name": "EPFL (Ecole Polytechnique Federale de Lausanne)",
+  "country": "Switzerland",
+  "city": "Lausanne",
+  "type": "public",
+  "researcherCount": 2600,
+  "avgHindex": 44,
+  "grantCount": 2000,
+  "departments": ["Computer and Communication Sciences", "Life Sciences", "Engineering", "Basic Sciences", "Architecture", "Microengineering", "Electrical Engineering", "Bioengineering"],
+  "topFields": ["Robotics", "Neuroscience", "Nanotechnology", "Machine Learning", "Materials Science"],
+  "description": "EPFL is a leading European technical university known for its ambitious Blue Brain Project and cutting-edge work in robotics, energy, and computational neuroscience. Its Innovation Park hosts over 200 startups and fosters strong academic-industry connections."
+}

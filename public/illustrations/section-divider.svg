@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="80" viewBox="0 0 1200 80" fill="none">
+  <!-- Constructivist section divider -->
+  <rect width="1200" height="80" fill="#101520"/>
+
+  <!-- Asymmetric Mondrian bars -->
+  <rect x="0" y="30" width="200" height="1" fill="#a05060" opacity="0.4"/>
+  <rect x="240" y="30" width="80" height="1" fill="#5a8bc2" opacity="0.3"/>
+  <rect x="360" y="30" width="40" height="1" fill="#a09050" opacity="0.3"/>
+
+  <!-- Diagonal accent -->
+  <line x1="420" y1="20" x2="480" y2="60" stroke="#232a3c" stroke-width="1"/>
+
+  <!-- Dots -->
+  <circle cx="520" cy="40" r="2" fill="#5a8bc2" opacity="0.25"/>
+  <circle cx="540" cy="40" r="2" fill="#a05060" opacity="0.25"/>
+  <circle cx="560" cy="40" r="2" fill="#a09050" opacity="0.25"/>
+
+  <!-- Right side bars -->
+  <rect x="800" y="50" width="120" height="1" fill="#5a8bc2" opacity="0.3"/>
+  <rect x="960" y="50" width="240" height="1" fill="#232a3c" opacity="0.5"/>
+</svg>

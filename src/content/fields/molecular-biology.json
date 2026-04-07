@@ -1,0 +1,9 @@
+{
+  "name": "Molecular Biology",
+  "subfields": ["Structural Biology", "Gene Expression", "DNA Repair", "RNA Biology", "Protein Folding"],
+  "keyTechnologies": ["CRISPR-Cas9", "Cryo-EM", "X-ray Crystallography", "PCR", "Mass Spectrometry"],
+  "topInstitutions": ["MIT", "Harvard", "Cambridge", "Max Planck Society", "Stanford"],
+  "researcherCount": 85000,
+  "avgFunding": "$450K",
+  "description": "Molecular biology studies the molecular mechanisms underlying cellular life, including DNA replication, transcription, translation, and regulation. It is foundational to modern biotechnology and medicine."
+}

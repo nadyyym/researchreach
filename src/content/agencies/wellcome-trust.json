@@ -1,0 +1,8 @@
+{
+  "name": "Wellcome Trust",
+  "country": "United Kingdom",
+  "type": "foundation",
+  "budget": "$1.6B",
+  "programs": ["Discovery Research", "Climate and Health", "Mental Health", "Infectious Disease", "Wellcome Leap", "Wellcome Sanger Institute"],
+  "description": "The Wellcome Trust is one of the world's largest charitable foundations dedicated to health research. It funds the Wellcome Sanger Institute, a global leader in genomics, and supports research on infectious disease, mental health, and climate-health intersections."
+}

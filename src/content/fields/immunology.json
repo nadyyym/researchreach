@@ -1,0 +1,9 @@
+{
+  "name": "Immunology",
+  "subfields": ["Tumor Immunology", "Mucosal Immunology", "Autoimmunity", "Vaccinology", "Innate Immunity"],
+  "keyTechnologies": ["Flow Cytometry", "Single-Cell RNA Sequencing", "ELISA", "Monoclonal Antibodies", "CAR-T Cell Engineering"],
+  "topInstitutions": ["Harvard", "Johns Hopkins", "Yale", "Karolinska Institute", "Oxford"],
+  "researcherCount": 62000,
+  "avgFunding": "$490K",
+  "description": "Immunology studies the immune system's defense mechanisms against pathogens, its role in disease, and how it can be harnessed for therapy. The field is central to vaccine development, cancer immunotherapy, and understanding autoimmune disorders."
+}

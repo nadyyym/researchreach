@@ -1,0 +1,9 @@
+{
+  "name": "Singapore",
+  "code": "SG",
+  "topInstitutions": ["National University of Singapore", "Nanyang Technological University", "A*STAR", "SUTD", "Duke-NUS Medical School"],
+  "topAgencies": ["NRF Singapore", "A*STAR", "MOH NMRC"],
+  "researchOutput": 18000,
+  "topFields": ["Materials Science", "Biomedical Engineering", "Artificial Intelligence", "Nanotechnology", "Drug Discovery"],
+  "description": "Singapore has strategically invested in becoming a biomedical and technology research hub for Southeast Asia. Its A*STAR research agency, world-class universities, and favorable immigration policies attract top global talent."
+}

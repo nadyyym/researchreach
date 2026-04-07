@@ -1,0 +1,11 @@
+{
+  "name": "Anna Kowalski",
+  "institution": "Max Planck Institute of Molecular Cell Biology and Genetics",
+  "field": "Stem Cell Research",
+  "advisor": "Dr. Jan Ellenberg",
+  "thesis": "Live imaging of chromosome dynamics during human embryonic stem cell differentiation",
+  "publications": 4,
+  "skills": ["Light-Sheet Microscopy", "iPSC Culture", "CRISPR Gene Editing", "Image Analysis", "Python", "Fiji/ImageJ"],
+  "transitionSignals": ["Applied to biotech accelerator program", "Building personal website showcasing industry-relevant skills", "Mentoring undergrads interested in biotech careers"],
+  "description": "Anna is a 3rd-year PhD student using advanced live imaging to understand how stem cells decide their fate. Her expertise in organoid culture and imaging makes her attractive to regenerative medicine companies."
+}

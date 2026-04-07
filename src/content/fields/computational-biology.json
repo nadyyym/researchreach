@@ -1,0 +1,9 @@
+{
+  "name": "Computational Biology",
+  "subfields": ["Molecular Dynamics", "Phylogenetics", "Protein Structure Prediction", "Gene Regulatory Networks", "Population Genetics"],
+  "keyTechnologies": ["AlphaFold", "Molecular Dynamics Simulators", "Machine Learning Pipelines", "Cloud Computing", "GPU-Accelerated Computing"],
+  "topInstitutions": ["MIT", "Stanford", "Harvard", "ETH Zurich", "University of Washington"],
+  "researcherCount": 35000,
+  "avgFunding": "$400K",
+  "description": "Computational biology develops and applies mathematical models, algorithms, and simulations to understand biological systems. It plays a central role in protein structure prediction, evolutionary analysis, and multi-omics integration."
+}

@@ -1,109 +1,119 @@
 ---
 import Base from "../layouts/Base.astro";
-import WaitlistForm from "../components/WaitlistForm.astro";
+import Breadcrumb from "../components/Breadcrumb.astro";
+import BottomCTA from "../components/BottomCTA.astro";
 import "../styles/global.css";
 ---
 
 <Base
-  title="About ResearchReach — Building the Researcher Graph"
-  description="ResearchReach is building contact intelligence for the scientific workforce. Learn about our mission, data philosophy, and team."
+  title="About — Sci-Buy"
+  description="Sci-Buy is building research intelligence for those who sell to scientists. Learn about our mission, data philosophy, and team."
 >
   <main>
-    <header class="border-b border-navy-600 bg-navy/90 backdrop-blur-sm sticky top-0 z-40">
-      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="/" class="font-display font-bold text-lg text-white no-underline">
-          Research<span class="text-electric">Reach</span>
-        </a>
-        <nav class="hidden md:flex items-center gap-8">
-          <a href="/#how-it-works" class="text-slate text-sm hover:text-white no-underline transition-colors">How it works</a>
-          <a href="/use-cases" class="text-slate text-sm hover:text-white no-underline transition-colors">Use cases</a>
-          <a href="/developers" class="text-slate text-sm hover:text-white no-underline transition-colors">Developers</a>
-          <a href="/#waitlist" class="px-4 py-2 bg-electric text-white text-sm font-semibold rounded-lg no-underline hover:bg-electric-dim transition-colors">Join waitlist</a>
-        </nav>
-      </div>
-    </header>
+    <Breadcrumb items={[{ name: "About", url: "/about" }]} />
 
-    <section class="bg-navy py-20 md:py-28">
-      <div class="max-w-4xl mx-auto px-6">
-        <div class="mb-16">
-          <p class="text-electric text-sm font-mono uppercase tracking-widest mb-4">About</p>
-          <h1 class="font-display text-[clamp(36px,5vw,64px)] font-black leading-tight mb-6">
-            We're building the<br />researcher graph.
-          </h1>
-          <p class="text-slate-light text-xl leading-relaxed max-w-2xl">
-            The scientific workforce is one of the least-indexed professional populations on earth. Researchers publish constantly, win grants publicly, file patents — and yet they're completely invisible to the tools sales, recruiting, and investment teams rely on every day.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-16">
-          <div>
-            <h2 class="font-display text-2xl font-bold text-white mb-4">The problem we're solving</h2>
-            <p class="text-slate text-base leading-relaxed mb-4">
-              A pharma BD team trying to reach the world's top CRISPR researchers has no reliable starting point. LinkedIn is wrong. ZoomInfo misses academics. Faculty directories are HTML tables with no emails. Conference attendee lists are guarded.
-            </p>
-            <p class="text-slate text-base leading-relaxed">
-              We're aggregating the world's best open research infrastructure — OpenAlex, ORCID, NIH Reporter, PubMed, Semantic Scholar — and turning it into a B2B contact intelligence layer that actually works for the scientific market.
-            </p>
-          </div>
-          <div>
-            <h2 class="font-display text-2xl font-bold text-white mb-4">Our moat: industry bridge signals</h2>
-            <p class="text-slate text-base leading-relaxed mb-4">
-              The most valuable researchers for B2B outreach are those with one foot in industry: patent holders, startup co-founders, SAB members, industry-funded PIs. They're commercially aware, move between academia and industry, and respond to outreach.
-            </p>
-            <p class="text-slate text-base leading-relaxed">
-              We built proprietary signal detection to surface exactly this population — the researchers who bridge the gap between basic science and commercial application.
-            </p>
-          </div>
-        </div>
-
-        <div class="bg-navy-700 border border-navy-600 rounded-2xl p-8 md:p-10 mb-16">
-          <h2 class="font-display text-2xl font-bold text-white mb-6">Data philosophy</h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div>
-              <div class="text-electric font-mono text-sm mb-2">01</div>
-              <h3 class="font-semibold text-white mb-2">Open sources only</h3>
-              <p class="text-slate text-sm leading-relaxed">We only index publicly disclosed information: papers, grants, patents, public institutional pages. No scraping of private university systems.</p>
-            </div>
-            <div>
-              <div class="text-electric font-mono text-sm mb-2">02</div>
-              <h3 class="font-semibold text-white mb-2">Opt-out respected</h3>
-              <p class="text-slate text-sm leading-relaxed">Any researcher can request removal. We maintain a global suppression list and honor it across all exports and API calls.</p>
-            </div>
-            <div>
-              <div class="text-electric font-mono text-sm mb-2">03</div>
-              <h3 class="font-semibold text-white mb-2">Freshness first</h3>
-              <p class="text-slate text-sm leading-relaxed">We'd rather show fewer records with high confidence than pad the database with stale or unverified contacts.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="mb-16">
-          <h2 class="font-display text-2xl font-bold text-white mb-8">Team</h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-navy-700 border border-navy-600 rounded-xl p-6">
-              <div class="w-14 h-14 rounded-full bg-navy-600 flex items-center justify-center text-2xl mb-4">👤</div>
-              <h3 class="font-display font-bold text-white mb-1">Co-founder, CEO</h3>
-              <p class="text-slate text-sm">Former pharma BD. Spent years trying to reach researchers with broken tools. Built ResearchReach to fix that.</p>
-            </div>
-            <div class="bg-navy-700 border border-navy-600 rounded-xl p-6">
-              <div class="w-14 h-14 rounded-full bg-navy-600 flex items-center justify-center text-2xl mb-4">👤</div>
-              <h3 class="font-display font-bold text-white mb-1">Co-founder, CTO</h3>
-              <p class="text-slate text-sm">Previously at a large academic data aggregator. Built pipelines processing billions of research metadata records.</p>
-            </div>
-            <div class="bg-navy-700 border border-navy-600 rounded-xl p-6">
-              <div class="w-14 h-14 rounded-full bg-navy-600 flex items-center justify-center text-2xl mb-4">📍</div>
-              <h3 class="font-display font-bold text-white mb-1">We're hiring</h3>
-              <p class="text-slate text-sm">Looking for data engineers and researchers with experience in scientific graph construction. Join us.</p>
-            </div>
-          </div>
-        </div>
-
-        <WaitlistForm
-          id="about-waitlist"
-          heading="Join the waitlist"
-          subheading="We're onboarding teams in waves. Priority to use cases with the tightest fit."
-        />
+    <!-- HERO -->
+    <section class="border-b border-line">
+      <div class="px-6 py-16 md:px-12 md:py-24 max-w-4xl">
+        <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-6 block">About Sci-Buy</span>
+        <h1 class="text-3xl md:text-4xl font-light text-text-bright tracking-tight mb-4 leading-[1.2]">
+          We are building the<br />
+          <strong class="font-semibold">research graph.</strong>
+        </h1>
+        <p class="text-[13px] text-text-dim leading-relaxed max-w-[480px]">
+          The scientific workforce is one of the least-indexed professional populations on earth. Researchers publish constantly, win grants publicly, file patents -- and yet they are completely invisible to B2B tools.
+        </p>
       </div>
     </section>
+
+    <!-- PROBLEM + MOAT -->
+    <section class="border-b border-line">
+      <div class="grid grid-cols-1 md:grid-cols-2 grid-lines">
+        <div class="bg-bg p-8 md:p-12">
+          <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-4 block">The Problem</span>
+          <h2 class="text-lg font-light text-text-bright mb-3">
+            Scientists are <strong class="font-semibold">invisible</strong> to sales tools
+          </h2>
+          <p class="text-[12px] text-text-dim leading-relaxed mb-4">
+            A pharma BD team trying to reach the world's top CRISPR researchers has no reliable starting point. LinkedIn is wrong. ZoomInfo misses academics. Faculty directories are HTML tables with no emails.
+          </p>
+          <p class="text-[12px] text-text-dim leading-relaxed">
+            We are aggregating the world's best open research infrastructure -- OpenAlex, ORCID, NIH Reporter, PubMed, Semantic Scholar -- and turning it into a contact intelligence layer that actually works for the scientific market.
+          </p>
+        </div>
+        <div class="bg-bg p-8 md:p-12">
+          <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-4 block">Our Moat</span>
+          <h2 class="text-lg font-light text-text-bright mb-3">
+            Industry <strong class="font-semibold">bridge signals</strong>
+          </h2>
+          <p class="text-[12px] text-text-dim leading-relaxed mb-4">
+            The most valuable researchers for B2B outreach are those with one foot in industry: patent holders, startup co-founders, SAB members, industry-funded PIs.
+          </p>
+          <p class="text-[12px] text-text-dim leading-relaxed">
+            We built proprietary signal detection to surface exactly this population -- the researchers who bridge the gap between basic science and commercial application.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DATA PHILOSOPHY -->
+    <section class="border-b border-line">
+      <div class="px-6 py-6 md:px-12 border-b border-line">
+        <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted">Data Philosophy</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 grid-lines">
+        <div class="bg-bg p-8 md:p-10 accent-top-red">
+          <span class="font-mono text-[32px] text-line-accent block mb-4">01</span>
+          <h3 class="text-[13px] font-semibold text-text-bright mb-2">Open sources only</h3>
+          <p class="text-[12px] text-text-dim leading-relaxed">
+            We only index publicly disclosed information: papers, grants, patents, public institutional pages. No scraping of private university systems.
+          </p>
+        </div>
+        <div class="bg-bg p-8 md:p-10 accent-top-blue">
+          <span class="font-mono text-[32px] text-line-accent block mb-4">02</span>
+          <h3 class="text-[13px] font-semibold text-text-bright mb-2">Opt-out respected</h3>
+          <p class="text-[12px] text-text-dim leading-relaxed">
+            Any researcher can request removal. We maintain a global suppression list and honor it across all exports and API calls.
+          </p>
+        </div>
+        <div class="bg-bg p-8 md:p-10 accent-top-yellow">
+          <span class="font-mono text-[32px] text-line-accent block mb-4">03</span>
+          <h3 class="text-[13px] font-semibold text-text-bright mb-2">Freshness first</h3>
+          <p class="text-[12px] text-text-dim leading-relaxed">
+            We would rather show fewer records with high confidence than pad the database with stale or unverified contacts.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="border-b border-line">
+      <div class="px-6 py-6 md:px-12 border-b border-line">
+        <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted">Team</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 grid-lines">
+        <div class="bg-bg p-8 md:p-10">
+          <span class="font-mono text-[9px] tracking-[2px] uppercase text-red mb-3 block">Co-founder, CEO</span>
+          <p class="text-[12px] text-text-dim leading-relaxed">
+            Former pharma BD. Spent years trying to reach researchers with broken tools. Built Sci-Buy to fix that.
+          </p>
+        </div>
+        <div class="bg-bg p-8 md:p-10">
+          <span class="font-mono text-[9px] tracking-[2px] uppercase text-accent mb-3 block">Co-founder, CTO</span>
+          <p class="text-[12px] text-text-dim leading-relaxed">
+            Previously at a large academic data aggregator. Built pipelines processing billions of research metadata records.
+          </p>
+        </div>
+        <div class="bg-bg p-8 md:p-10">
+          <span class="font-mono text-[9px] tracking-[2px] uppercase text-yellow mb-3 block">We are hiring</span>
+          <p class="text-[12px] text-text-dim leading-relaxed">
+            Looking for data engineers and researchers with experience in scientific graph construction. <a href="/contact" class="text-accent hover:text-text-bright no-underline transition-colors">Get in touch.</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOTTOM CTA -->
+    <BottomCTA />
   </main>
 </Base>

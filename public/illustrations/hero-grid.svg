@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <!-- Constructivist/Mondrian hero composition -->
+  <!-- Grid structure -->
+  <rect width="800" height="600" fill="#101520"/>
+
+  <!-- Mondrian grid lines -->
+  <line x1="300" y1="0" x2="300" y2="600" stroke="#232a3c" stroke-width="1"/>
+  <line x1="520" y1="0" x2="520" y2="600" stroke="#232a3c" stroke-width="1"/>
+  <line x1="0" y1="200" x2="800" y2="200" stroke="#232a3c" stroke-width="1"/>
+  <line x1="0" y1="420" x2="800" y2="420" stroke="#232a3c" stroke-width="1"/>
+
+  <!-- De Stijl color blocks -->
+  <rect x="521" y="0" width="279" height="200" fill="#4a2530" opacity="0.3"/>
+  <rect x="0" y="421" width="300" height="179" fill="#2e4f78" opacity="0.25"/>
+  <rect x="521" y="421" width="279" height="179" fill="#4a4020" opacity="0.2"/>
+
+  <!-- Rodchenko diagonal -->
+  <line x1="100" y1="500" x2="700" y2="100" stroke="#a05060" stroke-width="1" opacity="0.15"/>
+  <line x1="120" y1="500" x2="720" y2="100" stroke="#a05060" stroke-width="1" opacity="0.08"/>
+
+  <!-- Geometric circle -->
+  <circle cx="520" cy="200" r="120" stroke="#5a8bc2" stroke-width="1" fill="none" opacity="0.12"/>
+  <circle cx="520" cy="200" r="80" stroke="#5a8bc2" stroke-width="1" fill="none" opacity="0.08"/>
+
+  <!-- Bauhaus dots pattern -->
+  <circle cx="340" cy="240" r="3" fill="#5a8bc2" opacity="0.2"/>
+  <circle cx="380" cy="240" r="3" fill="#5a8bc2" opacity="0.2"/>
+  <circle cx="420" cy="240" r="3" fill="#5a8bc2" opacity="0.2"/>
+  <circle cx="460" cy="240" r="3" fill="#5a8bc2" opacity="0.2"/>
+  <circle cx="340" cy="280" r="3" fill="#a05060" opacity="0.2"/>
+  <circle cx="380" cy="280" r="3" fill="#a05060" opacity="0.2"/>
+  <circle cx="420" cy="280" r="3" fill="#a05060" opacity="0.2"/>
+  <circle cx="460" cy="280" r="3" fill="#a05060" opacity="0.2"/>
+
+  <!-- Small rotated square (De Stijl) -->
+  <rect x="145" y="145" width="30" height="30" fill="#a05060" opacity="0.15" transform="rotate(12, 160, 160)"/>
+  <rect x="660" y="440" width="20" height="20" fill="#5a8bc2" opacity="0.12" transform="rotate(-15, 670, 450)"/>
+</svg>

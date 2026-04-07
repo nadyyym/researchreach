@@ -1,0 +1,9 @@
+{
+  "name": "United Kingdom",
+  "code": "GB",
+  "topInstitutions": ["University of Oxford", "University of Cambridge", "Imperial College London", "UCL", "University of Edinburgh"],
+  "topAgencies": ["UK Research and Innovation (UKRI)", "Wellcome Trust", "Medical Research Council", "EPSRC"],
+  "researchOutput": 130000,
+  "topFields": ["Drug Discovery", "Genomics", "Epidemiology", "Artificial Intelligence", "Climate Science"],
+  "description": "The United Kingdom punches well above its weight in research, producing approximately 6% of global publications with just 1% of the world's population. Its Golden Triangle universities and the Wellcome Trust create a uniquely productive research ecosystem."
+}

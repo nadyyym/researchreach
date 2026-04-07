@@ -1,102 +1,133 @@
 ---
 import Base from "../layouts/Base.astro";
+import Breadcrumb from "../components/Breadcrumb.astro";
 import "../styles/global.css";
 ---
 
 <Base
-  title="Privacy Policy — ResearchReach"
-  description="ResearchReach privacy policy. How we collect, use, and protect data about researchers and users of our platform."
+  title="Privacy Policy — Sci-Buy"
+  description="Sci-Buy privacy policy. How we collect, use, and protect data about researchers and users of our platform."
   robots="noindex, follow"
 >
   <main>
-    <header class="border-b border-navy-600 bg-navy/90 backdrop-blur-sm sticky top-0 z-40">
-      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="/" class="font-display font-bold text-lg text-white no-underline">
-          Research<span class="text-electric">Reach</span>
-        </a>
-        <a href="/#waitlist" class="px-4 py-2 bg-electric text-white text-sm font-semibold rounded-lg no-underline hover:bg-electric-dim transition-colors">Join waitlist</a>
+    <Breadcrumb items={[{ name: "Privacy", url: "/privacy" }]} />
+
+    <section class="border-b border-line">
+      <div class="px-6 py-16 md:px-12 md:py-24 max-w-3xl">
+        <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-6 block">Legal</span>
+        <h1 class="text-3xl md:text-4xl font-light text-text-bright tracking-tight mb-3 leading-[1.2]">
+          Privacy <strong class="font-semibold">Policy</strong>
+        </h1>
+        <p class="text-[11px] text-text-muted font-mono">Last updated: April 2026</p>
       </div>
-    </header>
+    </section>
 
-    <section class="bg-navy py-16 md:py-24">
-      <div class="max-w-3xl mx-auto px-6">
-        <h1 class="font-display text-4xl md:text-5xl font-black text-white mb-4">Privacy Policy</h1>
-        <p class="text-slate text-sm mb-12">Last updated: April 2026</p>
+    <section class="border-b border-line">
+      <div class="max-w-3xl px-6 md:px-12 py-12 space-y-10">
 
-        <div class="prose prose-invert max-w-none space-y-10">
-          <div>
-            <h2 class="font-display text-xl font-bold text-white mb-4">1. Overview</h2>
-            <p class="text-slate-light leading-relaxed">
-              ResearchReach ("we", "our", "us") is a contact intelligence platform for academic researchers. This Privacy Policy explains how we collect, use, store, and share information about (a) visitors and users of our website and platform, and (b) academic researchers whose public data we index.
-            </p>
+        <div>
+          <h2 class="text-[13px] font-semibold text-text-bright mb-3 uppercase tracking-[1px]">1. Overview</h2>
+          <p class="text-[12px] text-text-dim leading-relaxed">
+            Sci-Buy ("we", "our", "us") operates selltoscientists.com — a research intelligence platform for those who sell to scientists. This Privacy Policy explains how we collect, use, store, and share information about (a) visitors and users of our website and platform, and (b) academic researchers whose public data we index.
+          </p>
+        </div>
+
+        <div class="border-t border-line pt-10">
+          <h2 class="text-[13px] font-semibold text-text-bright mb-3 uppercase tracking-[1px]">2. Data we collect about researchers</h2>
+          <p class="text-[12px] text-text-dim leading-relaxed mb-4">
+            Sci-Buy indexes publicly available information from the following sources:
+          </p>
+          <div class="space-y-2">
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-accent mt-0.5">--</span>
+              <p class="text-[12px] text-text-dim">OpenAlex (paper metadata, institutional affiliations, ORCID IDs)</p>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-accent mt-0.5">--</span>
+              <p class="text-[12px] text-text-dim">ORCID public profiles (names, institutional email if publicly disclosed)</p>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-accent mt-0.5">--</span>
+              <p class="text-[12px] text-text-dim">PubMed and Crossref (publication records, authorship)</p>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-accent mt-0.5">--</span>
+              <p class="text-[12px] text-text-dim">NIH Reporter (grant awards, PI information, funding amounts)</p>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-accent mt-0.5">--</span>
+              <p class="text-[12px] text-text-dim">USPTO patent database (patent filings by researcher)</p>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-accent mt-0.5">--</span>
+              <p class="text-[12px] text-text-dim">University faculty pages (institutional contact information)</p>
+            </div>
           </div>
+          <p class="text-[12px] text-text-dim leading-relaxed mt-4">
+            We do not purchase third-party data lists. We only index data that researchers themselves have made publicly available.
+          </p>
+        </div>
 
-          <div>
-            <h2 class="font-display text-xl font-bold text-white mb-4">2. Data we collect about researchers</h2>
-            <p class="text-slate-light leading-relaxed mb-4">
-              ResearchReach indexes publicly available information from the following sources:
-            </p>
-            <ul class="text-slate-light space-y-2 list-disc list-inside">
-              <li>OpenAlex (paper metadata, institutional affiliations, ORCID IDs)</li>
-              <li>ORCID public profiles (names, institutional email if publicly disclosed)</li>
-              <li>PubMed and Crossref (publication records, authorship)</li>
-              <li>NIH Reporter (grant awards, PI information, funding amounts)</li>
-              <li>USPTO patent database (patent filings by researcher)</li>
-              <li>University faculty pages (institutional contact information)</li>
-            </ul>
-            <p class="text-slate-light leading-relaxed mt-4">
-              We do not purchase third-party data lists. We only index data that researchers themselves have made publicly available.
-            </p>
-          </div>
+        <div class="border-t border-line pt-10">
+          <h2 class="text-[13px] font-semibold text-text-bright mb-3 uppercase tracking-[1px]">3. Legal basis for processing (GDPR)</h2>
+          <p class="text-[12px] text-text-dim leading-relaxed">
+            For researchers in the EU/EEA, our legal basis for processing publicly available professional contact information is <strong class="text-text-bright">legitimate interests</strong> (Article 6(1)(f) GDPR) — specifically, enabling lawful B2B communication between researchers and companies with a genuine professional purpose. We balance this against individual interests and maintain an opt-out mechanism.
+          </p>
+        </div>
 
-          <div>
-            <h2 class="font-display text-xl font-bold text-white mb-4">3. Legal basis for processing (GDPR)</h2>
-            <p class="text-slate-light leading-relaxed">
-              For researchers in the EU/EEA, our legal basis for processing publicly available professional contact information is <strong class="text-white">legitimate interests</strong> (Article 6(1)(f) GDPR) — specifically, enabling lawful B2B communication between researchers and companies with a genuine professional purpose. We balance this against individual interests and maintain an opt-out mechanism.
-            </p>
-          </div>
+        <div class="border-t border-line pt-10">
+          <h2 class="text-[13px] font-semibold text-text-bright mb-3 uppercase tracking-[1px]">4. Researcher opt-out</h2>
+          <p class="text-[12px] text-text-dim leading-relaxed">
+            Any researcher can request removal of their data from our platform at any time by emailing <a href="mailto:privacy@selltoscientists.com" class="text-accent hover:text-text-bright no-underline transition-colors">privacy@selltoscientists.com</a>. We will process removal requests within 30 days and maintain a suppression list to prevent re-indexing. Opt-out propagates to all customer exports.
+          </p>
+        </div>
 
-          <div>
-            <h2 class="font-display text-xl font-bold text-white mb-4">4. Researcher opt-out</h2>
-            <p class="text-slate-light leading-relaxed">
-              Any researcher can request removal of their data from our platform at any time by emailing privacy@researchreach.io. We will process removal requests within 30 days and maintain a suppression list to prevent re-indexing. Opt-out propagates to all customer exports.
-            </p>
-          </div>
-
-          <div>
-            <h2 class="font-display text-xl font-bold text-white mb-4">5. Data we collect about platform users</h2>
-            <p class="text-slate-light leading-relaxed mb-4">
-              When you sign up for the waitlist or use our platform, we collect:
-            </p>
-            <ul class="text-slate-light space-y-2 list-disc list-inside">
-              <li>Name, email address, and company name</li>
-              <li>Use case (provided at signup)</li>
-              <li>Usage data (searches performed, records exported)</li>
-              <li>Payment information (processed by Stripe — we do not store card details)</li>
-            </ul>
-          </div>
-
-          <div>
-            <h2 class="font-display text-xl font-bold text-white mb-4">6. How we use your data</h2>
-            <p class="text-slate-light leading-relaxed">
-              We use platform user data to: operate and improve the service, communicate product updates, process payments, and comply with legal obligations. We do not sell user data to third parties. We may share data with service providers (hosting, email, analytics) under data processing agreements.
-            </p>
-          </div>
-
-          <div>
-            <h2 class="font-display text-xl font-bold text-white mb-4">7. Data retention</h2>
-            <p class="text-slate-light leading-relaxed">
-              Researcher records are retained as long as the underlying public source remains active. Stale records (no publications or grant activity in 5+ years) are flagged and eventually removed. Platform user data is retained for the duration of the account plus 2 years.
-            </p>
-          </div>
-
-          <div>
-            <h2 class="font-display text-xl font-bold text-white mb-4">8. Contact</h2>
-            <p class="text-slate-light leading-relaxed">
-              For privacy questions, data subject requests, or opt-out requests: privacy@researchreach.io
-            </p>
+        <div class="border-t border-line pt-10">
+          <h2 class="text-[13px] font-semibold text-text-bright mb-3 uppercase tracking-[1px]">5. Data we collect about platform users</h2>
+          <p class="text-[12px] text-text-dim leading-relaxed mb-4">
+            When you sign up for the waitlist or use our platform, we collect:
+          </p>
+          <div class="space-y-2">
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-accent mt-0.5">--</span>
+              <p class="text-[12px] text-text-dim">Name, email address, and company name</p>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-accent mt-0.5">--</span>
+              <p class="text-[12px] text-text-dim">Use case (provided at signup)</p>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-accent mt-0.5">--</span>
+              <p class="text-[12px] text-text-dim">Usage data (searches performed, records exported)</p>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-accent mt-0.5">--</span>
+              <p class="text-[12px] text-text-dim">Payment information (processed by Stripe — we do not store card details)</p>
+            </div>
           </div>
         </div>
+
+        <div class="border-t border-line pt-10">
+          <h2 class="text-[13px] font-semibold text-text-bright mb-3 uppercase tracking-[1px]">6. How we use your data</h2>
+          <p class="text-[12px] text-text-dim leading-relaxed">
+            We use platform user data to: operate and improve the service, communicate product updates, process payments, and comply with legal obligations. We do not sell user data to third parties. We may share data with service providers (hosting, email, analytics) under data processing agreements.
+          </p>
+        </div>
+
+        <div class="border-t border-line pt-10">
+          <h2 class="text-[13px] font-semibold text-text-bright mb-3 uppercase tracking-[1px]">7. Data retention</h2>
+          <p class="text-[12px] text-text-dim leading-relaxed">
+            Researcher records are retained as long as the underlying public source remains active. Stale records (no publications or grant activity in 5+ years) are flagged and eventually removed. Platform user data is retained for the duration of the account plus 2 years.
+          </p>
+        </div>
+
+        <div class="border-t border-line pt-10">
+          <h2 class="text-[13px] font-semibold text-text-bright mb-3 uppercase tracking-[1px]">8. Contact</h2>
+          <p class="text-[12px] text-text-dim leading-relaxed">
+            For privacy questions, data subject requests, or opt-out requests: <a href="mailto:privacy@selltoscientists.com" class="text-accent hover:text-text-bright no-underline transition-colors">privacy@selltoscientists.com</a>
+          </p>
+        </div>
+
       </div>
     </section>
   </main>

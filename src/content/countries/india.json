@@ -1,0 +1,9 @@
+{
+  "name": "India",
+  "code": "IN",
+  "topInstitutions": ["Indian Institute of Science", "IIT Bombay", "IIT Delhi", "TIFR", "AIIMS"],
+  "topAgencies": ["DST", "DBT", "CSIR India", "ICMR"],
+  "researchOutput": 180000,
+  "topFields": ["Bioinformatics", "Drug Discovery", "Materials Science", "Artificial Intelligence", "Epidemiology"],
+  "description": "India is one of the fastest-growing research nations, with a massive pipeline of STEM graduates and rapidly increasing publication output. Its pharmaceutical generic manufacturing expertise and growing biotech sector are globally significant."
+}

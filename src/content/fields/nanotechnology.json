@@ -1,0 +1,9 @@
+{
+  "name": "Nanotechnology",
+  "subfields": ["Nanomedicine", "Nanoelectronics", "Nanophotonics", "Nanocomposites", "DNA Nanotechnology"],
+  "keyTechnologies": ["Electron Beam Lithography", "Atomic Force Microscopy", "Scanning Tunneling Microscopy", "Self-Assembly", "Nanoparticle Synthesis"],
+  "topInstitutions": ["MIT", "Stanford", "ETH Zurich", "NUS", "Tsinghua University"],
+  "researcherCount": 52000,
+  "avgFunding": "$390K",
+  "description": "Nanotechnology manipulates matter at the nanometer scale to create materials and devices with novel properties. Applications span drug delivery, energy storage, water purification, and next-generation electronics."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Imperial College London",
+  "country": "United Kingdom",
+  "city": "London",
+  "type": "public",
+  "researcherCount": 3900,
+  "avgHindex": 44,
+  "grantCount": 2700,
+  "departments": ["Bioengineering", "Computing", "Chemistry", "Medicine", "Physics", "Life Sciences", "Chemical Engineering", "Electrical and Electronic Engineering"],
+  "topFields": ["Drug Discovery", "Materials Science", "Artificial Intelligence", "Epidemiology", "Biomedical Engineering"],
+  "description": "Imperial College London focuses exclusively on science, engineering, medicine, and business. Its research in infectious disease modeling, materials science, and clinical medicine has global influence, and its London location enables strong industry partnerships."
+}

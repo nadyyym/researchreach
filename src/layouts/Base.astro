@@ -1,20 +1,31 @@
 ---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { buildJsonLd, organizationSchema, websiteSchema, webpageSchema } from '../lib/seo';
+
 interface Props {
   title?: string;
   description?: string;
   robots?: string;
-  isHome?: boolean;
+  extraSchemas?: Record<string, unknown>[];
 }
 
 const {
-  title = "ResearchReach — The Researcher Graph. Finally Searchable.",
-  description = "Contact intelligence for academic researchers. Find pharma PIs, biotech consultants, and industry-adjacent scientists. Built on OpenAlex, ORCID, NIH Reporter, and PubMed.",
+  title = "Sci-Buy — Research Intelligence CLI",
+  description = "Find and reach the scientists who need your product. Search 250M+ papers, map researchers by field, H-index, grants, and industry ties. Export verified contacts.",
   robots = "index, follow",
-  isHome = false,
+  extraSchemas = [],
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const ogImageURL = new URL("/og-image.png", Astro.site);
+
+const jsonLd = buildJsonLd(
+  organizationSchema(),
+  websiteSchema(),
+  webpageSchema(canonicalURL.href, title, description),
+  ...extraSchemas,
+);
 ---
 
 <!doctype html>
@@ -24,19 +35,16 @@ const ogImageURL = new URL("/og-image.png", Astro.site);
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <meta name="robots" content={robots} />
-    <meta name="author" content="ResearchReach" />
+    <meta name="author" content="Sci-Buy" />
 
     <link rel="canonical" href={canonicalURL.href} />
-    <link rel="alternate" hreflang="en" href={canonicalURL.href} />
-    <link rel="alternate" hreflang="x-default" href={canonicalURL.href} />
 
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImageURL.href} />
     <meta property="og:url" content={canonicalURL.href} />
-    <meta property="og:site_name" content="ResearchReach" />
+    <meta property="og:site_name" content="Sci-Buy" />
     <meta property="og:type" content="website" />
-    <meta property="og:locale" content="en_US" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
@@ -48,12 +56,12 @@ const ogImageURL = new URL("/og-image.png", Astro.site);
     <link
       rel="preload"
       as="style"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Space+Mono:wght@400;700&display=swap"
       onload="this.onload=null;this.rel='stylesheet'"
     />
     <noscript>
       <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Space+Mono:wght@400;700&display=swap"
         rel="stylesheet"
       />
     </noscript>
@@ -61,87 +69,33 @@ const ogImageURL = new URL("/og-image.png", Astro.site);
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
 
-    <!-- JSON-LD: Organization + WebSite + WebPage -->
-    <Fragment set:html={`<script type="application/ld+json">${JSON.stringify({
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "@id": "https://www.researchreach.io/#organization",
-          "name": "ResearchReach",
-          "url": "https://www.researchreach.io",
-          "description": "Contact intelligence platform for academic researchers."
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://www.researchreach.io/#website",
-          "url": "https://www.researchreach.io",
-          "name": "ResearchReach",
-          "publisher": { "@id": "https://www.researchreach.io/#organization" }
-        },
-        {
-          "@type": "WebPage",
-          "@id": canonicalURL.href + "#webpage",
-          "url": canonicalURL.href,
-          "name": title,
-          "description": description,
-          "isPartOf": { "@id": "https://www.researchreach.io/#website" },
-          "inLanguage": "en-US"
-        }
-      ]
-    })}<\/script>`} />
-  </head>
-  <body class="bg-navy text-white font-body overflow-x-hidden leading-normal">
-    <slot />
+    <Fragment set:html={`<script type="application/ld+json">${jsonLd}<\/script>`} />
 
-    <footer class="bg-navy-800 border-t border-navy-600">
-      <div class="max-w-6xl mx-auto px-6 py-12 md:py-16">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
-          <div class="md:col-span-2">
-            <a href="/" class="font-display text-xl font-bold text-white no-underline">
-              Research<span class="text-electric">Reach</span>
-            </a>
-            <p class="text-slate text-sm mt-3 max-w-xs leading-relaxed">
-              The researcher graph. Finally searchable. Contact intelligence for the scientific workforce.
-            </p>
-            <div class="mt-4 flex gap-3">
-              <span class="text-xs font-mono bg-navy-600 text-electric px-2 py-1 rounded">Beta</span>
-              <span class="text-xs font-mono bg-navy-600 text-slate px-2 py-1 rounded">200+ teams waiting</span>
-            </div>
-          </div>
-          <div>
-            <p class="text-xs uppercase tracking-widest text-slate mb-4 font-semibold">Product</p>
-            <nav class="flex flex-col gap-3">
-              <a href="/#how-it-works" class="text-slate-light hover:text-white text-sm no-underline transition-colors">How it works</a>
-              <a href="/use-cases" class="text-slate-light hover:text-white text-sm no-underline transition-colors">Use cases</a>
-              <a href="/developers" class="text-slate-light hover:text-white text-sm no-underline transition-colors">Developers API</a>
-              <a href="/researchers" class="text-slate-light hover:text-white text-sm no-underline transition-colors">Browse Institutions</a>
-              <a href="/#faq" class="text-slate-light hover:text-white text-sm no-underline transition-colors">FAQ</a>
-            </nav>
-          </div>
-          <div>
-            <p class="text-xs uppercase tracking-widest text-slate mb-4 font-semibold">Company</p>
-            <nav class="flex flex-col gap-3">
-              <a href="/about" class="text-slate-light hover:text-white text-sm no-underline transition-colors">About</a>
-              <a href="/privacy" class="text-slate-light hover:text-white text-sm no-underline transition-colors">Privacy</a>
-              <a href="/terms" class="text-slate-light hover:text-white text-sm no-underline transition-colors">Terms</a>
-            </nav>
-          </div>
-        </div>
-        <div class="border-t border-navy-600 pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-          <p class="text-slate text-xs">&copy; 2026 ResearchReach. All rights reserved.</p>
-          <p class="text-slate text-xs">Data sources: OpenAlex · ORCID · PubMed · NIH Reporter · Semantic Scholar</p>
-        </div>
-      </div>
-    </footer>
+    <!-- Google Search Console — validated via DNS -->
+
+    <!-- PostHog -->
+    <script is:inline>
+      !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageviewId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+      posthog.init('phc_wAVRYeb4axpt2J9m3yyNQee78Kye7XkQx6bminfv5XDy', {
+        api_host: 'https://us.i.posthog.com',
+        person_profiles: 'identified_only',
+        capture_pageview: true,
+        capture_pageleave: true,
+      });
+    </script>
+  </head>
+  <body class="bg-bg text-text font-body overflow-x-hidden leading-normal antialiased">
+    <Header />
+    <slot />
+    <Footer />
 
     <!-- Sticky mobile CTA -->
-    <div class="fixed bottom-0 left-0 right-0 bg-navy-800 border-t border-navy-600 z-50 px-4 py-3 md:hidden">
+    <div class="fixed bottom-0 left-0 right-0 bg-bg-raised border-t border-line z-50 px-4 py-3 md:hidden">
       <a
         href="#waitlist"
-        class="block w-full text-center py-3 font-display text-sm font-bold tracking-wide uppercase bg-electric text-white rounded-lg no-underline hover:bg-electric-dim transition-colors"
+        class="block w-full text-center py-3 font-mono text-[10px] font-bold tracking-[2px] uppercase bg-red text-text-bright no-underline hover:bg-red-btn transition-colors"
       >
-        Join the Waitlist →
+        Get Started →
       </a>
     </div>
   </body>

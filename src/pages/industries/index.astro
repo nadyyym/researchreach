@@ -1,0 +1,65 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import BottomCTA from '../../components/BottomCTA.astro';
+import '../../styles/global.css';
+
+const entries = await getCollection('industries');
+const pageTitle = 'Industries Selling to Scientists — Sci-Buy';
+const pageDesc = `Browse ${entries.length} industries that sell to academic researchers. Explore market size, key companies, target researchers, and use cases.`;
+---
+
+<Base title={pageTitle} description={pageDesc}>
+  <Breadcrumb items={[{ name: 'Industries', url: '/industries/' }]} />
+
+  <!-- HERO -->
+  <section class="border-b border-line">
+    <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr] grid-lines">
+      <div class="p-8 md:p-12">
+        <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-4">INDUSTRY INDEX</p>
+        <h1 class="text-3xl md:text-4xl font-light text-text-bright tracking-tight mb-3">
+          Target <strong class="font-semibold">Industries</strong>
+        </h1>
+        <p class="text-[13px] text-text-dim leading-relaxed max-w-[520px]">
+          Explore industries that sell products and services to the scientific community.
+          Each profile maps key companies, target researcher segments, market size, and use cases.
+        </p>
+      </div>
+      <div class="p-8 md:p-12 flex items-center justify-center accent-top-red">
+        <div class="text-center">
+          <p class="text-4xl font-light text-text-bright">{entries.length}</p>
+          <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mt-1">INDUSTRIES</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRID -->
+  <section class="p-6 md:p-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-lines">
+      {entries.map((entry) => (
+        <a
+          href={`/industries/${entry.id}/`}
+          class="block p-6 hover:bg-bg-raised transition-colors no-underline group"
+        >
+          <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-3">
+            {entry.data.marketSize}
+          </p>
+          <h2 class="text-[15px] font-semibold text-text-bright mb-2 group-hover:text-accent transition-colors">
+            {entry.data.name}
+          </h2>
+          <p class="text-[12px] text-text-dim leading-relaxed line-clamp-2 mb-4">
+            {entry.data.description}
+          </p>
+          <div class="flex items-center gap-4 text-[11px] font-mono text-text-muted">
+            <span>{entry.data.companies.length} companies</span>
+            <span>{entry.data.useCases.length} use cases</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <BottomCTA />
+</Base>

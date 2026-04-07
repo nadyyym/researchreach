@@ -1,0 +1,12 @@
+{
+  "name": "University of California, Berkeley",
+  "country": "United States",
+  "city": "Berkeley, CA",
+  "type": "public",
+  "researcherCount": 4100,
+  "avgHindex": 47,
+  "grantCount": 3200,
+  "departments": ["Electrical Engineering and Computer Sciences", "Molecular and Cell Biology", "Chemistry", "Physics", "Bioengineering", "Chemical and Biomolecular Engineering", "Statistics", "Public Health"],
+  "topFields": ["Artificial Intelligence", "Genomics", "Climate Science", "Nanotechnology", "Organic Chemistry"],
+  "description": "UC Berkeley is the flagship campus of the University of California system and a global leader in public research. Its contributions span from CRISPR gene editing to foundational work in artificial intelligence and environmental science."
+}

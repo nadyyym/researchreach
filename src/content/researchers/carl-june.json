@@ -1,0 +1,12 @@
+{
+  "name": "Carl June",
+  "institution": "University of Pennsylvania",
+  "field": "Immunology",
+  "hindex": 108,
+  "grantCount": 40,
+  "patents": 38,
+  "publications": 540,
+  "orcid": "0000-0003-3254-0054",
+  "industryTies": ["Novartis", "Tmunity Therapeutics", "Capstan Therapeutics"],
+  "description": "Carl June is a pioneer of CAR-T cell therapy who developed the first FDA-approved gene therapy, Kymriah, for cancer treatment. His work in engineering patients' own immune cells to attack tumors has transformed cancer immunotherapy."
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Swiss National Science Foundation (SNSF)",
+  "country": "Switzerland",
+  "type": "government",
+  "budget": "$1.1B",
+  "programs": ["Project Funding", "SNSF Professorships", "National Centres of Competence in Research (NCCRs)", "Ambizione", "PRIMA", "Eccellenza"],
+  "description": "The SNSF is Switzerland's leading research funding organization, supporting over 5,800 projects annually. Its funding model emphasizes researcher autonomy, and its National Centres of Competence in Research tackle strategic challenges in science and technology."
+}

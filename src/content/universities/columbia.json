@@ -1,0 +1,12 @@
+{
+  "name": "Columbia University",
+  "country": "United States",
+  "city": "New York, NY",
+  "type": "private",
+  "researcherCount": 3800,
+  "avgHindex": 45,
+  "grantCount": 3400,
+  "departments": ["Biomedical Engineering", "Computer Science", "Chemistry", "Biological Sciences", "Neuroscience", "Physics", "Earth and Environmental Sciences", "Electrical Engineering"],
+  "topFields": ["Neuroscience", "Genomics", "Climate Science", "Drug Discovery", "Nanotechnology"],
+  "description": "Columbia University is a major research hub in New York City with deep expertise in neuroscience, Earth sciences, and biomedical engineering. Its Zuckerman Mind Brain Behavior Institute and Lamont-Doherty Earth Observatory are among the world's premier research centers."
+}

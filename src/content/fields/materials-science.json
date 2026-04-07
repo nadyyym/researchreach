@@ -1,0 +1,9 @@
+{
+  "name": "Materials Science",
+  "subfields": ["Polymer Science", "Ceramics", "Metallurgy", "Biomaterials", "2D Materials"],
+  "keyTechnologies": ["Electron Microscopy", "X-ray Diffraction", "Atomic Force Microscopy", "Molecular Dynamics Simulation", "3D Printing"],
+  "topInstitutions": ["MIT", "ETH Zurich", "University of Tokyo", "Cambridge", "Northwestern University"],
+  "researcherCount": 68000,
+  "avgFunding": "$380K",
+  "description": "Materials science is the study of the properties, processing, and design of materials including metals, ceramics, polymers, and composites. Advances in this field enable breakthroughs in energy, electronics, medicine, and aerospace."
+}

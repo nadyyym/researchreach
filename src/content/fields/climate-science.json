@@ -1,0 +1,9 @@
+{
+  "name": "Climate Science",
+  "subfields": ["Atmospheric Science", "Paleoclimatology", "Ocean Science", "Climate Modeling", "Carbon Cycle"],
+  "keyTechnologies": ["Earth System Models", "Satellite Remote Sensing", "Ice Core Analysis", "Ocean Buoy Networks", "Isotope Geochemistry"],
+  "topInstitutions": ["MIT", "Columbia University", "ETH Zurich", "University of Reading", "NOAA/GFDL"],
+  "researcherCount": 42000,
+  "avgFunding": "$410K",
+  "description": "Climate science studies Earth's climate system, including atmosphere, oceans, land surfaces, and ice sheets. It provides the scientific foundation for understanding and predicting climate change and informing mitigation and adaptation strategies."
+}

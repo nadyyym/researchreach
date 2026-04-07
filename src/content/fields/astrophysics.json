@@ -1,0 +1,9 @@
+{
+  "name": "Astrophysics",
+  "subfields": ["Cosmology", "Exoplanet Science", "High-Energy Astrophysics", "Gravitational Wave Astronomy", "Stellar Evolution"],
+  "keyTechnologies": ["Space Telescopes", "Radio Interferometry", "Gravitational Wave Detectors", "Supercomputer Simulations", "Adaptive Optics"],
+  "topInstitutions": ["Caltech", "Princeton", "Cambridge", "Max Planck Institute for Astrophysics", "MIT"],
+  "researcherCount": 32000,
+  "avgFunding": "$420K",
+  "description": "Astrophysics applies the laws of physics to understand celestial objects and phenomena, from the formation of stars and planets to the large-scale structure and evolution of the universe."
+}

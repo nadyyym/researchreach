@@ -1,0 +1,12 @@
+{
+  "name": "Tsinghua University",
+  "country": "China",
+  "city": "Beijing",
+  "type": "public",
+  "researcherCount": 5500,
+  "avgHindex": 42,
+  "grantCount": 4800,
+  "departments": ["Computer Science and Technology", "Electronic Engineering", "Chemical Engineering", "Biomedical Engineering", "Physics", "Chemistry", "Life Sciences", "Materials Science and Engineering"],
+  "topFields": ["Artificial Intelligence", "Materials Science", "Nanotechnology", "Quantum Computing", "Robotics"],
+  "description": "Tsinghua University is China's most prominent technical university, known for producing world-class engineers and scientists. Its rapid rise in global rankings reflects massive investments in AI, quantum information, and advanced manufacturing research."
+}

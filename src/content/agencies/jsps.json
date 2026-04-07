@@ -1,0 +1,8 @@
+{
+  "name": "Japan Society for the Promotion of Science (JSPS)",
+  "country": "Japan",
+  "type": "government",
+  "budget": "$2.1B",
+  "programs": ["Grants-in-Aid for Scientific Research (KAKENHI)", "JSPS Fellowships", "Bilateral Joint Research", "Core-to-Core Program", "Specially Promoted Research"],
+  "description": "JSPS is Japan's primary funding body for academic research, administering the KAKENHI grants-in-aid system that supports the majority of competitive research funding in Japanese universities across all fields."
+}

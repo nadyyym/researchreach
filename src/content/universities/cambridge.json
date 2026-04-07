@@ -1,0 +1,12 @@
+{
+  "name": "University of Cambridge",
+  "country": "United Kingdom",
+  "city": "Cambridge",
+  "type": "public",
+  "researcherCount": 4800,
+  "avgHindex": 49,
+  "grantCount": 3300,
+  "departments": ["Biochemistry", "Chemical Engineering and Biotechnology", "Computer Science and Technology", "Engineering", "Genetics", "Physics", "Chemistry", "Clinical Neurosciences"],
+  "topFields": ["Genomics", "Astrophysics", "Stem Cell Research", "Machine Learning", "Materials Science"],
+  "description": "The University of Cambridge has a storied history of scientific breakthroughs, from the discovery of DNA's structure to foundational contributions in physics. Its Cavendish Laboratory and MRC Laboratory of Molecular Biology remain among the world's most impactful research centers."
+}

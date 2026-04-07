@@ -1,0 +1,12 @@
+{
+  "name": "Karolinska Institute",
+  "country": "Sweden",
+  "city": "Stockholm",
+  "type": "public",
+  "researcherCount": 2800,
+  "avgHindex": 47,
+  "grantCount": 2100,
+  "departments": ["Cell and Molecular Biology", "Medicine", "Neuroscience", "Microbiology, Tumor and Cell Biology", "Oncology-Pathology", "Clinical Science", "Physiology and Pharmacology", "Medical Biochemistry and Biophysics"],
+  "topFields": ["Immunology", "Neuroscience", "Stem Cell Research", "Epidemiology", "Drug Discovery"],
+  "description": "Karolinska Institute is one of the world's foremost medical universities and home to the Nobel Assembly that awards the Nobel Prize in Physiology or Medicine. Its research in immunology, regenerative medicine, and cancer biology is globally influential."
+}

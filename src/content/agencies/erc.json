@@ -1,0 +1,8 @@
+{
+  "name": "European Research Council (ERC)",
+  "country": "European Union",
+  "type": "government",
+  "budget": "$3.5B",
+  "programs": ["Starting Grants", "Consolidator Grants", "Advanced Grants", "Synergy Grants", "Proof of Concept Grants"],
+  "description": "The ERC is the premier European funding body for frontier research, awarding competitive grants solely on the basis of scientific excellence. Its grants are among the most prestigious in European science and support high-risk, high-reward research."
+}

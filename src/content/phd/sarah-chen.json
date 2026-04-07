@@ -1,0 +1,11 @@
+{
+  "name": "Sarah Chen",
+  "institution": "Stanford University",
+  "field": "Computational Biology",
+  "advisor": "Dr. Michael Snyder",
+  "thesis": "Multi-omic integration methods for identifying disease biomarkers in longitudinal cohort studies",
+  "publications": 8,
+  "skills": ["Python", "R", "Single-Cell RNA-seq", "Machine Learning", "Statistical Modeling", "Cloud Computing"],
+  "transitionSignals": ["LinkedIn profile updated to 'Open to Work'", "Attending industry conferences", "Published review on industry applications of multi-omics"],
+  "description": "Sarah is a 5th-year PhD candidate developing computational pipelines for integrating proteomics, metabolomics, and transcriptomics data. She has collaborated with Thermo Fisher on mass spectrometry data analysis workflows."
+}

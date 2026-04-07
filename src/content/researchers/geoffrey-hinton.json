@@ -1,0 +1,11 @@
+{
+  "name": "Geoffrey Hinton",
+  "institution": "University of Toronto",
+  "field": "Artificial Intelligence",
+  "hindex": 195,
+  "grantCount": 45,
+  "patents": 12,
+  "publications": 520,
+  "industryTies": ["Google Brain (former)", "Vector Institute"],
+  "description": "Geoffrey Hinton is a Turing Award and Nobel Prize-winning computer scientist known as one of the 'Godfathers of AI.' His work on backpropagation, Boltzmann machines, and deep neural networks laid the groundwork for the modern deep learning revolution."
+}

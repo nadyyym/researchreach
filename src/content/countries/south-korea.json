@@ -1,0 +1,9 @@
+{
+  "name": "South Korea",
+  "code": "KR",
+  "topInstitutions": ["KAIST", "Seoul National University", "POSTECH", "Yonsei University", "Korea University"],
+  "topAgencies": ["NRF", "KIST", "MSIT"],
+  "researchOutput": 78000,
+  "topFields": ["Materials Science", "Artificial Intelligence", "Nanotechnology", "Robotics", "Genomics"],
+  "description": "South Korea invests one of the highest percentages of GDP in R&D globally, driven by both government programs and major conglomerates like Samsung and LG. Its strengths in semiconductors, display technology, and battery research are world-leading."
+}

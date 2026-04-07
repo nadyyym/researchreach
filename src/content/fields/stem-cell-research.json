@@ -1,0 +1,9 @@
+{
+  "name": "Stem Cell Research",
+  "subfields": ["iPSC Technology", "Organoid Biology", "Hematopoietic Stem Cells", "Neural Stem Cells", "Tissue Engineering"],
+  "keyTechnologies": ["Cell Reprogramming", "CRISPR Gene Editing", "3D Bioprinting", "Single-Cell Sequencing", "Microfluidics"],
+  "topInstitutions": ["Harvard", "Karolinska Institute", "University of Tokyo", "Cambridge", "Stanford"],
+  "researcherCount": 28000,
+  "avgFunding": "$480K",
+  "description": "Stem cell research studies undifferentiated cells capable of self-renewal and differentiation. Advances in iPSC technology and organoid models are revolutionizing disease modeling, drug screening, and regenerative medicine."
+}

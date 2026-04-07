@@ -1,0 +1,9 @@
+{
+  "name": "Drug Discovery",
+  "subfields": ["Medicinal Chemistry", "Pharmacology", "High-Throughput Screening", "Structure-Based Drug Design", "ADMET"],
+  "keyTechnologies": ["AI-Driven Molecular Design", "Cryo-EM", "Fragment-Based Screening", "Organ-on-a-Chip", "DNA-Encoded Libraries"],
+  "topInstitutions": ["Oxford", "Harvard", "Johns Hopkins", "Karolinska Institute", "UC San Francisco"],
+  "researcherCount": 74000,
+  "avgFunding": "$580K",
+  "description": "Drug discovery is the process of identifying and developing new therapeutic agents. Modern approaches combine computational chemistry, structural biology, and machine learning to accelerate the pipeline from target identification through clinical trials."
+}

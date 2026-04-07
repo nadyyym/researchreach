@@ -1,0 +1,12 @@
+{
+  "name": "National University of Singapore",
+  "country": "Singapore",
+  "city": "Singapore",
+  "type": "public",
+  "researcherCount": 3400,
+  "avgHindex": 40,
+  "grantCount": 2600,
+  "departments": ["Biomedical Engineering", "Computer Science", "Chemistry", "Chemical and Biomolecular Engineering", "Medicine", "Physics", "Electrical and Computer Engineering", "Materials Science"],
+  "topFields": ["Materials Science", "Biomedical Engineering", "Artificial Intelligence", "Nanotechnology", "Drug Discovery"],
+  "description": "The National University of Singapore is Southeast Asia's leading research university. Its strategic location and strong government funding make it a hub for materials science, biomedical innovation, and cross-disciplinary research connecting East and West."
+}

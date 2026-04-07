@@ -1,0 +1,27 @@
+---
+import InstallCommand from './InstallCommand.astro';
+import WaitlistForm from './WaitlistForm.astro';
+---
+
+<section class="border-t border-line" id="waitlist">
+  <div class="grid grid-cols-1 md:grid-cols-2 grid-lines">
+    <div class="bg-bg p-12 flex flex-col justify-center relative">
+      <div class="absolute top-12 right-0 w-px h-[60px] bg-red-dim hidden md:block"></div>
+      <h2 class="text-2xl font-light text-text-bright tracking-tight mb-2.5">
+        Ready to find <strong class="font-semibold">your researchers?</strong>
+      </h2>
+      <p class="text-[13px] text-text-dim leading-relaxed max-w-[360px]">
+        Install the CLI and run your first search in under a minute. No account required to explore.
+      </p>
+    </div>
+    <div class="bg-bg p-12 flex flex-col justify-center gap-5">
+      <InstallCommand />
+      <div class="flex items-center gap-3">
+        <div class="flex-1 h-px bg-line"></div>
+        <span class="text-[10px] text-text-muted uppercase tracking-[2px]">or get notified</span>
+        <div class="flex-1 h-px bg-line"></div>
+      </div>
+      <WaitlistForm compact />
+    </div>
+  </div>
+</section>

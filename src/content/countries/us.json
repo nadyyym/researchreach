@@ -1,0 +1,9 @@
+{
+  "name": "United States",
+  "code": "US",
+  "topInstitutions": ["MIT", "Stanford University", "Harvard University", "Johns Hopkins University", "Caltech", "UC Berkeley", "NIH Intramural Research"],
+  "topAgencies": ["NIH", "NSF", "DARPA", "DOE Office of Science", "HHMI"],
+  "researchOutput": 450000,
+  "topFields": ["Artificial Intelligence", "Genomics", "Immunology", "Neuroscience", "Drug Discovery"],
+  "description": "The United States is the world's largest funder and producer of scientific research, with an expansive network of universities, federal laboratories, and private research institutions. Its NIH alone accounts for the largest single source of biomedical research funding globally."
+}

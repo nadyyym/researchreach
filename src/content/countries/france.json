@@ -1,0 +1,9 @@
+{
+  "name": "France",
+  "code": "FR",
+  "topInstitutions": ["CNRS", "Sorbonne University", "Paris-Saclay University", "Institut Pasteur", "Ecole Normale Superieure"],
+  "topAgencies": ["ANR", "CNRS", "INSERM", "CEA"],
+  "researchOutput": 82000,
+  "topFields": ["Astrophysics", "Immunology", "Materials Science", "Neuroscience", "Epidemiology"],
+  "description": "France is a leading European research nation anchored by CNRS, one of the world's largest public research organizations. The Institut Pasteur and INSERM drive biomedical research, while CEA leads in nuclear and energy sciences."
+}

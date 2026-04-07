@@ -1,0 +1,11 @@
+{
+  "name": "Lisa Johansson",
+  "institution": "Karolinska Institute",
+  "field": "Genomics",
+  "advisor": "Dr. Sten Linnarsson",
+  "thesis": "Spatial transcriptomics atlas of the developing human brain at single-cell resolution",
+  "publications": 7,
+  "skills": ["Spatial Transcriptomics", "10x Visium", "scRNA-seq", "Bioinformatics", "R/Seurat", "Python/Scanpy"],
+  "transitionSignals": ["Collaborating with 10x Genomics on method development", "Speaking at commercial genomics conferences", "Advisor to genomics startup"],
+  "description": "Lisa is a postdoctoral researcher creating high-resolution spatial maps of gene expression in the developing brain. Her datasets and methods are being adopted by both academic labs and diagnostics companies."
+}

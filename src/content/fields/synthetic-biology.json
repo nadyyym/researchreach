@@ -1,0 +1,9 @@
+{
+  "name": "Synthetic Biology",
+  "subfields": ["Metabolic Engineering", "Gene Circuit Design", "Cell-Free Systems", "Directed Evolution", "Xenobiology"],
+  "keyTechnologies": ["DNA Synthesis", "CRISPR-Cas Systems", "Automated Biofoundries", "Microfluidics", "Computational Pathway Design"],
+  "topInstitutions": ["MIT", "UC Berkeley", "Imperial College London", "ETH Zurich", "Boston University"],
+  "researcherCount": 22000,
+  "avgFunding": "$440K",
+  "description": "Synthetic biology engineers biological systems with new functions by designing and constructing genetic circuits, pathways, and organisms. Applications include biofuels, biosensors, living therapeutics, and sustainable manufacturing."
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Lab Instruments",
+  "companies": ["Thermo Fisher Scientific", "Agilent Technologies", "Danaher (Beckman Coulter, Leica)", "Waters Corporation", "Bruker", "Carl Zeiss", "Bio-Rad Laboratories", "Eppendorf"],
+  "targetResearchers": "Lab-based experimentalists in chemistry, biology, materials science, and clinical research who specify and purchase instrumentation",
+  "marketSize": "$78B",
+  "useCases": ["Instrument specification and sales", "Application note collaborations", "Beta testing new platforms", "Training and method development", "Service and maintenance contracts"],
+  "description": "The laboratory instruments industry manufactures the physical tools of scientific research, from microscopes and mass spectrometers to sequencers and flow cytometers. Researchers are both the end users and key influencers in purchasing decisions."
+}

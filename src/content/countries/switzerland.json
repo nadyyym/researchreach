@@ -1,0 +1,9 @@
+{
+  "name": "Switzerland",
+  "code": "CH",
+  "topInstitutions": ["ETH Zurich", "EPFL", "University of Zurich", "University of Basel", "University of Geneva"],
+  "topAgencies": ["SNF", "Innosuisse", "Swiss Academies"],
+  "researchOutput": 28000,
+  "topFields": ["Robotics", "Materials Science", "Computational Biology", "Nanotechnology", "Drug Discovery"],
+  "description": "Switzerland leads the world in per-capita research output and innovation indices. Its two federal institutes of technology, ETH Zurich and EPFL, combine with a strong pharmaceutical industry to create an exceptionally productive research ecosystem."
+}

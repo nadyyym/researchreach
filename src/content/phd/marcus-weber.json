@@ -1,0 +1,11 @@
+{
+  "name": "Marcus Weber",
+  "institution": "ETH Zurich",
+  "field": "Robotics",
+  "advisor": "Dr. Roland Siegwart",
+  "thesis": "Adaptive locomotion strategies for legged robots in unstructured environments",
+  "publications": 7,
+  "skills": ["C++", "ROS", "Reinforcement Learning", "Control Theory", "CAD/3D Printing", "Simulation"],
+  "transitionSignals": ["Won robotics startup competition", "Filed two patents", "Consulting for Boston Dynamics"],
+  "description": "Marcus is a postdoc developing AI-driven locomotion algorithms for quadrupedal robots. His work on terrain adaptation has been demonstrated in search-and-rescue scenarios and attracted industry interest."
+}

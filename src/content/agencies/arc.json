@@ -1,0 +1,8 @@
+{
+  "name": "Australian Research Council (ARC)",
+  "country": "Australia",
+  "type": "government",
+  "budget": "$780M",
+  "programs": ["Discovery Projects", "Future Fellowships", "Discovery Early Career Researcher Award", "Linkage Projects", "Centres of Excellence", "Laureate Fellowships"],
+  "description": "The ARC is Australia's primary competitive grants agency for fundamental and applied research across all non-medical disciplines. Its Centres of Excellence program brings together leading researchers to address major challenges."
+}

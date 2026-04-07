@@ -1,0 +1,9 @@
+{
+  "name": "Robotics",
+  "subfields": ["Autonomous Systems", "Soft Robotics", "Surgical Robotics", "Swarm Robotics", "Human-Robot Interaction"],
+  "keyTechnologies": ["LiDAR", "Computer Vision", "Reinforcement Learning", "Actuators and Sensors", "ROS (Robot Operating System)"],
+  "topInstitutions": ["MIT", "ETH Zurich", "Carnegie Mellon", "EPFL", "University of Tokyo"],
+  "researcherCount": 38000,
+  "avgFunding": "$460K",
+  "description": "Robotics integrates mechanical engineering, electrical engineering, and computer science to design, build, and program robots. Applications range from manufacturing and surgery to exploration and personal assistance."
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Defense Advanced Research Projects Agency (DARPA)",
+  "country": "United States",
+  "type": "government",
+  "budget": "$4.1B",
+  "programs": ["Biological Technologies Office", "Defense Sciences Office", "Information Innovation Office", "Microsystems Technology Office", "Strategic Technology Office"],
+  "description": "DARPA funds high-risk, high-reward research that creates breakthrough technologies for national security. It has catalyzed transformative innovations including the internet, GPS, and mRNA vaccines through its unique program manager-driven model."
+}

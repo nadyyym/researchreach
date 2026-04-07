@@ -1,0 +1,8 @@
+{
+  "name": "Dutch Research Council (NWO)",
+  "country": "Netherlands",
+  "type": "government",
+  "budget": "$1.2B",
+  "programs": ["Veni/Vidi/Vici Talent Scheme", "Open Competition", "National Science Agenda", "Gravitation Programme", "Crossover Programme"],
+  "description": "NWO is the primary research funding body in the Netherlands, known for its Veni-Vidi-Vici talent scheme that supports researchers at different career stages. It funds both curiosity-driven and strategic research across all scientific disciplines."
+}

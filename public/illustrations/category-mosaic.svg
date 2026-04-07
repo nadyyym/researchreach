@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" fill="none">
+  <!-- Mondrian-style mosaic representing 8 categories -->
+  <rect width="400" height="400" fill="#101520"/>
+
+  <!-- Grid lines -->
+  <line x1="200" y1="0" x2="200" y2="400" stroke="#232a3c" stroke-width="1"/>
+  <line x1="0" y1="200" x2="400" y2="200" stroke="#232a3c" stroke-width="1"/>
+  <line x1="300" y1="0" x2="300" y2="200" stroke="#232a3c" stroke-width="1"/>
+  <line x1="200" y1="100" x2="400" y2="100" stroke="#232a3c" stroke-width="1"/>
+  <line x1="0" y1="300" x2="200" y2="300" stroke="#232a3c" stroke-width="1"/>
+  <line x1="280" y1="200" x2="280" y2="400" stroke="#232a3c" stroke-width="1"/>
+
+  <!-- Color fills per category -->
+  <!-- Universities (large block) -->
+  <rect x="0" y="0" width="200" height="200" fill="#2e4f78" opacity="0.08"/>
+
+  <!-- Fields -->
+  <rect x="200" y="0" width="100" height="100" fill="#a05060" opacity="0.06"/>
+
+  <!-- Researchers -->
+  <rect x="300" y="0" width="100" height="100" fill="#5a8bc2" opacity="0.06"/>
+
+  <!-- PhD -->
+  <rect x="200" y="100" width="200" height="100" fill="#4a4020" opacity="0.06"/>
+
+  <!-- Countries -->
+  <rect x="0" y="200" width="200" height="100" fill="#a09050" opacity="0.06"/>
+
+  <!-- Agencies -->
+  <rect x="0" y="300" width="200" height="100" fill="#a05060" opacity="0.05"/>
+
+  <!-- Companies -->
+  <rect x="200" y="200" width="80" height="200" fill="#5a8bc2" opacity="0.05"/>
+
+  <!-- Industries -->
+  <rect x="280" y="200" width="120" height="200" fill="#2e4f78" opacity="0.05"/>
+
+  <!-- Category labels -->
+  <text x="15" y="25" font-family="monospace" font-size="7" fill="#4f576b" letter-spacing="1.5">UNIVERSITIES</text>
+  <text x="210" y="20" font-family="monospace" font-size="6" fill="#4f576b" letter-spacing="1">FIELDS</text>
+  <text x="310" y="20" font-family="monospace" font-size="6" fill="#4f576b" letter-spacing="1">RESEARCHERS</text>
+  <text x="210" y="120" font-family="monospace" font-size="6" fill="#4f576b" letter-spacing="1">PHD</text>
+  <text x="15" y="220" font-family="monospace" font-size="6" fill="#4f576b" letter-spacing="1">COUNTRIES</text>
+  <text x="15" y="320" font-family="monospace" font-size="6" fill="#4f576b" letter-spacing="1">AGENCIES</text>
+  <text x="210" y="220" font-family="monospace" font-size="6" fill="#4f576b" letter-spacing="1">COs</text>
+  <text x="290" y="220" font-family="monospace" font-size="6" fill="#4f576b" letter-spacing="1">INDUSTRIES</text>
+</svg>

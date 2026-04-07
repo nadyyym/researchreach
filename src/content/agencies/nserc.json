@@ -1,0 +1,8 @@
+{
+  "name": "Natural Sciences and Engineering Research Council (NSERC)",
+  "country": "Canada",
+  "type": "government",
+  "budget": "$1.4B",
+  "programs": ["Discovery Grants", "Canada Research Chairs", "CREATE Training Program", "Alliance Grants", "Canada Graduate Scholarships", "Collaborative Research and Development Grants"],
+  "description": "NSERC is Canada's primary federal funding agency for natural sciences and engineering research. Its Discovery Grants program provides stable base funding for university researchers, while Alliance Grants foster academic-industry partnerships."
+}

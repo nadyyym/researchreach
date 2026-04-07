@@ -1,0 +1,12 @@
+{
+  "name": "Princeton University",
+  "country": "United States",
+  "city": "Princeton, NJ",
+  "type": "private",
+  "researcherCount": 1200,
+  "avgHindex": 53,
+  "grantCount": 1100,
+  "departments": ["Computer Science", "Physics", "Chemistry", "Molecular Biology", "Neuroscience", "Mathematics", "Electrical and Computer Engineering", "Astrophysical Sciences"],
+  "topFields": ["Astrophysics", "Quantum Computing", "Machine Learning", "Computational Biology", "Climate Science"],
+  "description": "Princeton University combines a focused liberal arts approach with world-class research programs. Its strengths in theoretical physics, mathematics, and computer science have produced numerous Fields Medal and Nobel Prize winners."
+}

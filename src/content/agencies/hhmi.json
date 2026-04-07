@@ -1,0 +1,8 @@
+{
+  "name": "Howard Hughes Medical Institute (HHMI)",
+  "country": "United States",
+  "type": "private",
+  "budget": "$2.2B",
+  "programs": ["HHMI Investigators", "Janelia Research Campus", "Hanna Gray Fellows", "Freeman Hrabowski Scholars", "Gilliam Fellowships"],
+  "description": "HHMI is the largest private funder of biomedical research in the United States. Rather than funding projects, it employs investigators who remain at their home universities, providing long-term support that enables bold, curiosity-driven research."
+}

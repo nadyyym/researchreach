@@ -1,0 +1,27 @@
+---
+interface Props {
+  lines: { type: 'prompt' | 'output' | 'success' | 'blank'; text: string }[];
+  class?: string;
+}
+const { lines, class: className = '' } = Astro.props;
+---
+
+<div class:list={['terminal bg-bg-raised border border-line w-full font-mono text-[11px] leading-[1.9]', className]}>
+  <div class="flex items-center gap-1.5 px-3 py-2 border-b border-line">
+    <span class="w-1.5 h-1.5 rounded-full bg-red"></span>
+    <span class="w-1.5 h-1.5 rounded-full bg-yellow"></span>
+    <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
+  </div>
+  <div class="p-4 text-text-dim">
+    {lines.map(line => {
+      if (line.type === 'blank') return <br />;
+      if (line.type === 'prompt') return (
+        <div><span class="text-text-muted">$</span> <span class="text-text" set:html={line.text} /></div>
+      );
+      if (line.type === 'success') return (
+        <div><span class="text-accent">✓</span> <span class="text-text-muted" set:html={line.text} /></div>
+      );
+      return <div set:html={line.text} />;
+    })}
+  </div>
+</div>

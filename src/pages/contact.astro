@@ -1,0 +1,69 @@
+---
+import Base from "../layouts/Base.astro";
+import Breadcrumb from "../components/Breadcrumb.astro";
+import WaitlistForm from "../components/WaitlistForm.astro";
+import "../styles/global.css";
+---
+
+<Base
+  title="Contact — Sci-Buy"
+  description="Get in touch with the Sci-Buy team. Join the waitlist, request API access, or reach out about enterprise partnerships."
+>
+  <main>
+    <Breadcrumb items={[{ name: "Contact", url: "/contact" }]} />
+
+    <!-- HERO -->
+    <section class="border-b border-line">
+      <div class="px-6 py-16 md:px-12 md:py-24 max-w-4xl">
+        <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-6 block">Contact</span>
+        <h1 class="text-3xl md:text-4xl font-light text-text-bright tracking-tight mb-4 leading-[1.2]">
+          Get in <strong class="font-semibold">touch.</strong>
+        </h1>
+        <p class="text-[13px] text-text-dim leading-relaxed max-w-[480px]">
+          Join the waitlist, request API access, or reach out about enterprise partnerships.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT GRID -->
+    <section class="border-b border-line">
+      <div class="grid grid-cols-1 md:grid-cols-[1fr_2fr] grid-lines">
+        <!-- Contact Info -->
+        <div class="bg-bg p-8 md:p-12">
+          <div class="space-y-8">
+            <div>
+              <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-2 block">General</span>
+              <a href="mailto:hello@selltoscientists.com" class="text-[13px] text-accent hover:text-text-bright no-underline transition-colors">
+                hello@selltoscientists.com
+              </a>
+            </div>
+            <div class="border-t border-line pt-8">
+              <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-2 block">Enterprise</span>
+              <a href="mailto:enterprise@selltoscientists.com" class="text-[13px] text-accent hover:text-text-bright no-underline transition-colors">
+                enterprise@selltoscientists.com
+              </a>
+            </div>
+            <div class="border-t border-line pt-8">
+              <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-2 block">Privacy / Opt-Out</span>
+              <a href="mailto:privacy@selltoscientists.com" class="text-[13px] text-accent hover:text-text-bright no-underline transition-colors">
+                privacy@selltoscientists.com
+              </a>
+            </div>
+            <div class="border-t border-line pt-8">
+              <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-2 block">Legal</span>
+              <a href="mailto:legal@selltoscientists.com" class="text-[13px] text-accent hover:text-text-bright no-underline transition-colors">
+                legal@selltoscientists.com
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Waitlist Form -->
+        <div class="bg-bg p-8 md:p-12">
+          <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-6 block">Join the Waitlist</span>
+          <WaitlistForm id="contact-waitlist" />
+        </div>
+      </div>
+    </section>
+  </main>
+</Base>

@@ -1,0 +1,8 @@
+{
+  "name": "Scientific Software",
+  "companies": ["Benchling", "NVIDIA", "Google DeepMind", "Dotmatics", "Schrodinger", "PerkinElmer Signals", "MATLAB/MathWorks", "GraphPad", "CLC Genomics"],
+  "targetResearchers": "Computationally skilled researchers in bioinformatics, machine learning, computational chemistry, and data science who build analysis tools",
+  "marketSize": "$42B",
+  "useCases": ["Lab digitization and ELN adoption", "AI-powered drug design platforms", "Research data management", "Computational workflow automation", "Scientific visualization tools"],
+  "description": "The scientific software industry provides the digital infrastructure for modern research, from electronic lab notebooks to AI-driven drug discovery platforms. Growth is driven by the increasing computational intensity of research across all fields."
+}

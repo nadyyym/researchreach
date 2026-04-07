@@ -1,0 +1,12 @@
+{
+  "name": "Harvard University",
+  "country": "United States",
+  "city": "Cambridge, MA",
+  "type": "private",
+  "researcherCount": 4500,
+  "avgHindex": 54,
+  "grantCount": 4100,
+  "departments": ["Chemistry and Chemical Biology", "Molecular and Cellular Biology", "Physics", "Engineering and Applied Sciences", "Stem Cell and Regenerative Biology", "Immunology", "Neuroscience", "Biostatistics"],
+  "topFields": ["Immunology", "Genomics", "Neuroscience", "Stem Cell Research", "Epidemiology"],
+  "description": "Harvard University is the oldest institution of higher learning in the United States and boasts one of the largest research enterprises in the world. Its biomedical research programs, particularly in immunology and genomics, attract leading scientists globally."
+}

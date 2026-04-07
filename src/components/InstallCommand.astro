@@ -1,0 +1,52 @@
+---
+interface Props {
+  class?: string;
+}
+const { class: className = '' } = Astro.props;
+---
+
+<div class:list={['install-block', className]}>
+  <div class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-1.5">Install</div>
+  <div
+    class="install-cmd flex items-center bg-bg-raised border border-line-accent font-mono text-[13px] cursor-pointer transition-[border-color] hover:border-accent-dim relative"
+    data-cmd="npx sci-buy@latest"
+  >
+    <code class="flex-1 py-3 px-4 text-text select-all">npx sci-buy@latest</code>
+    <button
+      class="copy-btn py-3 px-3.5 border-l border-line bg-accent-dim text-text flex items-center hover:bg-accent-btn transition-colors"
+      aria-label="Copy install command"
+    >
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="9" y="9" width="13" height="13" rx="2"></rect>
+        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+      </svg>
+    </button>
+    <span class="copy-tooltip absolute -top-6 right-2 font-mono text-[9px] tracking-[1px] text-accent opacity-0 transition-opacity">COPIED</span>
+  </div>
+  <div class="install-feedback font-mono text-[10px] text-accent mt-1 h-3.5"></div>
+</div>
+
+<script>
+  import { trackEvent } from '../lib/posthog';
+
+  document.querySelectorAll('.install-cmd').forEach(el => {
+    el.addEventListener('click', () => {
+      const cmd = el.getAttribute('data-cmd') || 'npx sci-buy@latest';
+      navigator.clipboard.writeText(cmd).then(() => {
+        trackEvent('copy_install_cmd', { command: cmd });
+        el.classList.add('copied');
+        const fb = el.parentElement?.querySelector('.install-feedback');
+        if (fb) fb.textContent = 'Copied to clipboard';
+        setTimeout(() => {
+          el.classList.remove('copied');
+          if (fb) fb.textContent = '';
+        }, 2000);
+      });
+    });
+  });
+</script>
+
+<style>
+  .install-cmd.copied .copy-tooltip { opacity: 1; }
+  .install-cmd.copied .copy-btn { color: var(--color-accent); }
+</style>

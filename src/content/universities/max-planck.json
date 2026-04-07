@@ -1,0 +1,12 @@
+{
+  "name": "Max Planck Society",
+  "country": "Germany",
+  "city": "Munich",
+  "type": "public",
+  "researcherCount": 6800,
+  "avgHindex": 51,
+  "grantCount": 5200,
+  "departments": ["Biochemistry", "Neuroscience", "Physics", "Chemistry", "Molecular Genetics", "Biophysics", "Intelligent Systems", "Immunobiology"],
+  "topFields": ["Neuroscience", "Molecular Biology", "Astrophysics", "Materials Science", "Immunology"],
+  "description": "The Max Planck Society operates 86 research institutes across Germany and is one of the world's most prolific basic research organizations. With a focus on fundamental science, its institutes have produced 20 Nobel laureates since 1948."
+}

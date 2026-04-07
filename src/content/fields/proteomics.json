@@ -1,0 +1,9 @@
+{
+  "name": "Proteomics",
+  "subfields": ["Quantitative Proteomics", "Structural Proteomics", "Clinical Proteomics", "Interactomics", "Post-Translational Modifications"],
+  "keyTechnologies": ["Mass Spectrometry", "Protein Microarrays", "Proximity Ligation Assay", "Cryo-EM", "Cross-Linking Mass Spectrometry"],
+  "topInstitutions": ["Max Planck Society", "ETH Zurich", "Harvard", "Broad Institute", "University of Copenhagen"],
+  "researcherCount": 24000,
+  "avgFunding": "$370K",
+  "description": "Proteomics is the large-scale study of proteins, including their structures, functions, and interactions. It complements genomics by revealing how the proteome changes in health and disease, enabling biomarker discovery and therapeutic target identification."
+}

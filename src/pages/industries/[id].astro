@@ -1,0 +1,102 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import TerminalMockup from '../../components/TerminalMockup.astro';
+import BottomCTA from '../../components/BottomCTA.astro';
+import '../../styles/global.css';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('industries');
+  return entries.map((entry) => ({
+    params: { id: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const d = entry.data;
+
+const pageTitle = `${d.name} — Selling to Scientists — Sci-Buy`;
+const pageDesc = `${d.name} industry: ${d.marketSize} market. ${d.companies.length} key companies, ${d.useCases.length} use cases. Target researchers: ${d.targetResearchers}.`;
+---
+
+<Base title={pageTitle} description={pageDesc}>
+  <Breadcrumb items={[
+    { name: 'Industries', url: '/industries/' },
+    { name: d.name, url: `/industries/${entry.id}/` },
+  ]} />
+
+  <!-- HERO -->
+  <section class="border-b border-line">
+    <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr] grid-lines">
+      <div class="p-8 md:p-12">
+        <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-4">INDUSTRY PROFILE</p>
+        <h1 class="text-3xl md:text-4xl font-light text-text-bright tracking-tight mb-3">
+          {d.name}
+        </h1>
+        <p class="text-[13px] text-text leading-relaxed max-w-[520px]">
+          {d.description}
+        </p>
+      </div>
+      <div class="p-8 md:p-12 accent-top-red">
+        <div class="space-y-6">
+          <div>
+            <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-1">MARKET SIZE</p>
+            <p class="text-2xl font-light text-text-bright">{d.marketSize}</p>
+          </div>
+          <div>
+            <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-1">KEY COMPANIES</p>
+            <p class="text-2xl font-light text-text-bright">{d.companies.length}</p>
+          </div>
+          <div>
+            <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-1">TARGET RESEARCHERS</p>
+            <p class="text-sm font-light text-text-bright">{d.targetResearchers}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY COMPANIES -->
+  <section class="border-b border-line p-8 md:p-12">
+    <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-6">KEY COMPANIES</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-line">
+      {d.companies.map((company) => (
+        <div class="bg-bg p-4">
+          <p class="text-[13px] text-text">{company}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- USE CASES -->
+  <section class="border-b border-line p-8 md:p-12">
+    <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-6">USE CASES</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-px bg-line">
+      {d.useCases.map((useCase, i) => (
+        <div class="bg-bg p-4 flex items-center gap-4">
+          <span class="font-mono text-[10px] text-text-muted w-6 flex-shrink-0">{String(i + 1).padStart(2, '0')}</span>
+          <p class="text-[13px] text-text">{useCase}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- TERMINAL -->
+  <section class="border-b border-line p-8 md:p-12">
+    <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-6">TRY IT</p>
+    <TerminalMockup
+      lines={[
+        { type: 'prompt', text: `sci-buy search --industry "${d.name}"` },
+        { type: 'blank', text: '' },
+        { type: 'output', text: `Searching researchers targeted by ${d.name}...` },
+        { type: 'success', text: `Market size: ${d.marketSize} | ${d.companies.length} key companies` },
+        { type: 'output', text: `Target: ${d.targetResearchers}` },
+        { type: 'output', text: `${d.useCases.length} use cases identified` },
+      ]}
+    />
+  </section>
+
+  <BottomCTA />
+</Base>

@@ -1,0 +1,9 @@
+{
+  "name": "Organic Chemistry",
+  "subfields": ["Total Synthesis", "Catalysis", "Organometallic Chemistry", "Green Chemistry", "Chemical Biology"],
+  "keyTechnologies": ["NMR Spectroscopy", "Mass Spectrometry", "Flow Chemistry", "Automated Synthesis", "Computational Chemistry"],
+  "topInstitutions": ["MIT", "Harvard", "Scripps Research", "ETH Zurich", "University of Cambridge"],
+  "researcherCount": 56000,
+  "avgFunding": "$340K",
+  "description": "Organic chemistry studies the structure, properties, and reactions of carbon-containing compounds. It is foundational to pharmaceuticals, agrochemicals, polymers, and materials development."
+}

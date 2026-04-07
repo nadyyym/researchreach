@@ -5,8 +5,32 @@
   "redirects": [
     {
       "source": "/(.*)",
-      "has": [{"type": "host", "value": "researchreach.io"}],
-      "destination": "https://www.researchreach.io/$1",
+      "has": [{"type": "host", "value": "www.selltoscientists.com"}],
+      "destination": "https://selltoscientists.com/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [{"type": "host", "value": "selltoscientists.org"}],
+      "destination": "https://selltoscientists.com/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [{"type": "host", "value": "selltoscientists.dev"}],
+      "destination": "https://selltoscientists.com/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [{"type": "host", "value": "selltoscientists.sh"}],
+      "destination": "https://selltoscientists.com/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [{"type": "host", "value": "selltoscientists.tech"}],
+      "destination": "https://selltoscientists.com/$1",
       "permanent": true
     }
   ]

@@ -1,0 +1,12 @@
+{
+  "name": "ETH Zurich",
+  "country": "Switzerland",
+  "city": "Zurich",
+  "type": "public",
+  "researcherCount": 3600,
+  "avgHindex": 46,
+  "grantCount": 2800,
+  "departments": ["Computer Science", "Mechanical and Process Engineering", "Biology", "Chemistry and Applied Biosciences", "Physics", "Materials Science", "Biosystems Science and Engineering", "Electrical Engineering"],
+  "topFields": ["Robotics", "Materials Science", "Computational Biology", "Quantum Computing", "Nanotechnology"],
+  "description": "ETH Zurich is Switzerland's premier technical university and one of Europe's most research-intensive institutions. It has produced 22 Nobel laureates and is known for excellence in engineering, natural sciences, and technology transfer."
+}

@@ -1,0 +1,8 @@
+{
+  "name": "National Science Foundation (NSF)",
+  "country": "United States",
+  "type": "government",
+  "budget": "$11B",
+  "programs": ["CAREER Awards", "Major Research Instrumentation", "Graduate Research Fellowships", "Engineering Research Centers", "AI Institutes", "EPSCoR"],
+  "description": "The NSF funds fundamental research across all non-medical fields of science and engineering. It is the primary federal supporter of academic research in mathematics, computer science, physics, and engineering in the United States."
+}

@@ -1,0 +1,8 @@
+{
+  "name": "German Research Foundation (DFG)",
+  "country": "Germany",
+  "type": "government",
+  "budget": "$4.2B",
+  "programs": ["Individual Research Grants", "Collaborative Research Centres", "Research Training Groups", "Emmy Noether Programme", "Leibniz Prize", "Priority Programmes"],
+  "description": "The DFG is Germany's central self-governing research funding organization. It funds research across all disciplines at German universities and research institutes, with a strong emphasis on peer review and academic freedom."
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Japan",
+  "code": "JP",
+  "topInstitutions": ["University of Tokyo", "Kyoto University", "RIKEN", "Osaka University", "Tohoku University"],
+  "topAgencies": ["JSPS", "JST", "MEXT", "AMED"],
+  "researchOutput": 98000,
+  "topFields": ["Materials Science", "Robotics", "Stem Cell Research", "Nanotechnology", "Quantum Computing"],
+  "description": "Japan has a deep tradition of excellence in materials science, chemistry, and precision engineering. While facing challenges from declining research investment, it remains a powerhouse in manufacturing-adjacent research and has produced 29 Nobel laureates in science."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "University of Tokyo",
+  "country": "Japan",
+  "city": "Tokyo",
+  "type": "public",
+  "researcherCount": 5800,
+  "avgHindex": 38,
+  "grantCount": 4200,
+  "departments": ["Engineering", "Medicine", "Science", "Pharmaceutical Sciences", "Information Science and Technology", "Agricultural and Life Sciences", "Frontier Sciences", "Mathematical Sciences"],
+  "topFields": ["Materials Science", "Robotics", "Molecular Biology", "Nanotechnology", "Quantum Computing"],
+  "description": "The University of Tokyo is Japan's most prestigious research university and one of Asia's top institutions. It excels in materials science, robotics, and precision engineering, and serves as the primary training ground for Japan's scientific leadership."
+}

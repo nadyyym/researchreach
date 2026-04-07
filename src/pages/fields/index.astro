@@ -1,0 +1,65 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import BottomCTA from '../../components/BottomCTA.astro';
+import '../../styles/global.css';
+
+const entries = await getCollection('fields');
+const pageTitle = 'Research Fields & Disciplines — Sci-Buy';
+const pageDesc = `Explore ${entries.length} research fields. Find top institutions, researchers, and funding sources by scientific discipline.`;
+---
+
+<Base title={pageTitle} description={pageDesc}>
+  <Breadcrumb items={[{ name: 'Fields', url: '/fields/' }]} />
+
+  <!-- HERO -->
+  <section class="border-b border-line">
+    <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr] grid-lines">
+      <div class="p-8 md:p-12">
+        <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-4">DISCIPLINE INDEX</p>
+        <h1 class="text-3xl md:text-4xl font-light text-text-bright tracking-tight mb-3">
+          Research <strong class="font-semibold">Fields</strong>
+        </h1>
+        <p class="text-[13px] text-text-dim leading-relaxed max-w-[520px]">
+          Browse scientific disciplines and research areas. Each field profile maps top institutions,
+          researcher counts, key technologies, and average funding levels.
+        </p>
+      </div>
+      <div class="p-8 md:p-12 flex items-center justify-center accent-top-yellow">
+        <div class="text-center">
+          <p class="text-4xl font-light text-text-bright">{entries.length}</p>
+          <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mt-1">FIELDS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRID -->
+  <section class="p-6 md:p-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-lines">
+      {entries.map((entry) => (
+        <a
+          href={`/fields/${entry.id}/`}
+          class="block p-6 hover:bg-bg-raised transition-colors no-underline group"
+        >
+          <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-3">
+            {entry.data.researcherCount.toLocaleString()} RESEARCHERS
+          </p>
+          <h2 class="text-[15px] font-semibold text-text-bright mb-2 group-hover:text-accent transition-colors">
+            {entry.data.name}
+          </h2>
+          <p class="text-[12px] text-text-dim leading-relaxed line-clamp-2 mb-4">
+            {entry.data.description}
+          </p>
+          <div class="flex items-center gap-4 text-[11px] font-mono text-text-muted">
+            <span>{entry.data.subfields.length} subfields</span>
+            <span>{entry.data.avgFunding} avg funding</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <BottomCTA />
+</Base>

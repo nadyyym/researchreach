@@ -1,0 +1,11 @@
+{
+  "name": "Takeshi Nakamura",
+  "institution": "University of Tokyo",
+  "field": "Drug Discovery",
+  "advisor": "Dr. Hiroaki Suga",
+  "thesis": "Macrocyclic peptide libraries for targeting protein-protein interactions in oncology",
+  "publications": 9,
+  "skills": ["Medicinal Chemistry", "High-Throughput Screening", "Mass Spectrometry", "Molecular Docking", "Python", "Biochemical Assays"],
+  "transitionSignals": ["Published industry-focused review", "Attended JP Morgan Healthcare Conference", "Joined university tech transfer committee"],
+  "description": "Takeshi is a postdoctoral researcher developing novel cyclic peptide therapeutics targeting previously undruggable cancer proteins. His library screening technology has generated significant interest from pharmaceutical companies."
+}

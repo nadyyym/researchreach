@@ -1,0 +1,9 @@
+{
+  "name": "Bioinformatics",
+  "subfields": ["Sequence Analysis", "Structural Bioinformatics", "Systems Biology", "Network Biology", "Clinical Bioinformatics"],
+  "keyTechnologies": ["BLAST", "Genome Assembly Tools", "AlphaFold", "R/Bioconductor", "Python/Biopython"],
+  "topInstitutions": ["European Bioinformatics Institute", "Broad Institute", "UC San Diego", "University of Cambridge", "National Center for Biotechnology Information"],
+  "researcherCount": 48000,
+  "avgFunding": "$350K",
+  "description": "Bioinformatics applies computational methods to biological data, enabling researchers to analyze genomes, predict protein structures, and model biological systems. It is essential infrastructure for modern life sciences research."
+}

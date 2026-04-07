@@ -1,0 +1,9 @@
+{
+  "name": "Australia",
+  "code": "AU",
+  "topInstitutions": ["University of Melbourne", "University of Sydney", "Australian National University", "University of Queensland", "Monash University"],
+  "topAgencies": ["ARC", "NHMRC", "CSIRO"],
+  "researchOutput": 68000,
+  "topFields": ["Climate Science", "Immunology", "Materials Science", "Genomics", "Astrophysics"],
+  "description": "Australia is a significant research nation with particular strengths in biomedical sciences, environmental research, and astronomy. Its unique ecosystems and geographical position make it a key contributor to climate and ecological research."
+}

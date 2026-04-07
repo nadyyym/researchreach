@@ -1,0 +1,9 @@
+{
+  "name": "Canada",
+  "code": "CA",
+  "topInstitutions": ["University of Toronto", "McGill University", "University of British Columbia", "University of Alberta", "University of Waterloo"],
+  "topAgencies": ["NSERC", "CIHR", "SSHRC", "CFI"],
+  "researchOutput": 72000,
+  "topFields": ["Machine Learning", "Stem Cell Research", "Genomics", "Neuroscience", "Quantum Computing"],
+  "description": "Canada has emerged as a global hub for artificial intelligence research, anchored by the Vector Institute, Mila, and Amii. Its strengths also include stem cell biology, quantum information science, and a welcoming immigration policy that attracts global talent."
+}

@@ -1,360 +1,187 @@
 ---
 import Base from "../layouts/Base.astro";
+import InstallCommand from "../components/InstallCommand.astro";
+import TerminalMockup from "../components/TerminalMockup.astro";
 import WaitlistForm from "../components/WaitlistForm.astro";
+import BottomCTA from "../components/BottomCTA.astro";
 import "../styles/global.css";
+
+const categories = [
+  { name: "Universities", slug: "universities", count: "4,000+", accent: "accent-top-red", span: true },
+  { name: "Fields", slug: "fields", count: "250+", accent: "accent-top-blue" },
+  { name: "Researchers", slug: "researchers", count: "100M+", accent: "accent-top-yellow" },
+  { name: "PhD & Postdocs", slug: "phd", count: "2M+", accent: "accent-top-red" },
+  { name: "Countries", slug: "countries", count: "195", accent: "accent-top-blue" },
+  { name: "Agencies", slug: "agencies", count: "500+", accent: "accent-top-yellow" },
+  { name: "Companies", slug: "companies", count: "10K+", accent: "accent-top-red" },
+  { name: "Industries", slug: "industries", count: "50+", accent: "accent-top-blue" },
+];
+
+const terminalLines = [
+  { type: 'prompt' as const, text: 'npx sci-buy search "CRISPR gene editing" --institution Stanford' },
+  { type: 'blank' as const, text: '' },
+  { type: 'output' as const, text: '<span class="text-text-muted">Searching 250M+ papers...</span>' },
+  { type: 'blank' as const, text: '' },
+  { type: 'success' as const, text: '47 researchers found' },
+  { type: 'blank' as const, text: '' },
+  { type: 'output' as const, text: '<span class="text-accent">01</span>  Dr. Sarah Chen · Stanford · H-index: 32' },
+  { type: 'output' as const, text: '    <span class="text-text-muted">4 patents · NIH R01 · $2.1M active funding</span>' },
+  { type: 'output' as const, text: '    <span class="text-text-muted">s.chen@stanford.edu · confidence: high</span>' },
+  { type: 'blank' as const, text: '' },
+  { type: 'output' as const, text: '<span class="text-accent">02</span>  Prof. Michael Torres · Stanford · H-index: 45' },
+  { type: 'output' as const, text: '    <span class="text-text-muted">7 patents · NIH R01 · $3.8M active funding</span>' },
+  { type: 'output' as const, text: '    <span class="text-text-muted">m.torres@stanford.edu · confidence: high</span>' },
+  { type: 'blank' as const, text: '' },
+  { type: 'output' as const, text: '<span class="text-text-muted">... 45 more results</span>' },
+];
 ---
 
 <Base
-  isHome
-  title="ResearchReach — The Researcher Graph. Finally Searchable."
-  description="Contact intelligence for academic researchers. Find pharma PIs, biotech consultants, and industry-adjacent scientists. Built on OpenAlex, ORCID, NIH Reporter, and PubMed. Join the waitlist."
+  title="Sci-Buy — Research Intelligence CLI"
+  description="Find and reach the scientists who need your product. Search 250M+ papers, map researchers by field, H-index, grants, and industry ties. Export verified contacts."
 >
   <main>
-    <!-- NAV -->
-    <header class="border-b border-navy-600 bg-navy/90 backdrop-blur-sm sticky top-0 z-40">
-      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="/" class="font-display font-bold text-lg text-white no-underline">
-          Research<span class="text-electric">Reach</span>
-        </a>
-        <nav class="hidden md:flex items-center gap-8">
-          <a href="#how-it-works" class="text-slate text-sm hover:text-white no-underline transition-colors">How it works</a>
-          <a href="#use-cases" class="text-slate text-sm hover:text-white no-underline transition-colors">Use cases</a>
-          <a href="/developers" class="text-slate text-sm hover:text-white no-underline transition-colors">Developers</a>
-          <a href="#waitlist" class="px-4 py-2 bg-electric text-white text-sm font-semibold rounded-lg no-underline hover:bg-electric-dim transition-colors">Join waitlist</a>
-        </nav>
-      </div>
-    </header>
-
     <!-- HERO -->
-    <section class="screen bg-navy flex items-center" id="top">
-      <div class="max-w-6xl mx-auto px-6 py-24 md:py-32 w-full">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          <div>
-            <div class="inline-flex items-center gap-2 bg-navy-700 border border-navy-600 rounded-full px-4 py-2 mb-8">
-              <span class="w-2 h-2 bg-mint rounded-full animate-pulse"></span>
-              <span class="text-xs font-mono text-slate-light tracking-wider">EARLY ACCESS · 200+ TEAMS ON WAITLIST</span>
-            </div>
-            <h1 class="font-display text-[clamp(40px,6vw,72px)] font-black leading-[1.0] tracking-tight mb-6">
-              The researcher<br />graph.<br />
-              <span class="text-electric">Finally searchable.</span>
-            </h1>
-            <p class="text-slate-light text-lg md:text-xl leading-relaxed max-w-md mb-8">
-              Find the right academic scientists — by field, funding, patents, and industry signals. Verified contacts, not LinkedIn guesses.
-            </p>
-            <div class="flex flex-wrap gap-3">
-              <a href="#use-cases" class="inline-flex items-center gap-2 px-4 py-2 bg-navy-700 border border-navy-600 text-slate-light text-sm rounded-lg no-underline hover:border-electric hover:text-white transition-colors">
-                Pharma &amp; Biotech →
-              </a>
-              <a href="#use-cases" class="inline-flex items-center gap-2 px-4 py-2 bg-navy-700 border border-navy-600 text-slate-light text-sm rounded-lg no-underline hover:border-electric hover:text-white transition-colors">
-                Scientific Software →
-              </a>
-              <a href="/developers" class="inline-flex items-center gap-2 px-4 py-2 bg-navy-700 border border-navy-600 text-slate-light text-sm rounded-lg no-underline hover:border-electric hover:text-white transition-colors">
-                Developers API →
-              </a>
-            </div>
+    <section class="border-b border-line relative">
+      <img src="/illustrations/hero-grid.svg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-40 pointer-events-none" aria-hidden="true" />
+      <div class="grid grid-cols-1 md:grid-cols-[1fr_1fr] grid-lines relative z-10">
+        <div class="bg-bg/80 p-8 md:p-12 lg:p-16 flex flex-col justify-center">
+          <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-6">Research Intelligence CLI</span>
+          <h1 class="text-3xl md:text-4xl font-light text-text-bright tracking-tight mb-4 leading-[1.2]">
+            Find the scientists<br />
+            <span class="text-accent font-semibold">who need your product.</span>
+          </h1>
+          <p class="text-[13px] text-text-dim leading-relaxed max-w-[420px] mb-8">
+            Search 250M+ papers. Map researchers by field, H-index, grants, and industry ties. Export verified contacts. All from your terminal.
+          </p>
+          <div class="mb-6">
+            <InstallCommand />
           </div>
-          <div>
-            <WaitlistForm
-              id="waitlist-hero"
-              heading="Get early access"
-              subheading="Onboarding in waves. Work emails get priority."
-            />
+          <div class="flex items-center gap-3 mb-4">
+            <div class="flex-1 h-px bg-line"></div>
+            <span class="text-[10px] text-text-muted uppercase tracking-[2px]">or join the waitlist</span>
+            <div class="flex-1 h-px bg-line"></div>
           </div>
+          <WaitlistForm compact />
+        </div>
+        <div class="bg-bg/80 p-8 md:p-12 lg:p-16 flex items-center">
+          <TerminalMockup lines={terminalLines} />
         </div>
       </div>
     </section>
 
-    <!-- PROBLEM -->
-    <section class="bg-navy-800 border-y border-navy-600 py-20 md:py-28" id="problem">
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="max-w-3xl mx-auto text-center mb-16">
-          <h2 class="font-display text-[clamp(30px,4vw,52px)] font-bold leading-tight mb-6">
-            Academic researchers are <span class="text-electric">invisible</span> to B2B tools.
-          </h2>
-          <p class="text-slate-light text-lg leading-relaxed">
-            LinkedIn profiles are wrong or empty. ZoomInfo misses them entirely. Academic databases are 3 years stale. If your buyer is a PI, lab manager, or industry-adjacent scientist — you have no reliable way to reach them.
-          </p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="bg-navy-700 border border-navy-600 rounded-xl p-6">
-            <div class="text-3xl mb-4">🚫</div>
-            <h3 class="font-display font-bold text-white mb-2">LinkedIn is guesswork</h3>
-            <p class="text-slate text-sm leading-relaxed">70% of researchers have no LinkedIn presence. Those who do rarely update institutional details or grant affiliations.</p>
+    <!-- CATEGORY PORTAL -->
+    <section class="border-b border-line">
+      <div class="px-6 py-10 md:px-12 md:py-14">
+        <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted">Browse the Research Graph</span>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-[2fr_1fr_1fr_1fr] grid-lines auto-rows-auto">
+        <!-- Featured: Universities (spans 2 rows) -->
+        <a href="/universities" class="bg-bg p-8 md:p-10 row-span-2 border-r border-red-dim flex flex-col justify-between no-underline group hover:bg-bg-raised transition-colors">
+          <div>
+            <span class="font-mono text-[9px] tracking-[2px] uppercase text-red">{categories[0].name}</span>
+            <p class="text-2xl font-light text-text-bright mt-3 group-hover:text-accent transition-colors">{categories[0].count}</p>
+            <p class="text-[11px] text-text-dim mt-1.5">institutions indexed</p>
           </div>
-          <div class="bg-navy-700 border border-navy-600 rounded-xl p-6">
-            <div class="text-3xl mb-4">📅</div>
-            <h3 class="font-display font-bold text-white mb-2">ZoomInfo misses academia</h3>
-            <p class="text-slate text-sm leading-relaxed">Commercial databases index corporate HR systems. University researchers and NIH-funded PIs simply don't appear.</p>
-          </div>
-          <div class="bg-navy-700 border border-navy-600 rounded-xl p-6">
-            <div class="text-3xl mb-4">🕳️</div>
-            <h3 class="font-display font-bold text-white mb-2">Databases are 3 years stale</h3>
-            <p class="text-slate text-sm leading-relaxed">Faculty directories and publication databases update yearly at best. Lab moves, funding changes, and industry pivots go unrecorded.</p>
-          </div>
-        </div>
+          <span class="font-mono text-[10px] text-text-muted group-hover:text-text-dim transition-colors">Explore --&gt;</span>
+        </a>
+        <!-- Remaining 7 categories -->
+        {categories.slice(1).map(cat => (
+          <a href={`/${cat.slug}`} class:list={['bg-bg p-5 md:p-6 no-underline group hover:bg-bg-raised transition-colors flex flex-col justify-between', cat.accent]}>
+            <div>
+              <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted">{cat.name}</span>
+              <p class="text-lg font-light text-text-bright mt-2 group-hover:text-accent transition-colors">{cat.count}</p>
+            </div>
+            <span class="font-mono text-[10px] text-text-muted group-hover:text-text-dim transition-colors mt-3">--&gt;</span>
+          </a>
+        ))}
       </div>
     </section>
 
     <!-- HOW IT WORKS -->
-    <section class="bg-navy py-20 md:py-28" id="how-it-works">
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="text-center mb-16">
-          <h2 class="font-display text-[clamp(30px,4vw,52px)] font-bold leading-tight mb-4">
-            How it works
-          </h2>
-          <p class="text-slate-light text-lg max-w-xl mx-auto">
-            Three steps from search intent to verified contact export.
-          </p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="relative">
-            <div class="flex items-center gap-4 mb-6">
-              <div class="w-10 h-10 rounded-full bg-electric flex items-center justify-center font-display font-bold text-white text-sm shrink-0">1</div>
-              <div class="h-px flex-1 bg-navy-600 hidden md:block"></div>
-            </div>
-            <h3 class="font-display font-bold text-white text-xl mb-3">Search by field, topic, or funding</h3>
-            <p class="text-slate text-sm leading-relaxed">
-              Query 250M+ papers. Filter by research area, active NIH/NSF grants, institutional affiliation, or publication recency. Find exactly the scientists you need.
-            </p>
-            <div class="mt-4 font-mono text-xs text-electric bg-navy-800 border border-navy-600 rounded-lg p-3">
-              <span class="text-slate"># Example query</span><br />
-              field:"CRISPR gene editing"<br />
-              funding:"NIH R01"<br />
-              institution:"Stanford"
-            </div>
-          </div>
-          <div class="relative">
-            <div class="flex items-center gap-4 mb-6">
-              <div class="w-10 h-10 rounded-full bg-electric flex items-center justify-center font-display font-bold text-white text-sm shrink-0">2</div>
-              <div class="h-px flex-1 bg-navy-600 hidden md:block"></div>
-            </div>
-            <h3 class="font-display font-bold text-white text-xl mb-3">Filter by industry signals</h3>
-            <p class="text-slate text-sm leading-relaxed">
-              Surface researchers with one foot in industry: patent holders, startup co-founders, SAB members, industry-funded PIs, and recent academia→industry transitions.
-            </p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="text-xs font-mono bg-navy-800 border border-navy-600 text-mint px-2 py-1 rounded">patent_holder: true</span>
-              <span class="text-xs font-mono bg-navy-800 border border-navy-600 text-mint px-2 py-1 rounded">startup_affiliation: true</span>
-              <span class="text-xs font-mono bg-navy-800 border border-navy-600 text-mint px-2 py-1 rounded">industry_funding: true</span>
-            </div>
-          </div>
-          <div>
-            <div class="flex items-center gap-4 mb-6">
-              <div class="w-10 h-10 rounded-full bg-electric flex items-center justify-center font-display font-bold text-white text-sm shrink-0">3</div>
-            </div>
-            <h3 class="font-display font-bold text-white text-xl mb-3">Export verified contact + intent data</h3>
-            <p class="text-slate text-sm leading-relaxed">
-              Get institutional email addresses, ORCID profile, H-index, recent publications, grant amounts, and conference appearances — all in one export.
-            </p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="text-xs font-mono bg-navy-800 border border-navy-600 text-slate-light px-2 py-1 rounded">CSV export</span>
-              <span class="text-xs font-mono bg-navy-800 border border-navy-600 text-slate-light px-2 py-1 rounded">CRM sync</span>
-              <span class="text-xs font-mono bg-navy-800 border border-navy-600 text-slate-light px-2 py-1 rounded">REST API</span>
-            </div>
-          </div>
-        </div>
+    <section class="border-b border-line">
+      <div class="px-6 py-10 md:px-12 md:py-14 border-b border-line">
+        <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted">How It Works</span>
       </div>
-    </section>
-
-    <!-- USE CASES -->
-    <section class="bg-navy-800 border-y border-navy-600 py-20 md:py-28" id="use-cases">
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="text-center mb-16">
-          <h2 class="font-display text-[clamp(30px,4vw,52px)] font-bold leading-tight mb-4">
-            Who uses ResearchReach
-          </h2>
-          <p class="text-slate-light text-lg max-w-xl mx-auto">
-            Built for teams that sell to, recruit from, or invest in the scientific community.
+      <div class="grid grid-cols-1 md:grid-cols-3 grid-lines">
+        <div class="bg-bg p-8 md:p-10 border-b border-red-dim md:border-b-0" style="border-bottom: 1px solid var(--color-red-dim);">
+          <span class="font-mono text-[32px] text-line-accent block mb-5">01</span>
+          <h3 class="text-lg font-light text-text-bright mb-2.5">
+            <strong class="font-semibold">Search</strong> the graph
+          </h3>
+          <p class="text-[12px] text-text-dim leading-relaxed">
+            Query 250M+ papers by field, institution, funding, and keywords. Filter by NIH/NSF grants, H-index, publication recency.
           </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <a href="/use-cases#pharma" class="group bg-navy-700 border border-navy-600 hover:border-electric rounded-xl p-8 no-underline transition-all">
-            <div class="text-3xl mb-4">🧬</div>
-            <h3 class="font-display font-bold text-white text-xl mb-3 group-hover:text-electric transition-colors">Pharma &amp; Biotech Outreach</h3>
-            <p class="text-slate text-sm leading-relaxed mb-4">
-              Find PIs with active drug discovery grants. Identify researchers who've co-authored with industry teams. Build KOL lists with verified contacts, not stale rosters.
-            </p>
-            <span class="text-electric text-sm font-semibold">Learn more →</span>
-          </a>
-          <a href="/use-cases#software" class="group bg-navy-700 border border-navy-600 hover:border-electric rounded-xl p-8 no-underline transition-all">
-            <div class="text-3xl mb-4">🖥️</div>
-            <h3 class="font-display font-bold text-white text-xl mb-3 group-hover:text-electric transition-colors">Scientific Software Sales</h3>
-            <p class="text-slate text-sm leading-relaxed mb-4">
-              For Benchling, Dotmatics, and ELN vendors. Reach lab managers and PIs who are actively publishing in your target verticals. Segment by lab size and funding level.
-            </p>
-            <span class="text-electric text-sm font-semibold">Learn more →</span>
-          </a>
-          <a href="/use-cases#recruiting" class="group bg-navy-700 border border-navy-600 hover:border-electric rounded-xl p-8 no-underline transition-all">
-            <div class="text-3xl mb-4">🔬</div>
-            <h3 class="font-display font-bold text-white text-xl mb-3 group-hover:text-electric transition-colors">Deep Tech Recruiting</h3>
-            <p class="text-slate text-sm leading-relaxed mb-4">
-              Source PhD researchers with industry bridge signals. Filter by patent filings, startup co-founder credits, or recent transition from academia to industry.
-            </p>
-            <span class="text-electric text-sm font-semibold">Learn more →</span>
-          </a>
-          <a href="/use-cases#vc" class="group bg-navy-700 border border-navy-600 hover:border-electric rounded-xl p-8 no-underline transition-all">
-            <div class="text-3xl mb-4">💰</div>
-            <h3 class="font-display font-bold text-white text-xl mb-3 group-hover:text-electric transition-colors">VC &amp; Deal Sourcing</h3>
-            <p class="text-slate text-sm leading-relaxed mb-4">
-              Track researchers filing patents in emerging fields before they spin out. Monitor NIH funding in your thesis areas. Surface the scientists most likely to found deep-tech companies.
-            </p>
-            <span class="text-electric text-sm font-semibold">Learn more →</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- DATA SOURCES -->
-    <section class="bg-navy py-20 md:py-28" id="data-sources">
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="text-center mb-12">
-          <h2 class="font-display text-[clamp(28px,3.5vw,44px)] font-bold leading-tight mb-4">
-            Built on open, authoritative data
-          </h2>
-          <p class="text-slate-light text-base max-w-xl mx-auto">
-            We aggregate the world's best open research infrastructure — then layer proprietary industry signal detection on top.
+        <div class="bg-bg p-8 md:p-10" style="border-bottom: 1px solid var(--color-accent-dim);">
+          <span class="font-mono text-[32px] text-line-accent block mb-5">02</span>
+          <h3 class="text-lg font-light text-text-bright mb-2.5">
+            <strong class="font-semibold">Map</strong> researchers
+          </h3>
+          <p class="text-[12px] text-text-dim leading-relaxed">
+            Surface industry bridge signals: patent holders, startup co-founders, SAB members, industry-funded PIs, and recent transitions.
           </p>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
-          <div class="bg-navy-700 border border-navy-600 rounded-xl p-6 text-center">
-            <p class="font-display font-bold text-white mb-1">OpenAlex</p>
-            <p class="text-slate text-xs">250M+ papers</p>
-          </div>
-          <div class="bg-navy-700 border border-navy-600 rounded-xl p-6 text-center">
-            <p class="font-display font-bold text-white mb-1">ORCID</p>
-            <p class="text-slate text-xs">20M+ researcher IDs</p>
-          </div>
-          <div class="bg-navy-700 border border-navy-600 rounded-xl p-6 text-center">
-            <p class="font-display font-bold text-white mb-1">PubMed</p>
-            <p class="text-slate text-xs">36M+ biomedical articles</p>
-          </div>
-          <div class="bg-navy-700 border border-navy-600 rounded-xl p-6 text-center">
-            <p class="font-display font-bold text-white mb-1">NIH Reporter</p>
-            <p class="text-slate text-xs">Active grant funding</p>
-          </div>
-          <div class="bg-navy-700 border border-navy-600 rounded-xl p-6 text-center">
-            <p class="font-display font-bold text-white mb-1">Semantic Scholar</p>
-            <p class="text-slate text-xs">Citation intelligence</p>
-          </div>
-        </div>
-        <div class="mt-8 text-center">
-          <p class="text-slate text-sm">
-            Plus: USPTO patent filings, Crossref DOI metadata, and proprietary industry transition signals.
+        <div class="bg-bg p-8 md:p-10" style="border-bottom: 1px solid var(--color-yellow-dim);">
+          <span class="font-mono text-[32px] text-line-accent block mb-5">03</span>
+          <h3 class="text-lg font-light text-text-bright mb-2.5">
+            <strong class="font-semibold">Export</strong> contacts
+          </h3>
+          <p class="text-[12px] text-text-dim leading-relaxed">
+            Get verified institutional emails, ORCID profiles, H-index, grant amounts, and citations. Export to CSV or pipe to your CRM.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- SOCIAL PROOF -->
-    <section class="bg-navy-800 border-y border-navy-600 py-16 md:py-20" id="social-proof">
-      <div class="max-w-6xl mx-auto px-6 text-center">
-        <p class="font-display text-4xl md:text-5xl font-black text-white mb-4">200+</p>
-        <p class="text-slate-light text-lg mb-12">teams already on the waitlist</p>
-        <div class="flex flex-wrap justify-center gap-6 md:gap-12">
-          <div class="flex flex-col items-center gap-2">
-            <div class="w-12 h-12 rounded-full bg-navy-600 flex items-center justify-center text-xl">🏥</div>
-            <p class="text-slate text-xs font-mono">Pharma BD Lead</p>
-          </div>
-          <div class="flex flex-col items-center gap-2">
-            <div class="w-12 h-12 rounded-full bg-navy-600 flex items-center justify-center text-xl">💊</div>
-            <p class="text-slate text-xs font-mono">Biotech Head of Sales</p>
-          </div>
-          <div class="flex flex-col items-center gap-2">
-            <div class="w-12 h-12 rounded-full bg-navy-600 flex items-center justify-center text-xl">🧪</div>
-            <p class="text-slate text-xs font-mono">Lab Software AE</p>
-          </div>
-          <div class="flex flex-col items-center gap-2">
-            <div class="w-12 h-12 rounded-full bg-navy-600 flex items-center justify-center text-xl">🎯</div>
-            <p class="text-slate text-xs font-mono">Deep Tech Recruiter</p>
-          </div>
-          <div class="flex flex-col items-center gap-2">
-            <div class="w-12 h-12 rounded-full bg-navy-600 flex items-center justify-center text-xl">📈</div>
-            <p class="text-slate text-xs font-mono">Life Sciences VC</p>
-          </div>
+    <!-- WHO USES SCI-BUY -->
+    <section class="border-b border-line">
+      <div class="bg-red-dim px-6 py-3 md:px-12">
+        <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-dim">Who Uses Sci-Buy</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-[1fr_1fr_1fr_200px] grid-lines">
+        <a href="/use-cases#pharma" class="bg-bg p-8 no-underline group hover:bg-bg-raised transition-colors">
+          <span class="font-mono text-[9px] tracking-[2px] uppercase text-red mb-3 block">Pharma & Biotech</span>
+          <p class="text-[13px] text-text-bright font-light mb-2 group-hover:text-accent transition-colors">KOL identification, drug discovery outreach</p>
+          <p class="text-[11px] text-text-muted leading-relaxed">Find PIs with active grants. Identify researchers with industry co-authorships and patent filings.</p>
+        </a>
+        <a href="/use-cases#software" class="bg-bg p-8 no-underline group hover:bg-bg-raised transition-colors">
+          <span class="font-mono text-[9px] tracking-[2px] uppercase text-accent mb-3 block">Scientific Software</span>
+          <p class="text-[13px] text-text-bright font-light mb-2 group-hover:text-accent transition-colors">ELN, LIMS, and lab automation sales</p>
+          <p class="text-[11px] text-text-muted leading-relaxed">Reach lab managers running wet labs in your target verticals. Segment by lab size and funding level.</p>
+        </a>
+        <a href="/use-cases#recruiting" class="bg-bg p-8 no-underline group hover:bg-bg-raised transition-colors">
+          <span class="font-mono text-[9px] tracking-[2px] uppercase text-yellow mb-3 block">Deep Tech Recruiting</span>
+          <p class="text-[13px] text-text-bright font-light mb-2 group-hover:text-accent transition-colors">Source PhD researchers with industry signals</p>
+          <p class="text-[11px] text-text-muted leading-relaxed">Filter by patent filings, startup affiliations, or recent academia-to-industry transitions.</p>
+        </a>
+        <div class="bg-bg p-8 flex flex-col justify-center items-center text-center">
+          <span class="font-mono text-[32px] text-text-bright block mb-1">200+</span>
+          <span class="text-[11px] text-text-muted">teams on waitlist</span>
         </div>
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="bg-navy py-20 md:py-28" id="faq">
-      <div class="max-w-4xl mx-auto px-6">
-        <h2 class="font-display text-[clamp(30px,4vw,52px)] font-bold leading-tight mb-12 text-center">
-          Frequently asked questions
-        </h2>
-        <div class="divide-y divide-navy-600">
-          <details class="group py-6">
-            <summary class="font-display text-lg font-semibold text-white cursor-pointer list-none flex items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
-              How fresh is the data?
-              <span class="text-electric text-xl font-bold transition-transform group-open:rotate-45 shrink-0">+</span>
-            </summary>
-            <p class="mt-4 text-slate-light text-base leading-relaxed max-w-2xl">
-              We sync with OpenAlex and Semantic Scholar weekly, PubMed daily, and NIH Reporter monthly. ORCID profiles are pulled on-demand. Most records are updated within 7 days of a new publication or funding award.
-            </p>
-          </details>
-          <details class="group py-6">
-            <summary class="font-display text-lg font-semibold text-white cursor-pointer list-none flex items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
-              Is this GDPR-compliant?
-              <span class="text-electric text-xl font-bold transition-transform group-open:rotate-45 shrink-0">+</span>
-            </summary>
-            <p class="mt-4 text-slate-light text-base leading-relaxed max-w-2xl">
-              Yes. We only index publicly-disclosed contact information (institutional emails listed in publications or on university pages) and public grant records. Researchers can request removal via our opt-out form. We follow GDPR legitimate interest grounds for B2B contact data.
-            </p>
-          </details>
-          <details class="group py-6">
-            <summary class="font-display text-lg font-semibold text-white cursor-pointer list-none flex items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
-              How accurate are the email addresses?
-              <span class="text-electric text-xl font-bold transition-transform group-open:rotate-45 shrink-0">+</span>
-            </summary>
-            <p class="mt-4 text-slate-light text-base leading-relaxed max-w-2xl">
-              We target &gt;85% deliverability on verified contacts. Institutional emails are cross-referenced against recent publications (last 24 months) to filter out stale records. We mark addresses as "high confidence", "likely valid", or "unverified" so you can prioritize.
-            </p>
-          </details>
-          <details class="group py-6">
-            <summary class="font-display text-lg font-semibold text-white cursor-pointer list-none flex items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
-              What's the pricing model?
-              <span class="text-electric text-xl font-bold transition-transform group-open:rotate-45 shrink-0">+</span>
-            </summary>
-            <p class="mt-4 text-slate-light text-base leading-relaxed max-w-2xl">
-              We're finalizing pricing. Early access users will lock in launch pricing. We plan a credit-based model (pay per export) with monthly subscription tiers for heavy users. API access will be separate. Join the waitlist to be first to know.
-            </p>
-          </details>
-          <details class="group py-6">
-            <summary class="font-display text-lg font-semibold text-white cursor-pointer list-none flex items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
-              Is there an API for programmatic access?
-              <span class="text-electric text-xl font-bold transition-transform group-open:rotate-45 shrink-0">+</span>
-            </summary>
-            <p class="mt-4 text-slate-light text-base leading-relaxed max-w-2xl">
-              Yes. We're building a REST API for scientific software vendors and data teams. See the <a href="/developers" class="text-electric-bright hover:underline">Developers page</a> for the schema and early access program. Python and Node.js SDK planned at launch.
-            </p>
-          </details>
-          <details class="group py-6">
-            <summary class="font-display text-lg font-semibold text-white cursor-pointer list-none flex items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
-              How is this different from regular research databases like Scopus or Web of Science?
-              <span class="text-electric text-xl font-bold transition-transform group-open:rotate-45 shrink-0">+</span>
-            </summary>
-            <p class="mt-4 text-slate-light text-base leading-relaxed max-w-2xl">
-              Scopus and WoS are citation databases — built for academic research, not B2B prospecting. They don't surface contact information, industry signals, or grant data in a usable way. ResearchReach is a contact intelligence tool first: we're optimized for outreach and deal sourcing, not literature review.
-            </p>
-          </details>
-        </div>
+    <!-- TRUST BAR -->
+    <section class="border-b border-line">
+      <div class="px-6 py-6 md:px-12 flex flex-wrap items-center justify-center gap-x-3 gap-y-2">
+        <span class="font-mono text-[10px] text-text-muted tracking-[1px]">DATA SOURCES:</span>
+        <span class="text-text-muted">|</span>
+        <span class="font-mono text-[11px] text-text-dim">OpenAlex</span>
+        <span class="text-text-muted">|</span>
+        <span class="font-mono text-[11px] text-text-dim">ORCID</span>
+        <span class="text-text-muted">|</span>
+        <span class="font-mono text-[11px] text-text-dim">PubMed</span>
+        <span class="text-text-muted">|</span>
+        <span class="font-mono text-[11px] text-text-dim">NIH Reporter</span>
+        <span class="text-text-muted">|</span>
+        <span class="font-mono text-[11px] text-text-dim">Semantic Scholar</span>
+        <span class="text-text-muted">|</span>
+        <span class="font-mono text-[11px] text-text-dim">USPTO</span>
       </div>
     </section>
 
-    <!-- FINAL CTA -->
-    <section class="bg-navy-800 border-t border-navy-600 py-20 md:py-28" id="waitlist">
-      <div class="max-w-2xl mx-auto px-6 text-center">
-        <h2 class="font-display text-[clamp(28px,4vw,48px)] font-bold leading-tight mb-4">
-          Ready to find the right scientists?
-        </h2>
-        <p class="text-slate-light text-lg mb-12">
-          Join the waitlist. We're onboarding teams in waves — priority to use cases with the tightest fit.
-        </p>
-        <WaitlistForm
-          id="waitlist"
-          heading="Request early access"
-          subheading="No spam. Unsubscribe anytime."
-        />
-      </div>
-    </section>
+    <!-- BOTTOM CTA -->
+    <BottomCTA />
   </main>
 </Base>

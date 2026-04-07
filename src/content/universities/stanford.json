@@ -1,0 +1,12 @@
+{
+  "name": "Stanford University",
+  "country": "United States",
+  "city": "Stanford, CA",
+  "type": "private",
+  "researcherCount": 3900,
+  "avgHindex": 50,
+  "grantCount": 3600,
+  "departments": ["Computer Science", "Bioengineering", "Chemistry", "Physics", "Genetics", "Electrical Engineering", "Medicine", "Statistics"],
+  "topFields": ["Artificial Intelligence", "Genomics", "Neuroscience", "Machine Learning", "Drug Discovery"],
+  "description": "Stanford University sits at the heart of Silicon Valley and is renowned for its entrepreneurial culture and groundbreaking contributions to AI, biotechnology, and medicine. Its research output consistently ranks among the highest globally."
+}

@@ -1,97 +1,113 @@
 ---
 import Base from "../layouts/Base.astro";
+import Breadcrumb from "../components/Breadcrumb.astro";
 import "../styles/global.css";
 ---
 
 <Base
-  title="Terms of Service — ResearchReach"
-  description="ResearchReach terms of service. Acceptable use, data licensing, and platform terms."
+  title="Terms of Service — Sci-Buy"
+  description="Sci-Buy terms of service. Acceptable use, data licensing, and platform terms."
   robots="noindex, follow"
 >
   <main>
-    <header class="border-b border-navy-600 bg-navy/90 backdrop-blur-sm sticky top-0 z-40">
-      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="/" class="font-display font-bold text-lg text-white no-underline">
-          Research<span class="text-electric">Reach</span>
-        </a>
-        <a href="/#waitlist" class="px-4 py-2 bg-electric text-white text-sm font-semibold rounded-lg no-underline hover:bg-electric-dim transition-colors">Join waitlist</a>
+    <Breadcrumb items={[{ name: "Terms", url: "/terms" }]} />
+
+    <section class="border-b border-line">
+      <div class="px-6 py-16 md:px-12 md:py-24 max-w-3xl">
+        <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-6 block">Legal</span>
+        <h1 class="text-3xl md:text-4xl font-light text-text-bright tracking-tight mb-3 leading-[1.2]">
+          Terms of <strong class="font-semibold">Service</strong>
+        </h1>
+        <p class="text-[11px] text-text-muted font-mono">Last updated: April 2026</p>
       </div>
-    </header>
+    </section>
 
-    <section class="bg-navy py-16 md:py-24">
-      <div class="max-w-3xl mx-auto px-6">
-        <h1 class="font-display text-4xl md:text-5xl font-black text-white mb-4">Terms of Service</h1>
-        <p class="text-slate text-sm mb-12">Last updated: April 2026</p>
+    <section class="border-b border-line">
+      <div class="max-w-3xl px-6 md:px-12 py-12 space-y-10">
 
-        <div class="space-y-10">
-          <div>
-            <h2 class="font-display text-xl font-bold text-white mb-4">1. Acceptance</h2>
-            <p class="text-slate-light leading-relaxed">
-              By accessing or using ResearchReach ("Service"), you agree to these Terms of Service. If you do not agree, do not use the Service. These terms apply to all users, including API customers.
-            </p>
-          </div>
+        <div>
+          <h2 class="text-[13px] font-semibold text-text-bright mb-3 uppercase tracking-[1px]">1. Acceptance</h2>
+          <p class="text-[12px] text-text-dim leading-relaxed">
+            By accessing or using Sci-Buy ("Service"), operated at selltoscientists.com, you agree to these Terms of Service. If you do not agree, do not use the Service. These terms apply to all users, including API customers.
+          </p>
+        </div>
 
-          <div>
-            <h2 class="font-display text-xl font-bold text-white mb-4">2. Acceptable use</h2>
-            <p class="text-slate-light leading-relaxed mb-4">You may use ResearchReach data for lawful B2B outreach, recruiting, research, and investment purposes. You may not:</p>
-            <ul class="text-slate-light space-y-2 list-disc list-inside">
-              <li>Use researcher contact data for spam, harassment, or unsolicited personal messages</li>
-              <li>Resell or redistribute raw data exports without a data licensing agreement</li>
-              <li>Build competing data products using ResearchReach-sourced data</li>
-              <li>Circumvent rate limits or access controls on the API</li>
-              <li>Use the Service to target individuals for non-professional purposes</li>
-            </ul>
-          </div>
-
-          <div>
-            <h2 class="font-display text-xl font-bold text-white mb-4">3. Data license</h2>
-            <p class="text-slate-light leading-relaxed">
-              ResearchReach grants you a non-exclusive, non-transferable license to use researcher contact data for your organization's internal business purposes. Exported data may be stored in your CRM but may not be redistributed to third parties without written consent. Data licenses are per-seat and may not be shared across organizations.
-            </p>
-          </div>
-
-          <div>
-            <h2 class="font-display text-xl font-bold text-white mb-4">4. Account and billing</h2>
-            <p class="text-slate-light leading-relaxed">
-              You are responsible for maintaining the security of your account credentials. Billing is processed via Stripe. Subscriptions renew automatically unless cancelled before the billing date. Refunds are available within 7 days of initial purchase.
-            </p>
-          </div>
-
-          <div>
-            <h2 class="font-display text-xl font-bold text-white mb-4">5. Disclaimer of warranties</h2>
-            <p class="text-slate-light leading-relaxed">
-              The Service is provided "as is." We do not warrant that researcher contact data is complete, accurate, or up-to-date. Email deliverability will vary. We are not responsible for outcomes of outreach campaigns conducted using ResearchReach data.
-            </p>
-          </div>
-
-          <div>
-            <h2 class="font-display text-xl font-bold text-white mb-4">6. Limitation of liability</h2>
-            <p class="text-slate-light leading-relaxed">
-              ResearchReach's liability to you shall not exceed the amounts paid by you in the 12 months preceding the claim. We are not liable for indirect, incidental, or consequential damages arising from use of the Service.
-            </p>
-          </div>
-
-          <div>
-            <h2 class="font-display text-xl font-bold text-white mb-4">7. Termination</h2>
-            <p class="text-slate-light leading-relaxed">
-              We may suspend or terminate accounts that violate these terms, particularly acceptable use requirements. You may terminate your account at any time. Termination does not entitle you to a refund of prepaid fees.
-            </p>
-          </div>
-
-          <div>
-            <h2 class="font-display text-xl font-bold text-white mb-4">8. Governing law</h2>
-            <p class="text-slate-light leading-relaxed">
-              These terms are governed by the laws of the State of Delaware, USA. Disputes shall be resolved by binding arbitration, except where prohibited by law.
-            </p>
-          </div>
-
-          <div>
-            <h2 class="font-display text-xl font-bold text-white mb-4">9. Contact</h2>
-            <p class="text-slate-light leading-relaxed">
-              Legal questions: legal@researchreach.io
-            </p>
+        <div class="border-t border-line pt-10">
+          <h2 class="text-[13px] font-semibold text-text-bright mb-3 uppercase tracking-[1px]">2. Acceptable use</h2>
+          <p class="text-[12px] text-text-dim leading-relaxed mb-4">You may use Sci-Buy data for lawful B2B outreach, recruiting, research, and investment purposes. You may not:</p>
+          <div class="space-y-2">
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-red mt-0.5">x</span>
+              <p class="text-[12px] text-text-dim">Use researcher contact data for spam, harassment, or unsolicited personal messages</p>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-red mt-0.5">x</span>
+              <p class="text-[12px] text-text-dim">Resell or redistribute raw data exports without a data licensing agreement</p>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-red mt-0.5">x</span>
+              <p class="text-[12px] text-text-dim">Build competing data products using Sci-Buy-sourced data</p>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-red mt-0.5">x</span>
+              <p class="text-[12px] text-text-dim">Circumvent rate limits or access controls on the API</p>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-red mt-0.5">x</span>
+              <p class="text-[12px] text-text-dim">Use the Service to target individuals for non-professional purposes</p>
+            </div>
           </div>
         </div>
+
+        <div class="border-t border-line pt-10">
+          <h2 class="text-[13px] font-semibold text-text-bright mb-3 uppercase tracking-[1px]">3. Data license</h2>
+          <p class="text-[12px] text-text-dim leading-relaxed">
+            Sci-Buy grants you a non-exclusive, non-transferable license to use researcher contact data for your organization's internal business purposes. Exported data may be stored in your CRM but may not be redistributed to third parties without written consent. Data licenses are per-seat and may not be shared across organizations.
+          </p>
+        </div>
+
+        <div class="border-t border-line pt-10">
+          <h2 class="text-[13px] font-semibold text-text-bright mb-3 uppercase tracking-[1px]">4. Account and billing</h2>
+          <p class="text-[12px] text-text-dim leading-relaxed">
+            You are responsible for maintaining the security of your account credentials. Billing is processed via Stripe. Subscriptions renew automatically unless cancelled before the billing date. Refunds are available within 7 days of initial purchase.
+          </p>
+        </div>
+
+        <div class="border-t border-line pt-10">
+          <h2 class="text-[13px] font-semibold text-text-bright mb-3 uppercase tracking-[1px]">5. Disclaimer of warranties</h2>
+          <p class="text-[12px] text-text-dim leading-relaxed">
+            The Service is provided "as is." We do not warrant that researcher contact data is complete, accurate, or up-to-date. Email deliverability will vary. We are not responsible for outcomes of outreach campaigns conducted using Sci-Buy data.
+          </p>
+        </div>
+
+        <div class="border-t border-line pt-10">
+          <h2 class="text-[13px] font-semibold text-text-bright mb-3 uppercase tracking-[1px]">6. Limitation of liability</h2>
+          <p class="text-[12px] text-text-dim leading-relaxed">
+            Sci-Buy's liability to you shall not exceed the amounts paid by you in the 12 months preceding the claim. We are not liable for indirect, incidental, or consequential damages arising from use of the Service.
+          </p>
+        </div>
+
+        <div class="border-t border-line pt-10">
+          <h2 class="text-[13px] font-semibold text-text-bright mb-3 uppercase tracking-[1px]">7. Termination</h2>
+          <p class="text-[12px] text-text-dim leading-relaxed">
+            We may suspend or terminate accounts that violate these terms, particularly acceptable use requirements. You may terminate your account at any time. Termination does not entitle you to a refund of prepaid fees.
+          </p>
+        </div>
+
+        <div class="border-t border-line pt-10">
+          <h2 class="text-[13px] font-semibold text-text-bright mb-3 uppercase tracking-[1px]">8. Governing law</h2>
+          <p class="text-[12px] text-text-dim leading-relaxed">
+            These terms are governed by the laws of the State of Delaware, USA. Disputes shall be resolved by binding arbitration, except where prohibited by law.
+          </p>
+        </div>
+
+        <div class="border-t border-line pt-10">
+          <h2 class="text-[13px] font-semibold text-text-bright mb-3 uppercase tracking-[1px]">9. Contact</h2>
+          <p class="text-[12px] text-text-dim leading-relaxed">
+            Legal questions: <a href="mailto:legal@selltoscientists.com" class="text-accent hover:text-text-bright no-underline transition-colors">legal@selltoscientists.com</a>
+          </p>
+        </div>
+
       </div>
     </section>
   </main>

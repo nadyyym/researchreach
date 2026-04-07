@@ -1,0 +1,11 @@
+{
+  "name": "James Okonkwo",
+  "institution": "MIT",
+  "field": "Materials Science",
+  "advisor": "Dr. Angela Belcher",
+  "thesis": "Bio-inspired synthesis of nanostructured materials for next-generation battery electrodes",
+  "publications": 6,
+  "skills": ["Electron Microscopy", "Electrochemistry", "Nanofabrication", "X-ray Diffraction", "MATLAB", "Python"],
+  "transitionSignals": ["Filed provisional patent", "Presented at industry symposium", "Connected with VC firms on LinkedIn"],
+  "description": "James is a postdoctoral researcher working on biomineralization techniques for creating high-performance battery materials. His work bridges biology and materials engineering with direct applications in energy storage."
+}

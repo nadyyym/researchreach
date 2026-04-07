@@ -1,0 +1,12 @@
+{
+  "name": "Massachusetts Institute of Technology",
+  "country": "United States",
+  "city": "Cambridge, MA",
+  "type": "private",
+  "researcherCount": 4200,
+  "avgHindex": 52,
+  "grantCount": 3800,
+  "departments": ["Electrical Engineering & Computer Science", "Biology", "Chemistry", "Physics", "Chemical Engineering", "Mechanical Engineering", "Brain and Cognitive Sciences", "Mathematics"],
+  "topFields": ["Artificial Intelligence", "Robotics", "Materials Science", "Quantum Computing", "Synthetic Biology"],
+  "description": "MIT is a world-leading research university known for its pioneering work in engineering, computer science, and the physical sciences. Its interdisciplinary culture and close ties to industry make it a top destination for both fundamental and translational research."
+}

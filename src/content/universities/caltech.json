@@ -1,0 +1,12 @@
+{
+  "name": "California Institute of Technology",
+  "country": "United States",
+  "city": "Pasadena, CA",
+  "type": "private",
+  "researcherCount": 980,
+  "avgHindex": 58,
+  "grantCount": 1400,
+  "departments": ["Biology and Biological Engineering", "Chemistry and Chemical Engineering", "Engineering and Applied Science", "Geological and Planetary Sciences", "Physics, Mathematics and Astronomy"],
+  "topFields": ["Astrophysics", "Quantum Computing", "Materials Science", "Neuroscience", "Chemical Engineering"],
+  "description": "Caltech is a small but extraordinarily productive research university. Despite its size, it manages NASA's Jet Propulsion Laboratory and has produced numerous Nobel laureates. Its faculty-to-student ratio enables intensive mentorship and high per-capita research output."
+}

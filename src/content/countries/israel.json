@@ -1,0 +1,9 @@
+{
+  "name": "Israel",
+  "code": "IL",
+  "topInstitutions": ["Weizmann Institute of Science", "Technion", "Hebrew University of Jerusalem", "Tel Aviv University", "Ben-Gurion University"],
+  "topAgencies": ["ISF", "Israel Innovation Authority", "BARD"],
+  "researchOutput": 22000,
+  "topFields": ["Artificial Intelligence", "Immunology", "Nanotechnology", "Drug Discovery", "Computational Biology"],
+  "description": "Israel has the highest ratio of scientists per capita in the world and a thriving startup ecosystem. Its research strengths in computer science, immunology, and agricultural technology are amplified by robust technology transfer mechanisms."
+}

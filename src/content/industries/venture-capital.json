@@ -1,0 +1,8 @@
+{
+  "name": "Venture Capital (Life Sciences)",
+  "companies": ["ARCH Venture Partners", "Flagship Pioneering", "Third Rock Ventures", "a16z Bio + Health", "Polaris Partners", "OrbiMed", "RA Capital", "GV (Google Ventures)"],
+  "targetResearchers": "Academic entrepreneurs with patentable discoveries, principal investigators with translational research programs, and PhD/postdoc founders",
+  "marketSize": "$36B",
+  "useCases": ["Scientific due diligence", "Academic spin-out formation", "Scientific advisory board assembly", "IP landscape analysis", "Founder recruitment from academia"],
+  "description": "Life sciences venture capital funds the translation of academic discoveries into companies. VC firms actively scout university labs for breakthrough technologies, recruit academic co-founders, and rely on researcher networks for scientific due diligence."
+}

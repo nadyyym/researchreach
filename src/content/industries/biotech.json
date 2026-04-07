@@ -1,0 +1,8 @@
+{
+  "name": "Biotechnology",
+  "companies": ["Genentech", "Moderna", "BioNTech", "Regeneron", "Amgen", "Gilead Sciences", "Vertex Pharmaceuticals", "Illumina", "10x Genomics", "CRISPR Therapeutics"],
+  "targetResearchers": "Scientists working on gene therapy, mRNA technology, cell therapy, genomics, and protein engineering with strong industry-relevant skills",
+  "marketSize": "$820B",
+  "useCases": ["Platform technology licensing", "Academic co-founder recruitment", "Research tool validation", "Biomarker discovery partnerships", "Talent pipeline from PhD programs"],
+  "description": "The biotech industry translates cutting-edge biological research into therapeutics, diagnostics, and research tools. It is the primary employer of PhD-trained scientists outside academia and maintains the closest ties to university research."
+}

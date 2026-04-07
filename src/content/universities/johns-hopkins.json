@@ -1,0 +1,12 @@
+{
+  "name": "Johns Hopkins University",
+  "country": "United States",
+  "city": "Baltimore, MD",
+  "type": "private",
+  "researcherCount": 5100,
+  "avgHindex": 45,
+  "grantCount": 4500,
+  "departments": ["Biomedical Engineering", "Medicine", "Public Health", "Biology", "Computer Science", "Neuroscience", "Pharmacology", "Genetic Medicine"],
+  "topFields": ["Immunology", "Epidemiology", "Neuroscience", "Drug Discovery", "Genomics"],
+  "description": "Johns Hopkins University consistently leads all US universities in research and development expenditures. Its School of Medicine and Bloomberg School of Public Health are among the most influential in biomedical research and global health policy."
+}

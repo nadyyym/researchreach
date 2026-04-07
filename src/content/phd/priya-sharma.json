@@ -1,0 +1,11 @@
+{
+  "name": "Priya Sharma",
+  "institution": "University of Cambridge",
+  "field": "Immunology",
+  "advisor": "Dr. Gillian Griffiths",
+  "thesis": "Mechanistic analysis of cytotoxic T lymphocyte granule polarization in tumor microenvironments",
+  "publications": 11,
+  "skills": ["Flow Cytometry", "Confocal Microscopy", "CRISPR Screens", "Single-Cell Sequencing", "R", "ImageJ"],
+  "transitionSignals": ["Completed industry internship at AstraZeneca", "Co-authored patent application", "Active on biotech Twitter"],
+  "description": "Priya is a final-year PhD student studying how T cells kill cancer cells. Her imaging-based approach to understanding immune cell mechanics has attracted interest from pharma companies developing cancer immunotherapies."
+}

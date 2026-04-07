@@ -1,168 +1,219 @@
 ---
 import Base from "../layouts/Base.astro";
-import WaitlistForm from "../components/WaitlistForm.astro";
+import Breadcrumb from "../components/Breadcrumb.astro";
+import TerminalMockup from "../components/TerminalMockup.astro";
+import BottomCTA from "../components/BottomCTA.astro";
 import "../styles/global.css";
+
+const pharmaTerminal = [
+  { type: 'prompt' as const, text: 'sci-buy search "GLP-1 receptor" --grants NIH --signals industry' },
+  { type: 'blank' as const, text: '' },
+  { type: 'success' as const, text: '52 KOLs found with industry ties' },
+  { type: 'output' as const, text: '<span class="text-accent">01</span>  Dr. Elena Ruiz · UCSF · H-index: 38' },
+  { type: 'output' as const, text: '    <span class="text-text-muted">3 patents · Novo Nordisk SAB · $2.4M NIH R01</span>' },
+];
+
+const softwareTerminal = [
+  { type: 'prompt' as const, text: 'sci-buy search "proteomics" --min-hindex 15 --institution-type R1' },
+  { type: 'blank' as const, text: '' },
+  { type: 'success' as const, text: '310 lab PIs matched' },
+  { type: 'output' as const, text: '<span class="text-accent">01</span>  Prof. David Park · Johns Hopkins · H-index: 27' },
+  { type: 'output' as const, text: '    <span class="text-text-muted">Wet lab · 8 grad students · $1.2M active funding</span>' },
+];
+
+const recruitingTerminal = [
+  { type: 'prompt' as const, text: 'sci-buy map --field "quantum computing" --signals patents,startups' },
+  { type: 'blank' as const, text: '' },
+  { type: 'success' as const, text: '18 researchers with transition signals' },
+  { type: 'output' as const, text: '<span class="text-accent">01</span>  Dr. Wei Zhang · Caltech · H-index: 22' },
+  { type: 'output' as const, text: '    <span class="text-text-muted">2 patents · ex-Google Quantum AI · postdoc</span>' },
+];
+
+const vcTerminal = [
+  { type: 'prompt' as const, text: 'sci-buy map --field "mRNA therapeutics" --signals patents --min-patents 3' },
+  { type: 'blank' as const, text: '' },
+  { type: 'success' as const, text: '9 high-patent researchers found' },
+  { type: 'output' as const, text: '<span class="text-accent">01</span>  Prof. Anya Patel · Penn · H-index: 44' },
+  { type: 'output' as const, text: '    <span class="text-text-muted">7 patents · 2 SBIR grants · CRISPRx Bio co-founder</span>' },
+];
 ---
 
 <Base
-  title="Use Cases — ResearchReach"
-  description="How pharma BD teams, scientific software vendors, deep tech recruiters, and life sciences VCs use ResearchReach to find and reach academic researchers."
+  title="Use Cases — Sci-Buy CLI"
+  description="How pharma BD teams, scientific software vendors, deep tech recruiters, and life sciences VCs use Sci-Buy to find and reach academic researchers."
 >
   <main>
-    <header class="border-b border-navy-600 bg-navy/90 backdrop-blur-sm sticky top-0 z-40">
-      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="/" class="font-display font-bold text-lg text-white no-underline">
-          Research<span class="text-electric">Reach</span>
-        </a>
-        <nav class="hidden md:flex items-center gap-8">
-          <a href="/#how-it-works" class="text-slate text-sm hover:text-white no-underline transition-colors">How it works</a>
-          <a href="/use-cases" class="text-slate text-sm font-semibold text-white no-underline transition-colors">Use cases</a>
-          <a href="/developers" class="text-slate text-sm hover:text-white no-underline transition-colors">Developers</a>
-          <a href="/#waitlist" class="px-4 py-2 bg-electric text-white text-sm font-semibold rounded-lg no-underline hover:bg-electric-dim transition-colors">Join waitlist</a>
-        </nav>
-      </div>
-    </header>
+    <Breadcrumb items={[{ name: "Use Cases", url: "/use-cases" }]} />
 
-    <section class="bg-navy py-20 md:py-28">
-      <div class="max-w-4xl mx-auto px-6">
-        <div class="mb-16 text-center">
-          <p class="text-electric text-sm font-mono uppercase tracking-widest mb-4">Use Cases</p>
-          <h1 class="font-display text-[clamp(36px,5vw,64px)] font-black leading-tight mb-6">
-            Who uses ResearchReach
-          </h1>
-          <p class="text-slate-light text-xl leading-relaxed max-w-2xl mx-auto">
-            Four distinct buyer types — all with the same problem: finding and reaching the right scientists.
-          </p>
-        </div>
-
-        <!-- Pharma / Biotech -->
-        <div id="pharma" class="mb-16 pb-16 border-b border-navy-600">
-          <div class="flex items-start gap-6 mb-8">
-            <div class="text-5xl">🧬</div>
-            <div>
-              <h2 class="font-display text-3xl font-bold text-white mb-2">Pharma &amp; Biotech Outreach</h2>
-              <p class="text-electric text-sm font-mono">BD teams · KOL programs · Medical affairs · CRO sourcing</p>
-            </div>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-            <div>
-              <h3 class="font-display text-lg font-semibold text-white mb-3">The persona</h3>
-              <p class="text-slate text-base leading-relaxed">
-                A business development lead at a mid-size biotech needs to build a list of 50 KOLs in GLP-1 receptor research. She knows roughly who the key academic players are — but getting verified contact details, understanding their industry ties, and knowing which ones are actually receptive to outreach takes weeks.
-              </p>
-            </div>
-            <div>
-              <h3 class="font-display text-lg font-semibold text-white mb-3">How ResearchReach helps</h3>
-              <ul class="text-slate text-base leading-relaxed space-y-2">
-                <li class="flex items-start gap-2"><span class="text-mint mt-1">✓</span> Search by therapeutic area and active grant funding</li>
-                <li class="flex items-start gap-2"><span class="text-mint mt-1">✓</span> Filter by industry co-authorships and clinical trial affiliations</li>
-                <li class="flex items-start gap-2"><span class="text-mint mt-1">✓</span> Export verified institutional emails and ORCID profiles</li>
-                <li class="flex items-start gap-2"><span class="text-mint mt-1">✓</span> See patent filings to identify IP-generating researchers</li>
-                <li class="flex items-start gap-2"><span class="text-mint mt-1">✓</span> Track conference appearances for event-based outreach</li>
-              </ul>
-            </div>
-          </div>
-          <div class="bg-navy-700 border border-navy-600 rounded-xl p-6">
-            <p class="text-slate-light italic text-base leading-relaxed">
-              "We used to spend 3 weeks building KOL lists from scratch. With a tool like this, we could have that list ready in an afternoon — and actually know who has industry ties vs. pure academics."
-            </p>
-            <p class="text-slate text-sm mt-3">— Pharma BD Lead, waitlist member</p>
-          </div>
-        </div>
-
-        <!-- Scientific Software -->
-        <div id="software" class="mb-16 pb-16 border-b border-navy-600">
-          <div class="flex items-start gap-6 mb-8">
-            <div class="text-5xl">🖥️</div>
-            <div>
-              <h2 class="font-display text-3xl font-bold text-white mb-2">Scientific Software Sales</h2>
-              <p class="text-electric text-sm font-mono">ELN vendors · LIMS · Research platforms · Lab automation</p>
-            </div>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-            <div>
-              <h3 class="font-display text-lg font-semibold text-white mb-3">The persona</h3>
-              <p class="text-slate text-base leading-relaxed">
-                An AE at a lab software company (think: Benchling, Dotmatics, SciNote) is trying to grow their academic customer base. They need to reach lab managers and PIs running wet labs in their target verticals — but "researcher" isn't a job title that shows up in ZoomInfo.
-              </p>
-            </div>
-            <div>
-              <h3 class="font-display text-lg font-semibold text-white mb-3">How ResearchReach helps</h3>
-              <ul class="text-slate text-base leading-relaxed space-y-2">
-                <li class="flex items-start gap-2"><span class="text-mint mt-1">✓</span> Segment by research methodology (wet lab, computational, clinical)</li>
-                <li class="flex items-start gap-2"><span class="text-mint mt-1">✓</span> Filter by lab size proxy (number of co-authors, grad student volume)</li>
-                <li class="flex items-start gap-2"><span class="text-mint mt-1">✓</span> Target by NIH grant amount (budget signal for software spend)</li>
-                <li class="flex items-start gap-2"><span class="text-mint mt-1">✓</span> Find researchers who already publish with competitor software cited</li>
-                <li class="flex items-start gap-2"><span class="text-mint mt-1">✓</span> CRM sync via API or direct CSV export</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Recruiting -->
-        <div id="recruiting" class="mb-16 pb-16 border-b border-navy-600">
-          <div class="flex items-start gap-6 mb-8">
-            <div class="text-5xl">🔬</div>
-            <div>
-              <h2 class="font-display text-3xl font-bold text-white mb-2">Deep Tech Recruiting</h2>
-              <p class="text-electric text-sm font-mono">Biotech startups · Semicon firms · Defense tech · Quantum computing</p>
-            </div>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-            <div>
-              <h3 class="font-display text-lg font-semibold text-white mb-3">The persona</h3>
-              <p class="text-slate text-base leading-relaxed">
-                A technical recruiter at a quantum computing startup needs to hire 3 research scientists with background in superconducting qubits. LinkedIn searches return zero relevant results. PhD job boards are passive. The best candidates are still publishing from university labs.
-              </p>
-            </div>
-            <div>
-              <h3 class="font-display text-lg font-semibold text-white mb-3">How ResearchReach helps</h3>
-              <ul class="text-slate text-base leading-relaxed space-y-2">
-                <li class="flex items-start gap-2"><span class="text-mint mt-1">✓</span> Find researchers by publication topic and methodology keyword</li>
-                <li class="flex items-start gap-2"><span class="text-mint mt-1">✓</span> Filter by industry bridge signals (startup affiliation, patent filings)</li>
-                <li class="flex items-start gap-2"><span class="text-mint mt-1">✓</span> Identify PhD candidates and postdocs within 12 months of graduation</li>
-                <li class="flex items-start gap-2"><span class="text-mint mt-1">✓</span> Track researchers who've transitioned from academia to industry before</li>
-                <li class="flex items-start gap-2"><span class="text-mint mt-1">✓</span> H-index and citation count as research quality signals</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- VC -->
-        <div id="vc" class="mb-16 pb-16 border-b border-navy-600">
-          <div class="flex items-start gap-6 mb-8">
-            <div class="text-5xl">💰</div>
-            <div>
-              <h2 class="font-display text-3xl font-bold text-white mb-2">VC &amp; Deal Sourcing</h2>
-              <p class="text-electric text-sm font-mono">Life sciences funds · Deep tech VCs · University tech transfer</p>
-            </div>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-            <div>
-              <h3 class="font-display text-lg font-semibold text-white mb-3">The persona</h3>
-              <p class="text-slate text-base leading-relaxed">
-                A partner at a life sciences VC wants to monitor emerging research in CRISPR-based therapeutics before companies spin out of universities. They want to identify the PIs most likely to found companies — before they're on anyone's cap table.
-              </p>
-            </div>
-            <div>
-              <h3 class="font-display text-lg font-semibold text-white mb-3">How ResearchReach helps</h3>
-              <ul class="text-slate text-base leading-relaxed space-y-2">
-                <li class="flex items-start gap-2"><span class="text-mint mt-1">✓</span> Track patent filing velocity by researcher and institution</li>
-                <li class="flex items-start gap-2"><span class="text-mint mt-1">✓</span> Monitor NIH SBIR/STTR grants (the pre-spinout signal)</li>
-                <li class="flex items-start gap-2"><span class="text-mint mt-1">✓</span> Alert on new publications in your thesis areas</li>
-                <li class="flex items-start gap-2"><span class="text-mint mt-1">✓</span> Identify researchers with multiple patents + startup experience</li>
-                <li class="flex items-start gap-2"><span class="text-mint mt-1">✓</span> Export co-author networks to map scientific communities</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <WaitlistForm
-          id="usecases-waitlist"
-          heading="Ready to find the right scientists?"
-          subheading="Join the waitlist. Tell us your use case and we'll prioritize your onboarding."
-        />
+    <!-- HERO -->
+    <section class="border-b border-line">
+      <div class="px-6 py-16 md:px-12 md:py-24 max-w-4xl">
+        <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-6 block">Use Cases</span>
+        <h1 class="text-3xl md:text-4xl font-light text-text-bright tracking-tight mb-4 leading-[1.2]">
+          Four buyer types.<br />
+          <strong class="font-semibold">Same invisible market.</strong>
+        </h1>
+        <p class="text-[13px] text-text-dim leading-relaxed max-w-[480px]">
+          Whether you sell, recruit, or invest in the scientific community, Sci-Buy gives you the contacts and signals that B2B tools miss entirely.
+        </p>
       </div>
     </section>
+
+    <!-- PHARMA & BIOTECH -->
+    <section id="pharma" class="border-b border-line">
+      <div class="bg-red-dim px-6 py-3 md:px-12">
+        <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-dim">01 / Pharma & Biotech Outreach</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 grid-lines">
+        <div class="bg-bg p-8 md:p-12">
+          <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-4 block">The Persona</span>
+          <p class="text-[13px] text-text leading-relaxed mb-6">
+            BD teams, KOL programs, medical affairs, CRO sourcing. A business development lead at a mid-size biotech needs to build a list of 50 KOLs in GLP-1 receptor research. Getting verified contacts and understanding industry ties takes weeks with current tools.
+          </p>
+          <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-3 block">How Sci-Buy Helps</span>
+          <div class="space-y-2.5">
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-accent mt-0.5">+</span>
+              <p class="text-[12px] text-text">Search by therapeutic area and active grant funding</p>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-accent mt-0.5">+</span>
+              <p class="text-[12px] text-text">Filter by industry co-authorships and clinical trial affiliations</p>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-accent mt-0.5">+</span>
+              <p class="text-[12px] text-text">Export verified institutional emails and ORCID profiles</p>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-accent mt-0.5">+</span>
+              <p class="text-[12px] text-text">Patent filings to identify IP-generating researchers</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-bg p-8 md:p-12 flex flex-col justify-center gap-6">
+          <TerminalMockup lines={pharmaTerminal} />
+          <div class="border border-line p-5">
+            <p class="text-[12px] text-text-dim leading-relaxed italic">
+              "We used to spend 3 weeks building KOL lists from scratch. With a tool like this, we could have that list ready in an afternoon."
+            </p>
+            <p class="text-[10px] text-text-muted mt-2 font-mono">-- Pharma BD Lead, waitlist member</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCIENTIFIC SOFTWARE -->
+    <section id="software" class="border-b border-line">
+      <div class="px-6 py-3 md:px-12" style="background-color: var(--color-accent-dim);">
+        <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-dim">02 / Scientific Software Sales</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 grid-lines">
+        <div class="bg-bg p-8 md:p-12 flex flex-col justify-center order-2 md:order-1">
+          <TerminalMockup lines={softwareTerminal} />
+        </div>
+        <div class="bg-bg p-8 md:p-12 order-1 md:order-2">
+          <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-4 block">The Persona</span>
+          <p class="text-[13px] text-text leading-relaxed mb-6">
+            ELN vendors, LIMS, research platforms, lab automation. An AE at a lab software company is trying to grow their academic customer base. "Researcher" is not a job title that shows up in ZoomInfo.
+          </p>
+          <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-3 block">How Sci-Buy Helps</span>
+          <div class="space-y-2.5">
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-accent mt-0.5">+</span>
+              <p class="text-[12px] text-text">Segment by research methodology (wet lab, computational, clinical)</p>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-accent mt-0.5">+</span>
+              <p class="text-[12px] text-text">Filter by lab size proxy (co-authors, grad student volume)</p>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-accent mt-0.5">+</span>
+              <p class="text-[12px] text-text">Target by NIH grant amount as a budget signal</p>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-accent mt-0.5">+</span>
+              <p class="text-[12px] text-text">CRM sync via API or direct CSV export</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEEP TECH RECRUITING -->
+    <section id="recruiting" class="border-b border-line">
+      <div class="px-6 py-3 md:px-12" style="background-color: var(--color-yellow-dim);">
+        <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-dim">03 / Deep Tech Recruiting</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 grid-lines">
+        <div class="bg-bg p-8 md:p-12">
+          <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-4 block">The Persona</span>
+          <p class="text-[13px] text-text leading-relaxed mb-6">
+            Biotech startups, semicon firms, defense tech, quantum computing. A technical recruiter needs to hire 3 research scientists with background in superconducting qubits. LinkedIn returns zero relevant results.
+          </p>
+          <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-3 block">How Sci-Buy Helps</span>
+          <div class="space-y-2.5">
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-accent mt-0.5">+</span>
+              <p class="text-[12px] text-text">Find researchers by publication topic and methodology keyword</p>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-accent mt-0.5">+</span>
+              <p class="text-[12px] text-text">Filter by industry bridge signals (startup affiliation, patents)</p>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-accent mt-0.5">+</span>
+              <p class="text-[12px] text-text">Identify postdocs within 12 months of graduation</p>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-accent mt-0.5">+</span>
+              <p class="text-[12px] text-text">H-index and citation count as research quality signals</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-bg p-8 md:p-12 flex items-center">
+          <TerminalMockup lines={recruitingTerminal} />
+        </div>
+      </div>
+    </section>
+
+    <!-- VC & DEAL SOURCING -->
+    <section id="vc" class="border-b border-line">
+      <div class="bg-red-dim px-6 py-3 md:px-12">
+        <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-dim">04 / VC & Deal Sourcing</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 grid-lines">
+        <div class="bg-bg p-8 md:p-12 flex items-center order-2 md:order-1">
+          <TerminalMockup lines={vcTerminal} />
+        </div>
+        <div class="bg-bg p-8 md:p-12 order-1 md:order-2">
+          <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-4 block">The Persona</span>
+          <p class="text-[13px] text-text leading-relaxed mb-6">
+            Life sciences funds, deep tech VCs, university tech transfer. A partner at a life sciences VC wants to monitor emerging research before companies spin out of universities.
+          </p>
+          <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-3 block">How Sci-Buy Helps</span>
+          <div class="space-y-2.5">
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-accent mt-0.5">+</span>
+              <p class="text-[12px] text-text">Track patent filing velocity by researcher and institution</p>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-accent mt-0.5">+</span>
+              <p class="text-[12px] text-text">Monitor NIH SBIR/STTR grants (the pre-spinout signal)</p>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-accent mt-0.5">+</span>
+              <p class="text-[12px] text-text">Identify researchers with multiple patents + startup experience</p>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-mono text-[10px] text-accent mt-0.5">+</span>
+              <p class="text-[12px] text-text">Export co-author networks to map scientific communities</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOTTOM CTA -->
+    <BottomCTA />
   </main>
 </Base>

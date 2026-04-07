@@ -1,0 +1,9 @@
+{
+  "name": "Sweden",
+  "code": "SE",
+  "topInstitutions": ["Karolinska Institute", "Uppsala University", "Lund University", "KTH Royal Institute of Technology", "Chalmers University"],
+  "topAgencies": ["Swedish Research Council", "Vinnova", "Formas", "SSF"],
+  "researchOutput": 26000,
+  "topFields": ["Immunology", "Neuroscience", "Stem Cell Research", "Genomics", "Climate Science"],
+  "description": "Sweden combines a strong public university system with generous research funding and a culture of innovation. Home to the Nobel Prizes, Karolinska Institute, and major biobanks, it is a leader in precision medicine and immunology research."
+}

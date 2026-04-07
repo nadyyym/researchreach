@@ -1,0 +1,9 @@
+{
+  "name": "Germany",
+  "code": "DE",
+  "topInstitutions": ["Max Planck Society", "Helmholtz Association", "TU Munich", "LMU Munich", "Heidelberg University"],
+  "topAgencies": ["DFG", "BMBF", "Helmholtz Association", "Fraunhofer Society"],
+  "researchOutput": 120000,
+  "topFields": ["Materials Science", "Neuroscience", "Molecular Biology", "Astrophysics", "Organic Chemistry"],
+  "description": "Germany is Europe's largest research economy, anchored by its unique system of non-university research organizations including Max Planck (basic research), Helmholtz (strategic research), Fraunhofer (applied research), and Leibniz institutes."
+}

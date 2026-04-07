@@ -1,0 +1,12 @@
+{
+  "name": "Yale University",
+  "country": "United States",
+  "city": "New Haven, CT",
+  "type": "private",
+  "researcherCount": 3200,
+  "avgHindex": 46,
+  "grantCount": 2900,
+  "departments": ["Molecular Biophysics and Biochemistry", "Immunobiology", "Neuroscience", "Chemistry", "Computer Science", "Genetics", "Pharmacology", "Cell Biology"],
+  "topFields": ["Immunology", "Neuroscience", "Drug Discovery", "Stem Cell Research", "Organic Chemistry"],
+  "description": "Yale University is a leading research institution with particular strength in the biomedical sciences. Its School of Medicine drives cutting-edge research in immunobiology, cancer biology, and neurodegenerative diseases."
+}

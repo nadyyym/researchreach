@@ -1,0 +1,8 @@
+{
+  "name": "Scientific Recruiting",
+  "companies": ["IQVIA", "Kelly Science", "Hays Life Sciences", "EPM Scientific", "Planet Pharma", "Proclinical", "BioTalent", "Academic Positions"],
+  "targetResearchers": "PhD candidates and postdocs considering industry transitions, principal investigators seeking talent for their labs, and mid-career researchers open to new roles",
+  "marketSize": "$18B",
+  "useCases": ["PhD-to-industry placement", "Executive search for R&D leadership", "Contract research staffing", "Postdoc-to-biotech transition programs", "Academic job board services"],
+  "description": "The scientific recruiting industry connects trained researchers with positions in industry, government, and academia. With over 80% of STEM PhDs eventually leaving academic tenure tracks, this sector serves a massive and growing market."
+}

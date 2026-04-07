@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" fill="none">
+  <!-- Abstract research graph in constructivist style -->
+  <rect width="600" height="400" fill="#101520"/>
+
+  <!-- Network nodes (researchers) -->
+  <circle cx="300" cy="200" r="8" fill="#5a8bc2" opacity="0.4"/>
+  <circle cx="180" cy="120" r="5" fill="#a05060" opacity="0.35"/>
+  <circle cx="420" cy="140" r="6" fill="#5a8bc2" opacity="0.3"/>
+  <circle cx="150" cy="280" r="4" fill="#a09050" opacity="0.3"/>
+  <circle cx="450" cy="300" r="7" fill="#a05060" opacity="0.3"/>
+  <circle cx="350" cy="80" r="4" fill="#5a8bc2" opacity="0.25"/>
+  <circle cx="240" cy="320" r="5" fill="#a09050" opacity="0.25"/>
+  <circle cx="500" cy="200" r="4" fill="#5a8bc2" opacity="0.2"/>
+  <circle cx="100" cy="200" r="3" fill="#a05060" opacity="0.2"/>
+  <circle cx="380" cy="340" r="3" fill="#5a8bc2" opacity="0.15"/>
+
+  <!-- Network edges -->
+  <line x1="300" y1="200" x2="180" y2="120" stroke="#5a8bc2" stroke-width="1" opacity="0.12"/>
+  <line x1="300" y1="200" x2="420" y2="140" stroke="#5a8bc2" stroke-width="1" opacity="0.12"/>
+  <line x1="300" y1="200" x2="150" y2="280" stroke="#a05060" stroke-width="1" opacity="0.1"/>
+  <line x1="300" y1="200" x2="450" y2="300" stroke="#a05060" stroke-width="1" opacity="0.1"/>
+  <line x1="180" y1="120" x2="350" y2="80" stroke="#232a3c" stroke-width="1" opacity="0.1"/>
+  <line x1="420" y1="140" x2="500" y2="200" stroke="#232a3c" stroke-width="1" opacity="0.1"/>
+  <line x1="150" y1="280" x2="240" y2="320" stroke="#232a3c" stroke-width="1" opacity="0.08"/>
+  <line x1="450" y1="300" x2="380" y2="340" stroke="#232a3c" stroke-width="1" opacity="0.08"/>
+  <line x1="180" y1="120" x2="100" y2="200" stroke="#232a3c" stroke-width="1" opacity="0.08"/>
+
+  <!-- Constructivist overlay: thin grid -->
+  <line x1="200" y1="0" x2="200" y2="400" stroke="#232a3c" stroke-width="1" opacity="0.15"/>
+  <line x1="400" y1="0" x2="400" y2="400" stroke="#232a3c" stroke-width="1" opacity="0.15"/>
+  <line x1="0" y1="200" x2="600" y2="200" stroke="#232a3c" stroke-width="1" opacity="0.1"/>
+
+  <!-- Rodchenko diagonal -->
+  <line x1="50" y1="350" x2="550" y2="50" stroke="#a05060" stroke-width="1" opacity="0.06"/>
+</svg>

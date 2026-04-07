@@ -1,0 +1,8 @@
+{
+  "name": "Recursion Pharmaceuticals",
+  "industry": "Biotech",
+  "rdSpend": "$380M",
+  "academicCollabs": 85,
+  "patents": 320,
+  "description": "Recursion Pharmaceuticals combines automated cell biology experiments, AI, and large-scale computing to discover new drugs at scale. Its platform generates one of the world's largest biological datasets through automated microscopy and machine learning."
+}

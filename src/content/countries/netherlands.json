@@ -1,0 +1,9 @@
+{
+  "name": "Netherlands",
+  "code": "NL",
+  "topInstitutions": ["TU Delft", "University of Amsterdam", "Utrecht University", "Leiden University", "Wageningen University"],
+  "topAgencies": ["NWO", "KNAW", "ZonMw"],
+  "researchOutput": 42000,
+  "topFields": ["Nanotechnology", "Quantum Computing", "Genomics", "Climate Science", "Computational Biology"],
+  "description": "The Netherlands is a research powerhouse relative to its size, with particularly strong outputs in quantum technology, agricultural sciences, and water management. Dutch universities consistently rank in global top 100 lists."
+}

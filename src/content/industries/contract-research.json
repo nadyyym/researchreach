@@ -1,0 +1,8 @@
+{
+  "name": "Contract Research Organizations",
+  "companies": ["Charles River Laboratories", "Covance (LabCorp Drug Development)", "WuXi AppTec", "Eurofins Scientific", "PPD (Thermo Fisher)", "Syneos Health", "ICON plc", "Parexel"],
+  "targetResearchers": "Clinical researchers, biostatisticians, regulatory scientists, and lab-based researchers with GLP/GMP experience seeking industry roles or consulting",
+  "marketSize": "$82B",
+  "useCases": ["Preclinical study outsourcing", "Clinical trial management", "Bioanalytical testing", "Regulatory submission support", "Pharmacovigilance", "Central lab services"],
+  "description": "Contract research organizations (CROs) provide outsourced research services to pharma, biotech, and medical device companies. They are major employers of PhD-trained scientists and play a critical role in bringing therapies from bench to bedside."
+}
