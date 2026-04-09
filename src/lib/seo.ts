@@ -40,7 +40,7 @@ export function breadcrumbSchema(items: { name: string; url: string }[]) {
       '@type': 'ListItem',
       position: i + 1,
       name: item.name,
-      item: item.url,
+      item: item.url.startsWith('http') ? item.url : `${SITE}${item.url}`,
     })),
   };
 }
