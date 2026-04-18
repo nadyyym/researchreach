@@ -17,6 +17,11 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const d = entry.data;
 
+const allFields = await getCollection('fields');
+const fieldSlugMap = new Map(allFields.map(f => [f.data.name.toLowerCase(), f.id]));
+const allCountries = await getCollection('countries');
+const countrySlugMap = new Map(allCountries.map(c => [c.data.name.toLowerCase(), c.id]));
+
 const logoDomains: Record<string, string> = {
   'mit': 'mit.edu', 'stanford': 'stanford.edu', 'harvard': 'harvard.edu',
   'caltech': 'caltech.edu', 'oxford': 'ox.ac.uk', 'cambridge': 'cam.ac.uk',
@@ -62,7 +67,9 @@ const pageDesc = `Search ${d.researcherCount.toLocaleString()} researchers at ${
           </h1>
         </div>
         <p class="text-[13px] text-text-dim leading-relaxed max-w-[520px] mb-4">
-          {d.city}, {d.country}
+          {d.city}, {countrySlugMap.has(d.country.toLowerCase()) ? (
+            <a href={`/countries/${countrySlugMap.get(d.country.toLowerCase())}/`} class="text-accent no-underline hover:text-text-bright transition-colors">{d.country}</a>
+          ) : d.country}
         </p>
         <p class="text-[13px] text-text leading-relaxed max-w-[520px]">
           {d.description}
@@ -121,11 +128,18 @@ const pageDesc = `Search ${d.researcherCount.toLocaleString()} researchers at ${
   <section class="border-b border-line p-8 md:p-12">
     <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-6">TOP RESEARCH FIELDS</p>
     <div class="flex flex-wrap gap-2">
-      {d.topFields.map((field) => (
-        <span class="px-3 py-1.5 bg-bg-raised border border-line text-[12px] text-text font-mono">
-          {field}
-        </span>
-      ))}
+      {d.topFields.map((field) => {
+        const slug = fieldSlugMap.get(field.toLowerCase());
+        return slug ? (
+          <a href={`/fields/${slug}/`} class="px-3 py-1.5 bg-bg-raised border border-line text-[12px] text-accent font-mono no-underline hover:border-accent-dim hover:text-text-bright transition-colors">
+            {field}
+          </a>
+        ) : (
+          <span class="px-3 py-1.5 bg-bg-raised border border-line text-[12px] text-text font-mono">
+            {field}
+          </span>
+        );
+      })}
     </div>
   </section>
 

@@ -17,6 +17,14 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const d = entry.data;
 
+const allUniversities = await getCollection('universities');
+const uniSlugMap = new Map(allUniversities.map(u => [u.data.name.toLowerCase(), u.id]));
+const allFields = await getCollection('fields');
+const fieldSlugMap = new Map(allFields.map(f => [f.data.name.toLowerCase(), f.id]));
+
+const uniSlug = uniSlugMap.get(d.institution.toLowerCase());
+const fieldSlug = fieldSlugMap.get(d.field.toLowerCase());
+
 const pageTitle = `${d.name} — PhD at ${d.institution} — Sci-Buy`;
 const pageDesc = `${d.name}, PhD candidate at ${d.institution} in ${d.field}. Advisor: ${d.advisor}. ${d.publications} publications. Skills: ${d.skills.slice(0, 3).join(', ')}.`;
 ---
@@ -32,14 +40,28 @@ const pageDesc = `${d.name}, PhD candidate at ${d.institution} in ${d.field}. Ad
     <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr] grid-lines">
       <div class="p-8 md:p-12">
         <div class="flex items-center gap-3 mb-4">
-          <span class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted">{d.field}</span>
+          {fieldSlug ? (
+            <a href={`/fields/${fieldSlug}/`} class="font-mono text-[9px] tracking-[3px] uppercase text-accent no-underline hover:text-text-bright transition-colors">{d.field}</a>
+          ) : (
+            <span class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted">{d.field}</span>
+          )}
           <span class="w-px h-3 bg-line-accent"></span>
-          <span class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted">{d.institution}</span>
+          {uniSlug ? (
+            <a href={`/universities/${uniSlug}/`} class="font-mono text-[9px] tracking-[3px] uppercase text-accent no-underline hover:text-text-bright transition-colors">{d.institution}</a>
+          ) : (
+            <span class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted">{d.institution}</span>
+          )}
         </div>
         <h1 class="text-3xl md:text-4xl font-light text-text-bright tracking-tight mb-3">
           {d.name}
         </h1>
-        <p class="text-[13px] text-text-dim mb-2">{d.institution} / {d.field}</p>
+        <p class="text-[13px] text-text-dim mb-2">
+          {uniSlug ? (
+            <a href={`/universities/${uniSlug}/`} class="text-accent no-underline hover:text-text-bright transition-colors">{d.institution}</a>
+          ) : d.institution} / {fieldSlug ? (
+            <a href={`/fields/${fieldSlug}/`} class="text-accent no-underline hover:text-text-bright transition-colors">{d.field}</a>
+          ) : d.field}
+        </p>
         <p class="text-[13px] text-text-dim mb-4">Advisor: {d.advisor}</p>
         <p class="text-[13px] text-text leading-relaxed max-w-[520px]">
           {d.description}
