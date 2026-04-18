@@ -182,31 +182,91 @@ const exportLines = [
       <div class="px-6 py-10 md:px-12 md:py-14 border-b border-line">
         <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted">Data Sources</span>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 grid-lines">
-        <div class="bg-bg p-6 text-center">
-          <p class="font-mono text-[13px] text-text-bright mb-1">OpenAlex</p>
-          <p class="text-[11px] text-text-muted">250M+ papers</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-lines">
+        <div class="bg-bg p-6 accent-top-red">
+          <p class="font-mono text-[13px] text-text-bright mb-2">OpenAlex</p>
+          <p class="text-[12px] text-text-dim leading-relaxed">Open catalog of 250M+ scholarly works, 100M+ authors, and their institutional affiliations. Updated weekly from Crossref, PubMed, ORCID, and institutional repositories. The backbone of Sci-Buy's research graph.</p>
         </div>
-        <div class="bg-bg p-6 text-center">
-          <p class="font-mono text-[13px] text-text-bright mb-1">ORCID</p>
-          <p class="text-[11px] text-text-muted">20M+ researcher IDs</p>
+        <div class="bg-bg p-6 accent-top-blue">
+          <p class="font-mono text-[13px] text-text-bright mb-2">ORCID</p>
+          <p class="text-[12px] text-text-dim leading-relaxed">20M+ unique researcher identifiers linking publications, grants, and employment history. Used to disambiguate researchers with common names and track institutional transitions.</p>
         </div>
-        <div class="bg-bg p-6 text-center">
-          <p class="font-mono text-[13px] text-text-bright mb-1">PubMed</p>
-          <p class="text-[11px] text-text-muted">36M+ biomedical</p>
+        <div class="bg-bg p-6 accent-top-yellow">
+          <p class="font-mono text-[13px] text-text-bright mb-2">PubMed</p>
+          <p class="text-[12px] text-text-dim leading-relaxed">36M+ biomedical and life sciences citations from MEDLINE, life science journals, and online books. Essential for pharma/biotech prospecting with MeSH term search.</p>
         </div>
-        <div class="bg-bg p-6 text-center">
-          <p class="font-mono text-[13px] text-text-bright mb-1">NIH Reporter</p>
-          <p class="text-[11px] text-text-muted">Active grant data</p>
+        <div class="bg-bg p-6 accent-top-red">
+          <p class="font-mono text-[13px] text-text-bright mb-2">NIH Reporter</p>
+          <p class="text-[12px] text-text-dim leading-relaxed">Active and historical grant data from the National Institutes of Health. R01 grants, funding amounts, project abstracts, and PI details. Identifies researchers with active budgets to spend.</p>
         </div>
-        <div class="bg-bg p-6 text-center">
-          <p class="font-mono text-[13px] text-text-bright mb-1">Semantic Scholar</p>
-          <p class="text-[11px] text-text-muted">Citation intelligence</p>
+        <div class="bg-bg p-6 accent-top-blue">
+          <p class="font-mono text-[13px] text-text-bright mb-2">Semantic Scholar</p>
+          <p class="text-[12px] text-text-dim leading-relaxed">AI-powered academic search from the Allen Institute for AI. Provides citation contexts, influential citations, and paper-level impact metrics beyond raw citation count.</p>
         </div>
-        <div class="bg-bg p-6 text-center">
-          <p class="font-mono text-[13px] text-text-bright mb-1">USPTO</p>
-          <p class="text-[11px] text-text-muted">Patent filings</p>
+        <div class="bg-bg p-6 accent-top-yellow">
+          <p class="font-mono text-[13px] text-text-bright mb-2">USPTO</p>
+          <p class="text-[12px] text-text-dim leading-relaxed">US patent filings and grants cross-referenced against academic authors. Surfaces researchers who have commercialized their work — the strongest industry bridge signal.</p>
         </div>
+      </div>
+    </section>
+
+    <!-- WHY NOT EXISTING TOOLS -->
+    <section class="border-b border-line">
+      <div class="px-6 py-10 md:px-12 md:py-14 border-b border-line">
+        <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted">Why Not Existing Tools</span>
+      </div>
+      <div class="px-6 md:px-12 py-10 max-w-4xl">
+        <h2 class="text-2xl font-light text-text-bright tracking-tight mb-8">
+          Built for the market <strong class="font-semibold">B2B tools miss.</strong>
+        </h2>
+        <div class="space-y-8">
+          <div class="border-l-2 border-red pl-6">
+            <h3 class="text-[14px] text-text-bright font-semibold mb-2">LinkedIn</h3>
+            <p class="text-[12px] text-text-dim leading-relaxed">70% of academic researchers have no LinkedIn presence. Those who do rarely list grants, H-index, or current institutional affiliations. Sales Navigator was built for corporate prospecting — university PIs, postdocs, and lab managers are invisible to it.</p>
+          </div>
+          <div class="border-l-2 border-accent pl-6">
+            <h3 class="text-[14px] text-text-bright font-semibold mb-2">ZoomInfo / Apollo</h3>
+            <p class="text-[12px] text-text-dim leading-relaxed">B2B contact databases index corporate HR systems. They track job titles, org charts, and corporate email addresses. Academic researchers — funded by grants, employed by universities, publishing under institutional domains — simply don't appear. Try searching for any NIH-funded PI. They're not there.</p>
+          </div>
+          <div class="border-l-2 border-yellow pl-6">
+            <h3 class="text-[14px] text-text-bright font-semibold mb-2">Scopus / Web of Science</h3>
+            <p class="text-[12px] text-text-dim leading-relaxed">Citation databases designed for literature review, not B2B prospecting. No verified contact data. No industry bridge signals. No CRM-ready export. You can find a researcher's h-index but not their email, grant funding, or whether they've filed a patent.</p>
+          </div>
+          <div class="border-l-2 border-line-accent pl-6">
+            <h3 class="text-[14px] text-text-bright font-semibold mb-2">Manual research (spreadsheets)</h3>
+            <p class="text-[12px] text-text-dim leading-relaxed">The status quo: cross-referencing PubMed, Google Scholar, ORCID, university faculty pages, and LinkedIn in 47 browser tabs. Building one KOL list takes 2-3 weeks. Sci-Buy does it in minutes — and the data doesn't go stale because it's pulled from authoritative sources at query time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="border-b border-line">
+      <div class="px-6 py-10 md:px-12 md:py-14 border-b border-line">
+        <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted">How It Works</span>
+      </div>
+      <div class="px-6 md:px-12 py-10 max-w-4xl">
+        <h2 class="text-2xl font-light text-text-bright tracking-tight mb-8">
+          Six sources, <strong class="font-semibold">one graph.</strong>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-line mb-8">
+          <div class="bg-bg p-6 accent-top-red">
+            <p class="font-mono text-[10px] tracking-[2px] uppercase text-text-muted mb-3">Step 1</p>
+            <p class="text-[14px] text-text-bright font-semibold mb-2">Aggregate</p>
+            <p class="text-[12px] text-text-dim leading-relaxed">Pull data from OpenAlex, ORCID, PubMed, NIH Reporter, Semantic Scholar, and USPTO. Deduplicate researchers using ORCID identifiers and fuzzy name matching. Build a unified research graph with publications, grants, citations, and patents linked to each researcher.</p>
+          </div>
+          <div class="bg-bg p-6 accent-top-blue">
+            <p class="font-mono text-[10px] tracking-[2px] uppercase text-text-muted mb-3">Step 2</p>
+            <p class="text-[14px] text-text-bright font-semibold mb-2">Detect signals</p>
+            <p class="text-[12px] text-text-dim leading-relaxed">Layer proprietary signal detection on top of the graph. Cross-reference patent filings with author records. Identify startup affiliations from co-authorship patterns. Flag industry-funded grants and consulting relationships. Score each researcher's industry readiness.</p>
+          </div>
+          <div class="bg-bg p-6 accent-top-yellow">
+            <p class="font-mono text-[10px] tracking-[2px] uppercase text-text-muted mb-3">Step 3</p>
+            <p class="text-[14px] text-text-bright font-semibold mb-2">Verify contacts</p>
+            <p class="text-[12px] text-text-dim leading-relaxed">Extract institutional email addresses from recent publications (last 24 months). Cross-reference with university directory patterns. Assign confidence scores: high (verified in recent pub), likely (pattern match), unverified. Target: 85%+ deliverability on high-confidence contacts.</p>
+          </div>
+        </div>
+        <p class="text-[12px] text-text-dim leading-relaxed">The entire pipeline runs at query time. No stale database — every search pulls fresh data from authoritative sources. Results are cached for the session, so subsequent queries on the same researchers are instant.</p>
       </div>
     </section>
 
