@@ -4,6 +4,7 @@ import InstallCommand from "../components/InstallCommand.astro";
 import TerminalMockup from "../components/TerminalMockup.astro";
 import WaitlistForm from "../components/WaitlistForm.astro";
 import BottomCTA from "../components/BottomCTA.astro";
+import { softwareSchema } from "../lib/seo";
 import "../styles/global.css";
 
 const categories = [
@@ -39,6 +40,7 @@ const terminalLines = [
 <Base
   title="Sci-Buy — Research Intelligence CLI"
   description="Find and reach the scientists who need your product. Search 250M+ papers, map researchers by field, H-index, grants, and industry ties. Export verified contacts."
+  extraSchemas={[softwareSchema()]}
 >
   <main>
     <!-- HERO -->
