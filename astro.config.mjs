@@ -11,7 +11,6 @@ export default defineConfig({
       filter: (page) =>
         !page.includes("/privacy/") &&
         !page.includes("/terms/") &&
-        !page.includes("/blog/") &&
         !page.includes("/404"),
       serialize(item) {
         item.lastmod = new Date().toISOString();
