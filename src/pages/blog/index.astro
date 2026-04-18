@@ -1,16 +1,21 @@
 ---
+import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro";
 import Breadcrumb from "../../components/Breadcrumb.astro";
 import BottomCTA from "../../components/BottomCTA.astro";
 import "../../styles/global.css";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+);
 ---
 
 <Base
   title="Blog — Sci-Buy"
-  description="Insights on selling to scientists, research intelligence, and the academic-to-industry pipeline. Coming soon."
+  description="Insights on selling to scientists, research intelligence, KOL identification, and the academic-to-industry pipeline."
 >
   <main>
-    <Breadcrumb items={[{ name: "Blog", url: "/blog" }]} />
+    <Breadcrumb items={[{ name: "Blog", url: "/blog/" }]} />
 
     <!-- HERO -->
     <section class="border-b border-line">
@@ -26,16 +31,35 @@ import "../../styles/global.css";
       </div>
     </section>
 
-    <!-- COMING SOON -->
+    <!-- POST LIST -->
     <section class="border-b border-line">
-      <div class="px-6 py-20 md:px-12 md:py-32 flex flex-col items-center text-center">
-        <span class="font-mono text-[48px] text-line-accent block mb-6">--</span>
-        <h2 class="text-xl font-light text-text-bright mb-3">
-          <strong class="font-semibold">Coming soon.</strong>
-        </h2>
-        <p class="text-[13px] text-text-dim leading-relaxed max-w-[360px]">
-          We are preparing our first articles on research intelligence, academic outreach strategy, and the science of selling to scientists. Join the waitlist to be notified.
-        </p>
+      <div class="grid grid-cols-1 grid-lines">
+        {posts.map((post) => {
+          const dateFormatted = new Date(post.data.date).toLocaleDateString('en-US', {
+            year: 'numeric', month: 'long', day: 'numeric',
+          });
+          return (
+            <a href={`/blog/${post.id.replace(/\.md$/, '')}/`} class="bg-bg p-8 md:p-12 no-underline hover:bg-bg-raised transition-colors block border-b border-line last:border-b-0">
+              <div class="max-w-3xl">
+                <div class="flex items-center gap-3 mb-3">
+                  <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted">{dateFormatted}</span>
+                  {post.data.tags.length > 0 && (
+                    <>
+                      <span class="w-px h-3 bg-line-accent"></span>
+                      <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted">{post.data.tags[0]}</span>
+                    </>
+                  )}
+                </div>
+                <h2 class="text-xl font-light text-text-bright tracking-tight mb-2">
+                  {post.data.title}
+                </h2>
+                <p class="text-[12px] text-text-dim leading-relaxed">
+                  {post.data.description}
+                </p>
+              </div>
+            </a>
+          );
+        })}
       </div>
     </section>
 

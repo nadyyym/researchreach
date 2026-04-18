@@ -17,6 +17,13 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const d = entry.data;
 
+const allUniversities = await getCollection('universities');
+const uniSlugMap = new Map(allUniversities.map(u => [u.data.name.toLowerCase(), u.id]));
+const allFields = await getCollection('fields');
+const fieldSlugMap = new Map(allFields.map(f => [f.data.name.toLowerCase(), f.id]));
+const allAgencies = await getCollection('agencies');
+const agencySlugMap = new Map(allAgencies.map(a => [a.data.name.toLowerCase(), a.id]));
+
 const pageTitle = `${d.name} — Research Output & Institutions — Sci-Buy`;
 const pageDesc = `${d.name} research intelligence: ${d.researchOutput.toLocaleString()} papers, ${d.topInstitutions.length} top institutions, ${d.topAgencies.length} funding agencies. Top fields: ${d.topFields.slice(0, 3).join(', ')}.`;
 
@@ -85,11 +92,18 @@ const flag = String.fromCodePoint(...flagCodePoints);
   <section class="border-b border-line p-8 md:p-12">
     <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-6">TOP INSTITUTIONS</p>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-line">
-      {d.topInstitutions.map((inst) => (
-        <div class="bg-bg p-4">
-          <p class="text-[13px] text-text">{inst}</p>
-        </div>
-      ))}
+      {d.topInstitutions.map((inst) => {
+        const slug = uniSlugMap.get(inst.toLowerCase());
+        return slug ? (
+          <a href={`/universities/${slug}/`} class="bg-bg p-4 no-underline hover:bg-bg-raised transition-colors block">
+            <p class="text-[13px] text-accent">{inst}</p>
+          </a>
+        ) : (
+          <div class="bg-bg p-4">
+            <p class="text-[13px] text-text">{inst}</p>
+          </div>
+        );
+      })}
     </div>
   </section>
 
@@ -97,11 +111,18 @@ const flag = String.fromCodePoint(...flagCodePoints);
   <section class="border-b border-line p-8 md:p-12">
     <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-6">TOP RESEARCH FIELDS</p>
     <div class="flex flex-wrap gap-2">
-      {d.topFields.map((field) => (
-        <span class="px-3 py-1.5 bg-bg-raised border border-line text-[12px] text-text font-mono">
-          {field}
-        </span>
-      ))}
+      {d.topFields.map((field) => {
+        const slug = fieldSlugMap.get(field.toLowerCase());
+        return slug ? (
+          <a href={`/fields/${slug}/`} class="px-3 py-1.5 bg-bg-raised border border-line text-[12px] text-accent font-mono no-underline hover:border-accent-dim hover:text-text-bright transition-colors">
+            {field}
+          </a>
+        ) : (
+          <span class="px-3 py-1.5 bg-bg-raised border border-line text-[12px] text-text font-mono">
+            {field}
+          </span>
+        );
+      })}
     </div>
   </section>
 
@@ -109,11 +130,18 @@ const flag = String.fromCodePoint(...flagCodePoints);
   <section class="border-b border-line p-8 md:p-12">
     <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-6">FUNDING AGENCIES</p>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-px bg-line">
-      {d.topAgencies.map((agency) => (
-        <div class="bg-bg p-4">
-          <p class="text-[13px] text-text">{agency}</p>
-        </div>
-      ))}
+      {d.topAgencies.map((agency) => {
+        const slug = agencySlugMap.get(agency.toLowerCase());
+        return slug ? (
+          <a href={`/agencies/${slug}/`} class="bg-bg p-4 no-underline hover:bg-bg-raised transition-colors block">
+            <p class="text-[13px] text-accent">{agency}</p>
+          </a>
+        ) : (
+          <div class="bg-bg p-4">
+            <p class="text-[13px] text-text">{agency}</p>
+          </div>
+        );
+      })}
     </div>
   </section>
 

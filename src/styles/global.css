@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+/* Self-hosted fonts (eliminates Google Fonts DNS lookup) */
+@import "@fontsource/inter/300.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+@import "@fontsource/inter/900.css";
+@import "@fontsource/space-mono/400.css";
+@import "@fontsource/space-mono/700.css";
+
 @theme {
   /* Lighter constructivist palette — airy with De Stijl structure */
   --color-bg: #101520;

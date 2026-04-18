@@ -109,6 +109,17 @@ const industries = defineCollection({
   }),
 });
 
+const blog = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    date: z.string(),
+    author: z.string().default('Sci-Buy Team'),
+    tags: z.array(z.string()).default([]),
+  }),
+});
+
 export const collections = {
   universities,
   fields,
@@ -118,4 +129,5 @@ export const collections = {
   agencies,
   companies,
   industries,
+  blog,
 };

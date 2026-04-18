@@ -17,6 +17,11 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const d = entry.data;
 
+const allUniversities = await getCollection('universities');
+const uniSlugMap = new Map(allUniversities.map(u => [u.data.name.toLowerCase(), u.id]));
+const allResearchers = await getCollection('researchers');
+const relatedResearchers = allResearchers.filter(r => r.data.field.toLowerCase() === d.name.toLowerCase()).slice(0, 6);
+
 const pageTitle = `${d.name} Research — Scientists, Institutions & Funding — Sci-Buy`;
 const pageDesc = `Explore ${d.name} research: ${d.researcherCount.toLocaleString()} researchers, top institutions, key technologies, and funding sources. ${d.avgFunding} average funding.`;
 ---
@@ -62,11 +67,18 @@ const pageDesc = `Explore ${d.name} research: ${d.researcherCount.toLocaleString
   <section class="border-b border-line p-8 md:p-12">
     <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-6">TOP INSTITUTIONS</p>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-line">
-      {d.topInstitutions.map((inst) => (
-        <div class="bg-bg p-4">
-          <p class="text-[13px] text-text">{inst}</p>
-        </div>
-      ))}
+      {d.topInstitutions.map((inst) => {
+        const slug = uniSlugMap.get(inst.toLowerCase());
+        return slug ? (
+          <a href={`/universities/${slug}/`} class="bg-bg p-4 no-underline hover:bg-bg-raised transition-colors block">
+            <p class="text-[13px] text-accent">{inst}</p>
+          </a>
+        ) : (
+          <div class="bg-bg p-4">
+            <p class="text-[13px] text-text">{inst}</p>
+          </div>
+        );
+      })}
     </div>
   </section>
 
@@ -93,6 +105,21 @@ const pageDesc = `Explore ${d.name} research: ${d.researcherCount.toLocaleString
       ))}
     </div>
   </section>
+
+  <!-- RELATED RESEARCHERS -->
+  {relatedResearchers.length > 0 && (
+    <section class="border-b border-line p-8 md:p-12">
+      <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-6">RESEARCHERS IN {d.name.toUpperCase()}</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-line">
+        {relatedResearchers.map((r) => (
+          <a href={`/researchers/${r.id}/`} class="bg-bg p-4 no-underline hover:bg-bg-raised transition-colors block">
+            <p class="text-[13px] text-accent mb-1">{r.data.name}</p>
+            <p class="text-[11px] text-text-dim">{r.data.institution} · H-index {r.data.hindex}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
 
   <!-- TERMINAL -->
   <section class="border-b border-line p-8 md:p-12">

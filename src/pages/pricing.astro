@@ -2,7 +2,15 @@
 import Base from "../layouts/Base.astro";
 import Breadcrumb from "../components/Breadcrumb.astro";
 import BottomCTA from "../components/BottomCTA.astro";
+import { faqSchema } from "../lib/seo";
 import "../styles/global.css";
+
+const faqs = [
+  { q: "When will Pro pricing be announced?", a: "We are finalizing pricing. Waitlist members will lock in launch pricing. Join the waitlist to be first to know." },
+  { q: "Is there a credit-based model?", a: "Pro will use a credit-based system: pay per exported contact. Monthly subscriptions include a credit allocation. Unused credits do not roll over." },
+  { q: "Can I try the CLI before committing?", a: "Yes. The Free tier lets you search the research graph and view basic profiles with no account required. Run npx sci-buy@latest to start." },
+  { q: "Is API access separate from CLI access?", a: "Pro and Enterprise tiers include both CLI and REST API access. The Free tier is CLI-only." },
+];
 
 const tiers = [
   {
@@ -62,6 +70,7 @@ const tiers = [
 <Base
   title="Pricing — Sci-Buy CLI"
   description="Sci-Buy pricing tiers. Free tier for exploration, Pro for teams selling to scientists, Enterprise for custom pipelines and unlimited access."
+  extraSchemas={[faqSchema(faqs)]}
 >
   <main>
     <Breadcrumb items={[{ name: "Pricing", url: "/pricing" }]} />
