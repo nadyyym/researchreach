@@ -8,13 +8,43 @@ import '../../styles/global.css';
 
 export async function getStaticPaths() {
   const entries = await getCollection('companies');
-  return entries.map((entry) => ({
-    params: { id: entry.id },
-    props: { entry },
-  }));
+  const industries = await getCollection('industries');
+  const researchers = await getCollection('researchers');
+
+  // Build industry slug map: try slug, name, and first-word lowercase forms.
+  const industryByKey = new Map<string, string>();
+  for (const ind of industries) {
+    const slug = ind.id;
+    const name = ind.data.name.toLowerCase();
+    industryByKey.set(slug, slug);
+    industryByKey.set(name, slug);
+    industryByKey.set(name.split(' ')[0], slug);
+  }
+
+  return entries.map((entry) => {
+    const industryKey = entry.data.industry.toLowerCase();
+    const industrySlug =
+      industryByKey.get(industryKey) ??
+      industryByKey.get(industryKey.split(' ')[0]) ??
+      null;
+
+    // Researchers whose industryTies includes this company's name (case-insensitive substring).
+    const matchingResearchers = researchers
+      .filter((r) =>
+        r.data.industryTies.some(
+          (tie) => tie.toLowerCase().includes(entry.data.name.toLowerCase()),
+        ),
+      )
+      .slice(0, 6);
+
+    return {
+      params: { id: entry.id },
+      props: { entry, industrySlug, matchingResearchers },
+    };
+  });
 }
 
-const { entry } = Astro.props;
+const { entry, industrySlug, matchingResearchers } = Astro.props;
 const d = entry.data;
 
 const pageTitle = `${d.name} — Academic Collaborations & R&D — Sci-Buy`;
@@ -32,7 +62,11 @@ const pageDesc = `${d.name} in ${d.industry}. R&D spend: ${d.rdSpend}. ${d.acade
     <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr] grid-lines">
       <div class="p-8 md:p-12">
         <div class="flex items-center gap-3 mb-4">
-          <span class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted">{d.industry}</span>
+          {industrySlug ? (
+            <a href={`/industries/${industrySlug}/`} class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted hover:text-text-bright transition-colors no-underline">{d.industry}</a>
+          ) : (
+            <span class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted">{d.industry}</span>
+          )}
         </div>
         <h1 class="text-3xl md:text-4xl font-light text-text-bright tracking-tight mb-3">
           {d.name}
@@ -49,7 +83,11 @@ const pageDesc = `${d.name} in ${d.industry}. R&D spend: ${d.rdSpend}. ${d.acade
           </div>
           <div>
             <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-1">INDUSTRY</p>
-            <p class="text-lg font-light text-text-bright">{d.industry}</p>
+            {industrySlug ? (
+              <a href={`/industries/${industrySlug}/`} class="text-lg font-light text-text-bright hover:text-accent transition-colors no-underline">{d.industry}</a>
+            ) : (
+              <p class="text-lg font-light text-text-bright">{d.industry}</p>
+            )}
           </div>
         </div>
       </div>
@@ -83,6 +121,20 @@ const pageDesc = `${d.name} in ${d.industry}. R&D spend: ${d.rdSpend}. ${d.acade
       ]}
     />
   </section>
+
+  {matchingResearchers.length > 0 && (
+    <section class="border-b border-line p-8 md:p-12">
+      <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-6">Researchers connected to {d.name}</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-line">
+        {matchingResearchers.map((r) => (
+          <a href={`/researchers/${r.id}/`} class="bg-bg p-4 no-underline group hover:bg-bg-raised transition-colors">
+            <p class="text-[13px] text-text-bright group-hover:text-accent transition-colors">{r.data.name}</p>
+            <p class="font-mono text-[10px] text-text-muted mt-1">{r.data.field} · H-index {r.data.hindex}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
 
   <BottomCTA />
 </Base>

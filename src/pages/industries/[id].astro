@@ -8,13 +8,31 @@ import '../../styles/global.css';
 
 export async function getStaticPaths() {
   const entries = await getCollection('industries');
-  return entries.map((entry) => ({
-    params: { id: entry.id },
-    props: { entry },
-  }));
+  const companies = await getCollection('companies');
+
+  // Company name → slug map; keys lowercased so we can match the free-form
+  // company names in industries[].companies regardless of case/whitespace.
+  const companyByName = new Map<string, string>();
+  for (const c of companies) {
+    companyByName.set(c.data.name.toLowerCase(), c.id);
+    // Also key by the slug itself in case data files reference slug-form.
+    companyByName.set(c.id, c.id);
+  }
+
+  return entries.map((entry) => {
+    const companyLinks = entry.data.companies.map((name) => {
+      const key = name.toLowerCase();
+      const slug = companyByName.get(key) ?? null;
+      return { name, slug };
+    });
+    return {
+      params: { id: entry.id },
+      props: { entry, companyLinks },
+    };
+  });
 }
 
-const { entry } = Astro.props;
+const { entry, companyLinks } = Astro.props;
 const d = entry.data;
 
 const pageTitle = `${d.name} — Selling to Scientists — Sci-Buy`;
@@ -62,10 +80,16 @@ const pageDesc = `${d.name} industry: ${d.marketSize} market. ${d.companies.leng
   <section class="border-b border-line p-8 md:p-12">
     <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted mb-6">KEY COMPANIES</p>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-line">
-      {d.companies.map((company) => (
-        <div class="bg-bg p-4">
-          <p class="text-[13px] text-text">{company}</p>
-        </div>
+      {companyLinks.map(({ name, slug }) => (
+        slug ? (
+          <a href={`/companies/${slug}/`} class="bg-bg p-4 no-underline group hover:bg-bg-raised transition-colors">
+            <p class="text-[13px] text-text-bright group-hover:text-accent transition-colors">{name}</p>
+          </a>
+        ) : (
+          <div class="bg-bg p-4">
+            <p class="text-[13px] text-text">{name}</p>
+          </div>
+        )
       ))}
     </div>
   </section>
