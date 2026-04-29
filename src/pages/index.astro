@@ -1,11 +1,34 @@
 ---
 import Base from "../layouts/Base.astro";
+import { getCollection } from "astro:content";
 import InstallCommand from "../components/InstallCommand.astro";
 import TerminalMockup from "../components/TerminalMockup.astro";
 import WaitlistForm from "../components/WaitlistForm.astro";
 import BottomCTA from "../components/BottomCTA.astro";
 import { softwareSchema } from "../lib/seo";
 import "../styles/global.css";
+
+// Sample N entries from a collection, sorted by id for stable build output.
+function sample<T extends { id: string; data: { name: string } }>(
+  entries: T[],
+  count: number,
+): { id: string; name: string }[] {
+  return [...entries]
+    .sort((a, b) => a.id.localeCompare(b.id))
+    .slice(0, count)
+    .map((e) => ({ id: e.id, name: e.data.name }));
+}
+
+const browseSections = [
+  { slug: "universities", label: "Universities", items: sample(await getCollection("universities"), 6) },
+  { slug: "fields", label: "Fields", items: sample(await getCollection("fields"), 6) },
+  { slug: "researchers", label: "Researchers", items: sample(await getCollection("researchers"), 6) },
+  { slug: "phd", label: "PhD & Postdocs", items: sample(await getCollection("phd"), 6) },
+  { slug: "countries", label: "Countries", items: sample(await getCollection("countries"), 6) },
+  { slug: "agencies", label: "Funding Agencies", items: sample(await getCollection("agencies"), 6) },
+  { slug: "companies", label: "Companies", items: sample(await getCollection("companies"), 6) },
+  { slug: "industries", label: "Industries", items: sample(await getCollection("industries"), 6) },
+];
 
 const categories = [
   { name: "Universities", slug: "universities", count: "4,000+", accent: "accent-top-red", span: true },
@@ -96,6 +119,31 @@ const terminalLines = [
             </div>
             <span class="font-mono text-[10px] text-text-muted group-hover:text-text-dim transition-colors mt-3">--&gt;</span>
           </a>
+        ))}
+      </div>
+    </section>
+
+    <!-- BROWSE THE INDEX (sample detail pages from each collection) -->
+    <section class="border-b border-line">
+      <div class="px-6 py-10 md:px-12 md:py-14 border-b border-line">
+        <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted">Browse the Index</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-lines">
+        {browseSections.map((sec) => (
+          <div class="bg-bg p-6">
+            <a href={`/${sec.slug}/`} class="font-mono text-[10px] tracking-[2px] uppercase text-text-bright hover:text-accent transition-colors no-underline block mb-3">
+              {sec.label} &rarr;
+            </a>
+            <ul class="flex flex-col gap-1.5">
+              {sec.items.map((item) => (
+                <li>
+                  <a href={`/${sec.slug}/${item.id}/`} class="text-[12px] text-text-dim hover:text-text-bright no-underline transition-colors">
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         ))}
       </div>
     </section>
