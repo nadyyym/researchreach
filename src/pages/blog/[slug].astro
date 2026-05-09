@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import BottomCTA from '../../components/BottomCTA.astro';
+import { articleSchema, breadcrumbSchema } from '../../lib/seo';
 import '../../styles/global.css';
 
 export async function getStaticPaths() {
@@ -27,9 +28,26 @@ const dateFormatted = new Date(post.data.date).toLocaleDateString('en-US', {
   month: 'long',
   day: 'numeric',
 });
+
+const slug = slugFromId(post.id);
+const extraSchemas = [
+  articleSchema({
+    url: `/blog/${slug}/`,
+    headline: post.data.title,
+    description: post.data.description,
+    author: post.data.author,
+    datePublished: post.data.date,
+    keywords: post.data.tags,
+  }),
+  breadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Blog', url: '/blog/' },
+    { name: post.data.title, url: `/blog/${slug}/` },
+  ]),
+];
 ---
 
-<Base title={pageTitle} description={pageDesc}>
+<Base title={pageTitle} description={pageDesc} extraSchemas={extraSchemas} speakableSelectors={['h1', 'article p:first-of-type']}>
   <Breadcrumb items={[
     { name: 'Blog', url: '/blog/' },
     { name: post.data.title, url: `/blog/${slugFromId(post.id)}/` },

@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import { datasetSchema, itemListSchema, breadcrumbSchema } from '../../lib/seo';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import BottomCTA from '../../components/BottomCTA.astro';
 import '../../styles/global.css';
@@ -8,9 +9,32 @@ import '../../styles/global.css';
 const entries = await getCollection('industries');
 const pageTitle = 'Industries Selling to Scientists — Sci-Buy';
 const pageDesc = `Browse ${entries.length} industries that sell to academic researchers. Explore market size, key companies, target researchers, and use cases.`;
+
+const extraSchemas = [
+  datasetSchema({
+    name: 'Industries dataset — Sci-Buy',
+    description: 'Industries that target academic researchers, indexed by Sci-Buy.',
+    url: '/industries/',
+    keywords: ['industries', 'research intelligence', 'academic data'],
+    variableMeasured: ['companies', 'target researchers', 'market size', 'use cases'],
+    numberOfItems: entries.length,
+  }),
+  itemListSchema(
+    'Industries',
+    entries.map((e) => ({
+      name: (e.data as any).name || e.id,
+      url: `/industries/${e.id}/`,
+      description: ((e.data as any).description || '').slice(0, 160),
+    })),
+  ),
+  breadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Industries', url: '/industries/' },
+  ]),
+];
 ---
 
-<Base title={pageTitle} description={pageDesc}>
+<Base title={pageTitle} description={pageDesc} extraSchemas={extraSchemas}>
   <Breadcrumb items={[{ name: 'Industries', url: '/industries/' }]} />
 
   <!-- HERO -->

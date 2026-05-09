@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import { datasetSchema, itemListSchema, breadcrumbSchema } from '../../lib/seo';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import BottomCTA from '../../components/BottomCTA.astro';
 import '../../styles/global.css';
@@ -8,9 +9,32 @@ import '../../styles/global.css';
 const entries = await getCollection('fields');
 const pageTitle = 'Research Fields & Disciplines — Sci-Buy';
 const pageDesc = `Explore ${entries.length} research fields. Find top institutions, researchers, and funding sources by scientific discipline.`;
+
+const extraSchemas = [
+  datasetSchema({
+    name: 'Fields dataset — Sci-Buy',
+    description: 'Research fields indexed by Sci-Buy with subfields, key technologies, top institutions, and funding.',
+    url: '/fields/',
+    keywords: ['fields', 'research intelligence', 'academic data'],
+    variableMeasured: ['researcher count', 'average funding', 'subfields', 'key technologies', 'top institutions'],
+    numberOfItems: entries.length,
+  }),
+  itemListSchema(
+    'Fields',
+    entries.map((e) => ({
+      name: (e.data as any).name || e.id,
+      url: `/fields/${e.id}/`,
+      description: ((e.data as any).description || '').slice(0, 160),
+    })),
+  ),
+  breadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Fields', url: '/fields/' },
+  ]),
+];
 ---
 
-<Base title={pageTitle} description={pageDesc}>
+<Base title={pageTitle} description={pageDesc} extraSchemas={extraSchemas}>
   <Breadcrumb items={[{ name: 'Fields', url: '/fields/' }]} />
 
   <!-- HERO -->

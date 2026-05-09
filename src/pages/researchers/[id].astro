@@ -4,6 +4,7 @@ import Base from '../../layouts/Base.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import TerminalMockup from '../../components/TerminalMockup.astro';
 import BottomCTA from '../../components/BottomCTA.astro';
+import { profilePageSchema, breadcrumbSchema } from '../../lib/seo';
 import '../../styles/global.css';
 
 export async function getStaticPaths() {
@@ -27,9 +28,27 @@ const fieldSlug = fieldSlugMap.get(d.field.toLowerCase());
 
 const pageTitle = `${d.name} — ${d.institution} — Sci-Buy`;
 const pageDesc = `${d.name} at ${d.institution}. H-index ${d.hindex}, ${d.publications} publications, ${d.grantCount} grants, ${d.patents} patents. Research in ${d.field}.`;
+
+const orcidUrl = d.orcid ? `https://orcid.org/${d.orcid}` : undefined;
+const extraSchemas = [
+  profilePageSchema({
+    url: `/researchers/${entry.id}/`,
+    name: d.name,
+    jobTitle: 'Researcher',
+    affiliation: d.institution,
+    description: d.description,
+    sameAs: orcidUrl ? [orcidUrl] : [],
+    expertise: [d.field, ...d.industryTies].filter(Boolean),
+  }),
+  breadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Researchers', url: '/researchers/' },
+    { name: d.name, url: `/researchers/${entry.id}/` },
+  ]),
+];
 ---
 
-<Base title={pageTitle} description={pageDesc}>
+<Base title={pageTitle} description={pageDesc} extraSchemas={extraSchemas}>
   <Breadcrumb items={[
     { name: 'Researchers', url: '/researchers/' },
     { name: d.name, url: `/researchers/${entry.id}/` },
