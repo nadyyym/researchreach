@@ -8,6 +8,7 @@ interface Props {
   description?: string;
   robots?: string;
   extraSchemas?: Record<string, unknown>[];
+  speakableSelectors?: string[];
 }
 
 const {
@@ -15,15 +16,25 @@ const {
   description = "Find and reach the scientists who need your product. Search 250M+ papers, map researchers by field, H-index, grants, and industry ties. Export verified contacts.",
   robots = "index, follow",
   extraSchemas = [],
+  speakableSelectors,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const ogImageURL = new URL("/og-image.png", Astro.site);
 
+// Markdown alternate URL for AI agents and LLM scrapers. Mirrors the
+// pattern used on getbeton.ai — append `.md` to any URL to get a clean
+// markdown rendering. Strips the trailing slash before adding `.md`.
+const markdownPath =
+  canonicalURL.pathname === '/' ? '/index.md' : canonicalURL.pathname.replace(/\/$/, '.md');
+const markdownURL = new URL(markdownPath, Astro.site);
+
+const noIndex = robots.includes('noindex');
+
 const jsonLd = buildJsonLd(
   organizationSchema(),
   websiteSchema(),
-  webpageSchema(canonicalURL.href, title, description),
+  webpageSchema(canonicalURL.href, title, description, speakableSelectors),
   ...extraSchemas,
 );
 ---
@@ -52,6 +63,9 @@ const jsonLd = buildJsonLd(
     <meta name="twitter:image" content={ogImageURL.href} />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    {!noIndex && (
+      <link rel="alternate" type="text/markdown" href={markdownURL.href} title="Markdown version" />
+    )}
     <title>{title}</title>
 
     <Fragment set:html={`<script type="application/ld+json">${jsonLd}<\/script>`} />

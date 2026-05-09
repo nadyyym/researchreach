@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import { datasetSchema, itemListSchema, breadcrumbSchema } from '../../lib/seo';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import BottomCTA from '../../components/BottomCTA.astro';
 import '../../styles/global.css';
@@ -8,9 +9,32 @@ import '../../styles/global.css';
 const entries = await getCollection('researchers');
 const pageTitle = 'Top Academic Researchers — Sci-Buy';
 const pageDesc = `Browse ${entries.length} leading academic researchers. Search by H-index, publications, grants, patents, and industry ties.`;
+
+const extraSchemas = [
+  datasetSchema({
+    name: 'Researchers dataset — Sci-Buy',
+    description: 'Profiled researchers indexed by Sci-Buy with H-index, publications, grants, patents, and industry ties.',
+    url: '/researchers/',
+    keywords: ['researchers', 'research intelligence', 'academic data'],
+    variableMeasured: ['H-index', 'publications', 'grant count', 'patents', 'industry ties'],
+    numberOfItems: entries.length,
+  }),
+  itemListSchema(
+    'Researchers',
+    entries.map((e) => ({
+      name: (e.data as any).name || e.id,
+      url: `/researchers/${e.id}/`,
+      description: ((e.data as any).description || '').slice(0, 160),
+    })),
+  ),
+  breadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Researchers', url: '/researchers/' },
+  ]),
+];
 ---
 
-<Base title={pageTitle} description={pageDesc}>
+<Base title={pageTitle} description={pageDesc} extraSchemas={extraSchemas}>
   <Breadcrumb items={[{ name: 'Researchers', url: '/researchers/' }]} />
 
   <!-- HERO -->

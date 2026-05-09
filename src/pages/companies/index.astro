@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import { datasetSchema, itemListSchema, breadcrumbSchema } from '../../lib/seo';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import BottomCTA from '../../components/BottomCTA.astro';
 import '../../styles/global.css';
@@ -8,9 +9,32 @@ import '../../styles/global.css';
 const entries = await getCollection('companies');
 const pageTitle = 'Companies with Academic Collaborations — Sci-Buy';
 const pageDesc = `Browse ${entries.length} companies with active academic research partnerships. Search by industry, R&D spend, patents, and collaboration count.`;
+
+const extraSchemas = [
+  datasetSchema({
+    name: 'Companies dataset — Sci-Buy',
+    description: 'Companies with academic R&D collaborations indexed by Sci-Buy.',
+    url: '/companies/',
+    keywords: ['companies', 'research intelligence', 'academic data'],
+    variableMeasured: ['industry', 'R&D spend', 'academic collaborations', 'patents'],
+    numberOfItems: entries.length,
+  }),
+  itemListSchema(
+    'Companies',
+    entries.map((e) => ({
+      name: (e.data as any).name || e.id,
+      url: `/companies/${e.id}/`,
+      description: ((e.data as any).description || '').slice(0, 160),
+    })),
+  ),
+  breadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Companies', url: '/companies/' },
+  ]),
+];
 ---
 
-<Base title={pageTitle} description={pageDesc}>
+<Base title={pageTitle} description={pageDesc} extraSchemas={extraSchemas}>
   <Breadcrumb items={[{ name: 'Companies', url: '/companies/' }]} />
 
   <!-- HERO -->
