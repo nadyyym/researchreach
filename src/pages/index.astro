@@ -102,7 +102,7 @@ const terminalLines = [
       </div>
       <div class="grid grid-cols-2 md:grid-cols-[2fr_1fr_1fr_1fr] grid-lines auto-rows-auto">
         <!-- Featured: Universities (spans 2 rows) -->
-        <a href="/universities" class="bg-bg p-8 md:p-10 row-span-2 border-r border-red-dim flex flex-col justify-between no-underline group hover:bg-bg-raised transition-colors">
+        <a href="/universities/" class="bg-bg p-8 md:p-10 row-span-2 border-r border-red-dim flex flex-col justify-between no-underline group hover:bg-bg-raised transition-colors">
           <div>
             <span class="font-mono text-[9px] tracking-[2px] uppercase text-red">{categories[0].name}</span>
             <p class="text-2xl font-light text-text-bright mt-3 group-hover:text-accent transition-colors">{categories[0].count}</p>
@@ -112,7 +112,7 @@ const terminalLines = [
         </a>
         <!-- Remaining 7 categories -->
         {categories.slice(1).map(cat => (
-          <a href={`/${cat.slug}`} class:list={['bg-bg p-5 md:p-6 no-underline group hover:bg-bg-raised transition-colors flex flex-col justify-between', cat.accent]}>
+          <a href={`/${cat.slug}/`} class:list={['bg-bg p-5 md:p-6 no-underline group hover:bg-bg-raised transition-colors flex flex-col justify-between', cat.accent]}>
             <div>
               <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted">{cat.name}</span>
               <p class="text-lg font-light text-text-bright mt-2 group-hover:text-accent transition-colors">{cat.count}</p>
@@ -190,17 +190,17 @@ const terminalLines = [
         <span class="font-mono text-[9px] tracking-[2px] uppercase text-text-dim">Who Uses Sci-Buy</span>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-[1fr_1fr_1fr_200px] grid-lines">
-        <a href="/use-cases#pharma" class="bg-bg p-8 no-underline group hover:bg-bg-raised transition-colors">
+        <a href="/use-cases/#pharma" class="bg-bg p-8 no-underline group hover:bg-bg-raised transition-colors">
           <span class="font-mono text-[9px] tracking-[2px] uppercase text-red mb-3 block">Pharma & Biotech</span>
           <p class="text-[13px] text-text-bright font-light mb-2 group-hover:text-accent transition-colors">KOL identification, drug discovery outreach</p>
           <p class="text-[11px] text-text-muted leading-relaxed">Find PIs with active grants. Identify researchers with industry co-authorships and patent filings.</p>
         </a>
-        <a href="/use-cases#software" class="bg-bg p-8 no-underline group hover:bg-bg-raised transition-colors">
+        <a href="/use-cases/#software" class="bg-bg p-8 no-underline group hover:bg-bg-raised transition-colors">
           <span class="font-mono text-[9px] tracking-[2px] uppercase text-accent mb-3 block">Scientific Software</span>
           <p class="text-[13px] text-text-bright font-light mb-2 group-hover:text-accent transition-colors">ELN, LIMS, and lab automation sales</p>
           <p class="text-[11px] text-text-muted leading-relaxed">Reach lab managers running wet labs in your target verticals. Segment by lab size and funding level.</p>
         </a>
-        <a href="/use-cases#recruiting" class="bg-bg p-8 no-underline group hover:bg-bg-raised transition-colors">
+        <a href="/use-cases/#recruiting" class="bg-bg p-8 no-underline group hover:bg-bg-raised transition-colors">
           <span class="font-mono text-[9px] tracking-[2px] uppercase text-yellow mb-3 block">Deep Tech Recruiting</span>
           <p class="text-[13px] text-text-bright font-light mb-2 group-hover:text-accent transition-colors">Source PhD researchers with industry signals</p>
           <p class="text-[11px] text-text-muted leading-relaxed">Filter by patent filings, startup affiliations, or recent academia-to-industry transitions.</p>
