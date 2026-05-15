@@ -4,7 +4,7 @@ import Base from '../../layouts/Base.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import TerminalMockup from '../../components/TerminalMockup.astro';
 import BottomCTA from '../../components/BottomCTA.astro';
-import { profilePageSchema, breadcrumbSchema } from '../../lib/seo';
+import { profilePageSchema } from '../../lib/seo';
 import '../../styles/global.css';
 
 export async function getStaticPaths() {
@@ -40,11 +40,6 @@ const extraSchemas = [
     sameAs: orcidUrl ? [orcidUrl] : [],
     expertise: [d.field, ...d.industryTies].filter(Boolean),
   }),
-  breadcrumbSchema([
-    { name: 'Home', url: '/' },
-    { name: 'Researchers', url: '/researchers/' },
-    { name: d.name, url: `/researchers/${entry.id}/` },
-  ]),
 ];
 ---
 

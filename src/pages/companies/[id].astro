@@ -4,6 +4,7 @@ import Base from '../../layouts/Base.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import TerminalMockup from '../../components/TerminalMockup.astro';
 import BottomCTA from '../../components/BottomCTA.astro';
+import { entityOrgSchema } from '../../lib/seo';
 import '../../styles/global.css';
 
 export async function getStaticPaths() {
@@ -49,9 +50,17 @@ const d = entry.data;
 
 const pageTitle = `${d.name} — Academic Collaborations & R&D — Sci-Buy`;
 const pageDesc = `${d.name} in ${d.industry}. R&D spend: ${d.rdSpend}. ${d.academicCollabs} academic collaborations, ${d.patents} patents. Find researchers connected to ${d.name}.`;
+
+const extraSchemas = [
+  entityOrgSchema({
+    type: 'Corporation',
+    name: d.name,
+    description: d.description,
+  }),
+];
 ---
 
-<Base title={pageTitle} description={pageDesc}>
+<Base title={pageTitle} description={pageDesc} extraSchemas={extraSchemas}>
   <Breadcrumb items={[
     { name: 'Companies', url: '/companies/' },
     { name: d.name, url: `/companies/${entry.id}/` },

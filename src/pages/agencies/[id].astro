@@ -4,7 +4,14 @@ import Base from '../../layouts/Base.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import TerminalMockup from '../../components/TerminalMockup.astro';
 import BottomCTA from '../../components/BottomCTA.astro';
+import { entityOrgSchema } from '../../lib/seo';
 import '../../styles/global.css';
+
+const agencyTypeMap: Record<string, string> = {
+  government: 'GovernmentOrganization',
+  private: 'Corporation',
+  foundation: 'NGO',
+};
 
 export async function getStaticPaths() {
   const entries = await getCollection('agencies');
@@ -48,9 +55,18 @@ const d = entry.data;
 
 const pageTitle = `${d.name} — Funding Agency — Sci-Buy`;
 const pageDesc = `${d.name}: ${d.type} funding agency in ${d.country}. Budget: ${d.budget}. ${d.programs.length} programs. Find researchers funded by ${d.name}.`;
+
+const extraSchemas = [
+  entityOrgSchema({
+    type: agencyTypeMap[d.type] || 'Organization',
+    name: d.name,
+    description: d.description,
+    address: { country: d.country },
+  }),
+];
 ---
 
-<Base title={pageTitle} description={pageDesc}>
+<Base title={pageTitle} description={pageDesc} extraSchemas={extraSchemas}>
   <Breadcrumb items={[
     { name: 'Agencies', url: '/agencies/' },
     { name: d.name, url: `/agencies/${entry.id}/` },

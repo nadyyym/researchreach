@@ -1,7 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { buildJsonLd, organizationSchema, websiteSchema, webpageSchema } from '../lib/seo';
+import { buildJsonLd, organizationSchema, websiteSchema, webpageSchema, imageObjectSchema } from '../lib/seo';
 
 interface Props {
   title?: string;
@@ -34,6 +34,7 @@ const noIndex = robots.includes('noindex');
 const jsonLd = buildJsonLd(
   organizationSchema(),
   websiteSchema(),
+  imageObjectSchema(),
   webpageSchema(canonicalURL.href, title, description, speakableSelectors),
   ...extraSchemas,
 );

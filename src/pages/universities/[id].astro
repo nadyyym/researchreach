@@ -4,6 +4,7 @@ import Base from '../../layouts/Base.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import TerminalMockup from '../../components/TerminalMockup.astro';
 import BottomCTA from '../../components/BottomCTA.astro';
+import { entityOrgSchema } from '../../lib/seo';
 import '../../styles/global.css';
 
 export async function getStaticPaths() {
@@ -37,9 +38,19 @@ const logoDomain = logoDomains[entry.id];
 
 const pageTitle = `${d.name} — Research Intelligence — Sci-Buy`;
 const pageDesc = `Search ${d.researcherCount.toLocaleString()} researchers at ${d.name}. Average H-index ${d.avgHindex}, ${d.grantCount.toLocaleString()} active grants. Filter by department, field, and industry signals.`;
+
+const extraSchemas = [
+  entityOrgSchema({
+    type: 'CollegeOrUniversity',
+    name: d.name,
+    url: logoDomain ? `https://${logoDomain}` : undefined,
+    description: d.description,
+    address: { country: d.country, city: d.city },
+  }),
+];
 ---
 
-<Base title={pageTitle} description={pageDesc}>
+<Base title={pageTitle} description={pageDesc} extraSchemas={extraSchemas}>
   <Breadcrumb items={[
     { name: 'Universities', url: '/universities/' },
     { name: d.name, url: `/universities/${entry.id}/` },
