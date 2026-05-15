@@ -3,7 +3,31 @@ import Base from "../layouts/Base.astro";
 import Breadcrumb from "../components/Breadcrumb.astro";
 import TerminalMockup from "../components/TerminalMockup.astro";
 import BottomCTA from "../components/BottomCTA.astro";
+import { howToSchema } from "../lib/seo";
 import "../styles/global.css";
+
+const apiHowTo = howToSchema({
+  name: "Get started with the Sci-Buy REST API",
+  description: "Integrate researcher contact intelligence into your CRM, data pipeline, or application in three steps.",
+  totalTime: "PT10M",
+  steps: [
+    {
+      name: "Request API access",
+      text: "Join the early-access program at selltoscientists.com/pricing/. Pro and Enterprise tiers include API access; you'll receive an API key by email.",
+      url: "/pricing/",
+    },
+    {
+      name: "Search the researcher graph",
+      text: "Call GET /v1/researchers/search with query parameters for field, institution, grant type, H-index range, and industry signals. Results are paginated JSON.",
+    },
+    {
+      name: "Bulk export verified contacts",
+      text: "POST a list of researcher IDs or a search query to /v1/lists/export. Receive a CSV or JSON payload with contact, publication, grant, and patent data.",
+    },
+  ],
+});
+
+const extraSchemas = [apiHowTo];
 
 const sampleResponse = {
   "id": "orcid:0000-0002-1234-5678",
@@ -54,6 +78,7 @@ const endpoints = [
 <Base
   title="Developers API — Sci-Buy"
   description="Sci-Buy REST API for programmatic access to the research graph. Integrate researcher contact intelligence into your CRM, data pipeline, or application."
+  extraSchemas={extraSchemas}
 >
   <main>
     <Breadcrumb items={[{ name: "Developers", url: "/developers/" }]} />

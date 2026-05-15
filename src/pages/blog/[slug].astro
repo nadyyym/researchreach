@@ -3,7 +3,7 @@ import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import BottomCTA from '../../components/BottomCTA.astro';
-import { articleSchema, breadcrumbSchema } from '../../lib/seo';
+import { articleSchema } from '../../lib/seo';
 import '../../styles/global.css';
 
 export async function getStaticPaths() {
@@ -39,11 +39,6 @@ const extraSchemas = [
     datePublished: post.data.date,
     keywords: post.data.tags,
   }),
-  breadcrumbSchema([
-    { name: 'Home', url: '/' },
-    { name: 'Blog', url: '/blog/' },
-    { name: post.data.title, url: `/blog/${slug}/` },
-  ]),
 ];
 ---
 

@@ -3,7 +3,30 @@ import Base from "../layouts/Base.astro";
 import Breadcrumb from "../components/Breadcrumb.astro";
 import TerminalMockup from "../components/TerminalMockup.astro";
 import BottomCTA from "../components/BottomCTA.astro";
+import { howToSchema } from "../lib/seo";
 import "../styles/global.css";
+
+const extraSchemas = [
+  howToSchema({
+    name: "How Sci-Buy works",
+    description: "Find scientists who need your product in three commands: search the research graph, map industry-bridge signals, export verified contacts.",
+    totalTime: "PT5M",
+    steps: [
+      {
+        name: "Search the graph",
+        text: "Query 250M+ papers by field, institution, funding source, and keywords. Filter by NIH or NSF grants, H-index, and publication recency.",
+      },
+      {
+        name: "Map researchers",
+        text: "Surface industry-bridge signals: patent holders, startup co-founders, SAB members, industry-funded PIs, and recent academia-to-industry transitions.",
+      },
+      {
+        name: "Export contacts",
+        text: "Get verified institutional emails, ORCID profiles, H-index, grant amounts, and citations. Export to CSV or pipe directly into your CRM.",
+      },
+    ],
+  }),
+];
 
 const searchLines = [
   { type: 'prompt' as const, text: 'sci-buy search "CRISPR therapeutics" --grants NIH --min-hindex 20' },
@@ -45,6 +68,7 @@ const exportLines = [
 <Base
   title="Features — Sci-Buy CLI"
   description="Three commands, full pipeline. Search 250M+ papers, map industry bridge signals, and export verified researcher contacts from your terminal."
+  extraSchemas={extraSchemas}
 >
   <main>
     <Breadcrumb items={[{ name: "Features", url: "/features/" }]} />

@@ -1,5 +1,14 @@
 const SITE = 'https://selltoscientists.com';
 const ORG_NAME = 'Sci-Buy';
+const ORG_DESCRIPTION =
+  'Research intelligence CLI for those who sell to scientists.';
+const OG_IMAGE = `${SITE}/og-image.png`;
+
+// Strip trailing slash for stable @id roots so graph cross-refs resolve
+// consistently regardless of how callers format the URL.
+function idRoot(url: string): string {
+  return url.replace(/\/$/, '');
+}
 
 export function organizationSchema() {
   return {
@@ -7,11 +16,18 @@ export function organizationSchema() {
     '@id': `${SITE}/#organization`,
     name: ORG_NAME,
     url: SITE,
-    description: 'Research intelligence CLI for those who sell to scientists.',
+    logo: OG_IMAGE,
+    image: OG_IMAGE,
+    description: ORG_DESCRIPTION,
     sameAs: [
       'https://github.com/sci-buy',
       'https://x.com/scibuycli',
     ],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      url: `${SITE}/contact/`,
+      contactType: 'sales',
+    },
   };
 }
 
@@ -21,17 +37,19 @@ export function websiteSchema() {
     '@id': `${SITE}/#website`,
     url: SITE,
     name: ORG_NAME,
+    description: ORG_DESCRIPTION,
     publisher: { '@id': `${SITE}/#organization` },
-    // Sitelinks Searchbox — backed by the /search/ page that filters a
-    // build-time index of every public page.
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: `${SITE}/search/?q={search_term_string}`,
-      },
-      'query-input': 'required name=search_term_string',
-    },
+  };
+}
+
+export function imageObjectSchema() {
+  return {
+    '@type': 'ImageObject',
+    '@id': `${SITE}/#primaryimage`,
+    url: OG_IMAGE,
+    contentUrl: OG_IMAGE,
+    width: 1200,
+    height: 630,
   };
 }
 
@@ -41,13 +59,16 @@ export function webpageSchema(
   description: string,
   speakableSelectors?: string[],
 ) {
+  const root = idRoot(url);
   return {
     '@type': 'WebPage',
-    '@id': `${url}#webpage`,
+    '@id': `${root}/#webpage`,
     url,
     name: title,
     description,
     isPartOf: { '@id': `${SITE}/#website` },
+    publisher: { '@id': `${SITE}/#organization` },
+    primaryImageOfPage: { '@id': `${SITE}/#primaryimage` },
     inLanguage: 'en-US',
     speakable: {
       '@type': 'SpeakableSpecification',
@@ -84,10 +105,13 @@ export function faqSchema(questions: { q: string; a: string }[]) {
 export function softwareSchema() {
   return {
     '@type': 'SoftwareApplication',
+    '@id': `${SITE}/#software`,
     name: 'Sci-Buy CLI',
     applicationCategory: 'DeveloperApplication',
     operatingSystem: 'macOS, Linux, Windows',
     description: 'CLI tool for searching and exporting academic researcher contact intelligence.',
+    url: SITE,
+    publisher: { '@id': `${SITE}/#organization` },
     offers: {
       '@type': 'Offer',
       price: '0',
@@ -178,7 +202,7 @@ export function profilePageSchema(args: {
   const url = args.url.startsWith('http') ? args.url : `${SITE}${args.url}`;
   return {
     '@type': 'ProfilePage',
-    '@id': `${url}#profilepage`,
+    '@id': `${idRoot(url)}/#profilepage`,
     url,
     mainEntity: person,
     isPartOf: { '@id': `${SITE}/#website` },
@@ -201,15 +225,13 @@ export function articleSchema(args: {
     headline: args.headline,
     description: args.description,
     author: { '@type': 'Person', name: args.author },
-    publisher: {
-      '@type': 'Organization',
-      name: ORG_NAME,
-      url: SITE,
-    },
+    publisher: { '@id': `${SITE}/#organization` },
     datePublished: args.datePublished,
     ...(args.dateModified && { dateModified: args.dateModified }),
     mainEntityOfPage: url,
-    ...(args.image && { image: args.image.startsWith('http') ? args.image : `${SITE}${args.image}` }),
+    image: args.image
+      ? (args.image.startsWith('http') ? args.image : `${SITE}${args.image}`)
+      : OG_IMAGE,
     ...(args.keywords && args.keywords.length > 0 && { keywords: args.keywords.join(', ') }),
     speakable: {
       '@type': 'SpeakableSpecification',
@@ -242,6 +264,30 @@ export function entityOrgSchema(args: {
       },
     }),
     ...(args.sameAs && args.sameAs.length > 0 && { sameAs: args.sameAs }),
+  };
+}
+
+// HowTo schema for step-by-step pages (/features/ pipeline, /developers/
+// API quickstart). Google still shows HowTo rich results on desktop and
+// it's a high-trust signal for instructional content.
+export function howToSchema(args: {
+  name: string;
+  description: string;
+  totalTime?: string; // ISO 8601 duration, e.g. "PT5M"
+  steps: { name: string; text: string; url?: string }[];
+}) {
+  return {
+    '@type': 'HowTo',
+    name: args.name,
+    description: args.description,
+    ...(args.totalTime && { totalTime: args.totalTime }),
+    step: args.steps.map((s, i) => ({
+      '@type': 'HowToStep',
+      position: i + 1,
+      name: s.name,
+      text: s.text,
+      ...(s.url && { url: s.url.startsWith('http') ? s.url : `${SITE}${s.url}` }),
+    })),
   };
 }
 

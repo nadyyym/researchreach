@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import { datasetSchema, itemListSchema, breadcrumbSchema } from '../../lib/seo';
+import { datasetSchema, itemListSchema } from '../../lib/seo';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import BottomCTA from '../../components/BottomCTA.astro';
 import '../../styles/global.css';
@@ -27,10 +27,6 @@ const extraSchemas = [
       description: ((e.data as any).description || '').slice(0, 160),
     })),
   ),
-  breadcrumbSchema([
-    { name: 'Home', url: '/' },
-    { name: 'Industries', url: '/industries/' },
-  ]),
 ];
 ---
 
