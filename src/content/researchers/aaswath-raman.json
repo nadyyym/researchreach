@@ -1,0 +1,11 @@
+{
+  "name": "Aaswath Raman",
+  "institution": "University of California, Los Angeles",
+  "field": "Photonics / Radiative Cooling",
+  "hindex": 42,
+  "grantCount": 20,
+  "patents": 18,
+  "publications": 130,
+  "industryTies": ["SkyCool Systems", "ARPA-E", "3M Research"],
+  "description": "Aaswath Raman invented sub-ambient daytime radiative cooling — a photonic approach to cooling surfaces below ambient air temperature without electricity by engineering materials that emit thermal radiation through the atmospheric transmission window. His 2014 Science paper, demonstrating a nanophotonic multilayer film that cooled below ambient under direct sunlight, generated enormous commercial interest and led him to co-found SkyCool Systems, whose panels are now deployed on supermarket refrigeration systems in California. His UCLA lab currently explores large-area manufacturable radiative cooling films for building envelopes, data-center cooling, and solar-cell efficiency improvement by suppressing thermal losses. Raman is a CIFAR Azrieli Global Scholar and received the Allan Cox Medal from Stanford. His work has influenced ARPA-E's FOCUS and HESTIA programs targeting building energy consumption and has attracted partnership with 3M's Advanced Materials Division for scale-up manufacturing."
+}

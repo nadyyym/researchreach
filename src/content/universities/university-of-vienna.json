@@ -1,0 +1,26 @@
+{
+  "name": "University of Vienna",
+  "country": "Austria",
+  "city": "Vienna",
+  "type": "public",
+  "researcherCount": 3600,
+  "avgHindex": 45,
+  "grantCount": 2200,
+  "departments": [
+    "Chemistry",
+    "Physics",
+    "Life Sciences",
+    "Mathematics",
+    "Earth Sciences",
+    "Cognitive Science",
+    "Informatics"
+  ],
+  "topFields": [
+    "Quantum Physics",
+    "Structural Biology",
+    "Computational Chemistry",
+    "Geosciences",
+    "Evolutionary Biology"
+  ],
+  "description": "The University of Vienna is Austria's largest and most internationally cited research university, with exceptional strength in quantum physics and structural biology that places it consistently among Europe's top 100 institutions. Its Faculty of Physics houses groups working on quantum optics and quantum information that spin out from the legacy of Anton Zeilinger's Nobel Prize-winning research, attracting FWF Wittgenstein Prize grants and ERC Advanced Grants that fund state-of-the-art laser and cryogenic equipment. The Max Perutz Labs — a joint venture between the University of Vienna and the Medical University of Vienna — anchor a structural and cell biology campus that sustains heavy demand for cryo-EM, mass spectrometry, and single-molecule imaging consumables. Vienna's status as a UN city creates additional research funding pathways through IAEA and UNIDO collaborative programs, expanding the university's reach into nuclear and industrial chemistry instrumentation."
+}

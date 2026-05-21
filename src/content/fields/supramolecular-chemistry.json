@@ -1,0 +1,9 @@
+{
+  "name": "Supramolecular Chemistry",
+  "subfields": ["Host-Guest Chemistry", "Self-Assembly and Soft Matter", "Mechanically Interlocked Molecules", "Molecular Machines", "Supramolecular Catalysis"],
+  "keyTechnologies": ["Isothermal Titration Calorimetry", "Single-Crystal X-Ray Diffraction", "NMR Titration Binding Studies", "Atomic Force Microscopy", "Dynamic Light Scattering"],
+  "topInstitutions": ["Strasbourg University (Lehn Institute)", "Northwestern University Stoddart Lab", "University of Birmingham", "Nagoya University", "Cambridge University Yusuf Hamied Department of Chemistry"],
+  "researcherCount": 12000,
+  "avgFunding": "$560K",
+  "description": "Supramolecular chemistry — coined by Nobel laureate Jean-Marie Lehn — studies the non-covalent interactions between molecules: hydrogen bonds, metal coordination, pi-stacking, and van der Waals forces that drive self-assembly into complex architectures without forming or breaking conventional chemical bonds. The field encompasses everything from crown ethers that selectively extract specific metal ions to interlocked molecular rings and rotaxanes — whose mechanical bonds earned Stoddart and Sauvage the 2016 Nobel Prize — and ultimately to molecular machines capable of performing directed mechanical work at the nanoscale. Pharmaceutically, supramolecular encapsulation is deployed to solubilize insoluble drugs, control release kinetics, and cross cell membranes. In materials science, self-assembling supramolecular gels and frameworks are emerging as responsive smart materials for sensing, catalysis, and drug delivery. Researchers are primarily synthetic chemists who also draw on physical chemistry and computational modeling."
+}

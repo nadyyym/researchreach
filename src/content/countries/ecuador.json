@@ -1,0 +1,9 @@
+{
+  "name": "Ecuador",
+  "code": "EC",
+  "topInstitutions": ["Pontificia Universidad Católica del Ecuador", "Universidad San Francisco de Quito", "Escuela Politécnica Nacional", "Universidad de Cuenca", "FLACSO Ecuador"],
+  "topAgencies": ["SENESCYT", "CEDIA", "Yachay Tech"],
+  "researchOutput": 7200,
+  "topFields": ["Biodiversity", "Environmental Science", "Geosciences", "Agriculture", "Public Health"],
+  "description": "Ecuador hosts extraordinary biodiversity across four distinct natural regions — coast, highlands, Amazon, and Galápagos — giving it a natural comparative advantage in ecology, evolutionary biology, and conservation science. The government's 2013–2017 'Good Living' plan temporarily tripled higher-education investment and funded Yachay Tech, a specialist science and technology university modeled on South Korean research campuses. Universidad San Francisco de Quito is the most internationally cited institution, with recognized programs in ecology and bioinformatics drawing Galápagos field research. Escuela Politécnica Nacional leads in geosciences and volcanic risk monitoring, crucial given Ecuador's position on the Pacific Ring of Fire. SENESCYT's scholarship program has trained a cohort of PhD researchers at top global universities who are now returning to grow domestic output."
+}

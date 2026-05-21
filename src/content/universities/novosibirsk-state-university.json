@@ -1,0 +1,26 @@
+{
+  "name": "Novosibirsk State University",
+  "country": "Russia",
+  "city": "Novosibirsk",
+  "type": "public",
+  "researcherCount": 1200,
+  "avgHindex": 38,
+  "grantCount": 780,
+  "departments": [
+    "Physics",
+    "Mathematics",
+    "Chemistry",
+    "Biology",
+    "Geology",
+    "Information Technology",
+    "Medicine"
+  ],
+  "topFields": [
+    "Particle Physics",
+    "Mathematical Physics",
+    "Catalysis",
+    "Genomics",
+    "Geophysics"
+  ],
+  "description": "Novosibirsk State University occupies a unique position in global science: embedded within Akademgorodok, the Soviet-era academic township that houses the Siberian Branch of the Russian Academy of Sciences with more than 30 research institutes on a single wooded campus. This means NSU students and faculty have direct bench access to institute-grade facilities — particle accelerators (VEPP-4M at BINP), mass spectrometry centers, and synchrotron beamlines at SB RAS — making the university's effective research infrastructure far larger than its headcount suggests. The Institute of Nuclear Physics (BINP) and Institute of Cytology and Genetics are the primary procurement decision-makers for large capital equipment, though NSU faculty co-investigators influence specification and vendor selection. Russia Science Foundation grants have partially replaced Soviet state allocations, and NSU's inclusion in the Russian government's Priority 2030 program injects additional modernization budgets into experimental science departments."
+}

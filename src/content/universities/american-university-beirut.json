@@ -1,0 +1,26 @@
+{
+  "name": "American University of Beirut",
+  "country": "Lebanon",
+  "city": "Beirut",
+  "type": "private",
+  "researcherCount": 900,
+  "avgHindex": 34,
+  "grantCount": 580,
+  "departments": [
+    "Medicine",
+    "Engineering",
+    "Agriculture",
+    "Arts and Sciences",
+    "Nursing",
+    "Public Health",
+    "Computer Science"
+  ],
+  "topFields": [
+    "Infectious Disease",
+    "Water Resources",
+    "Renewable Energy",
+    "Cancer Biology",
+    "Food Security"
+  ],
+  "description": "The American University of Beirut is the Middle East's most internationally cited private research university, with an English-language curriculum, a strong US-modeled grant culture, and NIH-funded research programs that span infectious disease, oncology, and nutritional epidemiology across populations rarely covered by Western clinical trials. Its Faculty of Medicine and Medical Center functions as a regional referral hub with active clinical research units that sustain demand for diagnostic, imaging, and laboratory consumables even under Lebanon's challenging economic conditions. AUB's Faculty of Engineering and Architecture houses water and energy research groups that attract World Bank and USAID project funding, providing a durable funding base independent of the Lebanese state. For vendors, AUB's procurement operates in US dollars and follows internationally recognized purchasing standards, making it one of the more accessible entry points to Middle East academic markets."
+}

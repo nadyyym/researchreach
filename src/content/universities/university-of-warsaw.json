@@ -1,0 +1,26 @@
+{
+  "name": "University of Warsaw",
+  "country": "Poland",
+  "city": "Warsaw",
+  "type": "public",
+  "researcherCount": 3300,
+  "avgHindex": 40,
+  "grantCount": 1900,
+  "departments": [
+    "Physics",
+    "Chemistry",
+    "Biology",
+    "Mathematics",
+    "Computer Science",
+    "Geology",
+    "Psychology"
+  ],
+  "topFields": [
+    "Quantum Optics",
+    "Molecular Biology",
+    "High Energy Physics",
+    "Computational Mathematics",
+    "Neuroscience"
+  ],
+  "description": "The University of Warsaw is Poland's flagship comprehensive research university and the country's most internationally connected institution, with strong representation in CERN experiments, ERC grant competitions, and Marie Skłodowska-Curie fellowship networks that channel European funding into its physical and life science laboratories. Its Faculty of Physics operates quantum optics and ultrafast laser groups whose publications rival those of much larger Western European departments, supported by NCN Maestro and Sonata Bis grants for high-risk, high-reward fundamental research. The Faculty of Biology and the Centre of New Technologies (CeNT) together form a modern life-science campus equipped with advanced microscopy, proteomics, and genomics platforms that have benefited from EU structural fund co-investment. Poland's growing national R&D budget — expanding steadily under EU cohesion fund commitments — makes UW a market with notably increasing instrument and software purchasing capacity over the next funding cycle."
+}

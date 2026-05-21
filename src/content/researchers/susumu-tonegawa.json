@@ -1,0 +1,12 @@
+{
+  "name": "Susumu Tonegawa",
+  "institution": "Massachusetts Institute of Technology",
+  "field": "Immunology / Neuroscience",
+  "hindex": 118,
+  "grantCount": 60,
+  "patents": 22,
+  "publications": 470,
+  "orcid": "0000-0003-0384-8878",
+  "industryTies": ["Picower Institute for Learning and Memory", "Howard Hughes Medical Institute", "Riken Brain Science Institute"],
+  "description": "Susumu Tonegawa received the 1987 Nobel Prize in Physiology or Medicine as a sole laureate — a rare honor — for discovering the genetic mechanism of antibody diversity: the V(D)J recombination process that allows the adaptive immune system to generate millions of distinct antibody sequences from a compact genome. After the Nobel, he made a remarkable scientific pivot to neuroscience, establishing MIT's Picower Institute for Learning and Memory, where his lab pioneered optogenetic engram manipulation — physically activating and erasing specific memories encoded in hippocampal and cortical circuits. His 2014 Nature paper demonstrating that false memories can be implanted in mice by pairing the optogenetic activation of a neutral context engram with a fear stimulus generated worldwide attention and raised profound questions about memory reliability in legal and clinical contexts. Tonegawa also discovered that engram cells store information in a dormant state retrievable by optogenetic stimulation in Alzheimer's mouse models, a finding with direct therapeutic implications. He continues to direct both RIKEN's Japanese neuroscience program and his MIT lab."
+}

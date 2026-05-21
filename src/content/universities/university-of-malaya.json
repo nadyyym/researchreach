@@ -1,0 +1,26 @@
+{
+  "name": "University of Malaya",
+  "country": "Malaysia",
+  "city": "Kuala Lumpur",
+  "type": "public",
+  "researcherCount": 2300,
+  "avgHindex": 37,
+  "grantCount": 1400,
+  "departments": [
+    "Medicine",
+    "Engineering",
+    "Science",
+    "Computer Science",
+    "Dentistry",
+    "Law",
+    "Built Environment"
+  ],
+  "topFields": [
+    "Tropical Infectious Disease",
+    "Polymer Composites",
+    "Photovoltaics",
+    "Medical Imaging",
+    "Computational Intelligence"
+  ],
+  "description": "The University of Malaya is Malaysia's oldest and highest-ranked university, anchoring the country's national research ecosystem through its role as the primary recipient of Ministry of Science, Technology and Innovation grants and flagship Malaysian Research University Network programs. Its Faculty of Medicine, home to the University of Malaya Medical Centre, runs active tropical disease and cancer research programs with NIH and Wellcome Trust co-funding that sustain continuous procurement of high-end diagnostic and molecular biology equipment. UM's engineering and science faculties are deeply invested in photovoltaic materials, polymer composites, and AI-driven signal processing — areas aligned with Malaysia's National Policy on Science, Technology, Innovation and Economy. The university's proximity to multinational manufacturing R&D hubs in the Klang Valley generates additional industry-sponsored research revenue that broadens equipment purchasing across departments throughout the year."
+}

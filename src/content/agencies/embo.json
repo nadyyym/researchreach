@@ -1,0 +1,8 @@
+{
+  "name": "European Molecular Biology Organization (EMBO)",
+  "country": "Germany",
+  "type": "foundation",
+  "budget": "$75M",
+  "programs": ["EMBO Fellowships", "EMBO Young Investigator Program", "EMBO Global Investigator", "EMBO Science Policy", "EMBO Practical Courses"],
+  "description": "EMBO is a pan-European scientific organization founded in 1964 to promote excellence in molecular biology across member states and affiliated countries, selecting its members — approximately 1,900 of Europe's most accomplished life scientists — by rigorous peer review. Its prestigious postdoctoral fellowship program funds outstanding researchers to pursue training at EMBO-affiliated laboratories anywhere in Europe, generating alumni networks that span the continent's major research centers. The Young Investigator Program provides three-year grants and mentorship to newly independent group leaders, bridging the career gap between postdoc and secure academic position where attrition is highest. EMBO Practical Courses offer highly competitive short-format training in advanced experimental methods to graduate students and postdocs worldwide, with a consistent emphasis on cutting-edge techniques not yet covered by institutional curricula. Through its Science Policy Program, EMBO advises the European Commission and member-state governments on research funding priorities and open-science governance."
+}

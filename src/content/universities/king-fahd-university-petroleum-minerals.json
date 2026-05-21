@@ -1,0 +1,26 @@
+{
+  "name": "King Fahd University of Petroleum and Minerals",
+  "country": "Saudi Arabia",
+  "city": "Dhahran",
+  "type": "public",
+  "researcherCount": 1600,
+  "avgHindex": 39,
+  "grantCount": 1100,
+  "departments": [
+    "Petroleum Engineering",
+    "Chemical Engineering",
+    "Physics",
+    "Mathematics",
+    "Electrical Engineering",
+    "Chemistry",
+    "Computer Engineering"
+  ],
+  "topFields": [
+    "Reservoir Engineering",
+    "Enhanced Oil Recovery",
+    "Carbon Capture",
+    "Catalysis",
+    "Corrosion Science"
+  ],
+  "description": "KFUPM in Dhahran is the Arabian Peninsula's premier engineering and energy research university, sitting geographically and institutionally at the heart of Saudi Aramco's global R&D ecosystem with deep co-funding relationships that make its laboratory infrastructure among the most modern in the region. Its research output in petroleum engineering, catalysis, and corrosion science is disproportionately high for its size, reflecting targeted KACST and Saudi Aramco Research & Development Center grants that equip groups with high-end analytical and simulation tools. The university's focus on decarbonization and carbon capture has expanded its addressable equipment and software portfolio substantially in recent years as Vision 2030 mandates reshape energy research priorities. Vendors in specialty chemicals, high-pressure test equipment, and computational fluid-dynamics software find KFUPM a high-value single-institution account with streamlined central procurement processes."
+}

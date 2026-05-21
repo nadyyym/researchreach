@@ -1,0 +1,26 @@
+{
+  "name": "Budapest University of Technology and Economics",
+  "country": "Hungary",
+  "city": "Budapest",
+  "type": "public",
+  "researcherCount": 1800,
+  "avgHindex": 32,
+  "grantCount": 920,
+  "departments": [
+    "Electrical Engineering",
+    "Chemical Engineering",
+    "Mechanical Engineering",
+    "Computer Science",
+    "Physics",
+    "Civil Engineering",
+    "Architecture"
+  ],
+  "topFields": [
+    "Semiconductor Technology",
+    "Computational Fluid Dynamics",
+    "Telecommunications",
+    "Polymer Chemistry",
+    "Structural Mechanics"
+  ],
+  "description": "Budapest University of Technology and Economics (BME) is Central Europe's oldest technical university and the primary pipeline of engineering talent and applied research in Hungary, attracting co-funding from the country's NKFI Fund alongside significant Horizon Europe and EIT Digital project participation. Its Faculty of Electrical Engineering and Informatics runs several semiconductor and photonics laboratories equipped to European standards, and BME's role as a preferred industry partner for Bosch, Ericsson, and Samsung R&D centers in Budapest generates recurring demand for specialized test and measurement equipment. The relatively compact size of each department means purchasing decisions are made close to the PI level, making researcher-targeted outreach more effective than institutional procurement channels. Software vendors benefit from Hungary's favorable academic licensing environment under the national Hungarnet consortium agreements."
+}

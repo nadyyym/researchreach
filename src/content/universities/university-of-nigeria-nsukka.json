@@ -1,0 +1,26 @@
+{
+  "name": "University of Nigeria, Nsukka",
+  "country": "Nigeria",
+  "city": "Nsukka",
+  "type": "public",
+  "researcherCount": 1500,
+  "avgHindex": 28,
+  "grantCount": 620,
+  "departments": [
+    "Pharmaceutical Sciences",
+    "Medicine",
+    "Engineering",
+    "Agriculture",
+    "Biological Sciences",
+    "Physics",
+    "Chemistry"
+  ],
+  "topFields": [
+    "Natural Product Chemistry",
+    "Tropical Pharmacology",
+    "Soil Science",
+    "Petroleum Engineering",
+    "Infectious Disease"
+  ],
+  "description": "The University of Nigeria, Nsukka is one of West Africa's oldest and most productive research universities, with a particularly strong reputation in natural product and medicinal chemistry rooted in the region's exceptional plant biodiversity. Its Faculty of Pharmaceutical Sciences runs active drug-discovery programs drawing on indigenous pharmacopoeia and attracts grant support from the Wellcome Trust Africa Programs and NIH Fogarty International Center for tropical disease research. The engineering faculties engage with Nigeria's petroleum sector through federal and industry-sponsored research, while agriculture groups focus on cassava improvement and soil remediation — areas of strategic national importance backed by TETFUND grants. For science vendors, UNN represents a high-growth market as Nigeria's Tertiary Education Trust Fund (TETFUND) continues to channel infrastructure upgrade funds toward laboratory modernization across its faculties."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Bernhard Schölkopf",
+  "institution": "Max Planck Institute for Intelligent Systems",
+  "field": "Machine Learning",
+  "hindex": 135,
+  "grantCount": 40,
+  "patents": 28,
+  "publications": 560,
+  "orcid": "0000-0002-9397-3475",
+  "industryTies": ["Amazon Science", "Microsoft Research", "Empirical Inference GmbH"],
+  "description": "Bernhard Schölkopf is one of the architects of kernel methods in machine learning, co-developing support vector machines and kernel principal component analysis that dominated statistical learning in the early 2000s before deep learning's rise. His textbook with Alex Smola, Learning with Kernels, remains a canonical reference. More recently, his lab has become the foremost academic group pursuing causality-aware machine learning, arguing that current neural networks lack causal understanding and will fail in distribution shift — work that has influenced both AI-safety reasoning and pharmaceutical trial design. Schölkopf received the ACM Prize in Computing in 2023 and the Leibniz Prize from the German Research Foundation. His group actively collaborates with Amazon's supply-chain AI teams and has spawned several causal-inference startups in the Tübingen ecosystem."
+}

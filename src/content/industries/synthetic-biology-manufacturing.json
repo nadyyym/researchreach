@@ -1,0 +1,25 @@
+{
+  "name": "Synthetic Biology Manufacturing",
+  "companies": [
+    "Ginkgo Bioworks",
+    "Zymergen",
+    "Pivot Bio",
+    "Arcturus Biotherapeutics",
+    "Inscripta",
+    "Asimov",
+    "Twist Bioscience",
+    "Colossal Biosciences",
+    "Solugen",
+    "LanzaTech"
+  ],
+  "targetResearchers": "Synthetic biologists, metabolic engineers, and bioinformaticians working on strain design, CRISPR toolkits, and fermentation scale-up",
+  "marketSize": "$55B",
+  "useCases": [
+    "Metabolic-engineering PhD recruitment for strain-design teams",
+    "University partnerships for novel biosynthetic pathway discovery",
+    "CRISPR base-editing tool licensing and collaborations",
+    "Fermentation scale-up talent pipeline from chemical-engineering programs",
+    "Bioinformatics and design-of-experiments workflow development"
+  ],
+  "description": "Synthetic biology manufacturers reprogram microorganisms to produce chemicals, materials, and therapeutics that traditional chemistry cannot deliver economically or sustainably. The industry is an applied extension of academic research in metabolic engineering, systems biology, and molecular genetics — disciplines that generate the majority of its technical workforce. Companies like Ginkgo Bioworks and Solugen recruit heavily from PhD programs, open-source consortia, and iGEM alumni networks. Academic intelligence platforms allow these companies to track publication activity around specific genetic circuits, promoter libraries, or biosensor designs, giving recruiting and business-development teams a first-mover advantage when novel academic discoveries are about to translate to industry."
+}

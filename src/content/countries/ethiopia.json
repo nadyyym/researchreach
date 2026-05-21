@@ -1,0 +1,9 @@
+{
+  "name": "Ethiopia",
+  "code": "ET",
+  "topInstitutions": ["Addis Ababa University", "Jimma University", "Hawassa University", "Ethiopian Institute of Agricultural Research", "Armauer Hansen Research Institute"],
+  "topAgencies": ["Ministry of Science and Higher Education", "Ethiopian Science Academy", "EIAR"],
+  "researchOutput": 5800,
+  "topFields": ["Public Health", "Agriculture", "Nutrition", "Epidemiology", "Water Resources"],
+  "description": "Ethiopia is sub-Saharan Africa's second most populous nation and one of its fastest-growing research producers, driven by an ambitious national science and innovation strategy. Addis Ababa University is the continent's leading Ethiopian institution and co-leads flagship international research on malaria, TB, and HIV with the WHO and NIH. Agricultural science is a national priority, with EIAR coordinating a network of regional research centers focused on food security and drought-resilient crop varieties. Nutrition epidemiology has emerged as a globally cited specialty given Ethiopia's longstanding public-health challenges. Significant investment in university expansion since 2010 has more than doubled the graduate researcher pipeline."
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Belarus",
+  "code": "BY",
+  "topInstitutions": ["Belarusian State University", "National Academy of Sciences of Belarus", "Belarusian National Technical University", "Belarusian State Medical University", "Belarusian State University of Informatics and Radioelectronics"],
+  "topAgencies": ["State Committee for Science and Technology", "National Academy of Sciences of Belarus", "Belarusian Innovation Fund"],
+  "researchOutput": 10200,
+  "topFields": ["Optics", "Mathematics", "Computer Science", "Chemistry", "Physics"],
+  "description": "Belarus inherited one of the Soviet Union's most developed applied-science systems, particularly in optics, laser physics, and precision instrument manufacturing — strengths that persist in today's National Academy of Sciences. Belarusian optics research underpins a commercially significant photonics and sensor-manufacturing cluster, with BSUIR leading in microelectronics and embedded systems. Mathematics has long been a national academic strength, with the Belarusian Mathematical Olympiad tradition producing generations of internationally competitive researchers. Since 2020 political upheaval, many senior researchers have emigrated, creating capacity gaps offset in part by accelerated state investment. Russia remains the dominant international collaboration partner, while historical ties to the EU science community have contracted substantially, reshaping the country's publication and citation landscape."
+}

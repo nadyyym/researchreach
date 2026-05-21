@@ -1,0 +1,9 @@
+{
+  "name": "Cuba",
+  "code": "CU",
+  "topInstitutions": ["University of Havana", "Centro de Ingeniería Genética y Biotecnología", "Instituto de Oncología y Radiobiología", "Instituto Pedro Kourí", "Universidad Central Marta Abreu de Las Villas"],
+  "topAgencies": ["Ministry of Science Technology and Environment", "BioCubaFarma", "CITMA"],
+  "researchOutput": 6500,
+  "topFields": ["Biotechnology", "Oncology", "Epidemiology", "Genetics", "Tropical Medicine"],
+  "description": "Cuba has developed a uniquely state-directed biotechnology research system that has produced several internationally marketed vaccines and biopharmaceuticals, most notably the meningitis B vaccine VA-MENGOC-BC and a suite of cancer immunotherapies. The Centre for Genetic Engineering and Biotechnology in Havana operates as the flagship of the BioCubaFarma holding, coordinating pharmaceutical R&D across dozens of institutes under a model with few parallels in the developing world. Instituto Pedro Kourí is a WHO Collaborating Centre for infectious disease surveillance with deep expertise in dengue and arbovirus research. High physician-to-population ratios generate rich clinical datasets that support epidemiological research output disproportionate to GDP. Despite technology import constraints, Cuban researchers publish actively in indexed journals with an emphasis on clinical and biomedical sciences."
+}

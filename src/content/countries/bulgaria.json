@@ -1,0 +1,9 @@
+{
+  "name": "Bulgaria",
+  "code": "BG",
+  "topInstitutions": ["Sofia University St. Kliment Ohridski", "Bulgarian Academy of Sciences", "Technical University of Sofia", "Medical University of Sofia", "University of Plovdiv"],
+  "topAgencies": ["Bulgarian National Science Fund", "Bulgarian Academy of Sciences", "National Innovation Fund"],
+  "researchOutput": 11000,
+  "topFields": ["Chemistry", "Physics", "Mathematics", "Computer Science", "Biotechnology"],
+  "description": "Bulgaria maintains a research tradition anchored in the Bulgarian Academy of Sciences, which houses over seventy institutes spanning the natural sciences, social sciences, and humanities. Sofia University is the principal academic research hub, historically strong in mathematics, physics, and Slavic linguistics with an internationally recognized theoretical computer science community. Post-EU-accession structural funding has revitalized laboratory infrastructure and supported cross-border collaborations, particularly in renewable energy and environmental remediation. Biotechnology and pharmaceutical research have attracted modest but growing FDI-linked R&D investment from multinational companies. Bulgaria faces a persistent brain-drain challenge, but a renewed national science strategy targets halving net researcher emigration by 2030."
+}

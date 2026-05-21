@@ -1,0 +1,9 @@
+{
+  "name": "Palaeoclimatology",
+  "subfields": ["Ice Core Analysis", "Speleothem Records", "Tree-Ring Climatology", "Marine Sediment Proxies", "Pollen-Based Reconstructions"],
+  "keyTechnologies": ["Stable Isotope Ratio Analysis", "Radiometric Dating (U-Th, 14C)", "X-Ray Fluorescence Scanning", "Ice Core Gas Chromatography", "Climate System Models"],
+  "topInstitutions": ["British Antarctic Survey", "NOAA National Centers for Environmental Information", "Alfred Wegener Institute", "Lamont-Doherty Earth Observatory", "University of Bern"],
+  "researcherCount": 11000,
+  "avgFunding": "$840K",
+  "description": "Palaeoclimatology reconstructs Earth's past climate states from natural archives — ice cores, cave formations, coral skeletons, tree rings, sediment layers — to understand the full envelope of climate variability before the instrumental record. Ice cores from Antarctica and Greenland preserve 800,000 years of atmospheric CO2, methane, and temperature signals in annual layers, providing the only direct pre-industrial benchmark against which current greenhouse gas concentrations can be judged. The field is essential for constraining climate sensitivity — how much warming follows a doubling of CO2 — a parameter that all future projections depend on. Insurance actuaries, infrastructure planners, and international climate negotiators rely on palaeoclimate data to contextualize the pace and extremity of current change. Researchers are typically geochemists, climatologists, or ecologists skilled in laboratory proxy analysis and the statistical calibration of proxy-to-climate relationships."
+}

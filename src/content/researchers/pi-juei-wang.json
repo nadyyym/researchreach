@@ -1,0 +1,11 @@
+{
+  "name": "Pi-Juei Wang",
+  "institution": "National Taiwan University",
+  "field": "Semiconductor Materials / Nanoelectronics",
+  "hindex": 58,
+  "grantCount": 33,
+  "patents": 42,
+  "publications": 290,
+  "industryTies": ["TSMC", "MediaTek", "Applied Materials"],
+  "description": "Pi-Juei Wang leads one of East Asia's most productive groups working on high-κ dielectric and metal gate stacks for advanced CMOS nodes, with research spanning atomic-layer deposition of hafnium-zirconium oxide and interface passivation strategies that suppress threshold-voltage instability. Her collaboration with TSMC's research division has contributed to the reliability qualification of gate dielectrics at the 3 nm process node and informed defect-density targets for next-generation devices. Wang's group also investigates ferroelectric HfO2 as a non-volatile memory medium — work that has generated a foundational patent portfolio licensed to multiple memory manufacturers. She received the Presidential Science Prize from Taiwan, the highest scientific honor in the country, and has trained over 60 doctoral graduates who now hold senior positions at major foundries and fabless chipmakers. Her lab maintains an open-source TCAD simulation environment widely used across the Asia-Pacific semiconductor research community."
+}

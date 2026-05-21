@@ -1,0 +1,26 @@
+{
+  "name": "Stellenbosch University",
+  "country": "South Africa",
+  "city": "Stellenbosch",
+  "type": "public",
+  "researcherCount": 1900,
+  "avgHindex": 39,
+  "grantCount": 1150,
+  "departments": [
+    "AgriSciences",
+    "Medicine",
+    "Engineering",
+    "Science",
+    "Economic and Management Sciences",
+    "Theology",
+    "Arts and Social Sciences"
+  ],
+  "topFields": [
+    "Wine Science",
+    "Tuberculosis Research",
+    "Photovoltaics",
+    "Plant Pathology",
+    "Food Biotechnology"
+  ],
+  "description": "Stellenbosch University in the Western Cape is South Africa's second-highest-ranked research institution and the birthplace of the globally influential SATVI (South African Tuberculosis Vaccine Initiative), one of the world's most productive tuberculosis vaccine and immunology research groups funded by the Bill & Melinda Gates Foundation and NIH. Its Faculty of AgriSciences operates unique wine science and viticulture programs globally recognized by the food and beverage industry, with research labs equipped for sensory science, fermentation chemistry, and plant pathology — fields with specialized instrument needs rarely found in African universities. The Department of Electrical and Electronic Engineering is a leader in satellite communications and photovoltaic systems research, benefiting from CSIR and DSI grants tied to South Africa's national space program and renewable energy transition. SU's relatively compact campus and strong Afrikaans research community maintain a tight network of PIs that respond well to relationship-based vendor outreach supplemented by local distributor partnerships."
+}

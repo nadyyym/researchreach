@@ -1,0 +1,9 @@
+{
+  "name": "Environmental Toxicology",
+  "subfields": ["Ecotoxicology", "Aquatic Toxicology", "Endocrine Disruption", "Heavy Metal Bioaccumulation", "Microplastics and Nanomaterials"],
+  "keyTechnologies": ["Liquid Chromatography-Mass Spectrometry", "Zebrafish Bioassays", "In Vitro Reporter Gene Assays", "GIS-Based Exposure Mapping", "High-Throughput Screening"],
+  "topInstitutions": ["UC Davis School of Veterinary Medicine", "Helmholtz Centre for Environmental Research", "Wageningen University", "University of Toronto", "Stockholm University"],
+  "researcherCount": 14500,
+  "avgFunding": "$720K",
+  "description": "Environmental toxicology examines how chemical contaminants — pesticides, pharmaceuticals, industrial pollutants, and emerging substances like PFAS — affect organisms, populations, and ecosystems. The field sits at the nexus of analytical chemistry, ecology, molecular biology, and public health, tracking how toxicants are absorbed, metabolized, and passed up food chains with progressively higher concentrations. Endocrine-disrupting compounds and microplastics have become dominant research priorities in the past decade, driven by their pervasiveness and subtle but measurable effects on reproductive and neurological development at parts-per-trillion concentrations. Regulatory agencies including the EPA, ECHA, and WHO rely heavily on this discipline to set exposure limits and approve or restrict chemicals. Practitioners often split time between field sampling, laboratory dosing experiments, and risk-assessment modeling."
+}

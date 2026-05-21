@@ -1,0 +1,9 @@
+{
+  "name": "Hydrothermal Geochemistry",
+  "subfields": ["Black Smoker Vent Systems", "Seafloor Massive Sulfide Deposits", "Magmatic-Hydrothermal Ore Genesis", "Continental Geothermal Systems", "Fluid-Rock Interaction Thermodynamics"],
+  "keyTechnologies": ["Deep-Sea ROV Sampling", "Fluid Inclusion Microthermometry", "Stable Isotope Ratio Mass Spectrometry", "LA-ICP-MS Trace Element Analysis", "Reactive Transport Modeling"],
+  "topInstitutions": ["MBARI Monterey Bay", "GEOMAR Helmholtz Centre for Ocean Research Kiel", "University of Southampton", "University of British Columbia", "WHOI"],
+  "researcherCount": 2800,
+  "avgFunding": "$1.4M",
+  "description": "Hydrothermal geochemistry investigates the chemical exchange between superheated water and rock in submarine and continental settings, tracing how these fluids dissolve, transport, and redeposit metals to form ore bodies and vent ecosystems. Deep-sea hydrothermal vents — where temperatures can exceed 400 °C and pressures are hundreds of atmospheres — host chemosynthetic ecosystems that have become a model for potential life on ocean-bearing moons like Europa and Enceladus. On the applied side, the field underpins the exploration of volcanogenic massive sulfide deposits rich in copper, zinc, and rare earth elements increasingly sought for the energy transition. Methodologically, it blends deep-sea sampling expeditions with high-pressure laboratory experiments and thermodynamic fluid-speciation codes. Practitioners are typically geochemists, mineralogists, and physical oceanographers who alternate between ship time and desk-based modeling."
+}

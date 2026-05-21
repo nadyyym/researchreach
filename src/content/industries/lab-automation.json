@@ -1,0 +1,25 @@
+{
+  "name": "Lab Automation",
+  "companies": [
+    "Benchling",
+    "Synthace",
+    "Labman Automation",
+    "Automata",
+    "Opentrons",
+    "Hamilton Robotics",
+    "Tecan",
+    "Brooks Automation",
+    "Transcriptic",
+    "HighRes Biosolutions"
+  ],
+  "targetResearchers": "Biochemists, robotics engineers, and laboratory informatics scientists working on liquid-handling automation, workflow orchestration, and self-driving laboratory systems",
+  "marketSize": "$9B",
+  "useCases": [
+    "Self-driving laboratory PhD recruitment for closed-loop experimental design",
+    "University partnerships for active-learning and Bayesian optimization in wet labs",
+    "Liquid-handling integration and protocol translation collaboration programs",
+    "Lab information management system (LIMS) interoperability talent pipeline",
+    "High-throughput phenotypic assay and imaging automation R&D"
+  ],
+  "description": "Lab automation companies are transforming bench science by replacing manual pipetting, incubation, and data recording with robotic systems, orchestration software, and AI-driven experimental planning. The sector recruits from chemistry, biology, robotics engineering, and computer science programs — drawing especially on researchers who have built or published on self-driving laboratory platforms, high-throughput screening infrastructure, or Bayesian optimization in experimental science. Platforms like Opentrons and Synthace are designed by scientists who moved from academic labs frustrated by reproducibility and throughput limits, and the companies continue to co-develop features with university and pharma lab partners. Academic intelligence helps automation vendors identify early-career researchers who are publishing on workflow automation or active-learning experiments, enabling targeted outreach for technical sales, scientific advisory roles, and collaborative development programs."
+}

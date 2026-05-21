@@ -1,0 +1,26 @@
+{
+  "name": "Ghent University",
+  "country": "Belgium",
+  "city": "Ghent",
+  "type": "public",
+  "researcherCount": 4100,
+  "avgHindex": 48,
+  "grantCount": 2600,
+  "departments": [
+    "Bioscience Engineering",
+    "Medicine",
+    "Sciences",
+    "Engineering",
+    "Pharmaceutical Sciences",
+    "Veterinary Medicine",
+    "Economics"
+  ],
+  "topFields": [
+    "Plant Biotechnology",
+    "Food Science",
+    "Aquaculture",
+    "Cancer Biology",
+    "Photonics"
+  ],
+  "description": "Ghent University is Belgium's most research-productive university per capita and home to the VIB Biotechnology Institute, a globally recognized plant and systems biology center that pioneered early CRISPR-based crop engineering and continues to attract top-tier ERC and FWO grants. Its Faculty of Bioscience Engineering is the largest of its kind in Europe, running food quality, aquaculture, and sustainable agriculture research with direct industry linkages to the Ghent bio-economy cluster. The Photonics Research Group within the Faculty of Engineering and Architecture has built a world-leading silicon photonics program with imec collaboration, making Ghent a critical institution for photonic component and test equipment vendors. The university's flat funding structure and strong culture of open tender procurement means that well-positioned vendors can win broad framework agreements covering multiple departments simultaneously."
+}

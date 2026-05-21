@@ -1,0 +1,25 @@
+{
+  "name": "Computational Drug Discovery",
+  "companies": [
+    "Schrödinger",
+    "Recursion Pharmaceuticals",
+    "Insilico Medicine",
+    "Exscientia",
+    "Atomwise",
+    "Relay Therapeutics",
+    "Valo Health",
+    "Kebotix",
+    "BioAge Labs",
+    "Entos"
+  ],
+  "targetResearchers": "Computational chemists, structural biologists, and machine-learning researchers specializing in protein structure prediction, molecular dynamics, and generative molecular design",
+  "marketSize": "$7B",
+  "useCases": [
+    "Generative-chemistry PhD recruitment for AI-driven hit-identification teams",
+    "University partnerships for protein-dynamics and allostery research",
+    "Structure-based drug design collaboration programs with structural-biology labs",
+    "High-throughput screening and active-learning talent pipeline",
+    "Phenotypic imaging and multi-omics data integration R&D"
+  ],
+  "description": "Computational drug discovery companies use physics-based simulations, machine learning, and large biological datasets to design novel drug candidates faster and at lower cost than traditional screening campaigns. The field is a direct commercialization of academic research in structural biology, quantum chemistry, and deep learning — disciplines that generated foundational tools like AlphaFold, FEP+, and variational autoencoders for molecular generation. Companies such as Schrödinger and Relay Therapeutics recruit computational chemists and ML researchers who have published on force-field parameterization, binding free-energy methods, or generative molecular models, often approaching them before their dissertations are finalized. Academic intelligence platforms let these companies continuously track relevant preprints and publication networks, mapping which university groups are producing the next generation of methods that could meaningfully shift hit rates in a given target class."
+}

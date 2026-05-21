@@ -1,0 +1,25 @@
+{
+  "name": "Hydrogen Economy",
+  "companies": [
+    "Plug Power",
+    "Nel Hydrogen",
+    "ITM Power",
+    "Electric Hydrogen",
+    "Hyzon Motors",
+    "H2Pro",
+    "Hystar",
+    "Ceres Power",
+    "Green Hydrogen Systems",
+    "Advent Technologies"
+  ],
+  "targetResearchers": "Electrochemists and chemical engineers focused on PEM and alkaline electrolysis, catalyst design, hydrogen storage, and fuel-cell stack engineering",
+  "marketSize": "$185B",
+  "useCases": [
+    "Electrolyzer catalyst PhD recruitment for stack-design teams",
+    "University partnerships for novel proton-exchange membrane research",
+    "Hydrogen storage materials collaboration programs",
+    "Fuel-cell durability and degradation talent pipeline",
+    "Green-ammonia and liquid-carrier chemistry R&D recruitment"
+  ],
+  "description": "The hydrogen economy encompasses the production, storage, transport, and conversion of hydrogen as a zero-carbon energy carrier, with applications in heavy industry, shipping, and long-duration grid storage. The sector's key bottlenecks — electrolyzer efficiency, catalyst durability, and hydrogen embrittlement in storage — are active university research problems that companies like Electric Hydrogen and H2Pro are working to commercialize. Disciplines recruited include electrochemistry, surface science, polymer engineering, and thermodynamics. Academic intelligence gives hydrogen companies the ability to track catalyst and membrane publications in real time, identifying researchers whose work could accelerate stack performance or reduce the cost of green hydrogen before those researchers are approached by incumbent industrial gas players."
+}

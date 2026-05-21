@@ -1,0 +1,11 @@
+{
+  "name": "Ali Hajimiri",
+  "institution": "California Institute of Technology",
+  "field": "Electrical Engineering / Integrated Circuits",
+  "hindex": 82,
+  "grantCount": 35,
+  "patents": 85,
+  "publications": 380,
+  "industryTies": ["HRL Laboratories", "Waymo", "Space Exploration Technologies", "Psemi"],
+  "description": "Ali Hajimiri is a pioneering integrated-circuits engineer at Caltech whose lab produced the phase-noise model for oscillators that is now universally used in RF circuit design, published in a landmark 1998 IEEE Journal paper. He co-founded a series of deep-tech spinouts from his group, including a phased-array-on-chip LiDAR technology that was acquired into the Waymo autonomous-vehicle sensor supply chain. His recent work on optical phased arrays and holographic displays on silicon photonics platforms has attracted DARPA and SpaceX interest for free-space optical communications between satellites. Hajimiri holds more than 85 US patents across RF, mm-wave, and optical domains and received the IEEE David Sarnoff Award and the Caltech Graduate Student Council Teaching Award multiple times. He is also notable for popular science communication through his YouTube channel on circuits and electromagnetics."
+}

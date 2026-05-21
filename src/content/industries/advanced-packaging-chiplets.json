@@ -1,0 +1,25 @@
+{
+  "name": "Advanced Packaging & Chiplets",
+  "companies": [
+    "Intel Foundry Services",
+    "TSMC",
+    "ASE Group",
+    "Amkor Technology",
+    "Marvell Technology",
+    "Ayar Labs",
+    "Enosemi",
+    "SiPearl",
+    "Liqid",
+    "Ventana Micro Systems"
+  ],
+  "targetResearchers": "Electrical engineers and materials scientists specializing in heterogeneous integration, interposers, through-silicon vias, and thermal management",
+  "marketSize": "$65B",
+  "useCases": [
+    "Heterogeneous-integration PhD recruitment for packaging architecture teams",
+    "University TSV and interposer research partnerships",
+    "Photonic co-packaged optics collaboration programs",
+    "Thermal-management materials and simulation talent pipeline",
+    "Die-to-die interface protocol research collaborations"
+  ],
+  "description": "Advanced packaging and chiplets represent the semiconductor industry's response to the slowing of transistor scaling: disaggregating monolithic chips into smaller specialized dies that are integrated at the package level using high-density interconnects. The discipline draws on academic research in electrical engineering, materials science, and photonics — particularly work on through-silicon vias, wafer bonding, and co-packaged optics from university clean-room programs. Companies such as Ayar Labs and ASE Group are forming research partnerships with institutions that have fabrication facilities capable of prototyping new interconnect architectures. Academic intelligence enables packaging teams to monitor publication activity on die-to-die interface standards and thermal-management innovations, helping them identify collaborative partners and hire specialized engineers before competitors."
+}

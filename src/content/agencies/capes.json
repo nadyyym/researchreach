@@ -1,0 +1,8 @@
+{
+  "name": "CAPES — Brazilian Federal Agency for Support and Evaluation of Graduate Education",
+  "country": "Brazil",
+  "type": "government",
+  "budget": "$1.8B",
+  "programs": ["Science Without Borders", "PDSE Doctoral Sandwich Scholarships", "PROEX Research Excellence", "Print International Cooperation", "Capes-Humboldt"],
+  "description": "CAPES (Coordenação de Aperfeiçoamento de Pessoal de Nível Superior) is the Brazilian federal body responsible for accrediting, funding, and evaluating graduate programs across more than 5,000 courses at Brazilian universities. Its quadrennial Qualis system ranks every graduate program in the country, directly linking scores to fellowship allocation and shaping institutional research strategy. The Science Without Borders initiative, managed jointly with CNPq, sent over 100,000 Brazilian students and researchers abroad for graduate training at leading international universities. CAPES's Print program now funds long-term institutional partnerships between Brazilian universities and top global partners in defined thematic areas. The agency also administers the Portal de Periódicos, a national research library platform giving all Brazilian researchers free access to more than 45,000 peer-reviewed journals."
+}

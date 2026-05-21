@@ -1,0 +1,25 @@
+{
+  "name": "Geothermal Energy",
+  "companies": [
+    "Fervo Energy",
+    "Eavor Technologies",
+    "Quaise Energy",
+    "AltaRock Energy",
+    "Sage Geosystems",
+    "Zanskar Geothermal",
+    "Cyrq Energy",
+    "Baseload Capital",
+    "Eden GeoPower",
+    "Dandelion Energy"
+  ],
+  "targetResearchers": "Geoscientists, drilling engineers, and rock-mechanics researchers specializing in enhanced geothermal systems, fracture networks, and subsurface thermal modeling",
+  "marketSize": "$12B",
+  "useCases": [
+    "Enhanced geothermal system PhD recruitment for reservoir engineering",
+    "University partnerships for rock-mechanics and fracture-stimulation research",
+    "Millimeter-wave drilling and borehole technology collaborations",
+    "Subsurface thermal gradient modeling talent pipeline",
+    "Geologic site-characterization and seismic-risk research collaborations"
+  ],
+  "description": "Next-generation geothermal companies are moving beyond conventional hydrothermal fields to develop enhanced geothermal systems that can generate power almost anywhere by engineering fracture networks in hot dry rock. The sector recruits geoscientists, petroleum engineers retrained in subsurface heat flow, and drilling engineers — talent pools that overlap heavily with university earth-science and geoengineering programs. Quaise Energy is commercializing millimeter-wave vaporization drilling invented at MIT, illustrating how tightly the industry's frontier technology is tied to academic research. Academic intelligence helps geothermal developers track publications on reservoir stimulation, microseismic monitoring, and novel drilling approaches, enabling them to identify university partners and recruit specialized researchers before the larger oil-and-gas industry absorbs them."
+}

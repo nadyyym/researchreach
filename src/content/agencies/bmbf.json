@@ -1,0 +1,8 @@
+{
+  "name": "Federal Ministry of Education and Research (BMBF)",
+  "country": "Germany",
+  "type": "government",
+  "budget": "$24B",
+  "programs": ["Clusters of Excellence", "Research Campus Initiative", "High-Tech Strategy 2025", "Bioeconomy Strategy", "Quantum Technologies", "AI Strategy"],
+  "description": "The Bundesministerium für Bildung und Forschung is Germany's primary federal agency for science and education funding, disbursing the largest single national research budget in the European Union. It drives the national High-Tech Strategy that coordinates public and industrial R&D across priority fields including artificial intelligence, quantum computing, and green hydrogen. BMBF created the Clusters of Excellence program in partnership with the German Research Foundation, reshaping the competitive landscape of German universities into a small number of heavily resourced research powerhouses. Its Bioeconomy Strategy funds over 200 projects annually at the intersection of biology, agriculture, and industrial chemistry. BMBF also manages Germany's international science cooperation agreements, channeling grants to joint projects across sixty partner countries."
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Fusion Energy",
+  "companies": [
+    "Commonwealth Fusion Systems",
+    "TAE Technologies",
+    "Helion Energy",
+    "Zap Energy",
+    "General Fusion",
+    "Marvel Fusion",
+    "Focused Energy",
+    "Renaissance Fusion"
+  ],
+  "targetResearchers": "Plasma physicists, nuclear engineers, and magnet scientists specializing in MHD, superconducting materials, and inertial confinement",
+  "marketSize": "$40B",
+  "useCases": [
+    "Plasma-physics PhD hiring for confinement teams",
+    "Superconducting-magnet materials partnerships with universities",
+    "Inertial-confinement target fabrication collaborations",
+    "Tritium breeding and neutron-materials research talent pipeline",
+    "Computational plasma modeling R&D recruitment"
+  ],
+  "description": "Fusion energy companies are racing to commercialize controlled nuclear fusion by recruiting plasma physicists and nuclear engineers trained at national laboratories and research universities. The sector's core science — magnetohydrodynamics, high-temperature superconductors, and tritium breeding — is almost entirely rooted in decades of academic output from programs like MIT's PSFC and Princeton Plasma Physics Lab. Private ventures such as Commonwealth Fusion Systems and Helion are licensing university IP and staffing entire divisions with recently graduated PhDs. Academic intelligence helps recruiters identify authors on confinement, mirror-machine, and Z-pinch papers before they enter the general job market, compressing a notoriously long hiring cycle."
+}

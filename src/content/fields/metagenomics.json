@@ -1,0 +1,9 @@
+{
+  "name": "Metagenomics",
+  "subfields": ["Shotgun Metagenomics", "Amplicon-Based Community Profiling", "Viral Metagenomics", "Metaproteomics", "Ancient Environmental DNA"],
+  "keyTechnologies": ["Illumina Short-Read Sequencing", "Oxford Nanopore Long-Read Sequencing", "Binning and Assembly Pipelines", "Kraken2/Bracken Taxonomic Classification", "Metagenome-Assembled Genomes"],
+  "topInstitutions": ["DOE Joint Genome Institute", "EMBL-EBI", "Broad Institute", "University of California San Diego", "Wellcome Sanger Institute"],
+  "researcherCount": 22000,
+  "avgFunding": "$1.0M",
+  "description": "Metagenomics sequences and analyzes the collective genetic material recovered directly from environmental samples — soil, seawater, gut contents, sediment — without culturing individual organisms, thereby giving access to the vast majority of microbial life that has never been grown in a laboratory. The approach has fundamentally rewritten our understanding of microbial diversity: the human gut metagenome encodes roughly 150 times more genes than the human genome, and ocean surveys continually uncover phyla that exist nowhere in culture collections. Clinically, metagenomics is being deployed for culture-independent diagnosis of infectious disease and for characterizing the dysbiotic microbiomes linked to inflammatory bowel disease, obesity, and psychiatric conditions. The technology also anchors environmental monitoring pipelines that detect emerging pathogens in wastewater and track antibiotic resistance gene reservoirs. Practitioners are typically bioinformaticians, microbial ecologists, and molecular biologists who work primarily on high-throughput computing clusters."
+}

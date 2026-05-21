@@ -1,0 +1,11 @@
+{
+  "name": "Ritu Raman",
+  "institution": "Massachusetts Institute of Technology",
+  "field": "Biohybrid Robotics / Bioengineering",
+  "hindex": 28,
+  "grantCount": 14,
+  "patents": 9,
+  "publications": 75,
+  "industryTies": ["DARPA Biological Technologies Office", "Cytex Therapeutics", "MIT.nano"],
+  "description": "Ritu Raman leads MIT's Raman Lab, which builds biohybrid machines that harness the contractile force of engineered muscle tissue to actuate soft robotic structures — creating devices that, unlike conventional motors, can self-repair after damage and adapt to their environment through biological signaling. Her optogenetic muscle-powered robots demonstrated the first light-controlled biohybrid swimmer capable of executing programmable turning maneuvers, published in Science in 2016 during her doctoral work at UIUC. At MIT she has expanded this platform to neuromuscular biohybrids that model ALS and Duchenne muscular dystrophy in vitro, providing pharmaceutical screening tools that recapitulate disease progression with unprecedented fidelity. She received the NIH Director's New Innovator Award at age 29 and was named to Forbes 30 Under 30 in Science. DARPA funds her group's work on living materials for autonomous bio-integrated sensors in extreme environments."
+}

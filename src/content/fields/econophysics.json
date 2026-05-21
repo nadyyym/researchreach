@@ -1,0 +1,9 @@
+{
+  "name": "Econophysics",
+  "subfields": ["Financial Market Dynamics", "Wealth Distribution Modeling", "Network Economics", "Agent-Based Market Models", "Stochastic Processes in Finance"],
+  "keyTechnologies": ["Monte Carlo Simulations", "Random Matrix Theory", "High-Frequency Trade Data Analysis", "Complex Network Analysis", "Entropy-Based Statistical Methods"],
+  "topInstitutions": ["Santa Fe Institute", "Université Paris-Saclay", "Boston University", "ETH Zurich", "Indian Statistical Institute"],
+  "researcherCount": 3100,
+  "avgFunding": "$380K",
+  "description": "Econophysics applies the statistical mechanics and complexity tools of theoretical physics to financial markets and economic systems. Rather than assuming rational equilibrium, researchers treat markets as out-of-equilibrium many-body systems exhibiting power-law distributions, phase transitions, and avalanche dynamics. The discipline originated in the mid-1990s when physicists noticed that the fat-tailed return distributions and volatility clustering of stock prices looked uncannily like critical phenomena in condensed matter. Key deliverables include early-warning signals for market crashes, entropy-based portfolio risk measures, and network models of systemic banking contagion. Hedge funds and central banks are the primary industry draws, and the typical practitioner holds a physics PhD but publishes in both physics and economics journals."
+}

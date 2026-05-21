@@ -1,0 +1,9 @@
+{
+  "name": "Chronobiology",
+  "subfields": ["Circadian Rhythms", "Seasonal Physiology", "Chronopharmacology", "Molecular Clock Mechanisms", "Sleep Research"],
+  "keyTechnologies": ["Luciferase Reporter Assays", "Actigraphy Wearables", "Single-Cell RNA Sequencing", "CRISPR Clock-Gene Editing", "Polysomnography"],
+  "topInstitutions": ["Salk Institute for Biological Studies", "University of Texas Southwestern", "University of Surrey", "Charité Berlin", "LMU Munich"],
+  "researcherCount": 6800,
+  "avgFunding": "$780K",
+  "description": "Chronobiology studies the molecular and physiological timing systems that align biological processes with the 24-hour light-dark cycle and longer seasonal rhythms. The central clock is a transcription-translation feedback loop of a handful of genes — CLOCK, BMAL1, PER, CRY — that drive oscillations across virtually every cell in the body, from immune function to metabolism. Disruption of these clocks, as in shift work or chronic jet lag, is increasingly linked to metabolic syndrome, cancer, and mood disorders. The pharmaceutical industry draws heavily on chronopharmacology to optimize drug timing, a practice called chronotherapy. Researchers in this field span cell biology, neuroscience, epidemiology, and biomedical engineering, united by the conviction that time-of-day is an underappreciated clinical variable."
+}

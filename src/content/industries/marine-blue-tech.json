@@ -1,0 +1,25 @@
+{
+  "name": "Marine & Blue Tech",
+  "companies": [
+    "Saildrone",
+    "Sofar Ocean",
+    "Planet Ocean",
+    "Impossible Metals",
+    "Planetary Technologies",
+    "Running Tide",
+    "Ørsted",
+    "Subsea 7",
+    "OceanGate",
+    "BlueGreen Water Technologies"
+  ],
+  "targetResearchers": "Ocean scientists, marine biologists, and ocean engineers working on autonomous surface vehicles, deep-sea sensing, marine carbon removal, and offshore energy systems",
+  "marketSize": "$28B",
+  "useCases": [
+    "Autonomous underwater vehicle PhD recruitment for sensor and navigation teams",
+    "University partnerships for ocean biogeochemistry and carbon-removal research",
+    "Offshore wind turbine foundation and array collaboration programs",
+    "Deep-sea mineral exploration and environmental-impact talent pipeline",
+    "Harmful-algal-bloom detection and marine ecosystem monitoring R&D"
+  ],
+  "description": "Marine and blue-tech companies are commercializing the ocean as a platform for energy production, environmental monitoring, deep-sea resource extraction, and carbon removal. The industry draws on academic expertise in physical oceanography, marine biology, naval architecture, and underwater acoustics — disciplines concentrated in coastal research universities and institutions like WHOI, Scripps, and NOC. Companies like Saildrone and Running Tide are spinning out technology developed through federally funded ocean research programs and staffing their science teams with oceanographers who publish on ocean-atmosphere exchange, biogeochemical cycling, and autonomous sensing. Academic intelligence allows blue-tech firms to monitor publication activity across these disciplines, identify researchers before they graduate, and map institutional collaboration opportunities in a field where scientific credibility is essential for regulatory approval."
+}

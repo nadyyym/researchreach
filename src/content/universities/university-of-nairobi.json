@@ -1,0 +1,26 @@
+{
+  "name": "University of Nairobi",
+  "country": "Kenya",
+  "city": "Nairobi",
+  "type": "public",
+  "researcherCount": 1800,
+  "avgHindex": 30,
+  "grantCount": 850,
+  "departments": [
+    "Medicine",
+    "Agriculture",
+    "Engineering",
+    "Science",
+    "Veterinary Medicine",
+    "Public Health",
+    "Environmental Studies"
+  ],
+  "topFields": [
+    "Tropical Medicine",
+    "Agricultural Biotechnology",
+    "Environmental Health",
+    "Epidemiology",
+    "Renewable Energy"
+  ],
+  "description": "The University of Nairobi is East Africa's most research-active institution and a key partner in flagship international health programs including the US-funded KEMRI-Wellcome Trust collaboration and several NIH-funded HIV/AIDS research consortia that anchor the university's clinical-science output. Its College of Agriculture and Veterinary Sciences operates field stations across Kenya's diverse agroecological zones, sustaining demand for remote-sensing technology, soil analysis equipment, and molecular diagnostics relevant to both crop improvement and livestock health. The Faculty of Engineering is a growing hub for renewable energy and off-grid systems research, supported by Rockefeller Foundation and USAID grants targeting Sub-Saharan infrastructure challenges. Vendors serving global health, agricultural diagnostics, and environmental monitoring markets will find UoN a strategically important East African account, with procurement processes increasingly aligned to USAID and World Bank contracting standards."
+}

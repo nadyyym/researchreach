@@ -1,0 +1,25 @@
+{
+  "name": "Cultivated Meat",
+  "companies": [
+    "UPSIDE Foods",
+    "Good Meat (Eat Just)",
+    "Mosa Meat",
+    "Vow",
+    "Aleph Farms",
+    "Wildtype",
+    "BlueNalu",
+    "Shiok Meats",
+    "New Age Meats",
+    "Meatable"
+  ],
+  "targetResearchers": "Cell biologists, tissue engineers, and food scientists working on myosatellite cell expansion, scaffold design, serum-free growth media, and bioreactor scale-up",
+  "marketSize": "$25B",
+  "useCases": [
+    "Tissue-engineering PhD recruitment for muscle-fiber differentiation teams",
+    "University partnerships for serum-free and animal-free growth media development",
+    "3D scaffold and extracellular matrix fabrication collaboration programs",
+    "Bioreactor hydrodynamics and cell-culture scale-up talent pipeline",
+    "Sensory science and texture characterization R&D collaborations"
+  ],
+  "description": "Cultivated meat companies grow animal muscle tissue directly from stem cells, aiming to produce conventional meat products without livestock farming. The science is grounded in academic cell biology, regenerative medicine, and food engineering — disciplines whose tools for myogenic differentiation, extracellular matrix synthesis, and perfusion bioreactor design were developed for therapeutic tissue engineering rather than food production. Companies like UPSIDE Foods and Mosa Meat recruit cell biologists and tissue engineers from university programs and hospital research institutes, adapting their expertise to food-grade manufacturing constraints. Academic intelligence lets cultivated-meat developers track publications on serum-free expansion media, scaffold biomechanics, and cost-reduction strategies for growth factors — critical inflection points where academic breakthroughs directly determine whether the industry can reach price parity with conventional meat at industrial scale."
+}
