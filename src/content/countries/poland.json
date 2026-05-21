@@ -1,0 +1,9 @@
+{
+  "name": "Poland",
+  "code": "PL",
+  "topInstitutions": ["University of Warsaw", "Jagiellonian University", "Polish Academy of Sciences", "Warsaw University of Technology", "AGH University of Krakow"],
+  "topAgencies": ["NCN", "NCBR", "Polish Academy of Sciences"],
+  "researchOutput": 60000,
+  "topFields": ["Physics", "Chemistry", "Computer Science", "Mathematics", "Materials Science"],
+  "description": "Poland is one of Central Europe's largest research producers, with deep traditions in mathematics, physics, and chemistry. The Polish Academy of Sciences and major universities drive growing output in computer science and materials research."
+}

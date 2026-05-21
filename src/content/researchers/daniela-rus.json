@@ -1,0 +1,16 @@
+{
+  "name": "Daniela Rus",
+  "institution": "Massachusetts Institute of Technology",
+  "field": "Robotics",
+  "hindex": 95,
+  "grantCount": 50,
+  "patents": 40,
+  "publications": 380,
+  "orcid": "0000-0001-5473-3566",
+  "industryTies": [
+    "MIT CSAIL",
+    "Liquid AI",
+    "Toyota Research (advisory)"
+  ],
+  "description": "Daniela Rus directs MIT CSAIL and is a leader in robotics, distributed systems, and self-reconfiguring modular robots. She co-founded Liquid AI to commercialize liquid neural networks for efficient autonomy."
+}

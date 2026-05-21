@@ -1,0 +1,9 @@
+{
+  "name": "Microbiology",
+  "subfields": ["Microbial Genomics", "Antimicrobial Resistance", "Host-Pathogen Interactions", "Environmental Microbiology", "Microbiome Research"],
+  "keyTechnologies": ["16S rRNA Sequencing", "Metagenomics", "Flow Cytometry", "Single-Cell Sequencing", "Anaerobic Culturing"],
+  "topInstitutions": ["Harvard", "University of Melbourne", "Max Planck Institutes", "University of British Columbia", "ETH Zurich"],
+  "researcherCount": 35000,
+  "avgFunding": "$410K",
+  "description": "Microbiology studies microorganisms including bacteria, archaea, viruses, and fungi, and their roles in health, disease, and ecosystems. The field is central to combating antimicrobial resistance, understanding the human microbiome, and engineering microbes for biotechnology."
+}

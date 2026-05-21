@@ -1,0 +1,9 @@
+{
+  "name": "South Africa",
+  "code": "ZA",
+  "topInstitutions": ["University of Cape Town", "University of the Witwatersrand", "Stellenbosch University", "University of Pretoria"],
+  "topAgencies": ["NRF", "CSIR", "Department of Science and Innovation"],
+  "researchOutput": 30000,
+  "topFields": ["Astronomy", "Paleoanthropology", "Infectious Diseases", "Mining", "Zoology"],
+  "description": "South Africa is the African continent's leading research producer, hosting the MeerKAT array and a core site of the Square Kilometre Array. It is renowned for astronomy, paleoanthropology, and HIV/TB infectious-disease research."
+}

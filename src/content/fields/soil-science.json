@@ -1,0 +1,9 @@
+{
+  "name": "Soil Science",
+  "subfields": ["Soil Microbiology", "Pedology", "Soil Carbon Dynamics", "Soil Physics", "Agronomic Soil Management"],
+  "keyTechnologies": ["Stable Isotope Analysis", "X-Ray Computed Tomography", "Spectroscopic Soil Sensing", "Metagenomic Sequencing", "Eddy Covariance Flux Towers"],
+  "topInstitutions": ["Wageningen University", "Cornell University", "ETH Zurich", "China Agricultural University", "University of California Davis"],
+  "researcherCount": 16000,
+  "avgFunding": "$320K",
+  "description": "Soil science studies the formation, composition, and function of soils as natural bodies and as the foundation of agriculture. It is increasingly central to climate research through soil carbon sequestration and to global food security."
+}

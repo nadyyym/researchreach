@@ -1,0 +1,25 @@
+{
+  "name": "Paris Sciences et Lettres University",
+  "country": "France",
+  "city": "Paris",
+  "type": "public",
+  "researcherCount": 3200,
+  "avgHindex": 46,
+  "grantCount": 2400,
+  "departments": [
+    "Physics",
+    "Chemistry",
+    "Biology",
+    "Mathematics",
+    "Computer Science",
+    "Earth Sciences"
+  ],
+  "topFields": [
+    "Quantum Physics",
+    "Chemistry",
+    "Cognitive Science",
+    "Mathematics",
+    "Materials Science"
+  ],
+  "description": "PSL University federates elite Parisian institutions including ENS, ESPCI, and Mines Paris into a single research powerhouse. It punches well above its size in fundamental physics, chemistry, and mathematics, with multiple recent Nobel and Fields laureates."
+}

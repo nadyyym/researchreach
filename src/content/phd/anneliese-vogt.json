@@ -1,0 +1,22 @@
+{
+  "name": "Anneliese Vogt",
+  "institution": "Heidelberg University",
+  "field": "Single-Cell Genomics",
+  "advisor": "Dr. Oliver Stegle",
+  "thesis": "Multimodal single-cell atlases for immune-response profiling",
+  "publications": 9,
+  "skills": [
+    "Single-Cell RNA-seq",
+    "Bioinformatics",
+    "Python",
+    "R",
+    "Machine Learning",
+    "Cloud Computing"
+  ],
+  "transitionSignals": [
+    "Internship at 10x Genomics",
+    "Co-authored with diagnostics-company scientists",
+    "Maintains an open-source single-cell toolkit"
+  ],
+  "description": "Anneliese builds computational atlases that map immune-cell states across patients, supporting biomarker discovery. Her single-cell pipeline and cloud skills fit a genomics-tools or precision-medicine company."
+}

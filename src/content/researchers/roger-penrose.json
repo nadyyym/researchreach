@@ -1,0 +1,15 @@
+{
+  "name": "Roger Penrose",
+  "institution": "University of Oxford",
+  "field": "Mathematical Physics",
+  "hindex": 98,
+  "grantCount": 31,
+  "patents": 2,
+  "publications": 340,
+  "orcid": "0000-0002-1733-4980",
+  "industryTies": [
+    "Penrose Institute",
+    "Oxford Mathematical Institute"
+  ],
+  "description": "Roger Penrose is a Nobel laureate mathematical physicist renowned for proving that black hole formation is a robust prediction of general relativity. His work spans singularity theorems, twistor theory, and aperiodic tilings that later informed quasicrystal research."
+}

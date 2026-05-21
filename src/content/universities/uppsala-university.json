@@ -1,0 +1,26 @@
+{
+  "name": "Uppsala University",
+  "country": "Sweden",
+  "city": "Uppsala",
+  "type": "public",
+  "researcherCount": 3700,
+  "avgHindex": 48,
+  "grantCount": 2400,
+  "departments": [
+    "Medicine",
+    "Pharmacy",
+    "Chemistry",
+    "Physics and Astronomy",
+    "Biology",
+    "Mathematics",
+    "Information Technology"
+  ],
+  "topFields": [
+    "Pharmacology",
+    "Genomics",
+    "Materials Chemistry",
+    "Astronomy",
+    "Bioinformatics"
+  ],
+  "description": "Founded in 1477, Uppsala University is the oldest university in the Nordic countries. It maintains world-class research in pharmacy, chemistry, and genomics, with deep historical ties to Linnaeus and the SciLifeLab consortium."
+}

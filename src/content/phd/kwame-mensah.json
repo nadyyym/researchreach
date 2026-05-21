@@ -1,0 +1,22 @@
+{
+  "name": "Kwame Mensah",
+  "institution": "Stanford University",
+  "field": "Machine Learning",
+  "advisor": "Dr. Chelsea Finn",
+  "thesis": "Sample-efficient imitation learning for dexterous robotic manipulation",
+  "publications": 10,
+  "skills": [
+    "PyTorch",
+    "Reinforcement Learning",
+    "JAX",
+    "Distributed Training",
+    "Computer Vision",
+    "CUDA"
+  ],
+  "transitionSignals": [
+    "Internship at Google DeepMind",
+    "Co-authored with Physical Intelligence researchers",
+    "Maintains a popular open-source RL repo"
+  ],
+  "description": "Kwame builds policies that let robot hands learn complex tasks from a handful of demonstrations. His publication record at top venues and DeepMind internship make him a competitive hire for a frontier robotics-AI lab."
+}

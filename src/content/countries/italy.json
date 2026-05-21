@@ -1,0 +1,9 @@
+{
+  "name": "Italy",
+  "code": "IT",
+  "topInstitutions": ["Sapienza University of Rome", "University of Bologna", "Politecnico di Milano", "Scuola Normale Superiore di Pisa", "University of Padua"],
+  "topAgencies": ["CNR", "INFN", "MUR", "INAF"],
+  "researchOutput": 110000,
+  "topFields": ["Astrophysics", "Materials Science", "Organic Chemistry", "Immunology", "Condensed Matter Physics"],
+  "description": "Italy has a long and distinguished scientific tradition, with particular strength in physics, astronomy, and the life sciences. Its National Research Council and the INFN nuclear physics network anchor a productive ecosystem, while ancient universities like Bologna sustain broad disciplinary depth."
+}

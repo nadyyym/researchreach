@@ -1,0 +1,8 @@
+{
+  "name": "Volkswagen Foundation",
+  "country": "Germany",
+  "type": "foundation",
+  "budget": "$200M",
+  "programs": ["Freigeist Fellowships", "Momentum", "Lichtenberg Professorships", "Off the Beaten Track", "Pioneering Research Initiatives", "Knowledge for Tomorrow"],
+  "description": "The Volkswagen Foundation is Germany's largest private research-funding foundation, independent of the carmaker. It backs bold, unconventional, and interdisciplinary projects, often supporting early-career researchers and high-risk ideas overlooked by mainstream funders."
+}

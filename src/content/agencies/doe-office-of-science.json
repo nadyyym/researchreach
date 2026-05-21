@@ -1,0 +1,8 @@
+{
+  "name": "DOE Office of Science",
+  "country": "United States",
+  "type": "government",
+  "budget": "$8.2B",
+  "programs": ["Basic Energy Sciences", "High Energy Physics", "Fusion Energy Sciences", "Advanced Scientific Computing Research", "Biological and Environmental Research", "Early Career Research Program"],
+  "description": "The U.S. Department of Energy's Office of Science is the nation's largest funder of physical sciences research. It supports the national laboratory system, major user facilities, and university research in fields from particle physics to fusion energy."
+}

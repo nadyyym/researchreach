@@ -1,0 +1,25 @@
+{
+  "name": "Tokyo Institute of Technology",
+  "country": "Japan",
+  "city": "Tokyo",
+  "type": "public",
+  "researcherCount": 3400,
+  "avgHindex": 45,
+  "grantCount": 2400,
+  "departments": [
+    "Materials Science and Engineering",
+    "Chemistry",
+    "Physics",
+    "Computing",
+    "Mechanical Engineering",
+    "Life Science and Technology"
+  ],
+  "topFields": [
+    "Materials Science",
+    "Catalysis",
+    "Robotics",
+    "Solid-State Chemistry",
+    "Earth and Planetary Science"
+  ],
+  "description": "Tokyo Institute of Technology is Japan's premier engineering and physical-sciences university. It is internationally recognized for materials science, catalysis, and the discovery of superconducting and battery materials."
+}

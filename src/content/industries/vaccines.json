@@ -1,0 +1,25 @@
+{
+  "name": "Vaccines",
+  "companies": [
+    "Moderna",
+    "BioNTech",
+    "Pfizer",
+    "Novavax",
+    "Vaxcyte",
+    "Sanofi",
+    "CureVac",
+    "GSK",
+    "Valneva",
+    "Gritstone bio"
+  ],
+  "targetResearchers": "Immunologists and molecular biologists in mRNA technology, antigen design, adjuvants, and immune profiling",
+  "marketSize": "$70B",
+  "useCases": [
+    "mRNA-platform R&D recruitment",
+    "Academic antigen-design partnerships",
+    "University immunology collaborations",
+    "Vaccine-formulation talent pipeline",
+    "Pandemic-preparedness research alliances"
+  ],
+  "description": "The vaccine industry was transformed by mRNA platforms and now pursues programmable, rapidly deployable immunizations. It maintains close ties to academic immunology and structural-biology labs, recruiting PhD scientists in antigen design and formulation."
+}

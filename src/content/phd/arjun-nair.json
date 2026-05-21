@@ -1,0 +1,22 @@
+{
+  "name": "Arjun Nair",
+  "institution": "Georgia Institute of Technology",
+  "field": "Advanced Manufacturing",
+  "advisor": "Dr. Suman Das",
+  "thesis": "In-situ monitoring and closed-loop control of laser powder-bed fusion",
+  "publications": 7,
+  "skills": [
+    "Additive Manufacturing",
+    "Computer Vision",
+    "Python",
+    "Materials Characterization",
+    "Process Control",
+    "CAD/CAM"
+  ],
+  "transitionSignals": [
+    "Internship at Velo3D",
+    "Filed first patent on a defect-detection method",
+    "Co-authored with aerospace-manufacturing engineers"
+  ],
+  "description": "Arjun develops vision-based monitoring that catches defects mid-print in metal additive manufacturing, reducing scrap. His process-control and AM expertise suit an advanced-manufacturing company scaling production printing."
+}

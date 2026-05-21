@@ -1,0 +1,12 @@
+{
+  "name": "Demis Hassabis",
+  "institution": "Google DeepMind",
+  "field": "Artificial Intelligence",
+  "hindex": 95,
+  "grantCount": 12,
+  "patents": 40,
+  "publications": 200,
+  "orcid": "0000-0003-2812-9917",
+  "industryTies": ["Google DeepMind", "Isomorphic Labs", "Alphabet"],
+  "description": "Demis Hassabis co-founded DeepMind and led its research from AlphaGo to AlphaFold. A neuroscientist and AI researcher, he shared the 2024 Nobel Prize in Chemistry for AlphaFold and now leads efforts to apply AI to scientific discovery."
+}

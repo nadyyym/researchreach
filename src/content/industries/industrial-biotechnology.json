@@ -1,0 +1,25 @@
+{
+  "name": "Industrial Biotechnology",
+  "companies": [
+    "Ginkgo Bioworks",
+    "Amyris",
+    "Zymergen",
+    "LanzaTech",
+    "Genomatica",
+    "Solugen",
+    "Novonesis",
+    "Conagen",
+    "Geltor",
+    "Arzeda"
+  ],
+  "targetResearchers": "Metabolic engineers and synthetic biologists in strain engineering, fermentation, enzyme design, and bioprocess scale-up",
+  "marketSize": "$190B",
+  "useCases": [
+    "Strain-engineering R&D recruitment",
+    "Enzyme-design partnerships",
+    "University synthetic-biology collaborations",
+    "Fermentation scale-up talent pipeline",
+    "Bio-based chemical commercialization"
+  ],
+  "description": "Industrial biotechnology engineers microbes and enzymes to make chemicals, materials, and fuels sustainably. The sector recruits metabolic engineers and synthetic biologists from academia and frequently builds on university pathway-engineering research."
+}

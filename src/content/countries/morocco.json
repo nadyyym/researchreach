@@ -1,0 +1,9 @@
+{
+  "name": "Morocco",
+  "code": "MA",
+  "topInstitutions": ["Mohammed V University", "Cadi Ayyad University", "Mohammed VI Polytechnic University", "Hassan II University"],
+  "topAgencies": ["CNRST", "Ministry of Higher Education"],
+  "researchOutput": 16000,
+  "topFields": ["Renewable Energy", "Agriculture", "Chemistry", "Engineering", "Water Science"],
+  "description": "Morocco is a North African research leader, home to large solar installations and the research-focused Mohammed VI Polytechnic University. Its priorities include renewable energy, water management, and phosphate-related chemistry."
+}

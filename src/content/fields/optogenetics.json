@@ -1,0 +1,9 @@
+{
+  "name": "Optogenetics",
+  "subfields": ["Channelrhodopsin Engineering", "Circuit Neuroscience", "Optical Control of Signaling", "Behavioral Optogenetics", "All-Optical Physiology"],
+  "keyTechnologies": ["Light-Sensitive Opsins", "Fiber Photometry", "Two-Photon Microscopy", "Implantable LED Arrays", "Viral Gene Delivery"],
+  "topInstitutions": ["Stanford", "MIT", "Janelia Research Campus", "ETH Zurich", "Max Planck Society"],
+  "researcherCount": 9600,
+  "avgFunding": "$540K",
+  "description": "Optogenetics uses light to control genetically targeted cells, most prominently neurons. It has transformed neuroscience by enabling precise, reversible manipulation of neural circuits to map their roles in behavior and disease."
+}

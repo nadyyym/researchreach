@@ -1,0 +1,26 @@
+{
+  "name": "Australian National University",
+  "country": "Australia",
+  "city": "Canberra",
+  "type": "public",
+  "researcherCount": 3200,
+  "avgHindex": 52,
+  "grantCount": 2500,
+  "departments": [
+    "Physics",
+    "Astronomy and Astrophysics",
+    "Chemistry",
+    "Earth Sciences",
+    "Biology",
+    "Engineering",
+    "Computer Science"
+  ],
+  "topFields": [
+    "Astronomy",
+    "Quantum Optics",
+    "Earth Sciences",
+    "Materials Physics",
+    "Climate Science"
+  ],
+  "description": "The Australian National University in Canberra is the country's top-ranked research university, with elite programs in astronomy and the physical sciences. It operates major observatories and leads Australian climate and Earth-science research."
+}

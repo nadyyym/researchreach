@@ -1,0 +1,9 @@
+{
+  "name": "Limnology",
+  "subfields": ["Lake Ecology", "Stream Biogeochemistry", "Paleolimnology", "Aquatic Microbial Ecology", "Wetland Science"],
+  "keyTechnologies": ["Multiparameter Sondes", "Sediment Coring", "Acoustic Doppler Profilers", "Remote Sensing of Inland Waters", "Stable Isotope Tracers"],
+  "topInstitutions": ["University of Wisconsin–Madison", "Uppsala University", "ETH Zurich", "Trent University", "Leibniz Institute of Freshwater Ecology"],
+  "researcherCount": 5200,
+  "avgFunding": "$260K",
+  "description": "Limnology is the study of inland waters such as lakes, rivers, and wetlands as ecosystems. It examines their physical, chemical, and biological dynamics, informing freshwater management, water quality, and responses to climate and land-use change."
+}

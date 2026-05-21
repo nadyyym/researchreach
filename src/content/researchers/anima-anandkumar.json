@@ -1,0 +1,16 @@
+{
+  "name": "Anima Anandkumar",
+  "institution": "California Institute of Technology",
+  "field": "Machine Learning",
+  "hindex": 80,
+  "grantCount": 30,
+  "patents": 20,
+  "publications": 260,
+  "orcid": "0000-0002-6974-6797",
+  "industryTies": [
+    "NVIDIA",
+    "Caltech",
+    "Amazon (former)"
+  ],
+  "description": "Anima Anandkumar develops tensor methods and neural operators for scientific machine learning, including AI weather and physics simulation. She bridges Caltech research with large-scale industrial AI systems."
+}

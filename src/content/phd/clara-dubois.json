@@ -1,0 +1,11 @@
+{
+  "name": "Clara Dubois",
+  "institution": "EPFL",
+  "field": "Neuroengineering",
+  "advisor": "Dr. Grégoire Courtine",
+  "thesis": "Closed-loop neural interfaces for restoring movement after spinal cord injury",
+  "publications": 9,
+  "skills": ["Neural Signal Processing", "MATLAB", "Electrophysiology", "Embedded Systems", "Machine Learning", "Biomedical Device Design"],
+  "transitionSignals": ["Internship at neurotech startup", "Filed first patent", "Co-authored with medical device company"],
+  "description": "Clara develops closed-loop brain-spine interfaces that decode movement intent in real time to restore mobility. Her device patents and startup internship make her an ideal fit for the fast-growing neurotech industry."
+}

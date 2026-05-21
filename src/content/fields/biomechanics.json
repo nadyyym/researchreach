@@ -1,0 +1,9 @@
+{
+  "name": "Biomechanics",
+  "subfields": ["Musculoskeletal Mechanics", "Gait Analysis", "Tissue Mechanics", "Cellular Biomechanics", "Sports Biomechanics"],
+  "keyTechnologies": ["Motion Capture Systems", "Force Plates", "Finite Element Modeling", "Atomic Force Microscopy", "Electromyography"],
+  "topInstitutions": ["Stanford University", "ETH Zurich", "University of Michigan", "Imperial College London", "Delft University of Technology"],
+  "researcherCount": 9500,
+  "avgFunding": "$310K",
+  "description": "Biomechanics applies the principles of mechanics to biological systems, from molecules and cells to whole organisms. It informs prosthetic design, surgical planning, sports performance, and our understanding of how tissues bear load and adapt."
+}

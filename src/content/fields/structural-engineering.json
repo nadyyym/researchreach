@@ -1,0 +1,9 @@
+{
+  "name": "Structural Engineering",
+  "subfields": ["Earthquake Engineering", "Structural Health Monitoring", "Computational Mechanics", "Advanced Construction Materials", "Bridge and Infrastructure Design"],
+  "keyTechnologies": ["Finite Element Analysis", "Digital Twins", "Sensor Networks", "Carbon-Fiber Composites", "Building Information Modeling"],
+  "topInstitutions": ["ETH Zurich", "University of California, Berkeley", "University of Tokyo", "Imperial College London", "KAIST"],
+  "researcherCount": 19000,
+  "avgFunding": "$370K",
+  "description": "Structural engineering analyzes and designs structures to safely resist loads and environmental forces. Modern research integrates computational mechanics, novel materials, and real-time monitoring to build resilient infrastructure capable of withstanding earthquakes and climate stresses."
+}

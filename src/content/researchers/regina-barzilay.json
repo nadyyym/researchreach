@@ -1,0 +1,15 @@
+{
+  "name": "Regina Barzilay",
+  "institution": "Massachusetts Institute of Technology",
+  "field": "Machine Learning",
+  "hindex": 90,
+  "grantCount": 38,
+  "patents": 15,
+  "publications": 260,
+  "orcid": "0000-0002-3505-2535",
+  "industryTies": [
+    "MIT Jameel Clinic",
+    "Amazon Science (advisory)"
+  ],
+  "description": "Regina Barzilay develops machine-learning methods for natural-language processing and drug discovery, including models that predict breast-cancer risk from mammograms. She received the inaugural AAAI Squirrel AI Award for AI benefiting humanity."
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Wei-Chen Lin",
+  "institution": "National Taiwan University",
+  "field": "Semiconductor Devices",
+  "advisor": "Dr. Chenming Hu",
+  "thesis": "Gate-all-around nanosheet transistor reliability at sub-2nm nodes",
+  "publications": 8,
+  "skills": [
+    "TCAD Simulation",
+    "Device Characterization",
+    "Cleanroom Processing",
+    "Python",
+    "Failure Analysis",
+    "SPICE Modeling"
+  ],
+  "transitionSignals": [
+    "Internship at TSMC",
+    "Filed first patent on a reliability test structure",
+    "Recruited via semiconductor alumni network"
+  ],
+  "description": "Wei-Chen characterizes failure mechanisms in next-generation transistor architectures and builds predictive reliability models. His TCAD-to-fab skill set directly serves a leading-edge semiconductor foundry."
+}

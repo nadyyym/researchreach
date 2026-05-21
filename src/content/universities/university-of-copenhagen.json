@@ -1,0 +1,26 @@
+{
+  "name": "University of Copenhagen",
+  "country": "Denmark",
+  "city": "Copenhagen",
+  "type": "public",
+  "researcherCount": 4300,
+  "avgHindex": 50,
+  "grantCount": 2800,
+  "departments": [
+    "Health Sciences",
+    "Natural Sciences",
+    "Pharmaceutical Sciences",
+    "Biology",
+    "Physics",
+    "Chemistry",
+    "Computer Science"
+  ],
+  "topFields": [
+    "Metabolism Research",
+    "Quantum Physics",
+    "Pharmacology",
+    "Genomics",
+    "Climate Science"
+  ],
+  "description": "The University of Copenhagen is Denmark's oldest and largest university and a Nordic research leader. It is renowned for the Niels Bohr Institute in physics and for world-class metabolic and pharmaceutical research."
+}

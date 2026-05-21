@@ -1,0 +1,26 @@
+{
+  "name": "McGill University",
+  "country": "Canada",
+  "city": "Montreal",
+  "type": "public",
+  "researcherCount": 4200,
+  "avgHindex": 51,
+  "grantCount": 2900,
+  "departments": [
+    "Medicine",
+    "Science",
+    "Engineering",
+    "Physics",
+    "Chemistry",
+    "Biology",
+    "Computer Science"
+  ],
+  "topFields": [
+    "Neuroscience",
+    "Artificial Intelligence",
+    "Physics",
+    "Genomics",
+    "Materials Science"
+  ],
+  "description": "McGill University in Montreal is one of Canada's most prestigious research institutions with a strong medical and scientific tradition. Its Montreal Neurological Institute and ties to Mila make it a hub for neuroscience and AI research."
+}

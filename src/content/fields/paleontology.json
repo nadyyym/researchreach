@@ -1,0 +1,9 @@
+{
+  "name": "Paleontology",
+  "subfields": ["Vertebrate Paleontology", "Paleobotany", "Micropaleontology", "Taphonomy", "Paleoecology"],
+  "keyTechnologies": ["CT Scanning", "Stable Isotope Analysis", "Synchrotron Imaging", "Ancient Protein Sequencing", "Geochronological Dating"],
+  "topInstitutions": ["University of Chicago", "Natural History Museum London", "Chinese Academy of Sciences", "University of Bristol", "American Museum of Natural History"],
+  "researcherCount": 6800,
+  "avgFunding": "$250K",
+  "description": "Paleontology studies the history of life through fossils, reconstructing extinct organisms and ancient ecosystems. It illuminates evolutionary patterns, mass extinctions, and the deep-time context for present-day biodiversity and climate change."
+}

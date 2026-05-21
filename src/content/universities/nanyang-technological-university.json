@@ -1,0 +1,25 @@
+{
+  "name": "Nanyang Technological University",
+  "country": "Singapore",
+  "city": "Singapore",
+  "type": "public",
+  "researcherCount": 3300,
+  "avgHindex": 46,
+  "grantCount": 2500,
+  "departments": [
+    "Materials Science and Engineering",
+    "Electrical and Electronic Engineering",
+    "Chemistry",
+    "Physics",
+    "Biological Sciences",
+    "Computer Science"
+  ],
+  "topFields": [
+    "Materials Science",
+    "Energy Research",
+    "Photonics",
+    "Artificial Intelligence",
+    "Nanotechnology"
+  ],
+  "description": "Nanyang Technological University is one of Asia's top young research universities and a global leader in materials science and engineering. Its energy research institute and strong AI programs anchor Singapore's deep-tech ambitions."
+}

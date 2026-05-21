@@ -1,0 +1,25 @@
+{
+  "name": "Quantum Computing",
+  "companies": [
+    "IBM Quantum",
+    "Google Quantum AI",
+    "IonQ",
+    "Rigetti Computing",
+    "PsiQuantum",
+    "Quantinuum",
+    "QuEra Computing",
+    "Atom Computing",
+    "Pasqal",
+    "Silicon Quantum Computing"
+  ],
+  "targetResearchers": "Physicists and engineers in superconducting circuits, trapped ions, neutral atoms, quantum error correction, and cryogenic control electronics",
+  "marketSize": "$65B",
+  "useCases": [
+    "Quantum hardware R&D hiring",
+    "Academic spin-out partnerships",
+    "Error-correction algorithm licensing",
+    "Cryogenic and control-electronics talent pipeline",
+    "Joint quantum-advantage benchmarking projects"
+  ],
+  "description": "The quantum computing industry races to build machines that exploit superposition and entanglement for previously intractable problems. It draws heavily on academic physics labs, often spinning out directly from university research groups and competing fiercely for PhD-trained hardware talent."
+}

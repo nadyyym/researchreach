@@ -1,0 +1,8 @@
+{
+  "name": "Research Council of Finland",
+  "country": "Finland",
+  "type": "government",
+  "budget": "$600M",
+  "programs": ["Academy Projects", "Academy Research Fellows", "Centres of Excellence", "Postdoctoral Researcher Grants", "Flagship Programme", "Clinical Researcher Funding"],
+  "description": "The Research Council of Finland, formerly the Academy of Finland, is the country's main agency for funding high-quality scientific research. It supports researcher training, centres of excellence, and strategic research that addresses major societal challenges."
+}

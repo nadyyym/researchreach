@@ -1,0 +1,9 @@
+{
+  "name": "Estonia",
+  "code": "EE",
+  "topInstitutions": ["University of Tartu", "Tallinn University of Technology", "Estonian Academy of Sciences", "National Institute of Chemical Physics and Biophysics"],
+  "topAgencies": ["Estonian Research Council", "Ministry of Education and Research"],
+  "researchOutput": 9000,
+  "topFields": ["Genomics", "Computer Science", "Materials Science", "Environmental Science", "Digital Health"],
+  "description": "Estonia leverages its advanced digital infrastructure to lead research in genomics and computer science, including the Estonian Biobank. The University of Tartu drives strong output in life sciences and digital health."
+}

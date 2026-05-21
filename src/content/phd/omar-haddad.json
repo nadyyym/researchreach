@@ -1,0 +1,11 @@
+{
+  "name": "Omar Haddad",
+  "institution": "ETH Zurich",
+  "field": "Quantum Computing",
+  "advisor": "Dr. Andreas Wallraff",
+  "thesis": "Error mitigation techniques for superconducting qubit processors at scale",
+  "publications": 8,
+  "skills": ["Quantum Error Correction", "Python", "Qiskit", "Cryogenics", "FPGA Programming", "Microwave Engineering"],
+  "transitionSignals": ["Internship at IBM Quantum", "Filed first patent", "Co-authored with industry hardware team"],
+  "description": "Omar develops practical error-mitigation methods for noisy superconducting quantum processors. His IBM Quantum internship and hardware patent demonstrate the systems-level skills quantum hardware companies actively recruit for."
+}

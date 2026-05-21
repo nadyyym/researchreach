@@ -1,0 +1,9 @@
+{
+  "name": "Computational Chemistry",
+  "subfields": ["Quantum Chemistry", "Molecular Dynamics", "Density Functional Theory", "Cheminformatics", "Machine Learning Potentials"],
+  "keyTechnologies": ["DFT Codes", "Molecular Dynamics Engines", "GPU Acceleration", "Neural Network Potentials", "High-Performance Computing"],
+  "topInstitutions": ["MIT", "ETH Zurich", "University of California, Berkeley", "Peking University", "EPFL"],
+  "researcherCount": 27000,
+  "avgFunding": "$390K",
+  "description": "Computational chemistry uses theoretical methods and computer simulation to predict molecular structures, reaction pathways, and material properties. Increasingly fused with machine learning, it accelerates drug design, catalysis, and the discovery of new materials."
+}

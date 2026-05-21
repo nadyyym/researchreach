@@ -1,0 +1,25 @@
+{
+  "name": "Advanced Manufacturing",
+  "companies": [
+    "Velo3D",
+    "Desktop Metal",
+    "Markforged",
+    "Carbon",
+    "Seurat Technologies",
+    "VulcanForms",
+    "Relativity Space",
+    "Hadrian",
+    "Bright Machines",
+    "Machina Labs"
+  ],
+  "targetResearchers": "Mechanical and materials engineers in additive manufacturing, process control, robotics, and computer vision",
+  "marketSize": "$390B",
+  "useCases": [
+    "Additive-manufacturing R&D hiring",
+    "In-situ process-monitoring development",
+    "University manufacturing-lab partnerships",
+    "Automated factory-software talent pipeline",
+    "Aerospace and defense production collaborations"
+  ],
+  "description": "Advanced manufacturing fuses additive techniques, robotics, and AI-driven process control to make complex parts at scale. It recruits mechanical and materials engineers from academia and partners with university labs on metal printing and digital-factory research."
+}

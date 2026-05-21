@@ -1,0 +1,9 @@
+{
+  "name": "Bioacoustics",
+  "subfields": ["Animal Communication", "Marine Bioacoustics", "Soundscape Ecology", "Echolocation Studies", "Neuroethology of Hearing"],
+  "keyTechnologies": ["Passive Acoustic Monitoring", "Hydrophone Arrays", "Spectrogram Analysis", "Machine-Learning Call Classification", "Autonomous Recording Units"],
+  "topInstitutions": ["Cornell University", "University of St Andrews", "Max Planck Institute for Ornithology", "Scripps Institution of Oceanography", "Australian National University"],
+  "researcherCount": 4200,
+  "avgFunding": "$240K",
+  "description": "Bioacoustics studies the production, transmission, and reception of sound by living organisms. It spans whale song, bird vocalizations, and insect signaling, and increasingly relies on automated monitoring to track biodiversity and animal behavior at scale."
+}

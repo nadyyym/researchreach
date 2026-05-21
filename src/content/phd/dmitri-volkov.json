@@ -1,0 +1,22 @@
+{
+  "name": "Dmitri Volkov",
+  "institution": "University of Waterloo",
+  "field": "Quantum Computing",
+  "advisor": "Dr. Crystal Senko",
+  "thesis": "Error-correction protocols for trapped-ion quantum processors",
+  "publications": 6,
+  "skills": [
+    "Quantum Error Correction",
+    "Python",
+    "Qiskit",
+    "Cirq",
+    "Linear Algebra",
+    "Experimental Physics"
+  ],
+  "transitionSignals": [
+    "Internship at IonQ",
+    "Co-authored with quantum-hardware engineers",
+    "Active in a quantum-computing developer community"
+  ],
+  "description": "Dmitri designs and benchmarks error-correction codes tailored to trapped-ion hardware constraints. His bridge between theory and experiment fits a quantum-computing company working toward fault tolerance."
+}

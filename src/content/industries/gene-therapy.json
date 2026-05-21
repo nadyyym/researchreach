@@ -1,0 +1,25 @@
+{
+  "name": "Gene Therapy",
+  "companies": [
+    "Spark Therapeutics",
+    "Sarepta Therapeutics",
+    "BioMarin",
+    "uniQure",
+    "Sangamo Therapeutics",
+    "Intellia Therapeutics",
+    "Beam Therapeutics",
+    "Editas Medicine",
+    "Krystal Biotech",
+    "Solid Biosciences"
+  ],
+  "targetResearchers": "Molecular biologists and bioengineers in viral vectors, genome editing, delivery, and translational medicine",
+  "marketSize": "$95B",
+  "useCases": [
+    "AAV vector-engineering R&D hiring",
+    "CRISPR delivery partnerships",
+    "University gene-therapy-lab spin-outs",
+    "GMP and translational talent pipeline",
+    "Rare-disease research collaborations"
+  ],
+  "description": "Gene therapy delivers genetic fixes for inherited and acquired diseases using viral vectors and genome editing. It recruits molecular biologists and bioengineers from academia and frequently licenses university-developed editing and delivery technologies."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "KTH Royal Institute of Technology",
+  "country": "Sweden",
+  "city": "Stockholm",
+  "type": "public",
+  "researcherCount": 1900,
+  "avgHindex": 39,
+  "grantCount": 1600,
+  "departments": ["Computer Science and Communication", "Electrical Engineering", "Chemistry", "Materials Science and Engineering", "Mechanical Engineering", "Physics", "Industrial Engineering", "Biotechnology"],
+  "topFields": ["Materials Science", "Robotics", "Artificial Intelligence", "Nanotechnology", "Quantum Computing"],
+  "description": "KTH Royal Institute of Technology is Sweden's largest technical university and accounts for a substantial share of the country's engineering research. It is a leader in materials science, photonics, and sustainable energy, with strong ties to Swedish industry and the EU research framework."
+}

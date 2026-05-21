@@ -1,0 +1,12 @@
+{
+  "name": "University of Amsterdam",
+  "country": "Netherlands",
+  "city": "Amsterdam",
+  "type": "public",
+  "researcherCount": 3100,
+  "avgHindex": 43,
+  "grantCount": 2400,
+  "departments": ["Informatics", "Physics", "Chemistry", "Biology", "Medicine", "Mathematics", "Earth Sciences", "Psychology"],
+  "topFields": ["Artificial Intelligence", "Machine Learning", "Immunology", "Climate Science", "Bioinformatics"],
+  "description": "The University of Amsterdam is the Netherlands' largest research university and a European leader in machine learning and the data sciences. Its informatics institute hosts internationally recognized AI research groups, complemented by strong programs in physics and the life sciences."
+}

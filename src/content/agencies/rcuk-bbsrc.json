@@ -1,0 +1,8 @@
+{
+  "name": "Biotechnology and Biological Sciences Research Council (BBSRC)",
+  "country": "United Kingdom",
+  "type": "government",
+  "budget": "$600M",
+  "programs": ["Responsive Mode Grants", "Institute Strategic Programmes", "David Phillips Fellowships", "Industrial Partnership Awards", "Doctoral Training Partnerships", "Follow-on Fund"],
+  "description": "The BBSRC is the UK's main funder of bioscience research, operating as part of UK Research and Innovation. It supports work spanning agriculture, food, industrial biotechnology, and fundamental biology of plants, microbes, and animals."
+}

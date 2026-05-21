@@ -1,0 +1,22 @@
+{
+  "name": "Felix Brandt",
+  "institution": "RWTH Aachen University",
+  "field": "Hydrogen Energy",
+  "advisor": "Dr. Rüdiger-Albert Eichel",
+  "thesis": "Durable catalyst layers for proton-exchange-membrane electrolyzers",
+  "publications": 8,
+  "skills": [
+    "Electrocatalysis",
+    "Materials Synthesis",
+    "Electrochemistry",
+    "Python",
+    "Stack Testing",
+    "Degradation Analysis"
+  ],
+  "transitionSignals": [
+    "Internship at a green-hydrogen company",
+    "Filed first patent on a catalyst coating",
+    "Presented at hydrogen-economy conference"
+  ],
+  "description": "Felix engineers catalyst layers that extend electrolyzer lifetime while cutting iridium loading, key to affordable green hydrogen. His electrocatalysis and stack-testing experience fits a hydrogen-technology scale-up."
+}

@@ -1,0 +1,8 @@
+{
+  "name": "National Natural Science Foundation of China (NSFC)",
+  "country": "China",
+  "type": "government",
+  "budget": "$5.5B",
+  "programs": ["General Program", "Key Program", "Major Research Plans", "National Science Fund for Distinguished Young Scholars", "International Cooperation Program"],
+  "description": "The NSFC is China's primary funder of basic and applied fundamental research. It supports investigators across all disciplines through merit-based grants and has driven the rapid expansion of Chinese scientific output."
+}

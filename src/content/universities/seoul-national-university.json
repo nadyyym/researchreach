@@ -1,0 +1,12 @@
+{
+  "name": "Seoul National University",
+  "country": "South Korea",
+  "city": "Seoul",
+  "type": "public",
+  "researcherCount": 4600,
+  "avgHindex": 41,
+  "grantCount": 3500,
+  "departments": ["Electrical and Computer Engineering", "Chemistry", "Biological Sciences", "Materials Science and Engineering", "Physics and Astronomy", "Medicine", "Computer Science and Engineering", "Mechanical Engineering"],
+  "topFields": ["Materials Science", "Artificial Intelligence", "Nanotechnology", "Genomics", "Robotics"],
+  "description": "Seoul National University is South Korea's most prestigious national university and a top producer of the country's research output. It excels in materials science, biomedical research, and engineering, benefiting from strong government investment and partnerships with Korea's technology conglomerates."
+}

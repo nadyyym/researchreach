@@ -1,0 +1,22 @@
+{
+  "name": "Tomás Herrera",
+  "institution": "California Institute of Technology",
+  "field": "Quantum Information",
+  "advisor": "Dr. Oskar Painter",
+  "thesis": "Microwave-to-optical transduction for networking superconducting qubits",
+  "publications": 6,
+  "skills": [
+    "Cryogenic Measurement",
+    "Microwave Engineering",
+    "Python",
+    "Qiskit",
+    "Nanofabrication",
+    "FPGA Control"
+  ],
+  "transitionSignals": [
+    "Internship at AWS Center for Quantum Computing",
+    "Filed first patent on transducer design",
+    "Recruited into a quantum-hardware Slack community"
+  ],
+  "description": "Tomás builds devices that convert quantum signals between microwave and optical domains, a key bottleneck for quantum networks. His cleanroom fabrication skills and cryogenic measurement expertise map directly onto quantum-hardware industry needs."
+}

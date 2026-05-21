@@ -1,0 +1,25 @@
+{
+  "name": "University of Montreal",
+  "country": "Canada",
+  "city": "Montreal",
+  "type": "public",
+  "researcherCount": 3800,
+  "avgHindex": 48,
+  "grantCount": 2500,
+  "departments": [
+    "Medicine",
+    "Chemistry",
+    "Physics",
+    "Computer Science and Operations Research",
+    "Biology",
+    "Pharmacy"
+  ],
+  "topFields": [
+    "Deep Learning",
+    "Pharmacology",
+    "Cardiology",
+    "Computational Chemistry",
+    "Genomics"
+  ],
+  "description": "The University of Montreal is a leading French-language research university and home to the Mila AI institute founded by Yoshua Bengio. It is a global center for deep learning, alongside strong medical and pharmaceutical research."
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Spintronics",
+  "subfields": ["Magnetic Tunnel Junctions", "Spin-Orbit Torque", "Topological Spintronics", "Antiferromagnetic Spintronics", "Magnonics"],
+  "keyTechnologies": ["Magnetron Sputtering", "Spin-Transfer Torque MRAM", "Ferromagnetic Resonance", "Magneto-Optical Kerr Microscopy", "Spin Hall Devices"],
+  "topInstitutions": ["University of Tokyo", "MIT", "Johannes Gutenberg University Mainz", "National University of Singapore", "Tohoku University"],
+  "researcherCount": 10500,
+  "avgFunding": "$470K",
+  "description": "Spintronics exploits the electron's spin in addition to its charge to build faster, lower-power electronic devices. It underpins non-volatile memory technologies like MRAM and explores exotic magnetic phenomena for future computing."
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Mexico",
+  "code": "MX",
+  "topInstitutions": ["UNAM", "Cinvestav", "Tecnologico de Monterrey", "IPN", "University of Guadalajara"],
+  "topAgencies": ["CONAHCYT", "UNAM"],
+  "researchOutput": 32000,
+  "topFields": ["Physics", "Biotechnology", "Chemistry", "Astronomy", "Public Health"],
+  "description": "Mexico's research is led by UNAM, one of Latin America's largest universities, and the Cinvestav research center. Strengths include physics, biotechnology, astronomy, and public health, supported by a growing network of technology institutes."
+}

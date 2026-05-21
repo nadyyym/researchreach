@@ -1,0 +1,25 @@
+{
+  "name": "Materials Informatics",
+  "companies": [
+    "Citrine Informatics",
+    "Materials Zone",
+    "Kebotix",
+    "Schrödinger",
+    "Dunia Innovations",
+    "Matmerize",
+    "Polymerize",
+    "Intellegens",
+    "Uncountable",
+    "Phase Genomics"
+  ],
+  "targetResearchers": "Computational materials scientists and ML researchers in DFT, ML potentials, high-throughput screening, and Bayesian optimization",
+  "marketSize": "$5B",
+  "useCases": [
+    "ML-potential R&D recruitment",
+    "Accelerated materials-discovery partnerships",
+    "University computational-materials collaborations",
+    "High-throughput-screening talent pipeline",
+    "R&D data-platform deployment"
+  ],
+  "description": "Materials informatics applies machine learning and simulation to discover and optimize materials far faster than trial and error. It recruits computational materials scientists from academia and partners with university groups generating training data and models."
+}

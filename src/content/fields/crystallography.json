@@ -1,0 +1,9 @@
+{
+  "name": "Crystallography",
+  "subfields": ["Protein Crystallography", "Mineral Crystallography", "Electron Crystallography", "Time-Resolved Crystallography", "Powder Diffraction"],
+  "keyTechnologies": ["Synchrotron X-ray Diffraction", "X-ray Free-Electron Lasers", "Cryo-Electron Diffraction", "Single-Crystal Diffractometers", "Rietveld Refinement Software"],
+  "topInstitutions": ["MRC Laboratory of Molecular Biology", "Stanford University", "ETH Zurich", "Diamond Light Source", "University of Oxford"],
+  "researcherCount": 13000,
+  "avgFunding": "$320K",
+  "description": "Crystallography determines the atomic and molecular structure of materials by analyzing how they diffract radiation. It has been foundational to chemistry, biology, and materials science, revealing structures from minerals to proteins and DNA."
+}

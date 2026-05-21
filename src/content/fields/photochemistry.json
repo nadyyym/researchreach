@@ -1,0 +1,9 @@
+{
+  "name": "Photochemistry",
+  "subfields": ["Photocatalysis", "Photophysics", "Solar Energy Conversion", "Photodynamic Therapy", "Atmospheric Photochemistry"],
+  "keyTechnologies": ["Ultrafast Laser Spectroscopy", "Transient Absorption Spectroscopy", "Time-Resolved Fluorescence", "Photoreactors", "Femtosecond Pump-Probe Systems"],
+  "topInstitutions": ["EPFL", "University of California, Berkeley", "Max Planck Institute for Chemical Energy Conversion", "Kyoto University", "University of Bologna"],
+  "researcherCount": 8500,
+  "avgFunding": "$300K",
+  "description": "Photochemistry studies the chemical effects of light and the behavior of electronically excited molecules. It drives advances in solar fuels, light-activated materials, and medical phototherapies, and explains key reactions in the atmosphere and biology."
+}

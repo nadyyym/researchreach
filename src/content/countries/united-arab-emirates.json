@@ -1,0 +1,9 @@
+{
+  "name": "United Arab Emirates",
+  "code": "AE",
+  "topInstitutions": ["Khalifa University", "United Arab Emirates University", "Mohamed bin Zayed University of AI", "NYU Abu Dhabi"],
+  "topAgencies": ["ASPIRE", "Ministry of Education", "Technology Innovation Institute"],
+  "researchOutput": 25000,
+  "topFields": ["Artificial Intelligence", "Renewable Energy", "Space Science", "Water Technology", "Materials Science"],
+  "description": "The UAE has invested aggressively in research through institutions like the AI-focused MBZUAI and the Technology Innovation Institute. It is building capacity in space exploration, clean energy, and artificial intelligence."
+}

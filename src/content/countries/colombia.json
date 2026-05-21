@@ -1,0 +1,9 @@
+{
+  "name": "Colombia",
+  "code": "CO",
+  "topInstitutions": ["National University of Colombia", "University of the Andes", "University of Antioquia", "Pontifical Xavierian University"],
+  "topAgencies": ["MinCiencias", "Colciencias legacy"],
+  "researchOutput": 18000,
+  "topFields": ["Biodiversity", "Tropical Medicine", "Agriculture", "Public Health", "Engineering"],
+  "description": "Colombia leverages its position as one of the world's most biodiverse countries to lead research in ecology and tropical medicine. Its universities are expanding output in engineering, agriculture, and public health."
+}

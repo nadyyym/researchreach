@@ -1,0 +1,22 @@
+{
+  "name": "Nadia Petrosyan",
+  "institution": "Weizmann Institute of Science",
+  "field": "Structural Biology",
+  "advisor": "Dr. Sarel Fleishman",
+  "thesis": "Computational design of stabilized enzymes for industrial catalysis",
+  "publications": 7,
+  "skills": [
+    "Protein Design",
+    "Rosetta",
+    "Python",
+    "X-ray Crystallography",
+    "Enzyme Assays",
+    "Molecular Dynamics"
+  ],
+  "transitionSignals": [
+    "Internship at an enzyme-engineering company",
+    "Filed first patent on a designed enzyme",
+    "Co-authored with industrial-biotech scientists"
+  ],
+  "description": "Nadia computationally redesigns enzymes to withstand the heat and solvents of industrial processes while keeping activity. Her protein-design and structural skills fit an enzyme-engineering company serving chemical manufacturers."
+}

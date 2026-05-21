@@ -1,0 +1,8 @@
+{
+  "name": "Diagnostics & Genomics",
+  "companies": ["Illumina", "Guardant Health", "Grail", "Natera", "Exact Sciences", "Tempus", "Foundation Medicine", "Oxford Nanopore", "Pacific Biosciences", "10x Genomics"],
+  "targetResearchers": "Genomicists, bioinformaticians, clinical pathologists, and assay-development scientists working on sequencing, liquid biopsy, and single-cell methods",
+  "marketSize": "$98B",
+  "useCases": ["Assay validation with academic medical centers", "Recruiting genomics and bioinformatics PhDs", "Clinical-cohort and biobank partnerships", "Single-cell and spatial method co-development", "KOL engagement for diagnostic adoption", "Sponsored research on novel biomarkers"],
+  "description": "The diagnostics and genomics industry depends on academic medical centers and university genomics labs to validate assays, supply clinical cohorts, and pioneer methods like single-cell and spatial sequencing. Companies recruit bioinformaticians and genomics PhDs and engage academic key opinion leaders to drive clinical adoption of new tests. Biobank access and sponsored biomarker research with university pathology departments are central to bringing diagnostics to market."
+}

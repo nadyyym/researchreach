@@ -1,0 +1,9 @@
+{
+  "name": "Egypt",
+  "code": "EG",
+  "topInstitutions": ["Cairo University", "Ain Shams University", "Zewail City of Science and Technology", "American University in Cairo"],
+  "topAgencies": ["ASRT", "STDF", "NRC"],
+  "researchOutput": 35000,
+  "topFields": ["Chemistry", "Engineering", "Agriculture", "Medicine", "Materials Science"],
+  "description": "Egypt is one of Africa and the Arab world's largest research producers, anchored by Cairo University and the research-focused Zewail City. Its output is strongest in chemistry, engineering, and agricultural sciences."
+}

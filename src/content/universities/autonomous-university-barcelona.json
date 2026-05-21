@@ -1,0 +1,25 @@
+{
+  "name": "Autonomous University of Barcelona",
+  "country": "Spain",
+  "city": "Barcelona",
+  "type": "public",
+  "researcherCount": 3100,
+  "avgHindex": 42,
+  "grantCount": 1900,
+  "departments": [
+    "Biosciences",
+    "Medicine",
+    "Physics",
+    "Chemistry",
+    "Computer Science",
+    "Veterinary Science"
+  ],
+  "topFields": [
+    "Nanoscience",
+    "Veterinary Medicine",
+    "Neuroscience",
+    "Materials Science",
+    "Genomics"
+  ],
+  "description": "The Autonomous University of Barcelona is one of Spain's most research-intensive universities, anchoring a science park with institutes in nanoscience and genomics. It is internationally recognized for veterinary science and materials research."
+}

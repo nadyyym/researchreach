@@ -1,0 +1,26 @@
+{
+  "name": "Aarhus University",
+  "country": "Denmark",
+  "city": "Aarhus",
+  "type": "public",
+  "researcherCount": 3600,
+  "avgHindex": 47,
+  "grantCount": 2300,
+  "departments": [
+    "Biology",
+    "Chemistry",
+    "Physics and Astronomy",
+    "Molecular Biology",
+    "Engineering",
+    "Computer Science",
+    "Medicine"
+  ],
+  "topFields": [
+    "Nanoscience",
+    "Molecular Biology",
+    "Quantum Physics",
+    "Agroecology",
+    "Materials Chemistry"
+  ],
+  "description": "Aarhus University is one of Scandinavia's leading research institutions, with particular strength in nanoscience, molecular biology, and interdisciplinary materials research through its iNANO center."
+}

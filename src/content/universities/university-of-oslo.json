@@ -1,0 +1,26 @@
+{
+  "name": "University of Oslo",
+  "country": "Norway",
+  "city": "Oslo",
+  "type": "public",
+  "researcherCount": 3500,
+  "avgHindex": 47,
+  "grantCount": 2200,
+  "departments": [
+    "Medicine",
+    "Mathematics and Natural Sciences",
+    "Physics",
+    "Chemistry",
+    "Biosciences",
+    "Informatics",
+    "Geosciences"
+  ],
+  "topFields": [
+    "Cancer Research",
+    "Mathematics",
+    "Geosciences",
+    "Informatics",
+    "Materials Chemistry"
+  ],
+  "description": "The University of Oslo is Norway's oldest and highest-ranked university, with strong programs in mathematics, cancer research, and the geosciences. It has a long tradition of mathematical excellence dating to Niels Henrik Abel."
+}

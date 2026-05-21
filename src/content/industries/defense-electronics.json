@@ -1,0 +1,25 @@
+{
+  "name": "Defense Electronics",
+  "companies": [
+    "Anduril Industries",
+    "Raytheon Technologies",
+    "Lockheed Martin",
+    "Northrop Grumman",
+    "Palantir",
+    "Shield AI",
+    "L3Harris",
+    "Epirus",
+    "HawkEye 360",
+    "Saronic"
+  ],
+  "targetResearchers": "Engineers and physicists in RF/radar, signal processing, autonomy, sensing, and electronic warfare",
+  "marketSize": "$160B",
+  "useCases": [
+    "RF and radar R&D recruitment",
+    "Autonomy and ISR partnerships",
+    "University-affiliated-lab collaborations",
+    "Signal-processing talent pipeline",
+    "Sensor-fusion technology development"
+  ],
+  "description": "Defense electronics covers radar, electronic warfare, autonomy, and sensing systems for national security. It recruits engineers and physicists in RF and signal processing and works closely with university-affiliated research centers and DARPA programs."
+}

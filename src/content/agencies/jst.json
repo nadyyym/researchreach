@@ -1,0 +1,8 @@
+{
+  "name": "Japan Science and Technology Agency (JST)",
+  "country": "Japan",
+  "type": "government",
+  "budget": "$1.3B",
+  "programs": ["CREST", "PRESTO", "ERATO", "Moonshot R&D", "ACT-X Young Researchers", "Sakura Science Exchange"],
+  "description": "JST is a Japanese national agency that funds strategic, mission-oriented research and promotes science-society linkages. Its CREST and ERATO programmes back ambitious team and individual projects in emerging and high-impact areas of science and technology."
+}

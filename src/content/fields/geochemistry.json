@@ -1,0 +1,9 @@
+{
+  "name": "Geochemistry",
+  "subfields": ["Isotope Geochemistry", "Organic Geochemistry", "Aqueous Geochemistry", "Cosmochemistry", "Trace Element Geochemistry"],
+  "keyTechnologies": ["Mass Spectrometry (ICP-MS)", "Electron Microprobe", "Secondary Ion Mass Spectrometry", "X-ray Fluorescence", "Thermal Ionization Mass Spectrometry"],
+  "topInstitutions": ["California Institute of Technology", "ETH Zurich", "Carnegie Institution for Science", "University of Bristol", "Lamont-Doherty Earth Observatory"],
+  "researcherCount": 12000,
+  "avgFunding": "$340K",
+  "description": "Geochemistry applies chemical principles to understand the composition and evolution of the Earth and other planetary bodies. It traces the cycling of elements and isotopes to reconstruct planetary history, date rocks, and study natural resources."
+}

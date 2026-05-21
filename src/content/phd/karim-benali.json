@@ -1,0 +1,22 @@
+{
+  "name": "Karim Benali",
+  "institution": "Polytechnique Montréal",
+  "field": "Power Electronics",
+  "advisor": "Dr. João Pedro Trovão",
+  "thesis": "Wide-bandgap converters for fast electric-vehicle charging",
+  "publications": 6,
+  "skills": [
+    "Power Electronics",
+    "SiC/GaN Devices",
+    "Embedded C",
+    "PCB Design",
+    "Thermal Management",
+    "Hardware Testing"
+  ],
+  "transitionSignals": [
+    "Internship at a fast-charging company",
+    "Filed first patent on a converter topology",
+    "Co-authored with EV-charging engineers"
+  ],
+  "description": "Karim designs high-efficiency wide-bandgap power converters that enable ultra-fast EV charging with less heat. His hardware-to-firmware skills fit an EV-infrastructure or power-electronics company."
+}

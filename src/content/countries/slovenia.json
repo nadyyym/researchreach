@@ -1,0 +1,9 @@
+{
+  "name": "Slovenia",
+  "code": "SI",
+  "topInstitutions": ["University of Ljubljana", "Jozef Stefan Institute", "University of Maribor", "National Institute of Chemistry"],
+  "topAgencies": ["ARIS", "Jozef Stefan Institute"],
+  "researchOutput": 13000,
+  "topFields": ["Physics", "Chemistry", "Materials Science", "Computer Science", "Nuclear Science"],
+  "description": "Slovenia maintains a high research intensity relative to its size, anchored by the Jozef Stefan Institute. It is recognized for work in physics, chemistry, and nuclear science, with strong participation in EU research programs."
+}

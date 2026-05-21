@@ -1,0 +1,15 @@
+{
+  "name": "John Goodenough",
+  "institution": "University of Texas at Austin",
+  "field": "Materials Science",
+  "hindex": 140,
+  "grantCount": 60,
+  "patents": 40,
+  "publications": 850,
+  "industryTies": [
+    "Oxford Instruments",
+    "Solid Power (lineage)",
+    "UT Austin"
+  ],
+  "description": "John Goodenough identified the cathode materials that made the lithium-ion battery commercially viable, earning a Nobel Prize at age 97. His later work pursued solid-state batteries with higher energy density and safety."
+}

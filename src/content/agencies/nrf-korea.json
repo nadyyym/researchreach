@@ -1,0 +1,8 @@
+{
+  "name": "National Research Foundation of Korea (NRF)",
+  "country": "South Korea",
+  "type": "government",
+  "budget": "$5.5B",
+  "programs": ["Basic Research Programs", "Mid-career Researcher Support", "Global Research Network", "Leading Research Centers", "Sejong Science Fellowship", "Brain Korea 21"],
+  "description": "The NRF is South Korea's principal agency for funding academic research across all disciplines. It supports individual investigators, research centres, and large national initiatives, playing a central role in the country's rapid scientific growth."
+}

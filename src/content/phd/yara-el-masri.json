@@ -1,0 +1,22 @@
+{
+  "name": "Yara El-Masri",
+  "institution": "Delft University of Technology",
+  "field": "Aerospace Materials",
+  "advisor": "Dr. Sergio Turteltaub",
+  "thesis": "Self-healing composites for next-generation aircraft structures",
+  "publications": 6,
+  "skills": [
+    "Composite Manufacturing",
+    "Mechanical Testing",
+    "Finite Element Analysis",
+    "MATLAB",
+    "Materials Characterization",
+    "NDT Inspection"
+  ],
+  "transitionSignals": [
+    "Internship at Airbus",
+    "Filed first patent on a healing-agent system",
+    "Co-authored with aerospace structural engineers"
+  ],
+  "description": "Yara develops composites that autonomously repair micro-cracks, extending airframe service life. Her composites and testing background fits an aerospace materials supplier or aircraft manufacturer."
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Benjamin Cohen",
+  "institution": "Princeton University",
+  "field": "Fusion Energy",
+  "advisor": "Dr. Egemen Kolemen",
+  "thesis": "Reinforcement-learning control of tokamak plasma shape and stability",
+  "publications": 8,
+  "skills": [
+    "Plasma Physics",
+    "Reinforcement Learning",
+    "Python",
+    "Real-Time Control",
+    "Data Analysis",
+    "Simulation"
+  ],
+  "transitionSignals": [
+    "Internship at Commonwealth Fusion Systems",
+    "Co-authored with private-fusion engineers",
+    "Presented at fusion-energy symposium"
+  ],
+  "description": "Benjamin applies reinforcement learning to keep fusion plasmas stable in real time, a capability private-fusion ventures urgently need. His plasma-control and ML combination is a rare and valuable fit for a fusion startup."
+}

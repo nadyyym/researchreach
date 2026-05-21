@@ -1,0 +1,25 @@
+{
+  "name": "Delft University of Technology",
+  "country": "Netherlands",
+  "city": "Delft",
+  "type": "public",
+  "researcherCount": 3400,
+  "avgHindex": 45,
+  "grantCount": 2600,
+  "departments": [
+    "Aerospace Engineering",
+    "Applied Sciences",
+    "Electrical Engineering",
+    "Mechanical Engineering",
+    "Civil Engineering",
+    "Computer Science"
+  ],
+  "topFields": [
+    "Quantum Computing",
+    "Aerospace",
+    "Robotics",
+    "Photonics",
+    "Water Management"
+  ],
+  "description": "TU Delft is the largest and oldest technical university in the Netherlands and a global leader in quantum computing through QuTech. It excels in aerospace, robotics, and water-management engineering."
+}

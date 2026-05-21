@@ -1,0 +1,8 @@
+{
+  "name": "Max Planck Society",
+  "country": "Germany",
+  "type": "government",
+  "budget": "$2.3B",
+  "programs": ["Max Planck Institutes", "Max Planck Research Groups", "International Max Planck Research Schools", "Max Planck Fellows", "Lise Meitner Excellence Programme"],
+  "description": "The Max Planck Society operates more than eighty institutes conducting basic research in the natural, life, and social sciences. Its institutes have produced numerous Nobel laureates and emphasize curiosity-driven, long-horizon science."
+}

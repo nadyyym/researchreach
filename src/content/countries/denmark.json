@@ -1,0 +1,9 @@
+{
+  "name": "Denmark",
+  "code": "DK",
+  "topInstitutions": ["University of Copenhagen", "Technical University of Denmark", "Aarhus University", "University of Southern Denmark", "Aalborg University"],
+  "topAgencies": ["Independent Research Fund Denmark", "Novo Nordisk Foundation", "Innovation Fund Denmark"],
+  "researchOutput": 34000,
+  "topFields": ["Genomics", "Immunology", "Materials Science", "Climate Science", "Drug Discovery"],
+  "description": "Denmark consistently ranks among the world's most research-intensive nations per capita. Generously funded by foundations like Novo Nordisk, its universities lead in biomedicine, sustainable energy, and quantum research, with strong links to the country's pharmaceutical and clean-tech industries."
+}

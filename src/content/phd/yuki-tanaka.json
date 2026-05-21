@@ -1,0 +1,11 @@
+{
+  "name": "Yuki Tanaka",
+  "institution": "University of Tokyo",
+  "field": "Photonics",
+  "advisor": "Dr. Susumu Noda",
+  "thesis": "Silicon photonic integrated circuits for high-bandwidth optical interconnects",
+  "publications": 10,
+  "skills": ["Photonic Design", "Cleanroom Fabrication", "Python", "Optical Characterization", "FDTD Simulation", "RF Engineering"],
+  "transitionSignals": ["Internship at Intel photonics group", "Filed first patent", "Co-authored with industry photonics team"],
+  "description": "Yuki develops silicon photonic circuits that move data faster and with less power inside data centers. With a major chipmaker internship and a fabrication patent, he is ready to contribute to integrated-photonics product teams."
+}

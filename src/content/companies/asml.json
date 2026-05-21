@@ -1,0 +1,8 @@
+{
+  "name": "ASML",
+  "industry": "Semiconductors",
+  "rdSpend": "$4.6B",
+  "academicCollabs": 210,
+  "patents": 16000,
+  "description": "ASML is the sole supplier of extreme ultraviolet (EUV) lithography systems essential to leading-edge chipmaking. It collaborates closely with imec, TU Eindhoven, and Dutch research institutes on optics, plasma physics, and high-NA lithography."
+}

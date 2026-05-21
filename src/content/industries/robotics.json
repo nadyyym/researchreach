@@ -1,0 +1,25 @@
+{
+  "name": "Robotics",
+  "companies": [
+    "Boston Dynamics",
+    "ANYbotics",
+    "Agility Robotics",
+    "Figure AI",
+    "Physical Intelligence",
+    "Skild AI",
+    "Apptronik",
+    "Covariant",
+    "Dexterity",
+    "Sanctuary AI"
+  ],
+  "targetResearchers": "Roboticists and ML researchers in control, manipulation, locomotion, perception, and embodied learning",
+  "marketSize": "$210B",
+  "useCases": [
+    "Humanoid and legged-robot R&D recruitment",
+    "University robotics-lab spin-outs",
+    "Manipulation and locomotion algorithm development",
+    "Embodied-AI foundation-model talent pipeline",
+    "Industrial-automation deployment partnerships"
+  ],
+  "description": "The robotics industry is converging with AI to build general-purpose humanoid and mobile robots for logistics, manufacturing, and services. It hires heavily from academic robotics and ML labs, with several leading companies founded directly by university researchers."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "University of Melbourne",
+  "country": "Australia",
+  "city": "Melbourne",
+  "type": "public",
+  "researcherCount": 4200,
+  "avgHindex": 45,
+  "grantCount": 3100,
+  "departments": ["Medicine", "Biomedical Sciences", "Computing and Information Systems", "Chemistry", "Physics", "Engineering", "Population and Global Health", "Veterinary and Agricultural Sciences"],
+  "topFields": ["Immunology", "Epidemiology", "Materials Science", "Artificial Intelligence", "Climate Science"],
+  "description": "The University of Melbourne is Australia's leading research-intensive university and a member of the Group of Eight. It anchors a major biomedical precinct alongside the Walter and Eliza Hall Institute and Peter Doherty Institute, making it a global force in immunology and infectious disease research."
+}

@@ -1,0 +1,26 @@
+{
+  "name": "State University of Campinas",
+  "country": "Brazil",
+  "city": "Campinas",
+  "type": "public",
+  "researcherCount": 3400,
+  "avgHindex": 43,
+  "grantCount": 2200,
+  "departments": [
+    "Physics",
+    "Chemistry",
+    "Biology",
+    "Engineering",
+    "Medicine",
+    "Computer Science",
+    "Food Engineering"
+  ],
+  "topFields": [
+    "Synchrotron Science",
+    "Materials Physics",
+    "Food Engineering",
+    "Genomics",
+    "Bioenergy"
+  ],
+  "description": "UNICAMP in Campinas is one of Brazil's most research-intensive universities and hosts the country's national synchrotron-light laboratory. It is a leader in materials physics, food engineering, and bioenergy research."
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Sorbonne University",
+  "country": "France",
+  "city": "Paris",
+  "type": "public",
+  "researcherCount": 4600,
+  "avgHindex": 45,
+  "grantCount": 2500,
+  "departments": [
+    "Mathematics",
+    "Physics",
+    "Chemistry",
+    "Biology",
+    "Earth Sciences",
+    "Computer Science",
+    "Medicine"
+  ],
+  "topFields": [
+    "Mathematics",
+    "Condensed Matter Physics",
+    "Oceanography",
+    "Neuroscience",
+    "Theoretical Chemistry"
+  ],
+  "description": "Sorbonne University in Paris is one of France's flagship research institutions, formed from the merger of Pierre and Marie Curie University with Paris-Sorbonne. It excels in mathematics, fundamental physics, and marine sciences."
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Austrian Science Fund (FWF)",
+  "country": "Austria",
+  "type": "government",
+  "budget": "$280M",
+  "programs": ["Stand-Alone Projects", "START Programme", "Wittgenstein Award", "Doctoral Programmes", "Schrödinger Fellowships", "Clusters of Excellence"],
+  "description": "The FWF is Austria's central body for funding basic research, operating on the principles of peer review and scientific autonomy. It supports individual investigators, doctoral training, and prestigious career awards across all fields of science."
+}

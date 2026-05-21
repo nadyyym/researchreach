@@ -1,0 +1,8 @@
+{
+  "name": "Energy & Cleantech",
+  "companies": ["Tesla Energy", "First Solar", "QuantumScape", "Form Energy", "Commonwealth Fusion Systems", "Bloom Energy", "Sila Nanotechnologies", "Twelve", "Heliogen", "NextEra Energy"],
+  "targetResearchers": "Electrochemists, battery scientists, catalysis researchers, and plasma physicists working on storage, fuels, fusion, and carbon capture",
+  "marketSize": "$1.9T",
+  "useCases": ["Battery chemistry licensing from university labs", "Recruiting electrochemistry and materials PhDs", "DOE national-lab and university co-research", "Pilot validation of catalysis platforms", "Fusion and plasma talent acquisition", "Spinout co-founder recruitment"],
+  "description": "Energy and cleantech companies translate breakthroughs in electrochemistry, catalysis, and plasma physics into batteries, fuels, fusion reactors, and carbon-capture systems. The sector draws talent and IP directly from university labs and DOE national laboratories, and many of its flagship startups began as academic spinouts. Sponsored research and pilot validation with university labs are core to de-risking new chemistries before scale-up."
+}

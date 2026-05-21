@@ -1,0 +1,9 @@
+{
+  "name": "Romania",
+  "code": "RO",
+  "topInstitutions": ["University of Bucharest", "Babes-Bolyai University", "Romanian Academy", "Politehnica University of Bucharest", "ELI-NP"],
+  "topAgencies": ["UEFISCDI", "Romanian Academy", "Ministry of Research"],
+  "researchOutput": 22000,
+  "topFields": ["Physics", "Mathematics", "Chemistry", "Computer Science", "Materials Science"],
+  "description": "Romania hosts the Extreme Light Infrastructure Nuclear Physics (ELI-NP) facility, one of the world's most powerful laser systems. Its research strengths lie in physics, mathematics, and a fast-growing information technology sector."
+}

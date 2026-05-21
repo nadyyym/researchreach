@@ -1,0 +1,26 @@
+{
+  "name": "Shanghai Jiao Tong University",
+  "country": "China",
+  "city": "Shanghai",
+  "type": "public",
+  "researcherCount": 5800,
+  "avgHindex": 47,
+  "grantCount": 3400,
+  "departments": [
+    "Mechanical Engineering",
+    "Electronic Engineering",
+    "Medicine",
+    "Materials Science",
+    "Naval Architecture",
+    "Life Sciences",
+    "Computer Science"
+  ],
+  "topFields": [
+    "Materials Science",
+    "Biomedical Engineering",
+    "Ocean Engineering",
+    "Artificial Intelligence",
+    "Nanotechnology"
+  ],
+  "description": "Shanghai Jiao Tong University is one of China's oldest and most selective universities, with particular strength in engineering and medicine. Its naval architecture and materials programs are among the best in the country."
+}

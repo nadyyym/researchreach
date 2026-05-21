@@ -1,0 +1,8 @@
+{
+  "name": "German Academic Exchange Service (DAAD)",
+  "country": "Germany",
+  "type": "government",
+  "budget": "$650M",
+  "programs": ["Research Grants for Doctoral Candidates", "Postdoctoral Researchers International Mobility", "Research Stays for University Academics", "Bilateral Exchange Programmes", "Centres for Research Excellence Abroad", "Leadership for Africa"],
+  "description": "The DAAD is the world's largest funding organization for international academic exchange. It supports research fellowships, mobility grants, and collaborative programmes that bring scholars to and from Germany across every discipline."
+}

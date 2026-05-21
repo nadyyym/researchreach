@@ -1,0 +1,25 @@
+{
+  "name": "Oncology Diagnostics",
+  "companies": [
+    "Grail",
+    "Guardant Health",
+    "Foundation Medicine",
+    "Exact Sciences",
+    "Natera",
+    "Tempus",
+    "Freenome",
+    "Adaptive Biotechnologies",
+    "Caris Life Sciences",
+    "Delfi Diagnostics"
+  ],
+  "targetResearchers": "Molecular biologists and bioinformaticians in liquid biopsy, NGS, methylation analysis, and assay development",
+  "marketSize": "$55B",
+  "useCases": [
+    "Liquid-biopsy R&D recruitment",
+    "ctDNA-assay validation partnerships",
+    "University cancer-genomics collaborations",
+    "Bioinformatics talent pipeline",
+    "Early-detection clinical-study alliances"
+  ],
+  "description": "Oncology diagnostics develops blood-based and genomic tests to detect and monitor cancer earlier and more precisely. It recruits molecular biologists and bioinformaticians from academia and partners with cancer centers on biomarker and assay research."
+}

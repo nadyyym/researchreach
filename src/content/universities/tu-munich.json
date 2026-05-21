@@ -1,0 +1,27 @@
+{
+  "name": "Technical University of Munich",
+  "country": "Germany",
+  "city": "Munich",
+  "type": "public",
+  "researcherCount": 4200,
+  "avgHindex": 44,
+  "grantCount": 3100,
+  "departments": [
+    "Informatics",
+    "Mechanical Engineering",
+    "Electrical and Computer Engineering",
+    "Chemistry",
+    "Physics",
+    "Aerospace and Geodesy",
+    "Medicine",
+    "Mathematics"
+  ],
+  "topFields": [
+    "Robotics",
+    "Quantum Technology",
+    "Catalysis",
+    "Biomedical Engineering",
+    "Aerospace"
+  ],
+  "description": "The Technical University of Munich is Germany's leading technical university and a member of the German Universities Excellence Initiative. It is renowned for its tight integration of engineering, natural sciences, and entrepreneurship, spinning out hundreds of deep-tech startups."
+}

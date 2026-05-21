@@ -1,0 +1,8 @@
+{
+  "name": "Research Council of Norway",
+  "country": "Norway",
+  "type": "government",
+  "budget": "$1.2B",
+  "programs": ["FRIPRO Independent Projects", "Centres of Excellence (SFF)", "Research Infrastructure", "Innovation Projects", "International Partnerships", "Young Research Talents"],
+  "description": "The Research Council of Norway is the national body for funding and coordinating research across all sectors. It advises the government on research policy and channels public funds into basic science, innovation, and large-scale infrastructure."
+}

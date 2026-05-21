@@ -1,0 +1,9 @@
+{
+  "name": "Iceland",
+  "code": "IS",
+  "topInstitutions": ["University of Iceland", "Reykjavik University", "deCODE genetics", "Marine and Freshwater Research Institute"],
+  "topAgencies": ["Rannis", "Icelandic Research Fund"],
+  "researchOutput": 4000,
+  "topFields": ["Genomics", "Geothermal Energy", "Volcanology", "Marine Biology", "Earth Sciences"],
+  "description": "Iceland leads pioneering human genomics research through deCODE genetics, which has mapped a substantial fraction of the population's genome. Its geology drives world-class research in geothermal energy and volcanology."
+}

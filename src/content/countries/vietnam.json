@@ -1,0 +1,9 @@
+{
+  "name": "Vietnam",
+  "code": "VN",
+  "topInstitutions": ["Vietnam National University Hanoi", "Vietnam National University Ho Chi Minh City", "Vietnam Academy of Science and Technology", "Ton Duc Thang University"],
+  "topAgencies": ["NAFOSTED", "VAST", "Ministry of Science and Technology"],
+  "researchOutput": 22000,
+  "topFields": ["Mathematics", "Physics", "Materials Science", "Agriculture", "Computer Science"],
+  "description": "Vietnam is one of the fastest-growing research economies in Southeast Asia, propelled by reforms to its NAFOSTED funding agency. It has notable strength in mathematics, supported by the work of Fields Medalist Ngo Bao Chau."
+}

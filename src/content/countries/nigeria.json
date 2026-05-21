@@ -1,0 +1,9 @@
+{
+  "name": "Nigeria",
+  "code": "NG",
+  "topInstitutions": ["University of Ibadan", "University of Lagos", "Ahmadu Bello University", "Obafemi Awolowo University", "Covenant University"],
+  "topAgencies": ["TETFund", "NUC", "National Research Fund"],
+  "researchOutput": 25000,
+  "topFields": ["Public Health", "Agriculture", "Infectious Diseases", "Engineering", "Chemistry"],
+  "description": "Nigeria is Africa's most populous country and a major research producer, led by long-established universities like Ibadan and Lagos. Its output is strongest in public health, infectious diseases, and tropical agriculture."
+}

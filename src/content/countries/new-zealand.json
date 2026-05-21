@@ -1,0 +1,9 @@
+{
+  "name": "New Zealand",
+  "code": "NZ",
+  "topInstitutions": ["University of Auckland", "University of Otago", "Victoria University of Wellington", "University of Canterbury"],
+  "topAgencies": ["Royal Society Te Aparangi", "MBIE", "Health Research Council"],
+  "researchOutput": 26000,
+  "topFields": ["Agricultural Science", "Earth Sciences", "Ecology", "Marine Biology", "Antarctic Research"],
+  "description": "New Zealand punches above its weight in agricultural science, ecology, and earth sciences shaped by its unique geography. Its institutions lead research on volcanology, conservation biology, and Antarctic science."
+}

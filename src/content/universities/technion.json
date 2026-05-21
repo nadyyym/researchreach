@@ -1,0 +1,12 @@
+{
+  "name": "Technion - Israel Institute of Technology",
+  "country": "Israel",
+  "city": "Haifa",
+  "type": "public",
+  "researcherCount": 1700,
+  "avgHindex": 44,
+  "grantCount": 1500,
+  "departments": ["Computer Science", "Electrical Engineering", "Chemistry", "Biology", "Mechanical Engineering", "Materials Science and Engineering", "Biomedical Engineering", "Physics"],
+  "topFields": ["Materials Science", "Drug Discovery", "Nanotechnology", "Artificial Intelligence", "Quantum Computing"],
+  "description": "The Technion is Israel's oldest university and a cornerstone of the country's high-tech economy. It has produced multiple Nobel laureates in chemistry and is closely linked to Israel's startup ecosystem, particularly in semiconductors, medical devices, and water technology."
+}

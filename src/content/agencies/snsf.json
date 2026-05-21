@@ -1,0 +1,8 @@
+{
+  "name": "Swiss National Science Foundation (SNSF)",
+  "country": "Switzerland",
+  "type": "government",
+  "budget": "$1.0B",
+  "programs": ["Project Funding", "Sinergia", "Ambizione Fellowships", "National Centres of Competence in Research", "SNSF Starting Grants", "Doc.Mobility"],
+  "description": "The SNSF funds scientific research across all disciplines on behalf of the Swiss Confederation. It supports roughly 6,000 projects involving thousands of researchers each year, with a focus on basic research and early-career advancement."
+}

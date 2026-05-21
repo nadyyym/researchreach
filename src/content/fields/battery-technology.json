@@ -1,0 +1,9 @@
+{
+  "name": "Battery Technology",
+  "subfields": ["Solid-State Batteries", "Lithium-Ion Chemistry", "Sodium-Ion Batteries", "Battery Management Systems", "Electrode Materials"],
+  "keyTechnologies": ["Electrochemical Characterization", "In-Situ Spectroscopy", "Solid Electrolytes", "Computational Materials Screening", "Roll-to-Roll Manufacturing"],
+  "topInstitutions": ["MIT", "Stanford", "KAIST", "Peking University", "University of Michigan"],
+  "researcherCount": 29000,
+  "avgFunding": "$540K",
+  "description": "Battery technology research develops energy storage systems with higher density, faster charging, longer life, and greater safety. It is central to electric vehicles, grid-scale renewable storage, and portable electronics, with intense focus on solid-state and next-generation chemistries."
+}

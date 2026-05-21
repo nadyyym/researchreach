@@ -1,0 +1,26 @@
+{
+  "name": "Indian Institute of Science",
+  "country": "India",
+  "city": "Bangalore",
+  "type": "public",
+  "researcherCount": 3500,
+  "avgHindex": 44,
+  "grantCount": 2300,
+  "departments": [
+    "Physics",
+    "Chemistry",
+    "Materials Engineering",
+    "Aerospace Engineering",
+    "Molecular Biophysics",
+    "Computer Science",
+    "Electrical Engineering"
+  ],
+  "topFields": [
+    "Materials Science",
+    "Aerospace",
+    "Molecular Biophysics",
+    "Nanoelectronics",
+    "Catalysis"
+  ],
+  "description": "The Indian Institute of Science in Bangalore is India's foremost research institution for science and engineering. Founded in 1909, it leads the country in materials science, aerospace, and molecular biophysics."
+}

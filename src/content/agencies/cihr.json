@@ -1,0 +1,8 @@
+{
+  "name": "Canadian Institutes of Health Research (CIHR)",
+  "country": "Canada",
+  "type": "government",
+  "budget": "$1.0B",
+  "programs": ["Project Grants", "Foundation Grants", "Canada Research Chairs", "Strategy for Patient-Oriented Research", "Banting Postdoctoral Fellowships"],
+  "description": "CIHR is Canada's federal agency for health research funding, supporting biomedical, clinical, health systems, and population health science. It coordinates thirteen virtual institutes spanning the breadth of human health research."
+}

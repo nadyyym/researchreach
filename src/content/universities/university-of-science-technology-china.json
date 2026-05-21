@@ -1,0 +1,25 @@
+{
+  "name": "University of Science and Technology of China",
+  "country": "China",
+  "city": "Hefei",
+  "type": "public",
+  "researcherCount": 3800,
+  "avgHindex": 49,
+  "grantCount": 2900,
+  "departments": [
+    "Physics",
+    "Chemistry",
+    "Life Sciences",
+    "Engineering Science",
+    "Computer Science",
+    "Earth and Space Sciences"
+  ],
+  "topFields": [
+    "Quantum Information",
+    "Particle Physics",
+    "Materials Chemistry",
+    "Nanoscience",
+    "Astrophysics"
+  ],
+  "description": "USTC is China's premier institution for fundamental science and a global frontrunner in quantum information. Its researchers built the Micius quantum-communication satellite and lead programs in particle physics and nanoscience."
+}

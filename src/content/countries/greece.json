@@ -1,0 +1,9 @@
+{
+  "name": "Greece",
+  "code": "GR",
+  "topInstitutions": ["National and Kapodistrian University of Athens", "Aristotle University of Thessaloniki", "FORTH", "National Technical University of Athens", "University of Crete"],
+  "topAgencies": ["GSRI", "FORTH", "Hellenic Foundation for Research and Innovation"],
+  "researchOutput": 30000,
+  "topFields": ["Archaeology", "Physics", "Computer Science", "Marine Sciences", "Biomedical Engineering"],
+  "description": "Greece combines strong traditions in archaeology and classical studies with growing capacity in physics, informatics, and biomedical research. The Foundation for Research and Technology Hellas (FORTH) is a leading hub for applied science."
+}

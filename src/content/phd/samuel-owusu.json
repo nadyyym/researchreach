@@ -1,0 +1,22 @@
+{
+  "name": "Samuel Owusu",
+  "institution": "Massachusetts Institute of Technology",
+  "field": "Climate Modeling",
+  "advisor": "Dr. Raffaele Ferrari",
+  "thesis": "Machine-learning parameterizations for ocean turbulence in climate models",
+  "publications": 8,
+  "skills": [
+    "Python",
+    "Julia",
+    "Machine Learning",
+    "Fluid Dynamics",
+    "High-Performance Computing",
+    "Data Assimilation"
+  ],
+  "transitionSignals": [
+    "Internship at a climate-analytics startup",
+    "Co-authored with reinsurance data scientists",
+    "Maintains an open-source climate-emulator library"
+  ],
+  "description": "Samuel builds ML emulators that make climate simulations faster without sacrificing physical fidelity. His HPC and modeling skills fit a climate-risk analytics company serving insurers and asset managers."
+}

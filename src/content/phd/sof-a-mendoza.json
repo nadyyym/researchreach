@@ -1,0 +1,22 @@
+{
+  "name": "Sofía Mendoza",
+  "institution": "University of Cambridge",
+  "field": "Precision Agriculture",
+  "advisor": "Dr. Giles Oldroyd",
+  "thesis": "Engineering nitrogen-fixing symbioses in cereal crops via synthetic signaling",
+  "publications": 8,
+  "skills": [
+    "Plant Transformation",
+    "Synthetic Biology",
+    "Confocal Microscopy",
+    "RNA-seq",
+    "Field Trials",
+    "Bioinformatics"
+  ],
+  "transitionSignals": [
+    "Internship at Pivot Bio",
+    "Co-authored with industry agronomists",
+    "Presented at agtech venture forum"
+  ],
+  "description": "Sofía rewires plant-microbe signaling to reduce synthetic fertilizer dependence, with greenhouse results showing measurable nitrogen uptake gains. Her field-trial experience and synthetic-biology toolkit fit a precision-agriculture biotech."
+}

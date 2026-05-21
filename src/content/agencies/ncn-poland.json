@@ -1,0 +1,8 @@
+{
+  "name": "National Science Centre Poland (NCN)",
+  "country": "Poland",
+  "type": "government",
+  "budget": "$350M",
+  "programs": ["OPUS", "PRELUDIUM", "SONATA", "MAESTRO", "POLONEZ Fellowships", "MINIATURA"],
+  "description": "The National Science Centre is Poland's agency dedicated to funding basic research across all scientific disciplines. Through a portfolio of named grant schemes it supports researchers at every career stage, from doctoral candidates to senior investigators."
+}

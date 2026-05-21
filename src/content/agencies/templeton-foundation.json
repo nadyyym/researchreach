@@ -1,0 +1,8 @@
+{
+  "name": "John Templeton Foundation",
+  "country": "United States",
+  "type": "foundation",
+  "budget": "$180M",
+  "programs": ["Science and the Big Questions", "Genetics Research", "Mathematical and Physical Sciences", "Human Sciences", "Templeton Prize", "Public Engagement Grants"],
+  "description": "The John Templeton Foundation funds research and dialogue at the intersection of science, philosophy, and theology. It supports projects on fundamental questions in physics, biology, and the human sciences, and awards the annual Templeton Prize."
+}

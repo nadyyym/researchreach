@@ -1,0 +1,25 @@
+{
+  "name": "Korea University",
+  "country": "South Korea",
+  "city": "Seoul",
+  "type": "private",
+  "researcherCount": 3400,
+  "avgHindex": 42,
+  "grantCount": 2000,
+  "departments": [
+    "Engineering",
+    "Medicine",
+    "Science",
+    "Life Sciences",
+    "Informatics",
+    "Pharmacy"
+  ],
+  "topFields": [
+    "Brain Engineering",
+    "Materials Science",
+    "Artificial Intelligence",
+    "Battery Research",
+    "Genomics"
+  ],
+  "description": "Korea University is a leading private research university in Seoul and part of the prestigious SKY group. It has rapidly grown its research output in brain engineering, artificial intelligence, and advanced materials."
+}

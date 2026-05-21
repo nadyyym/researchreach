@@ -1,0 +1,14 @@
+{
+  "name": "Andrew Wiles",
+  "institution": "University of Oxford",
+  "field": "Number Theory",
+  "hindex": 28,
+  "grantCount": 15,
+  "patents": 0,
+  "publications": 35,
+  "industryTies": [
+    "University of Oxford",
+    "Clay Mathematics Institute"
+  ],
+  "description": "Andrew Wiles proved Fermat's Last Theorem by establishing the modularity of semistable elliptic curves, resolving a 358-year-old problem. His work catalyzed major advances in the Langlands program and arithmetic geometry."
+}

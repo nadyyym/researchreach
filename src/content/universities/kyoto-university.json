@@ -1,0 +1,26 @@
+{
+  "name": "Kyoto University",
+  "country": "Japan",
+  "city": "Kyoto",
+  "type": "public",
+  "researcherCount": 5500,
+  "avgHindex": 50,
+  "grantCount": 3300,
+  "departments": [
+    "Medicine",
+    "Engineering",
+    "Science",
+    "Pharmaceutical Sciences",
+    "Agriculture",
+    "Informatics",
+    "Energy Science"
+  ],
+  "topFields": [
+    "Stem Cell Biology",
+    "Chemistry",
+    "Primatology",
+    "Materials Science",
+    "Particle Physics"
+  ],
+  "description": "Kyoto University is Japan's second-oldest university and its most decorated for science, with multiple Nobel laureates. It pioneered induced pluripotent stem cell research and remains a global leader in regenerative medicine and chemistry."
+}

@@ -1,0 +1,8 @@
+{
+  "name": "National Research Foundation of South Africa (NRF)",
+  "country": "South Africa",
+  "type": "government",
+  "budget": "$300M",
+  "programs": ["Competitive Programme for Rated Researchers", "Thuthuka Programme", "South African Research Chairs Initiative", "Centres of Excellence", "Postgraduate Scholarships", "International Collaboration Grants"],
+  "description": "The NRF is South Africa's primary agency for supporting and promoting research across all disciplines. It funds researchers, postgraduate students, and national research infrastructure, with a strong emphasis on transformation and building research capacity."
+}

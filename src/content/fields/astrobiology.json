@@ -1,0 +1,9 @@
+{
+  "name": "Astrobiology",
+  "subfields": ["Origin of Life", "Extremophile Biology", "Planetary Habitability", "Biosignature Detection", "Prebiotic Chemistry"],
+  "keyTechnologies": ["Mass Spectrometry", "Mars Rover Instrumentation", "Exoplanet Spectroscopy", "Cryogenic Sample Analysis", "Microfluidic Reactors"],
+  "topInstitutions": ["NASA Ames", "Caltech", "University of Arizona", "Tokyo Institute of Technology", "University of Cambridge"],
+  "researcherCount": 5200,
+  "avgFunding": "$510K",
+  "description": "Astrobiology investigates the origin, evolution, and distribution of life in the universe. It integrates planetary science, chemistry, and biology to identify habitable environments and detect potential biosignatures on other worlds."
+}

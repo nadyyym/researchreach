@@ -1,0 +1,8 @@
+{
+  "name": "Gates Foundation",
+  "country": "United States",
+  "type": "foundation",
+  "budget": "$7.7B",
+  "programs": ["Global Health", "Global Development", "Grand Challenges", "Malaria and TB Research", "Vaccine Development", "Agricultural Innovation"],
+  "description": "The Gates Foundation is the world's largest private philanthropic funder of global health and development research. It backs vaccine development, infectious disease eradication, and agricultural innovation aimed at low- and middle-income countries."
+}

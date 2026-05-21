@@ -1,0 +1,9 @@
+{
+  "name": "Rheology",
+  "subfields": ["Polymer Rheology", "Suspension Mechanics", "Biorheology", "Yield-Stress Fluids", "Microrheology"],
+  "keyTechnologies": ["Rotational Rheometers", "Capillary Rheometry", "Optical Tweezers Microrheology", "Small-Angle Neutron Scattering", "Rheo-Optical Spectroscopy"],
+  "topInstitutions": ["University of Delaware", "ETH Zurich", "Kyoto University", "Cambridge University", "Georgia Tech"],
+  "researcherCount": 7000,
+  "avgFunding": "$270K",
+  "description": "Rheology studies the deformation and flow of matter, especially complex fluids and soft solids that behave neither as simple liquids nor classical solids. It is essential to materials processing, food science, biological tissues, and industrial manufacturing."
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Indian Institute of Technology Delhi",
+  "country": "India",
+  "city": "New Delhi",
+  "type": "public",
+  "researcherCount": 2900,
+  "avgHindex": 39,
+  "grantCount": 2000,
+  "departments": [
+    "Computer Science",
+    "Electrical Engineering",
+    "Mechanical Engineering",
+    "Textile Technology",
+    "Physics",
+    "Chemistry",
+    "Biotechnology"
+  ],
+  "topFields": [
+    "Photonics",
+    "Computer Science",
+    "Textile Engineering",
+    "Materials Science",
+    "Biotechnology"
+  ],
+  "description": "IIT Delhi is among the highest-ranked Indian technical universities, with notable research in photonics, computing, and materials. Its location in the capital strengthens ties to government and industry research programs."
+}

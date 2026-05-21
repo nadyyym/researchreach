@@ -1,0 +1,26 @@
+{
+  "name": "Sapienza University of Rome",
+  "country": "Italy",
+  "city": "Rome",
+  "type": "public",
+  "researcherCount": 4800,
+  "avgHindex": 43,
+  "grantCount": 2400,
+  "departments": [
+    "Physics",
+    "Mathematics",
+    "Chemistry",
+    "Engineering",
+    "Medicine",
+    "Biology",
+    "Earth Sciences"
+  ],
+  "topFields": [
+    "Theoretical Physics",
+    "Astrophysics",
+    "Mathematics",
+    "Pharmacology",
+    "Earth Sciences"
+  ],
+  "description": "Sapienza University of Rome is one of the largest universities in Europe and Italy's top-ranked institution for physics. It has a storied tradition in theoretical and particle physics rooted in the Fermi school, plus strong biomedical research."
+}

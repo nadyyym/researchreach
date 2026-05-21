@@ -1,0 +1,9 @@
+{
+  "name": "Kenya",
+  "code": "KE",
+  "topInstitutions": ["University of Nairobi", "Kenyatta University", "International Livestock Research Institute", "KEMRI"],
+  "topAgencies": ["NACOSTI", "Kenya Medical Research Institute"],
+  "researchOutput": 12000,
+  "topFields": ["Infectious Diseases", "Agriculture", "Ecology", "Public Health", "Veterinary Science"],
+  "description": "Kenya is a leading research hub in East Africa, hosting international centers like ILRI and the KEMRI medical research institute. Its strengths center on infectious diseases, agriculture, and wildlife ecology."
+}

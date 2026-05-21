@@ -1,0 +1,8 @@
+{
+  "name": "Simons Foundation",
+  "country": "United States",
+  "type": "foundation",
+  "budget": "$1.2B",
+  "programs": ["Mathematics and Physical Sciences", "Life Sciences", "Simons Collaborations", "Flatiron Institute", "Simons Investigators", "SFARI Autism Research"],
+  "description": "The Simons Foundation is a private funder advancing research in mathematics and the basic sciences. It operates the in-house Flatiron Institute for computational science and funds large collaborations as well as autism research through SFARI."
+}

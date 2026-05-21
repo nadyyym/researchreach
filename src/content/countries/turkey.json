@@ -1,0 +1,9 @@
+{
+  "name": "Turkey",
+  "code": "TR",
+  "topInstitutions": ["Middle East Technical University", "Bogazici University", "Koc University", "Istanbul Technical University", "Bilkent University"],
+  "topAgencies": ["TUBITAK", "Council of Higher Education"],
+  "researchOutput": 70000,
+  "topFields": ["Engineering", "Materials Science", "Medicine", "Physics", "Computer Science"],
+  "description": "Turkey is a major research producer bridging Europe and Asia, with TUBITAK funding work across engineering and the sciences. Leading universities like METU and Koc drive strong output in materials, physics, and biomedical research."
+}

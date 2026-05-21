@@ -1,0 +1,9 @@
+{
+  "name": "Mycology",
+  "subfields": ["Fungal Genomics", "Mycorrhizal Ecology", "Medical Mycology", "Fungal Biotechnology", "Lichenology"],
+  "keyTechnologies": ["Whole-Genome Sequencing", "Confocal Microscopy", "Metabarcoding", "Culture-Independent Profiling", "Bioreactor Fermentation"],
+  "topInstitutions": ["Westerdijk Fungal Biodiversity Institute", "University of Wisconsin", "Chinese Academy of Sciences", "University of Cambridge", "ETH Zurich"],
+  "researcherCount": 7400,
+  "avgFunding": "$280K",
+  "description": "Mycology is the study of fungi, including their genetics, ecology, and applications. It spans the role of fungi in ecosystems and disease, as well as their growing use in biotechnology, food, and sustainable materials."
+}

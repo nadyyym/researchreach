@@ -1,0 +1,9 @@
+{
+  "name": "Brazil",
+  "code": "BR",
+  "topInstitutions": ["University of São Paulo", "University of Campinas", "Federal University of Rio de Janeiro", "Federal University of Minas Gerais", "São Paulo State University"],
+  "topAgencies": ["CNPq", "CAPES", "FAPESP"],
+  "researchOutput": 95000,
+  "topFields": ["Genomics", "Climate Science", "Immunology", "Materials Science", "Epidemiology"],
+  "description": "Brazil is Latin America's research powerhouse, producing the majority of the region's scientific output. The University of São Paulo and the FAPESP funding agency drive strong programs in tropical medicine, agricultural science, and biodiversity research tied to the Amazon."
+}

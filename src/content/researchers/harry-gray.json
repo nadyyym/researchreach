@@ -1,0 +1,14 @@
+{
+  "name": "Harry Gray",
+  "institution": "California Institute of Technology",
+  "field": "Inorganic Chemistry",
+  "hindex": 120,
+  "grantCount": 48,
+  "patents": 15,
+  "publications": 900,
+  "industryTies": [
+    "Caltech",
+    "Beckman Institute"
+  ],
+  "description": "Harry Gray is a leader in bioinorganic chemistry and long-range electron transfer in proteins. His Solar Army initiative pursues inexpensive catalysts for splitting water to produce clean hydrogen fuel."
+}

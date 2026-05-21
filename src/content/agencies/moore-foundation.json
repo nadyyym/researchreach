@@ -1,0 +1,8 @@
+{
+  "name": "Gordon and Betty Moore Foundation",
+  "country": "United States",
+  "type": "foundation",
+  "budget": "$400M",
+  "programs": ["Science Program", "Moore Inventor Fellows", "Symbiosis in Aquatic Systems", "Data-Driven Discovery", "Environmental Conservation", "Patient Care"],
+  "description": "Founded by Intel co-founder Gordon Moore, this foundation funds large-scale scientific discovery, environmental conservation, and patient care. Its science program backs ambitious projects in areas such as fundamental physics, astronomy, and marine microbiology."
+}

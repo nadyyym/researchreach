@@ -1,0 +1,9 @@
+{
+  "name": "Cryptography",
+  "subfields": ["Post-Quantum Cryptography", "Zero-Knowledge Proofs", "Homomorphic Encryption", "Multiparty Computation", "Lattice-Based Cryptography"],
+  "keyTechnologies": ["Lattice Schemes", "Elliptic Curve Cryptography", "Secure Enclaves", "Formal Verification Tools", "Hardware Security Modules"],
+  "topInstitutions": ["MIT", "Weizmann Institute", "ETH Zurich", "Stanford", "CWI Amsterdam"],
+  "researcherCount": 13500,
+  "avgFunding": "$400K",
+  "description": "Cryptography is the science of securing communication and computation against adversaries. Modern research spans provably secure protocols, privacy-preserving computation, and the transition to post-quantum schemes resistant to quantum attacks."
+}

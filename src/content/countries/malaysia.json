@@ -1,0 +1,9 @@
+{
+  "name": "Malaysia",
+  "code": "MY",
+  "topInstitutions": ["University of Malaya", "Universiti Sains Malaysia", "Universiti Putra Malaysia", "Universiti Kebangsaan Malaysia"],
+  "topAgencies": ["MOSTI", "Academy of Sciences Malaysia"],
+  "researchOutput": 35000,
+  "topFields": ["Engineering", "Materials Science", "Agriculture", "Renewable Energy", "Biotechnology"],
+  "description": "Malaysia has built a strong research base across its public universities, with notable output in engineering and materials science. Palm-oil biotechnology, renewable energy, and tropical agriculture are areas of national focus."
+}

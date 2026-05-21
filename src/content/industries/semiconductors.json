@@ -1,0 +1,8 @@
+{
+  "name": "Semiconductors",
+  "companies": ["NVIDIA", "TSMC", "Intel", "ASML", "Applied Materials", "Samsung Semiconductor", "Lam Research", "Qualcomm", "imec", "Micron Technology"],
+  "targetResearchers": "Solid-state physicists, electrical engineers, and materials scientists working on lithography, novel transistor architectures, photonics, and advanced packaging",
+  "marketSize": "$627B",
+  "useCases": ["University fab and cleanroom partnerships", "Recruiting device-physics and EE PhDs", "Sponsored research on next-node materials", "Joint development with consortia like imec", "Patent licensing for novel architectures", "Beta access to advanced metrology"],
+  "description": "The semiconductor industry depends on a deep bench of academic device physicists and materials scientists to push past the limits of conventional scaling. Leading firms fund university cleanrooms, co-author with consortium labs, and compete aggressively for EE and solid-state-physics PhDs who can work on lithography, photonics, and advanced packaging. The talent pipeline from academic fabs is treated as a strategic asset."
+}

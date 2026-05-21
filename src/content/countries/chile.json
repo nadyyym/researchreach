@@ -1,0 +1,9 @@
+{
+  "name": "Chile",
+  "code": "CL",
+  "topInstitutions": ["University of Chile", "Pontifical Catholic University of Chile", "University of Concepcion", "Universidad Austral de Chile"],
+  "topAgencies": ["ANID", "CONICYT legacy", "Millennium Science Initiative"],
+  "researchOutput": 20000,
+  "topFields": ["Astronomy", "Marine Biology", "Earth Sciences", "Mining Engineering", "Ecology"],
+  "description": "Chile is a global hub for astronomy, hosting major observatories like ALMA and the future Extremely Large Telescope in the Atacama Desert. Its research also excels in marine biology, seismology, and mining-related earth sciences."
+}

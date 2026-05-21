@@ -1,0 +1,16 @@
+{
+  "name": "Daphne Koller",
+  "institution": "Stanford University",
+  "field": "Computational Biology",
+  "hindex": 120,
+  "grantCount": 40,
+  "patents": 30,
+  "publications": 280,
+  "orcid": "0000-0002-2391-3160",
+  "industryTies": [
+    "Coursera",
+    "insitro",
+    "Calico"
+  ],
+  "description": "Daphne Koller is a leader in probabilistic graphical models and machine learning for biology. She founded insitro to apply machine learning to drug discovery and co-founded the online-education platform Coursera."
+}

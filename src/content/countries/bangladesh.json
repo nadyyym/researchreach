@@ -1,0 +1,9 @@
+{
+  "name": "Bangladesh",
+  "code": "BD",
+  "topInstitutions": ["University of Dhaka", "Bangladesh University of Engineering and Technology", "icddr,b", "Bangladesh Agricultural University"],
+  "topAgencies": ["UGC", "Ministry of Science and Technology"],
+  "researchOutput": 15000,
+  "topFields": ["Public Health", "Infectious Diseases", "Agriculture", "Engineering", "Climate Science"],
+  "description": "Bangladesh is home to icddr,b, a globally influential center for diarrheal-disease and public-health research that pioneered oral rehydration therapy. Its research priorities also include climate adaptation and agricultural science."
+}

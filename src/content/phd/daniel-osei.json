@@ -1,0 +1,11 @@
+{
+  "name": "Daniel Osei",
+  "institution": "University of California, Berkeley",
+  "field": "Chemical Engineering",
+  "advisor": "Dr. Alexis Bell",
+  "thesis": "Catalyst design for electrochemical CO2 reduction to value-added chemicals",
+  "publications": 8,
+  "skills": ["Heterogeneous Catalysis", "Electrochemistry", "DFT Simulation", "Python", "Reactor Design", "Spectroscopy"],
+  "transitionSignals": ["Internship at industrial chemicals R&D lab", "Co-authored with industry catalysis team", "Presented at clean-tech conference"],
+  "description": "Daniel designs catalysts that convert captured CO2 into useful chemicals at commercially relevant rates. His combination of computational and experimental skills plus industry experience makes him a strong candidate for clean-tech and chemicals companies."
+}

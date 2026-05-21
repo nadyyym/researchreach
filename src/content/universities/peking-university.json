@@ -1,0 +1,12 @@
+{
+  "name": "Peking University",
+  "country": "China",
+  "city": "Beijing",
+  "type": "public",
+  "researcherCount": 4800,
+  "avgHindex": 43,
+  "grantCount": 3600,
+  "departments": ["Chemistry and Molecular Engineering", "Life Sciences", "Physics", "Computer Science", "Mathematics", "Medicine", "Materials Science", "Environmental Sciences"],
+  "topFields": ["Materials Science", "Genomics", "Artificial Intelligence", "Nanotechnology", "Organic Chemistry"],
+  "description": "Peking University is one of China's two most prestigious universities and a leader in the basic sciences. Its strengths in chemistry, life sciences, and physics are reinforced by substantial national funding and a growing presence in genomics and materials research."
+}

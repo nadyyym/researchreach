@@ -1,0 +1,9 @@
+{
+  "name": "Neuromorphic Computing",
+  "subfields": ["Spiking Neural Networks", "Memristive Devices", "Event-Based Sensing", "In-Memory Computing", "Bio-Inspired Architectures"],
+  "keyTechnologies": ["Memristor Crossbars", "Neuromorphic Chips", "Phase-Change Memory", "Event Cameras", "Analog VLSI"],
+  "topInstitutions": ["Stanford", "ETH Zurich", "IBM Research", "University of Manchester", "Heidelberg University"],
+  "researcherCount": 8500,
+  "avgFunding": "$560K",
+  "description": "Neuromorphic computing designs hardware and algorithms that mimic the structure and dynamics of biological neural systems. By co-locating memory and computation and using spike-based signaling, it promises orders-of-magnitude gains in energy-efficient AI."
+}

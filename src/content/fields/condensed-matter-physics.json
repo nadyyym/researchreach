@@ -1,0 +1,9 @@
+{
+  "name": "Condensed Matter Physics",
+  "subfields": ["Superconductivity", "Topological Materials", "Quantum Magnetism", "Strongly Correlated Systems", "Two-Dimensional Materials"],
+  "keyTechnologies": ["Scanning Tunneling Microscopy", "Angle-Resolved Photoemission Spectroscopy", "Dilution Refrigerators", "Neutron Scattering", "Molecular Beam Epitaxy"],
+  "topInstitutions": ["MIT", "Stanford", "ETH Zurich", "University of British Columbia", "Max Planck Institutes"],
+  "researcherCount": 33000,
+  "avgFunding": "$500K",
+  "description": "Condensed matter physics investigates the macroscopic and microscopic properties of solid and liquid matter. It is the largest subfield of physics and the source of discoveries such as superconductivity, the transistor, and topological states that underpin emerging quantum devices."
+}

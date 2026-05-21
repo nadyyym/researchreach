@@ -1,0 +1,9 @@
+{
+  "name": "Photonics",
+  "subfields": ["Integrated Photonics", "Nonlinear Optics", "Quantum Photonics", "Optoelectronics", "Plasmonics"],
+  "keyTechnologies": ["Silicon Photonics", "Laser Systems", "Optical Fibers", "Photonic Integrated Circuits", "Metamaterials"],
+  "topInstitutions": ["MIT", "ETH Zurich", "KTH Royal Institute of Technology", "EPFL", "University of Tokyo"],
+  "researcherCount": 31000,
+  "avgFunding": "$510K",
+  "description": "Photonics is the science and engineering of generating, controlling, and detecting photons, particularly in the visible and near-infrared range. It underpins optical communications, laser manufacturing, biomedical imaging, and emerging quantum technologies."
+}

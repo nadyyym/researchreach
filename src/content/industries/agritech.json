@@ -1,0 +1,8 @@
+{
+  "name": "Agritech",
+  "companies": ["Corteva Agriscience", "Bayer Crop Science", "Syngenta", "Inari Agriculture", "Pivot Bio", "Indigo Agriculture", "Benson Hill", "Pairwise", "Greenlight Biosciences"],
+  "targetResearchers": "Plant scientists, agronomists, soil microbiologists, and crop geneticists working on yield, gene editing, nitrogen fixation, and sustainable inputs",
+  "marketSize": "$24B",
+  "useCases": ["Crop trait licensing from university programs", "Field trial collaboration with ag-extension labs", "Recruiting plant-genomics PhDs", "Microbiome platform co-development", "Sponsored research at land-grant universities", "Gene-editing IP partnerships"],
+  "description": "The agritech industry commercializes advances in plant genetics, soil microbiology, and precision agriculture, much of which originates in land-grant university research programs. Companies recruit heavily from plant-science and agronomy PhD pipelines and rely on sponsored research and field-trial collaborations to validate new traits and biologicals. The closest academic ties run through agricultural extension labs and crop-genomics centers."
+}

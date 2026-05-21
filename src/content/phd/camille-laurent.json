@@ -1,0 +1,22 @@
+{
+  "name": "Camille Laurent",
+  "institution": "École Polytechnique",
+  "field": "Nuclear Engineering",
+  "advisor": "Dr. Jean-Marc Cavedon",
+  "thesis": "Accident-tolerant fuel cladding for small modular reactors",
+  "publications": 6,
+  "skills": [
+    "Materials Testing",
+    "Neutronics Simulation",
+    "MATLAB",
+    "Thermal-Hydraulics",
+    "Failure Analysis",
+    "Regulatory Documentation"
+  ],
+  "transitionSignals": [
+    "Internship at a small-modular-reactor startup",
+    "Co-authored with nuclear-utility engineers",
+    "Presented at advanced-reactor conference"
+  ],
+  "description": "Camille tests cladding materials that resist failure during reactor transients, supporting safer next-generation reactors. Her materials and regulatory familiarity fit an advanced-nuclear company moving toward licensing."
+}

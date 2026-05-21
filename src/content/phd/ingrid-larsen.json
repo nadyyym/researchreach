@@ -1,0 +1,22 @@
+{
+  "name": "Ingrid Larsen",
+  "institution": "Karolinska Institute",
+  "field": "Gene Therapy",
+  "advisor": "Dr. Anna Wedell",
+  "thesis": "AAV capsid engineering for targeted delivery to the central nervous system",
+  "publications": 7,
+  "skills": [
+    "Molecular Cloning",
+    "Viral Vector Production",
+    "Flow Cytometry",
+    "CRISPR Screening",
+    "In Vivo Models",
+    "GMP Documentation"
+  ],
+  "transitionSignals": [
+    "Internship at Spark Therapeutics",
+    "Filed first patent on a novel capsid variant",
+    "Attended ASGCT annual meeting"
+  ],
+  "description": "Ingrid engineers AAV capsids that cross the blood-brain barrier with improved tropism, validated in rodent models. Her vector-production and GMP-awareness skills are exactly what a clinical-stage gene-therapy company looks for."
+}

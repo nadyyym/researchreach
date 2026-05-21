@@ -1,0 +1,9 @@
+{
+  "name": "Tissue Engineering",
+  "subfields": ["Scaffold Design", "Organoid Development", "Bioprinting", "Vascularization", "Regenerative Medicine"],
+  "keyTechnologies": ["3D Bioprinting", "Decellularized Matrices", "Microfluidic Organ-on-Chip", "Hydrogel Scaffolds", "Stem Cell Differentiation"],
+  "topInstitutions": ["Harvard Wyss Institute", "MIT", "University of Toronto", "ETH Zurich", "Kyoto University"],
+  "researcherCount": 19000,
+  "avgFunding": "$520K",
+  "description": "Tissue engineering combines cells, scaffolds, and biochemical cues to build functional biological tissues. It aims to repair or replace damaged organs and provides physiologically realistic models for drug testing and disease research."
+}

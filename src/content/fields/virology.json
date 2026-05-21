@@ -1,0 +1,9 @@
+{
+  "name": "Virology",
+  "subfields": ["Molecular Virology", "Viral Immunology", "Emerging Infectious Diseases", "Antiviral Drug Development", "Viral Evolution"],
+  "keyTechnologies": ["Cryo-EM", "Next-Generation Sequencing", "Reverse Genetics Systems", "Pseudovirus Neutralization Assays", "BSL-4 Containment"],
+  "topInstitutions": ["Scripps Research", "University of Oxford", "Pasteur Institute", "Erasmus MC", "University of Hong Kong"],
+  "researcherCount": 31000,
+  "avgFunding": "$480K",
+  "description": "Virology is the study of viruses, their structure, replication, and interactions with hosts. It drives the development of vaccines and antivirals and is central to pandemic preparedness and the surveillance of emerging pathogens."
+}

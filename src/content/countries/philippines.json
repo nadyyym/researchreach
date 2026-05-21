@@ -1,0 +1,9 @@
+{
+  "name": "Philippines",
+  "code": "PH",
+  "topInstitutions": ["University of the Philippines", "Ateneo de Manila University", "De La Salle University", "International Rice Research Institute"],
+  "topAgencies": ["DOST", "PCHRD", "NRCP"],
+  "researchOutput": 14000,
+  "topFields": ["Agriculture", "Marine Biology", "Public Health", "Disaster Science", "Biodiversity"],
+  "description": "The Philippines hosts the International Rice Research Institute, a global leader in crop science and food security. Its research priorities reflect its geography, with strengths in marine biology, disaster resilience, and tropical agriculture."
+}

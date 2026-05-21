@@ -1,0 +1,26 @@
+{
+  "name": "Polytechnic University of Milan",
+  "country": "Italy",
+  "city": "Milan",
+  "type": "public",
+  "researcherCount": 3600,
+  "avgHindex": 40,
+  "grantCount": 2200,
+  "departments": [
+    "Mechanical Engineering",
+    "Electrical Engineering",
+    "Civil Engineering",
+    "Architecture",
+    "Materials Science",
+    "Computer Science",
+    "Energy"
+  ],
+  "topFields": [
+    "Mechanical Engineering",
+    "Energy Systems",
+    "Design",
+    "Materials Science",
+    "Aerospace"
+  ],
+  "description": "Politecnico di Milano is Italy's largest technical university and its top institution for engineering, architecture, and design. It maintains deep ties with the manufacturing and automotive industries of northern Italy."
+}

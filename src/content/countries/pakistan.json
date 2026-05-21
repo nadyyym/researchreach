@@ -1,0 +1,9 @@
+{
+  "name": "Pakistan",
+  "code": "PK",
+  "topInstitutions": ["Quaid-i-Azam University", "National University of Sciences and Technology", "University of the Punjab", "COMSATS University"],
+  "topAgencies": ["HEC", "PCST", "Pakistan Science Foundation"],
+  "researchOutput": 38000,
+  "topFields": ["Chemistry", "Engineering", "Agriculture", "Mathematics", "Biotechnology"],
+  "description": "Pakistan has substantially increased research output following reforms by its Higher Education Commission. Its strengths include chemistry, engineering, and agricultural sciences, with growing capacity in biotechnology."
+}

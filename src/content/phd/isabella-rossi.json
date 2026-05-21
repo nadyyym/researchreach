@@ -1,0 +1,11 @@
+{
+  "name": "Isabella Rossi",
+  "institution": "Imperial College London",
+  "field": "Computational Chemistry",
+  "advisor": "Dr. Kim Jelfs",
+  "thesis": "Machine learning accelerated discovery of porous materials for gas capture",
+  "publications": 11,
+  "skills": ["Molecular Simulation", "Python", "Machine Learning", "High-Performance Computing", "Cheminformatics", "Materials Screening"],
+  "transitionSignals": ["Internship at materials-AI startup", "Co-authored with industry scientists", "Open-sourced screening toolkit"],
+  "description": "Isabella couples machine learning with molecular simulation to screen porous materials for carbon capture orders of magnitude faster than experiment. Her open-source tooling and startup internship signal readiness for an industrial materials-discovery team."
+}

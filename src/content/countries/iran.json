@@ -1,0 +1,9 @@
+{
+  "name": "Iran",
+  "code": "IR",
+  "topInstitutions": ["University of Tehran", "Sharif University of Technology", "Tehran University of Medical Sciences", "Amirkabir University of Technology"],
+  "topAgencies": ["INSF", "Ministry of Science", "Vice-Presidency for Science and Technology"],
+  "researchOutput": 75000,
+  "topFields": ["Engineering", "Nanotechnology", "Chemistry", "Medicine", "Mathematics"],
+  "description": "Iran has rapidly expanded its research output, with particular strength in engineering, nanotechnology, and chemistry. Sharif University of Technology is internationally regarded for producing top mathematics and engineering talent."
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Lund University",
+  "country": "Sweden",
+  "city": "Lund",
+  "type": "public",
+  "researcherCount": 4000,
+  "avgHindex": 49,
+  "grantCount": 2600,
+  "departments": [
+    "Engineering",
+    "Medicine",
+    "Science",
+    "Physics",
+    "Chemistry",
+    "Biology",
+    "Computer Science"
+  ],
+  "topFields": [
+    "Photonics",
+    "Materials Science",
+    "Neuroscience",
+    "Combustion Physics",
+    "Diabetes Research"
+  ],
+  "description": "Lund University is one of Scandinavia's largest and oldest universities and hosts the MAX IV synchrotron and the European Spallation Source nearby. It is a leader in photonics, materials science, and diabetes research."
+}

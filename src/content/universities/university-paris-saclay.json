@@ -1,0 +1,26 @@
+{
+  "name": "University of Paris-Saclay",
+  "country": "France",
+  "city": "Gif-sur-Yvette",
+  "type": "public",
+  "researcherCount": 5800,
+  "avgHindex": 44,
+  "grantCount": 3200,
+  "departments": [
+    "Physics",
+    "Mathematics",
+    "Chemistry",
+    "Biology",
+    "Computer Science",
+    "Pharmacy",
+    "Engineering"
+  ],
+  "topFields": [
+    "Particle Physics",
+    "Mathematics",
+    "Drug Discovery",
+    "Plant Science",
+    "Optics"
+  ],
+  "description": "Paris-Saclay is France's largest research university, clustering universities, grandes ecoles, and national labs like CEA and CNRS on a single plateau south of Paris. It is a global leader in physics and mathematics and consistently ranks first in France."
+}

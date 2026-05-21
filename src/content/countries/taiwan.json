@@ -1,0 +1,9 @@
+{
+  "name": "Taiwan",
+  "code": "TW",
+  "topInstitutions": ["National Taiwan University", "National Tsing Hua University", "Academia Sinica", "National Yang Ming Chiao Tung University", "National Cheng Kung University"],
+  "topAgencies": ["NSTC", "Academia Sinica", "ITRI"],
+  "researchOutput": 42000,
+  "topFields": ["Materials Science", "Nanotechnology", "Artificial Intelligence", "Condensed Matter Physics", "Genomics"],
+  "description": "Taiwan is a global leader in semiconductor and materials research, reflecting its central role in the world's electronics supply chain. Academia Sinica and the Industrial Technology Research Institute anchor a research system tightly coupled to advanced manufacturing."
+}

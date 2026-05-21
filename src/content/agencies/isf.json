@@ -1,0 +1,8 @@
+{
+  "name": "Israel Science Foundation (ISF)",
+  "country": "Israel",
+  "type": "government",
+  "budget": "$200M",
+  "programs": ["Individual Research Grants", "Centers of Research Excellence", "Equipment Grants", "Personal Research Grants for New Faculty", "Joint International Programs", "Breakthrough Research Grants"],
+  "description": "The Israel Science Foundation is the country's predominant source of competitive funding for basic research. It supports investigators across all disciplines through peer-reviewed grants and underpins much of Israel's academic research output."
+}

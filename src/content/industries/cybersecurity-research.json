@@ -1,0 +1,25 @@
+{
+  "name": "Cybersecurity Research",
+  "companies": [
+    "CrowdStrike",
+    "Palo Alto Networks",
+    "SentinelOne",
+    "Microsoft Security",
+    "Trail of Bits",
+    "Tenable",
+    "Wiz",
+    "Chainguard",
+    "Mandiant",
+    "Sublime Security"
+  ],
+  "targetResearchers": "Computer scientists in cryptography, systems security, formal verification, malware analysis, and ML for security",
+  "marketSize": "$220B",
+  "useCases": [
+    "Security-research R&D recruitment",
+    "Confidential-computing partnerships",
+    "University systems-security collaborations",
+    "Vulnerability-research talent pipeline",
+    "Formal-verification technology development"
+  ],
+  "description": "Cybersecurity research defends systems against evolving threats through cryptography, secure systems, and ML-driven detection. It recruits computer scientists from academic security labs and collaborates on confidential computing and formal-verification research."
+}

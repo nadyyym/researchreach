@@ -1,0 +1,22 @@
+{
+  "name": "Mateo Rossi",
+  "institution": "University of Toronto",
+  "field": "Cybersecurity",
+  "advisor": "Dr. David Lie",
+  "thesis": "Hardware-enforced isolation for confidential machine-learning inference",
+  "publications": 9,
+  "skills": [
+    "Rust",
+    "C",
+    "Trusted Execution Environments",
+    "Cryptography",
+    "Reverse Engineering",
+    "Formal Verification"
+  ],
+  "transitionSignals": [
+    "Internship at Microsoft Security",
+    "Disclosed a CVE in a major hypervisor",
+    "Active contributor to an open-source TEE project"
+  ],
+  "description": "Mateo designs systems that keep ML models and data confidential even on untrusted servers, backed by a published vulnerability disclosure. His low-level systems and cryptography depth fit a confidential-computing security team."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "University of British Columbia",
+  "country": "Canada",
+  "city": "Vancouver",
+  "type": "public",
+  "researcherCount": 4400,
+  "avgHindex": 46,
+  "grantCount": 3300,
+  "departments": ["Computer Science", "Chemistry", "Physics and Astronomy", "Microbiology and Immunology", "Medicine", "Forestry", "Materials Engineering", "Earth and Ocean Sciences"],
+  "topFields": ["Genomics", "Climate Science", "Immunology", "Materials Science", "Artificial Intelligence"],
+  "description": "The University of British Columbia is one of Canada's top research universities, spanning campuses in Vancouver and Kelowna. It is a global leader in genomics, sustainability, and quantum materials, hosting the Stewart Blusson Quantum Matter Institute and major ocean and forestry research programs."
+}

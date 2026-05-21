@@ -1,0 +1,9 @@
+{
+  "name": "Quantum Information",
+  "subfields": ["Quantum Entanglement Theory", "Quantum Communication", "Quantum Metrology", "Quantum Key Distribution", "Quantum Networks"],
+  "keyTechnologies": ["Entangled Photon Sources", "Quantum Repeaters", "Single-Photon Detectors", "Bell-State Analyzers", "Satellite QKD Links"],
+  "topInstitutions": ["University of Science and Technology of China", "University of Waterloo", "TU Delft", "University of Vienna", "MIT"],
+  "researcherCount": 15000,
+  "avgFunding": "$640K",
+  "description": "Quantum information science studies how information is encoded, transmitted, and processed using quantum systems. It underpins secure communication, quantum-enhanced sensing, and distributed quantum computing, bridging fundamental physics with practical cryptographic and networking applications."
+}

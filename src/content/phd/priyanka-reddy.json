@@ -1,0 +1,22 @@
+{
+  "name": "Priyanka Reddy",
+  "institution": "University of Illinois Urbana-Champaign",
+  "field": "Materials Informatics",
+  "advisor": "Dr. Elif Ertekin",
+  "thesis": "Machine-learning interatomic potentials for accelerated alloy discovery",
+  "publications": 8,
+  "skills": [
+    "Python",
+    "DFT",
+    "Machine Learning",
+    "High-Throughput Computing",
+    "Materials Databases",
+    "Bayesian Optimization"
+  ],
+  "transitionSignals": [
+    "Internship at Citrine Informatics",
+    "Co-authored with industry materials scientists",
+    "Open-sourced a potential-fitting toolkit"
+  ],
+  "description": "Priyanka trains ML potentials that predict alloy properties orders of magnitude faster than first-principles methods. Her materials-informatics pipeline expertise fits a company building data-driven materials-discovery platforms."
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Russian Science Foundation (RSF)",
+  "country": "Russia",
+  "type": "government",
+  "budget": "$500M",
+  "programs": ["Individual Research Groups", "Research Teams", "Existing Laboratory Support", "International Collaborations", "Young Scientist Grants", "Regional Co-funding"],
+  "description": "The Russian Science Foundation funds competitive, peer-reviewed basic and exploratory research across the Russian Federation. It supports individual groups, laboratories, and large research teams with an emphasis on scientific excellence."
+}
