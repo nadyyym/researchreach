@@ -1,0 +1,8 @@
+{
+  "name": "Commonwealth Scientific and Industrial Research Organisation (CSIRO)",
+  "country": "Australia",
+  "type": "government",
+  "budget": "$1.0B",
+  "programs": ["Industry PhD Program", "Kick-Start Vouchers", "Main Sequence Ventures", "Future Science Platforms", "ON Innovation Program", "Collaborative Research Grants"],
+  "description": "CSIRO is Australia's national science agency, conducting and funding research across agriculture, health, energy, and the environment. It partners extensively with industry and universities to translate scientific discovery into economic and societal benefit."
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Ukraine",
+  "code": "UA",
+  "topInstitutions": ["Taras Shevchenko National University of Kyiv", "National Academy of Sciences of Ukraine", "Kharkiv Polytechnic Institute", "Lviv Polytechnic"],
+  "topAgencies": ["NASU", "National Research Foundation of Ukraine"],
+  "researchOutput": 20000,
+  "topFields": ["Physics", "Materials Science", "Mathematics", "Cybernetics", "Welding Engineering"],
+  "description": "Ukraine has a deep research heritage rooted in the National Academy of Sciences, with world-class traditions in materials science, mathematics, and cybernetics. The Paton Institute remains globally influential in welding and metallurgy."
+}

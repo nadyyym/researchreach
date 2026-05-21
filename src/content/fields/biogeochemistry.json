@@ -1,0 +1,9 @@
+{
+  "name": "Biogeochemistry",
+  "subfields": ["Carbon Cycle Science", "Nitrogen Cycling", "Marine Biogeochemistry", "Soil Biogeochemistry", "Trace Gas Fluxes"],
+  "keyTechnologies": ["Eddy Covariance Towers", "Stable Isotope Mass Spectrometry", "Autonomous Ocean Floats", "Flux Chambers", "Earth System Modeling"],
+  "topInstitutions": ["Woods Hole Oceanographic Institution", "Max Planck Institute for Biogeochemistry", "Princeton University", "ETH Zurich", "University of California, Santa Barbara"],
+  "researcherCount": 7800,
+  "avgFunding": "$350K",
+  "description": "Biogeochemistry studies how chemical elements cycle through living organisms, the atmosphere, oceans, and rocks. It is central to understanding the global carbon and nitrogen cycles and how ecosystems regulate the planet's climate."
+}

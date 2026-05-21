@@ -1,0 +1,22 @@
+{
+  "name": "Yusuf Demir",
+  "institution": "Koç University",
+  "field": "Neurotechnology",
+  "advisor": "Dr. Müge Devrim-Üçok",
+  "thesis": "Closed-loop neural decoding for upper-limb prosthetic control",
+  "publications": 7,
+  "skills": [
+    "Signal Processing",
+    "Machine Learning",
+    "Embedded C",
+    "Electrophysiology",
+    "Python",
+    "Real-Time Systems"
+  ],
+  "transitionSignals": [
+    "Internship at a neural-interface startup",
+    "Filed first patent on a decoding algorithm",
+    "Co-authored with clinical engineers"
+  ],
+  "description": "Yusuf builds decoders that translate neural signals into smooth prosthetic movement in real time, validated with human subjects. His embedded and ML skills are a strong match for a neurotech company building brain-computer interfaces."
+}

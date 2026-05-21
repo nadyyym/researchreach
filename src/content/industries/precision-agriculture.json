@@ -1,0 +1,25 @@
+{
+  "name": "Precision Agriculture",
+  "companies": [
+    "John Deere",
+    "Pivot Bio",
+    "Climate LLC",
+    "Indigo Agriculture",
+    "Inari",
+    "Benson Hill",
+    "Carbon Robotics",
+    "Greeneye Technology",
+    "Farmers Edge",
+    "Taranis"
+  ],
+  "targetResearchers": "Plant scientists and data scientists in genomics, microbiology, remote sensing, and agronomic modeling",
+  "marketSize": "$130B",
+  "useCases": [
+    "Crop-genomics R&D recruitment",
+    "Nitrogen-fixation microbe partnerships",
+    "University agronomy collaborations",
+    "Computer-vision and robotics talent pipeline",
+    "Carbon-farming measurement projects"
+  ],
+  "description": "Precision agriculture applies genomics, microbiology, robotics, and data science to boost yields while cutting inputs. The sector recruits plant scientists and agronomists from universities and partners on field trials of new seeds, microbes, and sensing systems."
+}

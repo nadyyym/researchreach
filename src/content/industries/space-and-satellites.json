@@ -1,0 +1,25 @@
+{
+  "name": "Space & Satellites",
+  "companies": [
+    "SpaceX",
+    "Planet Labs",
+    "Rocket Lab",
+    "Astranis",
+    "Maxar Technologies",
+    "D-Orbit",
+    "ICEYE",
+    "Sierra Space",
+    "Astroscale",
+    "Loft Orbital"
+  ],
+  "targetResearchers": "Aerospace engineers and physicists in propulsion, GNC, orbital mechanics, RF/communications, and remote sensing",
+  "marketSize": "$630B",
+  "useCases": [
+    "Propulsion and avionics R&D recruitment",
+    "University CubeSat partnerships",
+    "In-orbit servicing technology development",
+    "Earth-observation data-science talent pipeline",
+    "Launch and constellation engineering collaborations"
+  ],
+  "description": "The commercial space sector spans launch, satellite manufacturing, Earth observation, and in-orbit servicing. It recruits academic scientists in propulsion, controls, and remote sensing, and partners with universities on small-satellite missions and instrument development."
+}

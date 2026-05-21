@@ -1,0 +1,9 @@
+{
+  "name": "Finland",
+  "code": "FI",
+  "topInstitutions": ["University of Helsinki", "Aalto University", "University of Turku", "Tampere University", "University of Oulu"],
+  "topAgencies": ["Research Council of Finland", "Business Finland", "Sigrid Jusélius Foundation"],
+  "researchOutput": 27000,
+  "topFields": ["Artificial Intelligence", "Materials Science", "Genomics", "Climate Science", "Quantum Computing"],
+  "description": "Finland combines a strong public education system with focused research investment to deliver high-impact science per capita. Aalto University leads in design and engineering, while Finnish biobanks and genomics initiatives have made the country a hub for population-scale genetic research."
+}

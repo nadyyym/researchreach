@@ -1,0 +1,9 @@
+{
+  "name": "Epigenetics",
+  "subfields": ["DNA Methylation", "Histone Modification", "Chromatin Remodeling", "Non-Coding RNA Regulation", "Transgenerational Inheritance"],
+  "keyTechnologies": ["Bisulfite Sequencing", "ChIP-seq", "ATAC-seq", "CUT&RUN", "Single-Cell Epigenomics"],
+  "topInstitutions": ["Harvard", "Broad Institute", "Babraham Institute", "Max Planck Society", "Johns Hopkins"],
+  "researcherCount": 28000,
+  "avgFunding": "$430K",
+  "description": "Epigenetics examines heritable changes in gene expression that do not involve alterations to the DNA sequence. It illuminates how environment, development, and disease reshape the regulatory landscape of the genome, with major implications for cancer and aging research."
+}

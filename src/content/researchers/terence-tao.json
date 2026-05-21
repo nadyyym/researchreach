@@ -1,0 +1,16 @@
+{
+  "name": "Terence Tao",
+  "institution": "University of California, Los Angeles",
+  "field": "Mathematics",
+  "hindex": 94,
+  "grantCount": 40,
+  "patents": 0,
+  "publications": 360,
+  "orcid": "0000-0002-0140-7853",
+  "industryTies": [
+    "UCLA",
+    "Simons Foundation",
+    "Google DeepMind (advisory)"
+  ],
+  "description": "Terence Tao is a Fields Medalist working across harmonic analysis, partial differential equations, combinatorics, and number theory. He co-proved the Green–Tao theorem on arithmetic progressions of primes and advises on AI-assisted formal mathematics."
+}

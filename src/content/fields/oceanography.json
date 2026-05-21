@@ -1,0 +1,9 @@
+{
+  "name": "Oceanography",
+  "subfields": ["Physical Oceanography", "Marine Biogeochemistry", "Marine Ecology", "Paleoceanography", "Ocean Modeling"],
+  "keyTechnologies": ["Autonomous Underwater Vehicles", "Argo Float Networks", "Satellite Altimetry", "Ocean Sensors and Buoys", "Coupled Climate Models"],
+  "topInstitutions": ["University of British Columbia", "University of Tokyo", "University of Melbourne", "MIT", "ETH Zurich"],
+  "researcherCount": 18000,
+  "avgFunding": "$450K",
+  "description": "Oceanography is the study of the physical, chemical, biological, and geological processes of the oceans. It is critical to understanding climate regulation, carbon cycling, and marine ecosystems, relying increasingly on autonomous platforms and large-scale observation networks."
+}

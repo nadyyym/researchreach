@@ -1,0 +1,17 @@
+{
+  "name": "George Church",
+  "institution": "Harvard Medical School",
+  "field": "Synthetic Biology",
+  "hindex": 175,
+  "grantCount": 78,
+  "patents": 150,
+  "publications": 700,
+  "orcid": "0000-0003-3535-2076",
+  "industryTies": [
+    "Veritas Genetics",
+    "Editas Medicine",
+    "Colossal Biosciences",
+    "eGenesis"
+  ],
+  "description": "George Church pioneered multiplex genome engineering, next-generation sequencing methods, and synthetic biology. He has co-founded dozens of companies spanning gene editing, xenotransplantation, and de-extinction."
+}

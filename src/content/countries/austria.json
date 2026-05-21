@@ -1,0 +1,9 @@
+{
+  "name": "Austria",
+  "code": "AT",
+  "topInstitutions": ["University of Vienna", "TU Wien", "Institute of Science and Technology Austria", "University of Innsbruck", "Medical University of Vienna"],
+  "topAgencies": ["FWF", "FFG", "Austrian Academy of Sciences"],
+  "researchOutput": 32000,
+  "topFields": ["Quantum Computing", "Materials Science", "Immunology", "Condensed Matter Physics", "Genomics"],
+  "description": "Austria is a recognized leader in quantum physics, home to pioneering work in quantum information at the University of Innsbruck and the Austrian Academy of Sciences. Its research system combines strong basic-science funding with the rapidly rising Institute of Science and Technology Austria."
+}

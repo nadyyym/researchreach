@@ -1,0 +1,9 @@
+{
+  "name": "Hydrology",
+  "subfields": ["Catchment Hydrology", "Groundwater Science", "Ecohydrology", "Snow Hydrology", "Hydrological Modeling"],
+  "keyTechnologies": ["Satellite Gravimetry", "Stable Isotope Tracers", "Distributed Sensor Networks", "Land Surface Models", "LiDAR Terrain Mapping"],
+  "topInstitutions": ["ETH Zurich", "Wageningen University", "University of Arizona", "Tsinghua University", "Delft University of Technology"],
+  "researcherCount": 14500,
+  "avgFunding": "$360K",
+  "description": "Hydrology studies the movement, distribution, and quality of water across the Earth system. It is central to water resource management, flood and drought prediction, and understanding how climate change reshapes the global water cycle."
+}

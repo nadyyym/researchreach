@@ -1,0 +1,9 @@
+{
+  "name": "Czechia",
+  "code": "CZ",
+  "topInstitutions": ["Charles University", "Czech Academy of Sciences", "Czech Technical University in Prague", "Masaryk University", "CEITEC"],
+  "topAgencies": ["GACR", "TACR", "Czech Academy of Sciences"],
+  "researchOutput": 35000,
+  "topFields": ["Chemistry", "Materials Science", "Structural Biology", "Particle Physics", "Nanotechnology"],
+  "description": "Czechia hosts a strong research base led by the Czech Academy of Sciences and the CEITEC institute in Brno. Its researchers are internationally recognized in chemistry, structural biology, and laser physics, including the ELI Beamlines facility."
+}

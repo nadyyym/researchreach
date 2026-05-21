@@ -1,0 +1,25 @@
+{
+  "name": "Carbon Capture",
+  "companies": [
+    "Climeworks",
+    "Carbon Engineering",
+    "Heirloom",
+    "Charm Industrial",
+    "Svante",
+    "CarbonCure",
+    "Carbon Clean",
+    "8 Rivers",
+    "Living Carbon",
+    "Mission Zero Technologies"
+  ],
+  "targetResearchers": "Chemical engineers and materials scientists in sorbents, process engineering, mineralization, and techno-economic analysis",
+  "marketSize": "$25B",
+  "useCases": [
+    "Direct-air-capture R&D recruitment",
+    "Sorbent-material partnerships",
+    "University carbon-removal collaborations",
+    "Process-engineering talent pipeline",
+    "Mineralization and storage technology development"
+  ],
+  "description": "Carbon capture and removal builds engineered systems to pull CO2 from the air and industrial flues. The young industry recruits chemical engineers and materials scientists from universities and commercializes academic sorbent and process research."
+}

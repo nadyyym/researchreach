@@ -1,0 +1,9 @@
+{
+  "name": "Cryobiology",
+  "subfields": ["Cryopreservation", "Vitrification", "Cold Adaptation Physiology", "Cryosurgery", "Anhydrobiosis"],
+  "keyTechnologies": ["Controlled-Rate Freezers", "Cryoprotectant Formulation", "Differential Scanning Calorimetry", "Cryo-Electron Microscopy Prep", "Ice Recrystallization Inhibition Assays"],
+  "topInstitutions": ["University of Minnesota", "University of Cambridge", "Massachusetts General Hospital", "Hokkaido University", "University of Alberta"],
+  "researcherCount": 3800,
+  "avgFunding": "$320K",
+  "description": "Cryobiology examines the effects of low temperatures on living systems, from cells and tissues to whole organisms. It underpins the preservation of gametes, organs, and biological samples, and explores how cold-tolerant species survive freezing."
+}

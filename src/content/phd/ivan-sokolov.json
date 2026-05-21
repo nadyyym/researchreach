@@ -1,0 +1,22 @@
+{
+  "name": "Ivan Sokolov",
+  "institution": "University of Edinburgh",
+  "field": "Drug Discovery AI",
+  "advisor": "Dr. Antonia-Maria Mey",
+  "thesis": "Generative models for structure-based small-molecule design",
+  "publications": 9,
+  "skills": [
+    "PyTorch",
+    "Cheminformatics",
+    "Molecular Docking",
+    "Python",
+    "Free-Energy Calculations",
+    "RDKit"
+  ],
+  "transitionSignals": [
+    "Internship at Isomorphic Labs",
+    "Co-authored with pharma computational chemists",
+    "Open-sourced a generative-chemistry model"
+  ],
+  "description": "Ivan builds generative models that propose novel drug-like molecules conditioned on protein targets. His AI-for-chemistry skills are in high demand at computational drug-discovery companies."
+}

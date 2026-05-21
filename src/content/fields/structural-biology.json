@@ -1,0 +1,9 @@
+{
+  "name": "Structural Biology",
+  "subfields": ["Cryo-Electron Microscopy", "X-Ray Crystallography", "NMR Spectroscopy", "Protein Structure Prediction", "Membrane Protein Biology"],
+  "keyTechnologies": ["Cryo-EM", "Synchrotron Radiation", "AlphaFold and Deep Learning Models", "Mass Spectrometry", "Single-Particle Analysis"],
+  "topInstitutions": ["University of Cambridge", "Max Planck Institutes", "Stanford", "MIT", "University of Tokyo"],
+  "researcherCount": 21000,
+  "avgFunding": "$480K",
+  "description": "Structural biology determines the three-dimensional architecture of biological macromolecules to explain their function. The cryo-EM revolution and AI-based structure prediction have transformed the field, accelerating drug discovery and our understanding of molecular machines."
+}

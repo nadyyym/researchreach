@@ -1,0 +1,22 @@
+{
+  "name": "Chiara Conti",
+  "institution": "Politecnico di Milano",
+  "field": "Space Systems",
+  "advisor": "Dr. Michèle Lavagna",
+  "thesis": "Autonomous proximity operations for in-orbit satellite servicing",
+  "publications": 7,
+  "skills": [
+    "GNC Algorithms",
+    "C++",
+    "Python",
+    "Orbital Mechanics",
+    "Hardware-in-the-Loop Testing",
+    "Sensor Fusion"
+  ],
+  "transitionSignals": [
+    "Internship at D-Orbit",
+    "Filed first patent on a docking controller",
+    "Co-authored with satellite-servicing engineers"
+  ],
+  "description": "Chiara develops guidance and control for spacecraft that rendezvous and dock with satellites for refueling and repair. Her GNC and HIL-testing skills fit a space company building in-orbit servicing missions."
+}

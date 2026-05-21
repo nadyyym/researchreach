@@ -1,0 +1,25 @@
+{
+  "name": "Ludwig Maximilian University of Munich",
+  "country": "Germany",
+  "city": "Munich",
+  "type": "public",
+  "researcherCount": 4500,
+  "avgHindex": 47,
+  "grantCount": 2900,
+  "departments": [
+    "Medicine",
+    "Physics",
+    "Chemistry and Pharmacy",
+    "Biology",
+    "Mathematics, Informatics and Statistics",
+    "Geosciences"
+  ],
+  "topFields": [
+    "Laser Physics",
+    "Pharmacology",
+    "Genetics",
+    "Astrophysics",
+    "Neuroscience"
+  ],
+  "description": "LMU Munich is one of Europe's oldest and most prestigious universities, with a strong record in physics and the life sciences. It anchors the Munich research cluster alongside Max Planck institutes and is a leader in attosecond and laser physics."
+}

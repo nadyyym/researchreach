@@ -1,0 +1,26 @@
+{
+  "name": "Zhejiang University",
+  "country": "China",
+  "city": "Hangzhou",
+  "type": "public",
+  "researcherCount": 6000,
+  "avgHindex": 48,
+  "grantCount": 3600,
+  "departments": [
+    "Engineering",
+    "Medicine",
+    "Science",
+    "Computer Science",
+    "Agriculture",
+    "Materials Science",
+    "Optical Engineering"
+  ],
+  "topFields": [
+    "Optics",
+    "Materials Science",
+    "Agricultural Science",
+    "Artificial Intelligence",
+    "Chemical Engineering"
+  ],
+  "description": "Zhejiang University is one of China's most prestigious and comprehensive research universities. It produces enormous research output across optics, materials, and agricultural science, and is a leader in AI and engineering."
+}

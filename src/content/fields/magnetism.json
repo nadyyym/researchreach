@@ -1,0 +1,9 @@
+{
+  "name": "Magnetism",
+  "subfields": ["Ferromagnetism", "Antiferromagnetism", "Magnonics", "Molecular Magnets", "Frustrated Magnetism"],
+  "keyTechnologies": ["SQUID Magnetometry", "Neutron Scattering", "Magneto-Optical Kerr Effect", "X-ray Magnetic Circular Dichroism", "Pulsed High-Field Magnets"],
+  "topInstitutions": ["MIT", "Max Planck Institute for Solid State Research", "University of Cambridge", "Tohoku University", "Argonne National Laboratory"],
+  "researcherCount": 11000,
+  "avgFunding": "$350K",
+  "description": "Magnetism is the branch of condensed matter physics concerned with magnetic ordering and the behavior of spins in materials. It underlies data storage, spin-based electronics, and emerging quantum technologies built on exotic magnetic states."
+}

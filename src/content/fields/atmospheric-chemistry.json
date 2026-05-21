@@ -1,0 +1,9 @@
+{
+  "name": "Atmospheric Chemistry",
+  "subfields": ["Aerosol Chemistry", "Tropospheric Ozone", "Stratospheric Chemistry", "Air Quality Modeling", "Atmospheric Radical Kinetics"],
+  "keyTechnologies": ["Mass Spectrometry", "Cavity Ring-Down Spectroscopy", "Atmospheric Chamber Reactors", "Satellite Remote Sensing", "Chemical Transport Models"],
+  "topInstitutions": ["Max Planck Institute for Chemistry", "MIT", "Caltech", "Peking University", "University of Leeds"],
+  "researcherCount": 12000,
+  "avgFunding": "$420K",
+  "description": "Atmospheric chemistry studies the chemical composition and reactions of the atmosphere. It is essential to understanding air pollution, ozone depletion, and the chemical feedbacks that shape climate and human health."
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Sofia Andersson",
+  "institution": "Karolinska Institute",
+  "field": "Immunology",
+  "advisor": "Dr. Petter Brodin",
+  "thesis": "Single-cell immune profiling of early-life vaccine responses",
+  "publications": 10,
+  "skills": ["Single-Cell RNA-seq", "Flow Cytometry", "R", "Immunoassays", "Bioinformatics", "CITE-seq"],
+  "transitionSignals": ["Internship at industry immunology lab", "Co-authored with AstraZeneca scientists", "Presented at industry vaccine conference"],
+  "description": "Sofia uses single-cell methods to map how the infant immune system responds to vaccination. Her collaborations with pharma immunology teams position her strongly for translational research roles in biotech."
+}

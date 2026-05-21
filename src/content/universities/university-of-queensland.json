@@ -1,0 +1,26 @@
+{
+  "name": "University of Queensland",
+  "country": "Australia",
+  "city": "Brisbane",
+  "type": "public",
+  "researcherCount": 4000,
+  "avgHindex": 51,
+  "grantCount": 2700,
+  "departments": [
+    "Medicine",
+    "Biological Sciences",
+    "Chemistry and Molecular Biosciences",
+    "Engineering",
+    "Physics",
+    "Agriculture",
+    "Computer Science"
+  ],
+  "topFields": [
+    "Bioengineering",
+    "Immunology",
+    "Agricultural Science",
+    "Materials Chemistry",
+    "Neuroscience"
+  ],
+  "description": "The University of Queensland is one of Australia's leading research universities, known for biomedical and agricultural research. Its institutes developed the Gardasil cervical-cancer vaccine technology and lead Australian bioengineering."
+}

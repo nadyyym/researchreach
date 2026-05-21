@@ -1,0 +1,8 @@
+{
+  "name": "Anusandhan National Research Foundation (ANRF/SERB)",
+  "country": "India",
+  "type": "government",
+  "budget": "$700M",
+  "programs": ["Core Research Grants", "Ramanujan Fellowship", "J.C. Bose Fellowship", "SERB-POWER for Women", "Startup Research Grants", "Mathematical Research Impact"],
+  "description": "The Anusandhan National Research Foundation, which absorbed the Science and Engineering Research Board (SERB), is India's apex body for funding research in science and engineering. It supports individual investigators, fellowships, and national research priorities across the country's universities."
+}

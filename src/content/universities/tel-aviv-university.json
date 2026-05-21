@@ -1,0 +1,26 @@
+{
+  "name": "Tel Aviv University",
+  "country": "Israel",
+  "city": "Tel Aviv",
+  "type": "public",
+  "researcherCount": 3200,
+  "avgHindex": 49,
+  "grantCount": 2300,
+  "departments": [
+    "Medicine",
+    "Exact Sciences",
+    "Life Sciences",
+    "Engineering",
+    "Computer Science",
+    "Neuroscience",
+    "Chemistry"
+  ],
+  "topFields": [
+    "Neuroscience",
+    "Computer Science",
+    "Materials Science",
+    "Cybersecurity",
+    "Genomics"
+  ],
+  "description": "Tel Aviv University is Israel's largest university and a powerhouse for computer science, neuroscience, and engineering. Its tight integration with the Israeli tech ecosystem makes it a leading source of deep-tech research and startups."
+}

@@ -1,0 +1,8 @@
+{
+  "name": "UK Research and Innovation (UKRI)",
+  "country": "United Kingdom",
+  "type": "government",
+  "budget": "$11.0B",
+  "programs": ["Future Leaders Fellowships", "Strategic Priorities Fund", "Catapult Network", "Industrial Strategy Challenge Fund", "Doctoral Training Partnerships"],
+  "description": "UKRI is the umbrella body coordinating the UK's seven research councils and Innovate UK. It directs national funding across all disciplines, from fundamental science to industrial innovation and knowledge exchange."
+}

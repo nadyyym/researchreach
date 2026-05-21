@@ -1,0 +1,8 @@
+{
+  "name": "Carlsberg Foundation",
+  "country": "Denmark",
+  "type": "foundation",
+  "budget": "$80M",
+  "programs": ["Distinguished Fellowships", "Young Researcher Fellowships", "Semper Ardens Research Projects", "Field Trips and Infrastructure", "Internationalisation Fellowships", "Monograph Support"],
+  "description": "The Carlsberg Foundation, funded by its ownership stake in the Carlsberg brewery, supports basic scientific research in Denmark. It backs the natural sciences, humanities, and social sciences, and historically funded landmark work including Niels Bohr's institute."
+}

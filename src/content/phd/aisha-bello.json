@@ -1,0 +1,22 @@
+{
+  "name": "Aisha Bello",
+  "institution": "Massachusetts Institute of Technology",
+  "field": "Industrial Biotechnology",
+  "advisor": "Dr. Kristala Prather",
+  "thesis": "Dynamic metabolic control for high-titer production of bio-based chemicals",
+  "publications": 7,
+  "skills": [
+    "Metabolic Engineering",
+    "Fermentation",
+    "HPLC/MS",
+    "Strain Engineering",
+    "Bioreactor Scale-Up",
+    "Design of Experiments"
+  ],
+  "transitionSignals": [
+    "Internship at Ginkgo Bioworks",
+    "Filed first patent on a pathway switch",
+    "Co-authored with Amyris scientists"
+  ],
+  "description": "Aisha engineers microbes that produce specialty chemicals at industrially relevant titers using dynamic pathway regulation. Her bioreactor scale-up and DOE experience make her a strong candidate for an industrial-biotech production team."
+}

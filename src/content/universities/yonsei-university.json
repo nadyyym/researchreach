@@ -1,0 +1,25 @@
+{
+  "name": "Yonsei University",
+  "country": "South Korea",
+  "city": "Seoul",
+  "type": "private",
+  "researcherCount": 3600,
+  "avgHindex": 43,
+  "grantCount": 2100,
+  "departments": [
+    "Medicine",
+    "Engineering",
+    "Science",
+    "Pharmacy",
+    "Life Science and Biotechnology",
+    "Computer Science"
+  ],
+  "topFields": [
+    "Biomedical Engineering",
+    "Materials Science",
+    "Oncology",
+    "Battery Research",
+    "Artificial Intelligence"
+  ],
+  "description": "Yonsei University is one of South Korea's top private research universities and a member of the elite SKY group. It is strong in medicine, biomedical engineering, and battery and materials research."
+}

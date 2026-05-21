@@ -1,0 +1,22 @@
+{
+  "name": "Olga Kuznetsova",
+  "institution": "Max Planck Institute for Intelligent Systems",
+  "field": "Soft Robotics",
+  "advisor": "Dr. Metin Sitti",
+  "thesis": "Magnetically actuated soft microrobots for targeted drug delivery",
+  "publications": 7,
+  "skills": [
+    "Soft Material Fabrication",
+    "Magnetic Actuation",
+    "Microscopy",
+    "CAD",
+    "Finite Element Analysis",
+    "Biocompatibility Testing"
+  ],
+  "transitionSignals": [
+    "Internship at a medical-device startup",
+    "Filed first patent on a microrobot design",
+    "Co-authored with industry R&D group"
+  ],
+  "description": "Olga builds millimeter-scale soft robots that navigate fluidic environments under magnetic control for localized therapy. Her materials and biocompatibility work positions her for a medical-robotics R&D role."
+}

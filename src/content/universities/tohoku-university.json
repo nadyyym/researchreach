@@ -1,0 +1,26 @@
+{
+  "name": "Tohoku University",
+  "country": "Japan",
+  "city": "Sendai",
+  "type": "public",
+  "researcherCount": 4600,
+  "avgHindex": 46,
+  "grantCount": 2800,
+  "departments": [
+    "Engineering",
+    "Science",
+    "Medicine",
+    "Materials Research",
+    "Information Sciences",
+    "Agriculture",
+    "Pharmaceutical Sciences"
+  ],
+  "topFields": [
+    "Materials Science",
+    "Spintronics",
+    "Metallurgy",
+    "Disaster Science",
+    "Magnetics"
+  ],
+  "description": "Tohoku University is a leading Japanese research institution famed for materials science and spintronics. Its Institute for Materials Research is one of the world's foremost centers for metallurgy and magnetic materials."
+}

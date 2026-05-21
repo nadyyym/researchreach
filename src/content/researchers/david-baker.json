@@ -1,0 +1,17 @@
+{
+  "name": "David Baker",
+  "institution": "University of Washington",
+  "field": "Computational Biology",
+  "hindex": 175,
+  "grantCount": 80,
+  "patents": 120,
+  "publications": 650,
+  "orcid": "0000-0001-7896-6217",
+  "industryTies": [
+    "Rosetta Commons",
+    "Arzeda",
+    "Sana Biotechnology",
+    "Neoleukin"
+  ],
+  "description": "David Baker won a share of the 2024 Nobel Prize in Chemistry for computational protein design, creating proteins not found in nature. His Rosetta and RFdiffusion tools have spun out numerous biotechnology companies."
+}

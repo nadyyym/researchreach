@@ -1,0 +1,9 @@
+{
+  "name": "Norway",
+  "code": "NO",
+  "topInstitutions": ["University of Oslo", "Norwegian University of Science and Technology", "University of Bergen", "UiT The Arctic University of Norway", "Norwegian University of Life Sciences"],
+  "topAgencies": ["Research Council of Norway", "SINTEF", "Norwegian Polar Institute"],
+  "researchOutput": 30000,
+  "topFields": ["Oceanography", "Climate Science", "Materials Science", "Genomics", "Immunology"],
+  "description": "Norway leverages substantial petroleum-derived funding to support research in marine science, climate, and energy. Its Arctic location makes it a global center for polar and oceanographic studies, while SINTEF ranks among Europe's largest independent research organizations."
+}

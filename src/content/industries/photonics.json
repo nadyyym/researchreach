@@ -1,0 +1,25 @@
+{
+  "name": "Photonics",
+  "companies": [
+    "Lumentum",
+    "Coherent",
+    "Metalenz",
+    "Voyant Photonics",
+    "Ayar Labs",
+    "Lightmatter",
+    "PsiQuantum",
+    "II-VI",
+    "NKT Photonics",
+    "POET Technologies"
+  ],
+  "targetResearchers": "Optical physicists and engineers in integrated photonics, metasurfaces, lasers, and optical communications",
+  "marketSize": "$780B",
+  "useCases": [
+    "Silicon-photonics R&D recruitment",
+    "Metalens and flat-optics commercialization",
+    "University photonics-lab partnerships",
+    "Optical-interconnect talent pipeline",
+    "LiDAR and sensing technology development"
+  ],
+  "description": "Photonics underpins data-center interconnects, LiDAR, imaging, and optical computing through devices that manipulate light on-chip. The field recruits optical physicists and frequently commercializes university inventions in integrated photonics and metasurfaces."
+}

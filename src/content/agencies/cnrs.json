@@ -1,0 +1,8 @@
+{
+  "name": "French National Centre for Scientific Research (CNRS)",
+  "country": "France",
+  "type": "government",
+  "budget": "$3.9B",
+  "programs": ["CNRS Research Units", "International Research Laboratories", "80|Prime Interdisciplinary Programme", "CNRS Innovation", "Bronze and Silver Medals"],
+  "description": "The CNRS is Europe's largest fundamental research organization, operating laboratories across every scientific field in partnership with French universities. It employs thousands of permanent researchers and drives France's basic research output."
+}

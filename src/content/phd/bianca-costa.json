@@ -1,0 +1,22 @@
+{
+  "name": "Bianca Costa",
+  "institution": "University of Melbourne",
+  "field": "Neurotech Signal Processing",
+  "advisor": "Dr. David Grayden",
+  "thesis": "Adaptive deep-brain-stimulation control for Parkinson's disease",
+  "publications": 7,
+  "skills": [
+    "Signal Processing",
+    "Embedded Systems",
+    "Machine Learning",
+    "MATLAB",
+    "Electrophysiology",
+    "Clinical Trials"
+  ],
+  "transitionSignals": [
+    "Internship at a neuromodulation company",
+    "Filed first patent on an adaptive-stimulation method",
+    "Co-authored with clinical neurologists"
+  ],
+  "description": "Bianca develops closed-loop stimulation that adjusts therapy to a patient's neural state in real time, reducing side effects. Her embedded and clinical skills fit a neuromodulation medical-device company."
+}

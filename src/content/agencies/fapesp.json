@@ -1,0 +1,8 @@
+{
+  "name": "São Paulo Research Foundation (FAPESP)",
+  "country": "Brazil",
+  "type": "government",
+  "budget": "$600M",
+  "programs": ["Regular Research Grants", "Thematic Projects", "Young Investigators Awards", "Research Programs on Bioenergy", "BIOTA Biodiversity", "Engineering Research Centers"],
+  "description": "FAPESP is one of Latin America's leading research funding agencies, financed by a fixed share of São Paulo state tax revenue. It funds basic and applied research across all fields and runs major thematic programmes in biodiversity, bioenergy, and global climate change."
+}

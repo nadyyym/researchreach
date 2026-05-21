@@ -1,0 +1,26 @@
+{
+  "name": "Osaka University",
+  "country": "Japan",
+  "city": "Osaka",
+  "type": "public",
+  "researcherCount": 5200,
+  "avgHindex": 47,
+  "grantCount": 3100,
+  "departments": [
+    "Medicine",
+    "Engineering",
+    "Science",
+    "Pharmaceutical Sciences",
+    "Dentistry",
+    "Information Science",
+    "Frontier Biosciences"
+  ],
+  "topFields": [
+    "Immunology",
+    "Laser Physics",
+    "Protein Science",
+    "Materials Science",
+    "Robotics"
+  ],
+  "description": "Osaka University is a leading Japanese national research university with global standing in immunology and laser science. Its Immunology Frontier Research Center and high-power laser facilities anchor major international collaborations."
+}

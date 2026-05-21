@@ -1,0 +1,8 @@
+{
+  "name": "Marsden Fund",
+  "country": "New Zealand",
+  "type": "government",
+  "budget": "$60M",
+  "programs": ["Standard Grants", "Fast-Start Grants", "Council Awards", "Marsden Fund Te Pūtea Rangahau", "Investigator-Led Research", "Early-Career Support"],
+  "description": "The Marsden Fund supports excellence in fundamental, investigator-led research in New Zealand, administered by the Royal Society Te Apārangi. It backs projects across the sciences, engineering, humanities, and social sciences without requiring predefined economic outcomes."
+}

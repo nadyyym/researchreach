@@ -1,0 +1,9 @@
+{
+  "name": "Spain",
+  "code": "ES",
+  "topInstitutions": ["University of Barcelona", "Autonomous University of Madrid", "Complutense University of Madrid", "Pompeu Fabra University", "University of Valencia"],
+  "topAgencies": ["CSIC", "AEI", "ISCIII", "ICREA"],
+  "researchOutput": 100000,
+  "topFields": ["Genomics", "Materials Science", "Immunology", "Astrophysics", "Climate Science"],
+  "description": "Spain has rapidly expanded its research output over the past two decades, led by the CSIC, the largest public research institution in Europe by staff. Catalonia in particular has built world-class centers in genomics, photonics, and biomedicine that attract international talent."
+}

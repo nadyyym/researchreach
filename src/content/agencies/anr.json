@@ -1,0 +1,8 @@
+{
+  "name": "French National Research Agency (ANR)",
+  "country": "France",
+  "type": "government",
+  "budget": "$1.1B",
+  "programs": ["Generic Call for Proposals", "JCJC Young Researchers", "PRC Collaborative Research", "France 2030 Programmes", "International Co-funding", "ASTRID Defence Research"],
+  "description": "The ANR is France's primary project-based research funding agency, supporting fundamental and applied research across all disciplines. It allocates competitive grants through annual calls and manages major national investment programmes on behalf of the French government."
+}

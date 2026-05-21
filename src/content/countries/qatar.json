@@ -1,0 +1,9 @@
+{
+  "name": "Qatar",
+  "code": "QA",
+  "topInstitutions": ["Qatar University", "Hamad Bin Khalifa University", "Weill Cornell Medicine-Qatar", "Qatar Computing Research Institute"],
+  "topAgencies": ["QNRF", "Qatar Foundation"],
+  "researchOutput": 12000,
+  "topFields": ["Computer Science", "Biomedical Sciences", "Energy", "Environmental Science", "Materials Science"],
+  "description": "Qatar concentrates research within Education City, a hub of international university branch campuses backed by the Qatar Foundation. Its priorities include computing, biomedical research, and sustainable energy."
+}

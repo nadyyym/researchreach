@@ -1,0 +1,22 @@
+{
+  "name": "Rajesh Pillai",
+  "institution": "University of California, Berkeley",
+  "field": "Photonics",
+  "advisor": "Dr. Eli Yablonovitch",
+  "thesis": "Silicon nitride frequency combs for chip-scale LiDAR",
+  "publications": 6,
+  "skills": [
+    "Photonic Design (Lumerical)",
+    "Cleanroom Fabrication",
+    "Optical Characterization",
+    "Python",
+    "Verilog-A",
+    "Packaging"
+  ],
+  "transitionSignals": [
+    "Internship at Voyant Photonics",
+    "Filed first patent on comb stabilization",
+    "Co-authored with industry photonics engineers"
+  ],
+  "description": "Rajesh develops integrated frequency combs that shrink LiDAR systems onto a single chip. His end-to-end design-to-packaging skill set is well matched to a photonics startup productizing solid-state LiDAR."
+}

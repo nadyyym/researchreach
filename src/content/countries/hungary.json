@@ -1,0 +1,9 @@
+{
+  "name": "Hungary",
+  "code": "HU",
+  "topInstitutions": ["Eotvos Lorand University", "Semmelweis University", "University of Szeged", "Hungarian Research Network", "Budapest University of Technology and Economics"],
+  "topAgencies": ["NKFIH", "Hungarian Research Network (HUN-REN)"],
+  "researchOutput": 24000,
+  "topFields": ["Biochemistry", "Mathematics", "Physics", "Neuroscience", "Pharmacology"],
+  "description": "Hungary has a distinguished scientific heritage, having produced numerous Nobel laureates in chemistry and physics. Its modern research network excels in biochemistry, mathematics, and pharmacology with strong university-industry collaboration."
+}

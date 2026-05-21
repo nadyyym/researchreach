@@ -1,0 +1,8 @@
+{
+  "name": "Vinnova",
+  "country": "Sweden",
+  "type": "government",
+  "budget": "$0.4B",
+  "programs": ["Strategic Innovation Programmes", "Vinnväxt", "Eurostars Co-funding", "Innovative Startups", "Challenge-Driven Innovation"],
+  "description": "Vinnova is Sweden's innovation agency, funding research and development that strengthens national competitiveness and addresses societal challenges. It connects universities, industry, and the public sector through challenge-driven innovation programs."
+}

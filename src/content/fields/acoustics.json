@@ -1,0 +1,9 @@
+{
+  "name": "Acoustics",
+  "subfields": ["Architectural Acoustics", "Underwater Acoustics", "Psychoacoustics", "Ultrasonics", "Aeroacoustics"],
+  "keyTechnologies": ["Acoustic Beamforming Arrays", "Anechoic Chambers", "Laser Doppler Vibrometry", "Finite Element Acoustic Modeling", "Hydroacoustic Transducers"],
+  "topInstitutions": ["Pennsylvania State University", "University of Southampton", "Technical University of Denmark", "MIT", "Le Mans University"],
+  "researcherCount": 9000,
+  "avgFunding": "$250K",
+  "description": "Acoustics is the science of sound, covering its generation, propagation, and reception across media. It spans noise control, sonar, medical ultrasound, and concert-hall design, bridging physics, engineering, and human perception."
+}

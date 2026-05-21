@@ -1,0 +1,26 @@
+{
+  "name": "University of Helsinki",
+  "country": "Finland",
+  "city": "Helsinki",
+  "type": "public",
+  "researcherCount": 3800,
+  "avgHindex": 48,
+  "grantCount": 2400,
+  "departments": [
+    "Biological and Environmental Sciences",
+    "Medicine",
+    "Pharmacy",
+    "Physics",
+    "Chemistry",
+    "Computer Science",
+    "Agriculture and Forestry"
+  ],
+  "topFields": [
+    "Genomics",
+    "Atmospheric Science",
+    "Pharmacology",
+    "Forest Science",
+    "Data Science"
+  ],
+  "description": "The University of Helsinki is Finland's largest and most prestigious university and a Nordic leader in genomics and atmospheric science. Its biobank and forest-research programs are internationally influential."
+}

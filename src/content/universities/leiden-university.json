@@ -1,0 +1,26 @@
+{
+  "name": "Leiden University",
+  "country": "Netherlands",
+  "city": "Leiden",
+  "type": "public",
+  "researcherCount": 3000,
+  "avgHindex": 47,
+  "grantCount": 2200,
+  "departments": [
+    "Physics",
+    "Chemistry",
+    "Biology",
+    "Medicine",
+    "Computer Science",
+    "Mathematics",
+    "Astronomy"
+  ],
+  "topFields": [
+    "Astronomy",
+    "Immunology",
+    "Theoretical Physics",
+    "Bioinformatics",
+    "Drug Discovery"
+  ],
+  "description": "Founded in 1575, Leiden University is the oldest in the Netherlands and home to the historic Leiden Observatory. It is a European center for astronomy, theoretical physics, and immunological research."
+}

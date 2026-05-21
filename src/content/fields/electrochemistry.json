@@ -1,0 +1,9 @@
+{
+  "name": "Electrochemistry",
+  "subfields": ["Electrocatalysis", "Corrosion Science", "Bioelectrochemistry", "Photoelectrochemistry", "Solid-State Electrochemistry"],
+  "keyTechnologies": ["Cyclic Voltammetry", "Electrochemical Impedance Spectroscopy", "Scanning Electrochemical Microscopy", "Rotating Disk Electrodes", "In-situ Raman Spectroscopy"],
+  "topInstitutions": ["California Institute of Technology", "Technical University of Munich", "University of Texas at Austin", "Xiamen University", "EPFL"],
+  "researcherCount": 14000,
+  "avgFunding": "$330K",
+  "description": "Electrochemistry studies the relationship between electrical energy and chemical change at electrode interfaces. It is foundational to batteries, fuel cells, electrolysis, and corrosion, making it central to the global transition toward clean energy."
+}

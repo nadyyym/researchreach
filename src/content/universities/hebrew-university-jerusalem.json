@@ -1,0 +1,26 @@
+{
+  "name": "Hebrew University of Jerusalem",
+  "country": "Israel",
+  "city": "Jerusalem",
+  "type": "public",
+  "researcherCount": 3000,
+  "avgHindex": 50,
+  "grantCount": 2400,
+  "departments": [
+    "Medicine",
+    "Science",
+    "Agriculture",
+    "Chemistry",
+    "Physics",
+    "Computer Science",
+    "Pharmacy"
+  ],
+  "topFields": [
+    "Agricultural Science",
+    "Brain Science",
+    "Chemistry",
+    "Nanoscience",
+    "Computer Science"
+  ],
+  "description": "The Hebrew University of Jerusalem is Israel's flagship research university, founded in 1918 with Einstein among its early backers. It is a global leader in agricultural science, brain research, and chemistry, with multiple Nobel laureates."
+}

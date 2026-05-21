@@ -1,0 +1,8 @@
+{
+  "name": "Science Foundation Ireland (SFI)",
+  "country": "Ireland",
+  "type": "government",
+  "budget": "$250M",
+  "programs": ["Investigators Programme", "Research Centres", "Frontiers for the Future", "President of Ireland Future-Frontiers", "Industry Fellowships", "Centres for Research Training"],
+  "description": "Science Foundation Ireland funds oriented basic and applied research in areas underpinning the Irish economy, including ICT, biotech, and energy. It supports major research centres and individual investigators with an emphasis on impact and industry partnership."
+}

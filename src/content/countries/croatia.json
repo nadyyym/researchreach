@@ -1,0 +1,9 @@
+{
+  "name": "Croatia",
+  "code": "HR",
+  "topInstitutions": ["University of Zagreb", "Ruder Boskovic Institute", "University of Split", "University of Rijeka"],
+  "topAgencies": ["HRZZ", "Ruder Boskovic Institute"],
+  "researchOutput": 14000,
+  "topFields": ["Chemistry", "Marine Biology", "Physics", "Materials Science", "Pharmacology"],
+  "description": "Croatia's research is led by the University of Zagreb and the Ruder Boskovic Institute, a major center for natural and biomedical sciences. Strengths include chemistry, marine biology, and pharmacology."
+}

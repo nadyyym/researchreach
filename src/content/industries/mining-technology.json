@@ -1,0 +1,25 @@
+{
+  "name": "Mining Technology",
+  "companies": [
+    "Caterpillar",
+    "Komatsu",
+    "KoBold Metals",
+    "MineSense",
+    "Plotlogic",
+    "Earth AI",
+    "Hummingbird Technologies",
+    "Sandvik",
+    "Tomra",
+    "Durin"
+  ],
+  "targetResearchers": "Geoscientists and engineers in mineral processing, geophysics, machine vision, and exploration data science",
+  "marketSize": "$200B",
+  "useCases": [
+    "Sensor-based ore-sorting R&D hiring",
+    "AI-driven mineral-exploration partnerships",
+    "University geoscience collaborations",
+    "Autonomous mining-equipment development",
+    "Critical-minerals discovery talent pipeline"
+  ],
+  "description": "Mining technology modernizes extraction with AI exploration, sensor-based sorting, and autonomous equipment, sharpened by demand for battery metals. It recruits geoscientists and machine-vision researchers and partners with university geology and mineral-processing departments."
+}

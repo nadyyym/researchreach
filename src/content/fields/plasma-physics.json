@@ -1,0 +1,9 @@
+{
+  "name": "Plasma Physics",
+  "subfields": ["Magnetic Confinement Fusion", "Inertial Confinement Fusion", "Astrophysical Plasmas", "Low-Temperature Plasmas", "Plasma Turbulence"],
+  "keyTechnologies": ["Tokamaks", "Stellarators", "High-Power Lasers", "Magnetohydrodynamic Codes", "Thomson Scattering Diagnostics"],
+  "topInstitutions": ["Princeton Plasma Physics Laboratory", "Max Planck Institute for Plasma Physics", "MIT", "Culham Centre for Fusion Energy", "University of Tokyo"],
+  "researcherCount": 14000,
+  "avgFunding": "$680K",
+  "description": "Plasma physics studies ionized gases that make up most of the visible universe and power fusion energy research. It spans fundamental questions in astrophysics and the engineering challenge of confining hot plasmas for clean energy generation."
+}

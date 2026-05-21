@@ -1,0 +1,11 @@
+{
+  "name": "Rohan Mehta",
+  "institution": "Carnegie Mellon University",
+  "field": "Computer Vision",
+  "advisor": "Dr. Deva Ramanan",
+  "thesis": "Robust 3D perception for autonomous systems in adverse weather conditions",
+  "publications": 12,
+  "skills": ["Deep Learning", "C++", "Sensor Fusion", "LiDAR Processing", "PyTorch", "Real-Time Systems"],
+  "transitionSignals": ["Internship at Waymo", "Filed two patents", "Co-authored with autonomous vehicle team"],
+  "description": "Rohan builds perception models that keep autonomous vehicles reliable in rain, fog, and snow. With a Waymo internship and multiple filed patents, he is a turnkey hire for any autonomy or robotics R&D team."
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Sungkyunkwan University",
+  "country": "South Korea",
+  "city": "Suwon",
+  "type": "private",
+  "researcherCount": 3200,
+  "avgHindex": 44,
+  "grantCount": 2100,
+  "departments": [
+    "Nanotechnology",
+    "Energy Science",
+    "Electrical Engineering",
+    "Chemistry",
+    "Medicine",
+    "Computer Science"
+  ],
+  "topFields": [
+    "Graphene Research",
+    "Energy Materials",
+    "Nanoscience",
+    "Semiconductors",
+    "Flexible Electronics"
+  ],
+  "description": "Sungkyunkwan University, backed by a Samsung-affiliated foundation, is one of Korea's fastest-rising research universities. Its SKKU Advanced Institute of Nanotechnology is world-leading in graphene and flexible electronics."
+}

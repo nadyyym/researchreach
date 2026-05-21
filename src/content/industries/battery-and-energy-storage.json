@@ -1,0 +1,25 @@
+{
+  "name": "Battery & Energy Storage",
+  "companies": [
+    "QuantumScape",
+    "Solid Power",
+    "Form Energy",
+    "Sila Nanotechnologies",
+    "Northvolt",
+    "Redwood Materials",
+    "Natron Energy",
+    "ESS Inc.",
+    "24M Technologies",
+    "Lyten"
+  ],
+  "targetResearchers": "Electrochemists and materials scientists in solid-state electrolytes, electrode materials, cell engineering, and recycling",
+  "marketSize": "$140B",
+  "useCases": [
+    "Solid-state battery R&D hiring",
+    "University electrochemistry partnerships",
+    "Grid-storage chemistry development",
+    "Cell-manufacturing talent pipeline",
+    "Battery-recycling technology collaborations"
+  ],
+  "description": "The battery and energy-storage industry develops chemistries beyond lithium-ion for electric vehicles and the grid. It recruits electrochemists and materials scientists from academia and routinely spins technology out of university and national-lab research."
+}

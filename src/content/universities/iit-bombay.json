@@ -1,0 +1,26 @@
+{
+  "name": "Indian Institute of Technology Bombay",
+  "country": "India",
+  "city": "Mumbai",
+  "type": "public",
+  "researcherCount": 3000,
+  "avgHindex": 40,
+  "grantCount": 2100,
+  "departments": [
+    "Computer Science",
+    "Electrical Engineering",
+    "Mechanical Engineering",
+    "Chemical Engineering",
+    "Physics",
+    "Chemistry",
+    "Energy Science"
+  ],
+  "topFields": [
+    "Energy Systems",
+    "Nanoelectronics",
+    "Computer Science",
+    "Materials Science",
+    "Chemical Engineering"
+  ],
+  "description": "IIT Bombay is one of India's most selective engineering institutes and a leader in energy and electronics research. Its strong industry links and entrepreneurship ecosystem have produced many of India's deep-tech startups."
+}

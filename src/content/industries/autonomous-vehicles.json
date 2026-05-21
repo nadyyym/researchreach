@@ -1,0 +1,25 @@
+{
+  "name": "Autonomous Vehicles",
+  "companies": [
+    "Waymo",
+    "Cruise",
+    "Aurora Innovation",
+    "Zoox",
+    "Wayve",
+    "Nuro",
+    "Mobileye",
+    "Pony.ai",
+    "Kodiak Robotics",
+    "Applied Intuition"
+  ],
+  "targetResearchers": "ML and robotics researchers in perception, prediction, planning, sensor fusion, and safety validation",
+  "marketSize": "$210B",
+  "useCases": [
+    "Perception and planning R&D recruitment",
+    "University autonomy-lab partnerships",
+    "Simulation and validation development",
+    "End-to-end driving talent pipeline",
+    "Sensor-fusion technology collaborations"
+  ],
+  "description": "The autonomous-vehicle industry builds self-driving systems for ride-hailing, trucking, and delivery. It recruits ML and robotics researchers from academia and partners with university labs on perception, prediction, and safety-validation research."
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Kavli Foundation",
+  "country": "United States",
+  "type": "foundation",
+  "budget": "$60M",
+  "programs": ["Kavli Institutes", "Kavli Prize", "Neuroscience Initiatives", "Astrophysics Programs", "Nanoscience Research", "Science Public Engagement"],
+  "description": "The Kavli Foundation advances science for the benefit of humanity through its global network of Kavli Institutes in astrophysics, nanoscience, neuroscience, and theoretical physics. It also awards the biennial Kavli Prize recognizing breakthroughs in these fields."
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Naledi Khumalo",
+  "institution": "University of Cape Town",
+  "field": "Water Technology",
+  "advisor": "Dr. Sue Harrison",
+  "thesis": "Membrane bioreactor optimization for decentralized wastewater reuse",
+  "publications": 6,
+  "skills": [
+    "Membrane Science",
+    "Process Engineering",
+    "Water Quality Analysis",
+    "Python",
+    "Pilot-Plant Operation",
+    "Life-Cycle Assessment"
+  ],
+  "transitionSignals": [
+    "Internship at a water-tech scale-up",
+    "Co-authored with utility engineers",
+    "Presented at water-reuse industry summit"
+  ],
+  "description": "Naledi optimizes compact membrane bioreactors that recycle wastewater for non-potable reuse in water-stressed regions. Her pilot-plant experience and process focus suit a water-technology company deploying decentralized systems."
+}

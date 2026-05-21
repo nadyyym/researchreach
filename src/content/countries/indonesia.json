@@ -1,0 +1,9 @@
+{
+  "name": "Indonesia",
+  "code": "ID",
+  "topInstitutions": ["University of Indonesia", "Bandung Institute of Technology", "Gadjah Mada University", "Bogor Agricultural University", "BRIN"],
+  "topAgencies": ["BRIN", "Ministry of Education and Culture"],
+  "researchOutput": 40000,
+  "topFields": ["Agriculture", "Earth Sciences", "Marine Biology", "Engineering", "Biodiversity"],
+  "description": "Indonesia consolidated its research under the National Research and Innovation Agency (BRIN) and leverages its vast biodiversity and volcanic geology. Strengths include agriculture, marine biology, and earth sciences."
+}

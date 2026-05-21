@@ -1,0 +1,8 @@
+{
+  "name": "Scientific and Technological Research Council of Türkiye (TÜBİTAK)",
+  "country": "Türkiye",
+  "type": "government",
+  "budget": "$1.4B",
+  "programs": ["1001 Scientific Research Projects", "2232 International Fellowship", "1004 Centres of Excellence", "BİDEB Scholarships", "TEYDEB Industry R&D", "Frontier R&D Labs"],
+  "description": "TÜBİTAK is Türkiye's leading agency for managing and funding research and development. It supports academic and industrial research, fellowships, and national laboratories, and advises the government on science and technology policy."
+}

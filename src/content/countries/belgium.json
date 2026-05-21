@@ -1,0 +1,9 @@
+{
+  "name": "Belgium",
+  "code": "BE",
+  "topInstitutions": ["KU Leuven", "Ghent University", "Université Catholique de Louvain", "University of Antwerp", "Vrije Universiteit Brussel"],
+  "topAgencies": ["FWO", "FNRS", "imec"],
+  "researchOutput": 45000,
+  "topFields": ["Materials Science", "Immunology", "Artificial Intelligence", "Genomics", "Nanotechnology"],
+  "description": "Belgium punches well above its size in research, anchored by KU Leuven and the imec nanoelectronics research center, a global leader in semiconductor R&D. Its universities are deeply integrated into European research networks and excel in life sciences and microelectronics."
+}

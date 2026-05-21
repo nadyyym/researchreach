@@ -1,0 +1,22 @@
+{
+  "name": "Hannah Fischer",
+  "institution": "University of Munich (LMU)",
+  "field": "Oncology Diagnostics",
+  "advisor": "Dr. Klaus Pantel",
+  "thesis": "Liquid-biopsy circulating-tumor-DNA assays for early cancer detection",
+  "publications": 9,
+  "skills": [
+    "NGS Library Prep",
+    "Bioinformatics",
+    "ddPCR",
+    "Python",
+    "Assay Validation",
+    "Clinical Sample Handling"
+  ],
+  "transitionSignals": [
+    "Internship at Grail",
+    "Co-authored with diagnostics-company scientists",
+    "Presented at AACR liquid-biopsy session"
+  ],
+  "description": "Hannah builds and validates ctDNA assays that detect cancer signals before symptoms appear, with strong analytical sensitivity. Her assay-validation and clinical-sample skills fit a molecular-diagnostics company commercializing early-detection tests."
+}

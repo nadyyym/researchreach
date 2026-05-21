@@ -1,0 +1,8 @@
+{
+  "name": "Research Foundation – Flanders (FWO)",
+  "country": "Belgium",
+  "type": "government",
+  "budget": "$400M",
+  "programs": ["Research Projects", "PhD Fellowships", "Postdoctoral Fellowships", "Excellence of Science (EOS)", "Research Infrastructure", "Senior Clinical Investigators"],
+  "description": "The FWO funds fundamental and strategic basic research in Flanders, Belgium, across all scientific disciplines. It supports individual fellowships, research projects, and large infrastructure through open competition and peer review."
+}

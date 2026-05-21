@@ -1,0 +1,11 @@
+{
+  "name": "Nadia Okafor",
+  "institution": "Massachusetts Institute of Technology",
+  "field": "Materials Science",
+  "advisor": "Dr. Yet-Ming Chiang",
+  "thesis": "Solid-state electrolyte interfaces for next-generation lithium-metal batteries",
+  "publications": 9,
+  "skills": ["Electrochemistry", "X-ray Diffraction", "Python", "Battery Cell Assembly", "Finite Element Modeling", "Materials Characterization"],
+  "transitionSignals": ["Internship at QuantumScape", "Filed first patent on electrolyte coating", "Presented at industry battery summit"],
+  "description": "Nadia is a 5th-year PhD candidate engineering stable solid-electrolyte interfaces that suppress dendrite growth. Her summer at a battery scale-up gave her hands-on cell-manufacturing experience that maps directly onto industry R&D roles."
+}

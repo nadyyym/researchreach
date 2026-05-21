@@ -1,0 +1,16 @@
+{
+  "name": "Shafi Goldwasser",
+  "institution": "Massachusetts Institute of Technology",
+  "field": "Cryptography",
+  "hindex": 110,
+  "grantCount": 40,
+  "patents": 15,
+  "publications": 300,
+  "orcid": "0000-0002-3877-1238",
+  "industryTies": [
+    "MIT CSAIL",
+    "Duality Technologies",
+    "Simons Institute"
+  ],
+  "description": "Shafi Goldwasser won the Turing Award for foundational work on probabilistic encryption, zero-knowledge proofs, and interactive proof systems. Her cryptographic frameworks underpin privacy-preserving computation and blockchain protocols."
+}

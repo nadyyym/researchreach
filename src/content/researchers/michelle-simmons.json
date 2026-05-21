@@ -1,0 +1,15 @@
+{
+  "name": "Michelle Simmons",
+  "institution": "University of New South Wales",
+  "field": "Quantum Computing",
+  "hindex": 75,
+  "grantCount": 40,
+  "patents": 45,
+  "publications": 420,
+  "orcid": "0000-0002-6976-3401",
+  "industryTies": [
+    "Silicon Quantum Computing",
+    "UNSW"
+  ],
+  "description": "Michelle Simmons builds atomic-precision quantum devices in silicon, fabricating single-atom transistors and qubits. She founded Silicon Quantum Computing to commercialize a silicon-based quantum computer."
+}

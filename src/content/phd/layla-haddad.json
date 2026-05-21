@@ -1,0 +1,22 @@
+{
+  "name": "Layla Haddad",
+  "institution": "American University of Beirut",
+  "field": "Computational Chemistry",
+  "advisor": "Dr. Mazen Al-Ghoul",
+  "thesis": "Machine-learned reaction networks for catalyst screening",
+  "publications": 7,
+  "skills": [
+    "DFT",
+    "Python",
+    "Machine Learning",
+    "Reaction Kinetics",
+    "High-Throughput Screening",
+    "Cheminformatics"
+  ],
+  "transitionSignals": [
+    "Internship at a computational-chemistry software firm",
+    "Co-authored with industry catalysis group",
+    "Open-sourced a reaction-prediction model"
+  ],
+  "description": "Layla builds ML-accelerated reaction networks that prioritize promising catalysts before expensive lab synthesis. Her cheminformatics pipeline expertise fits a company building computational chemistry platforms for R&D teams."
+}

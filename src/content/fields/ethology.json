@@ -1,0 +1,9 @@
+{
+  "name": "Ethology",
+  "subfields": ["Behavioral Ecology", "Cognitive Ethology", "Social Behavior", "Neuroethology", "Comparative Cognition"],
+  "keyTechnologies": ["Automated Behavior Tracking", "Bio-logging Tags", "GPS Telemetry", "Pose-Estimation Software", "Field Camera Traps"],
+  "topInstitutions": ["University of Oxford", "Max Planck Institute of Animal Behavior", "University of Cambridge", "Duke University", "Australian National University"],
+  "researcherCount": 6000,
+  "avgFunding": "$230K",
+  "description": "Ethology is the scientific study of animal behavior, particularly under natural conditions. It integrates evolution, ecology, and neuroscience to explain how and why animals act, communicate, and make decisions in their environments."
+}

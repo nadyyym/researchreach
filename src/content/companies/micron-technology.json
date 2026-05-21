@@ -1,0 +1,8 @@
+{
+  "name": "Micron Technology",
+  "industry": "Semiconductors",
+  "rdSpend": "$3.1B",
+  "academicCollabs": 140,
+  "patents": 51000,
+  "description": "Micron designs and manufactures DRAM and NAND memory and storage products central to AI and data-center workloads. It partners with universities on HBM, 3D NAND scaling, and compute-in-memory architectures."
+}

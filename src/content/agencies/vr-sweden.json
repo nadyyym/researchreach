@@ -1,0 +1,8 @@
+{
+  "name": "Swedish Research Council (Vetenskapsrådet)",
+  "country": "Sweden",
+  "type": "government",
+  "budget": "$800M",
+  "programs": ["Project Grants", "Starting Grants", "Distinguished Professor Grants", "Research Infrastructure", "International Postdoc", "Excellence Centres"],
+  "description": "The Swedish Research Council is the largest governmental funder of basic research in Sweden, spanning the natural sciences, medicine, humanities, and social sciences. It also advises the government on research policy and supports national research infrastructure."
+}

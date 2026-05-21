@@ -1,0 +1,8 @@
+{
+  "name": "National Aeronautics and Space Administration (NASA)",
+  "country": "United States",
+  "type": "government",
+  "budget": "$7.8B",
+  "programs": ["Research Opportunities in Space and Earth Sciences", "Astrophysics Research", "Planetary Science Division", "Earth Science Program", "Space Technology Research Grants", "NASA Postdoctoral Program"],
+  "description": "NASA is the United States' civil space agency, and a major funder of space, planetary, and Earth science research. Beyond its missions, it awards billions in research grants to universities and institutions through programs like ROSES."
+}

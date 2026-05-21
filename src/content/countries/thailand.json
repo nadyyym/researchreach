@@ -1,0 +1,9 @@
+{
+  "name": "Thailand",
+  "code": "TH",
+  "topInstitutions": ["Chulalongkorn University", "Mahidol University", "Kasetsart University", "King Mongkut's University of Technology Thonburi"],
+  "topAgencies": ["NSTDA", "TSRI", "NRCT"],
+  "researchOutput": 28000,
+  "topFields": ["Tropical Medicine", "Agriculture", "Biotechnology", "Materials Science", "Public Health"],
+  "description": "Thailand's research is led by Mahidol and Chulalongkorn universities, with global recognition in tropical medicine and public health. The National Science and Technology Development Agency drives biotechnology and materials research."
+}

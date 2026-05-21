@@ -1,0 +1,12 @@
+{
+  "name": "University of Edinburgh",
+  "country": "United Kingdom",
+  "city": "Edinburgh",
+  "type": "public",
+  "researcherCount": 3900,
+  "avgHindex": 44,
+  "grantCount": 2900,
+  "departments": ["Informatics", "Biological Sciences", "Chemistry", "Physics and Astronomy", "Medicine", "GeoSciences", "Engineering", "Mathematics"],
+  "topFields": ["Artificial Intelligence", "Genomics", "Climate Science", "Stem Cell Research", "Bioinformatics"],
+  "description": "The University of Edinburgh is one of Scotland's ancient universities and a powerhouse in informatics and the life sciences. Its School of Informatics is among Europe's largest, and the Roslin Institute placed it at the forefront of animal genomics and regenerative biology."
+}

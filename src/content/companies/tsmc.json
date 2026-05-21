@@ -1,0 +1,8 @@
+{
+  "name": "TSMC",
+  "industry": "Semiconductors",
+  "rdSpend": "$6.2B",
+  "academicCollabs": 290,
+  "patents": 56000,
+  "description": "TSMC is the world's largest dedicated semiconductor foundry, manufacturing the leading-edge chips that power AI, mobile, and high-performance computing. Its research collaborations advance EUV lithography, transistor scaling, and advanced 3D packaging."
+}

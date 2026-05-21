@@ -1,0 +1,26 @@
+{
+  "name": "University of Barcelona",
+  "country": "Spain",
+  "city": "Barcelona",
+  "type": "public",
+  "researcherCount": 3700,
+  "avgHindex": 44,
+  "grantCount": 2100,
+  "departments": [
+    "Physics",
+    "Chemistry",
+    "Biology",
+    "Medicine",
+    "Pharmacy",
+    "Earth Sciences",
+    "Mathematics"
+  ],
+  "topFields": [
+    "Astrophysics",
+    "Pharmacology",
+    "Neuroscience",
+    "Photonics",
+    "Genetics"
+  ],
+  "description": "The University of Barcelona is Spain's leading research university by output and a Mediterranean hub for the life and physical sciences. It is closely tied to the Barcelona biomedical research cluster and the ICFO photonics institute."
+}

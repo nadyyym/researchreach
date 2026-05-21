@@ -1,0 +1,11 @@
+{
+  "name": "Julian Vasquez",
+  "institution": "Stanford University",
+  "field": "Machine Learning",
+  "advisor": "Dr. Chelsea Finn",
+  "thesis": "Sample-efficient reinforcement learning for robotic manipulation under distribution shift",
+  "publications": 11,
+  "skills": ["PyTorch", "Reinforcement Learning", "Robotics", "CUDA", "Distributed Training", "Sim-to-Real Transfer"],
+  "transitionSignals": ["Research internship at Google DeepMind", "Co-authored paper with NVIDIA researchers", "Open-sourced widely-starred RL library"],
+  "description": "Julian builds reinforcement learning systems that transfer from simulation to physical robots with minimal real-world data. His internships at top industry labs and a popular open-source release signal a candidate ready to ship production ML."
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Kazakhstan",
+  "code": "KZ",
+  "topInstitutions": ["Nazarbayev University", "Al-Farabi Kazakh National University", "Satbayev University", "L.N. Gumilyov Eurasian National University"],
+  "topAgencies": ["MSHE", "Science Committee", "National Center for Science and Technology Evaluation"],
+  "researchOutput": 11000,
+  "topFields": ["Earth Sciences", "Materials Science", "Energy", "Agriculture", "Chemistry"],
+  "description": "Kazakhstan is expanding its research capacity through the English-language Nazarbayev University and reforms to national funding. Its priorities reflect natural-resource strengths in geosciences, energy, and materials chemistry."
+}

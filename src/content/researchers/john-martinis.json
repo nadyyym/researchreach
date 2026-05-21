@@ -1,0 +1,16 @@
+{
+  "name": "John Martinis",
+  "institution": "University of California, Santa Barbara",
+  "field": "Quantum Computing",
+  "hindex": 85,
+  "grantCount": 38,
+  "patents": 40,
+  "publications": 300,
+  "orcid": "0000-0001-9269-6907",
+  "industryTies": [
+    "Google Quantum AI",
+    "Qolab",
+    "UCSB"
+  ],
+  "description": "John Martinis led the Google team that demonstrated quantum supremacy with the Sycamore processor. A pioneer of superconducting qubits, he now develops scalable quantum hardware at his startup Qolab."
+}

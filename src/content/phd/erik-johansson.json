@@ -1,0 +1,22 @@
+{
+  "name": "Erik Johansson",
+  "institution": "KTH Royal Institute of Technology",
+  "field": "Photovoltaics",
+  "advisor": "Dr. Lars Kloo",
+  "thesis": "Stability engineering of tandem perovskite-silicon solar cells",
+  "publications": 8,
+  "skills": [
+    "Thin-Film Deposition",
+    "Device Characterization",
+    "Materials Science",
+    "Python",
+    "Encapsulation",
+    "Stability Testing"
+  ],
+  "transitionSignals": [
+    "Internship at Oxford PV",
+    "Filed first patent on an encapsulation scheme",
+    "Presented at photovoltaics industry forum"
+  ],
+  "description": "Erik improves the operational stability of tandem solar cells that push past silicon's efficiency ceiling. His thin-film and stability-testing skills are well matched to a next-generation solar manufacturer."
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Foundation for Science and Technology (FCT)",
+  "country": "Portugal",
+  "type": "government",
+  "budget": "$500M",
+  "programs": ["R&D Project Grants", "PhD Studentships", "Scientific Employment Stimulus", "Associate Laboratories", "CEEC Individual Calls", "Advanced Computing Access"],
+  "description": "The FCT is Portugal's national agency for funding research in science, technology, and innovation. It supports research projects, doctoral and postdoctoral training, and the network of associate laboratories and research units across the country."
+}

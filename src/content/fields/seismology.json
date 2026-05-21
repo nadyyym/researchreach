@@ -1,0 +1,9 @@
+{
+  "name": "Seismology",
+  "subfields": ["Earthquake Physics", "Seismic Tomography", "Volcano Seismology", "Ambient Noise Imaging", "Induced Seismicity"],
+  "keyTechnologies": ["Broadband Seismometers", "Distributed Acoustic Sensing", "Dense Nodal Arrays", "Full-Waveform Inversion", "GNSS Geodesy"],
+  "topInstitutions": ["Caltech", "ETH Zurich", "University of Tokyo", "GFZ Potsdam", "Scripps Institution of Oceanography"],
+  "researcherCount": 8800,
+  "avgFunding": "$390K",
+  "description": "Seismology studies elastic waves traveling through the Earth to image its interior and understand earthquakes. It underpins seismic hazard assessment, resource exploration, and monitoring of nuclear tests through global sensor networks."
+}

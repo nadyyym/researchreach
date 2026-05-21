@@ -1,0 +1,25 @@
+{
+  "name": "Grenoble Alpes University",
+  "country": "France",
+  "city": "Grenoble",
+  "type": "public",
+  "researcherCount": 3000,
+  "avgHindex": 41,
+  "grantCount": 2100,
+  "departments": [
+    "Physics",
+    "Computer Science",
+    "Chemistry",
+    "Engineering",
+    "Earth Sciences",
+    "Biology"
+  ],
+  "topFields": [
+    "Nanotechnology",
+    "Cryogenics",
+    "Computer Science",
+    "Glaciology",
+    "Photonics"
+  ],
+  "description": "Grenoble Alpes University sits at the heart of a major European science and microelectronics cluster, alongside CEA-Leti and the European Synchrotron. It is a leader in nanotechnology, cryogenics, and high-performance computing."
+}

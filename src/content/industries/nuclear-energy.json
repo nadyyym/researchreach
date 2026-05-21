@@ -1,0 +1,25 @@
+{
+  "name": "Nuclear Energy",
+  "companies": [
+    "TerraPower",
+    "Commonwealth Fusion Systems",
+    "X-energy",
+    "NuScale Power",
+    "Oklo",
+    "Kairos Power",
+    "Helion Energy",
+    "TAE Technologies",
+    "Westinghouse",
+    "Type One Energy"
+  ],
+  "targetResearchers": "Nuclear engineers and plasma physicists in reactor design, fuel materials, neutronics, thermal-hydraulics, and fusion confinement",
+  "marketSize": "$430B",
+  "useCases": [
+    "Advanced-reactor R&D hiring",
+    "National-lab and university partnerships",
+    "Accident-tolerant fuel development",
+    "Plasma-control and fusion talent pipeline",
+    "Regulatory and licensing collaboration"
+  ],
+  "description": "Nuclear energy is being reinvented through small modular reactors and private fusion ventures pursuing clean baseload power. The field recruits nuclear engineers, materials scientists, and plasma physicists, with deep ties to national labs and university research reactors."
+}

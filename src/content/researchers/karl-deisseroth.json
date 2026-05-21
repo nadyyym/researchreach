@@ -1,0 +1,16 @@
+{
+  "name": "Karl Deisseroth",
+  "institution": "Stanford University",
+  "field": "Neuroscience",
+  "hindex": 130,
+  "grantCount": 55,
+  "patents": 70,
+  "publications": 300,
+  "orcid": "0000-0002-3406-0817",
+  "industryTies": [
+    "Circuit Therapeutics",
+    "MapLight Therapeutics",
+    "Stanford"
+  ],
+  "description": "Karl Deisseroth invented optogenetics, enabling control of specific neurons with light, and CLARITY for transparent brain imaging. His tools have transformed systems neuroscience and seeded neurotechnology startups."
+}

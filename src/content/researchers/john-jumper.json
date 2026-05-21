@@ -1,0 +1,12 @@
+{
+  "name": "John Jumper",
+  "institution": "Google DeepMind",
+  "field": "Computational Structural Biology",
+  "hindex": 38,
+  "grantCount": 6,
+  "patents": 14,
+  "publications": 70,
+  "orcid": "0000-0001-6519-1429",
+  "industryTies": ["Google DeepMind", "Isomorphic Labs"],
+  "description": "John Jumper led the development of AlphaFold, the deep learning system that solved the decades-old protein structure prediction problem. His work earned a share of the 2024 Nobel Prize in Chemistry and has reshaped structural biology and drug discovery."
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Amara Diallo",
+  "institution": "ETH Zurich",
+  "field": "Robotics & Control",
+  "advisor": "Dr. Roland Siegwart",
+  "thesis": "Whole-body model-predictive control for legged robots on unstructured terrain",
+  "publications": 9,
+  "skills": [
+    "C++",
+    "ROS 2",
+    "Model Predictive Control",
+    "Reinforcement Learning",
+    "Real-Time Systems",
+    "Mechatronics"
+  ],
+  "transitionSignals": [
+    "Internship at Boston Dynamics",
+    "Co-authored paper with ANYbotics engineers",
+    "Open-sourced a widely-starred controller library"
+  ],
+  "description": "Amara develops controllers that let quadruped robots recover from slips in real time, validated on hardware in field trials. Her production-grade C++ and industry collaborations signal readiness for an applied robotics role."
+}

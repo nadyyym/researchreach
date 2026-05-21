@@ -1,0 +1,9 @@
+{
+  "name": "Argentina",
+  "code": "AR",
+  "topInstitutions": ["University of Buenos Aires", "CONICET", "National University of La Plata", "Balseiro Institute"],
+  "topAgencies": ["CONICET", "ANPCyT", "MINCyT"],
+  "researchOutput": 28000,
+  "topFields": ["Physics", "Molecular Biology", "Agriculture", "Mathematics", "Biotechnology"],
+  "description": "Argentina has a strong scientific tradition with three Nobel laureates in the sciences and a robust national research council, CONICET. It is recognized for work in physics, molecular biology, and agricultural biotechnology."
+}

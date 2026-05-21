@@ -1,0 +1,26 @@
+{
+  "name": "University of Sao Paulo",
+  "country": "Brazil",
+  "city": "Sao Paulo",
+  "type": "public",
+  "researcherCount": 5600,
+  "avgHindex": 45,
+  "grantCount": 3000,
+  "departments": [
+    "Medicine",
+    "Physics",
+    "Chemistry",
+    "Biosciences",
+    "Engineering",
+    "Agriculture",
+    "Computer Science"
+  ],
+  "topFields": [
+    "Tropical Medicine",
+    "Agricultural Science",
+    "Physics",
+    "Biochemistry",
+    "Bioenergy"
+  ],
+  "description": "The University of Sao Paulo is the largest and highest-ranked university in Latin America. It dominates Brazilian research output across medicine, physics, and agricultural science, and leads regional work on bioenergy and tropical disease."
+}

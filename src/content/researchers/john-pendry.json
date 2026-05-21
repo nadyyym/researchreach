@@ -1,0 +1,15 @@
+{
+  "name": "John Pendry",
+  "institution": "Imperial College London",
+  "field": "Condensed Matter Physics",
+  "hindex": 95,
+  "grantCount": 35,
+  "patents": 30,
+  "publications": 340,
+  "orcid": "0000-0001-5145-5441",
+  "industryTies": [
+    "Imperial College London",
+    "Metamaterial Inc. (advisory)"
+  ],
+  "description": "John Pendry laid the theoretical foundation for metamaterials, negative-index media, and the perfect lens, and proposed the cloaking device. His work created the field of transformation optics."
+}

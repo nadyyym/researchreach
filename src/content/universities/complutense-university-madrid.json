@@ -1,0 +1,26 @@
+{
+  "name": "Complutense University of Madrid",
+  "country": "Spain",
+  "city": "Madrid",
+  "type": "public",
+  "researcherCount": 4000,
+  "avgHindex": 41,
+  "grantCount": 1800,
+  "departments": [
+    "Physics",
+    "Chemistry",
+    "Biology",
+    "Medicine",
+    "Pharmacy",
+    "Mathematics",
+    "Geology"
+  ],
+  "topFields": [
+    "Particle Physics",
+    "Pharmacology",
+    "Paleontology",
+    "Astrophysics",
+    "Biochemistry"
+  ],
+  "description": "Complutense University of Madrid is one of the oldest and largest universities in Spain, with broad research strength across the physical and life sciences. It has notable programs in particle physics, pharmacy, and paleontology."
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Geomicrobiology",
+  "subfields": ["Microbial Mineralogy", "Subsurface Microbiology", "Biogeochemical Cycling", "Extremophile Ecology", "Microbial Fossil Records"],
+  "keyTechnologies": ["Stable Isotope Probing", "Synchrotron X-ray Spectroscopy", "Metagenomic Sequencing", "Scanning Electron Microscopy", "Nanoscale Secondary Ion Mass Spectrometry"],
+  "topInstitutions": ["California Institute of Technology", "University of Tübingen", "ETH Zurich", "University of Wisconsin–Madison", "Aarhus University"],
+  "researcherCount": 3100,
+  "avgFunding": "$300K",
+  "description": "Geomicrobiology investigates how microorganisms interact with minerals, rocks, and geochemical processes. It reveals the microbial role in element cycling, mineral formation, and life in extreme subsurface environments relevant to both Earth and astrobiology."
+}

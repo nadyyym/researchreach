@@ -1,0 +1,25 @@
+{
+  "name": "University of Waterloo",
+  "country": "Canada",
+  "city": "Waterloo",
+  "type": "public",
+  "researcherCount": 3000,
+  "avgHindex": 44,
+  "grantCount": 2200,
+  "departments": [
+    "Computer Science",
+    "Engineering",
+    "Physics and Astronomy",
+    "Mathematics",
+    "Chemistry",
+    "Quantum Computing"
+  ],
+  "topFields": [
+    "Quantum Computing",
+    "Computer Science",
+    "Cryptography",
+    "Nanotechnology",
+    "Mathematics"
+  ],
+  "description": "The University of Waterloo is Canada's top university for computer science and mathematics, with a famous co-op program. Its Institute for Quantum Computing is one of the world's largest centers for quantum information research."
+}

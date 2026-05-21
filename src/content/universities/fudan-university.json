@@ -1,0 +1,26 @@
+{
+  "name": "Fudan University",
+  "country": "China",
+  "city": "Shanghai",
+  "type": "public",
+  "researcherCount": 5400,
+  "avgHindex": 47,
+  "grantCount": 3200,
+  "departments": [
+    "Medicine",
+    "Physics",
+    "Chemistry",
+    "Life Sciences",
+    "Computer Science",
+    "Materials Science",
+    "Microelectronics"
+  ],
+  "topFields": [
+    "Microelectronics",
+    "Polymer Chemistry",
+    "Oncology",
+    "Materials Physics",
+    "Genomics"
+  ],
+  "description": "Fudan University is a top-tier comprehensive research university in Shanghai with elite programs in medicine, microelectronics, and chemistry. It is a national leader in integrated-circuit and polymer research."
+}

@@ -1,0 +1,26 @@
+{
+  "name": "University of Bologna",
+  "country": "Italy",
+  "city": "Bologna",
+  "type": "public",
+  "researcherCount": 4100,
+  "avgHindex": 42,
+  "grantCount": 2300,
+  "departments": [
+    "Physics and Astronomy",
+    "Engineering",
+    "Chemistry",
+    "Biology",
+    "Computer Science",
+    "Medicine",
+    "Mathematics"
+  ],
+  "topFields": [
+    "Astrophysics",
+    "Engineering",
+    "Pharmacology",
+    "Agricultural Science",
+    "Cultural Heritage Science"
+  ],
+  "description": "Founded in 1088, the University of Bologna is the oldest university in continuous operation in the world. Today it is one of Italy's largest research institutions, with notable strength in astrophysics, engineering, and agricultural science."
+}

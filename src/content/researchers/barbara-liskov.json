@@ -1,0 +1,14 @@
+{
+  "name": "Barbara Liskov",
+  "institution": "Massachusetts Institute of Technology",
+  "field": "Computer Science",
+  "hindex": 60,
+  "grantCount": 25,
+  "patents": 8,
+  "publications": 180,
+  "orcid": "0000-0002-2150-2545",
+  "industryTies": [
+    "MIT CSAIL"
+  ],
+  "description": "Barbara Liskov won the Turing Award for contributions to data abstraction, programming languages, and distributed computing. The Liskov Substitution Principle she formalized is a cornerstone of object-oriented design."
+}

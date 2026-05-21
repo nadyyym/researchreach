@@ -1,0 +1,22 @@
+{
+  "name": "Henrik Sørensen",
+  "institution": "Technical University of Denmark",
+  "field": "Wind Energy",
+  "advisor": "Dr. Jens Nørkær Sørensen",
+  "thesis": "Wake-aware control strategies for floating offshore wind farms",
+  "publications": 6,
+  "skills": [
+    "CFD",
+    "MATLAB",
+    "Control Systems",
+    "Python",
+    "Aeroelastic Modeling",
+    "Data Analysis"
+  ],
+  "transitionSignals": [
+    "Internship at Ørsted",
+    "Co-authored with Vestas engineers",
+    "Presented at offshore-wind technical conference"
+  ],
+  "description": "Henrik develops farm-level control that boosts energy yield by steering turbine wakes, validated against operational data. His aeroelastic modeling and industry ties fit an offshore-wind developer optimizing fleet performance."
+}

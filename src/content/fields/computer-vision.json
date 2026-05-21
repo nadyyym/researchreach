@@ -1,0 +1,9 @@
+{
+  "name": "Computer Vision",
+  "subfields": ["Object Detection", "Image Segmentation", "3D Reconstruction", "Visual SLAM", "Generative Image Models"],
+  "keyTechnologies": ["Convolutional Neural Networks", "Vision Transformers", "Diffusion Models", "GPU Compute", "Neural Radiance Fields"],
+  "topInstitutions": ["Stanford", "MIT", "ETH Zurich", "University of Amsterdam", "KAIST"],
+  "researcherCount": 42000,
+  "avgFunding": "$430K",
+  "description": "Computer vision develops algorithms that enable machines to interpret and understand visual information from the world. It powers autonomous vehicles, medical imaging, augmented reality, and industrial inspection, and has been transformed by deep learning architectures."
+}

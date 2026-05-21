@@ -1,0 +1,9 @@
+{
+  "name": "Portugal",
+  "code": "PT",
+  "topInstitutions": ["University of Porto", "University of Lisbon", "University of Coimbra", "NOVA University Lisbon", "Champalimaud Foundation"],
+  "topAgencies": ["FCT", "ANI", "Champalimaud Foundation"],
+  "researchOutput": 28000,
+  "topFields": ["Neuroscience", "Marine Biology", "Materials Science", "Oncology", "Renewable Energy"],
+  "description": "Portugal has steadily grown its research output, anchored by the Champalimaud Foundation's neuroscience and cancer programs. National funding through the FCT supports strengths in marine sciences, energy, and biomedical research."
+}

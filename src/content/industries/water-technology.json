@@ -1,0 +1,25 @@
+{
+  "name": "Water Technology",
+  "companies": [
+    "Xylem",
+    "Veolia",
+    "Gradiant",
+    "NEWyou Water (Source)",
+    "Desolenator",
+    "Membrion",
+    "ZwitterCo",
+    "Aquaporin",
+    "Oneka Technologies",
+    "Epic Cleantec"
+  ],
+  "targetResearchers": "Chemical and environmental engineers in membrane science, desalination, water treatment, and process optimization",
+  "marketSize": "$310B",
+  "useCases": [
+    "Membrane and desalination R&D recruitment",
+    "Decentralized water-reuse pilots",
+    "University water-research partnerships",
+    "Brine-management technology development",
+    "Water-quality sensing talent pipeline"
+  ],
+  "description": "Water technology addresses scarcity through advanced desalination, recycling, and treatment systems. It draws on academic membrane scientists and environmental engineers, often piloting university-developed processes at municipal and industrial scale."
+}

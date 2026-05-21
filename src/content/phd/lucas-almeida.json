@@ -1,0 +1,22 @@
+{
+  "name": "Lucas Almeida",
+  "institution": "University of São Paulo",
+  "field": "Vaccine Development",
+  "advisor": "Dr. Jorge Kalil",
+  "thesis": "Self-amplifying mRNA platforms for thermostable tropical-disease vaccines",
+  "publications": 7,
+  "skills": [
+    "mRNA Synthesis",
+    "Lipid Nanoparticle Formulation",
+    "Immunoassays",
+    "Cell Culture",
+    "GMP Awareness",
+    "Stability Testing"
+  ],
+  "transitionSignals": [
+    "Internship at a vaccine biotech",
+    "Filed first patent on a formulation",
+    "Co-authored with Butantan Institute scientists"
+  ],
+  "description": "Lucas develops heat-stable self-amplifying mRNA vaccines suited to low-resource settings, with promising immunogenicity data. His formulation and stability work makes him a strong fit for a vaccine company expanding into emerging markets."
+}

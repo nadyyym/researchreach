@@ -1,0 +1,22 @@
+{
+  "name": "Liang Wei",
+  "institution": "Massachusetts Institute of Technology",
+  "field": "Battery Electrochemistry",
+  "advisor": "Dr. Yang Shao-Horn",
+  "thesis": "Interfacial degradation mechanisms in solid-state lithium-metal batteries probed by operando spectroscopy",
+  "publications": 7,
+  "skills": [
+    "Operando Spectroscopy",
+    "Electrochemical Impedance",
+    "Python",
+    "COMSOL Multiphysics",
+    "Materials Synthesis",
+    "Cell Prototyping"
+  ],
+  "transitionSignals": [
+    "Summer internship at QuantumScape",
+    "Filed first patent on electrolyte coatings",
+    "Presented at industry battery summit"
+  ],
+  "description": "Liang designs solid electrolytes that suppress dendrite formation, with prototype cells reaching 400 cycles at high current density. His blend of fundamental electrochemistry and hands-on cell fabrication makes him a strong fit for an energy-storage R&D team."
+}

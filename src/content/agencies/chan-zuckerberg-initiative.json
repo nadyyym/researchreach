@@ -1,0 +1,8 @@
+{
+  "name": "Chan Zuckerberg Initiative",
+  "country": "United States",
+  "type": "foundation",
+  "budget": "$1.0B",
+  "programs": ["Science Programs", "Human Cell Atlas", "CZ Biohub Network", "Neurodegeneration Challenge Network", "Imaging and Single-Cell Biology", "Open Science"],
+  "description": "The Chan Zuckerberg Initiative funds science aimed at curing, preventing, or managing all diseases by the end of the century. It supports the Human Cell Atlas, open-source software, and the CZ Biohub network of research institutes."
+}

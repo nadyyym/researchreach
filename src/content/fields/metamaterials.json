@@ -1,0 +1,9 @@
+{
+  "name": "Metamaterials",
+  "subfields": ["Optical Metamaterials", "Acoustic Metamaterials", "Mechanical Metamaterials", "Tunable Metasurfaces", "Negative-Index Media"],
+  "keyTechnologies": ["Electron-Beam Lithography", "Finite-Difference Time-Domain Simulation", "Nanoimprint Fabrication", "Terahertz Spectroscopy", "3D Microprinting"],
+  "topInstitutions": ["Duke University", "Imperial College London", "Karlsruhe Institute of Technology", "Caltech", "Nanyang Technological University"],
+  "researcherCount": 11000,
+  "avgFunding": "$450K",
+  "description": "Metamaterials are engineered structures whose properties arise from their geometry rather than composition, enabling phenomena like negative refraction and cloaking. They span optics, acoustics, and mechanics, with applications in imaging, sensing, and energy."
+}

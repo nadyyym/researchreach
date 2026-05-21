@@ -1,0 +1,22 @@
+{
+  "name": "Theo Nakamura",
+  "institution": "University of Tokyo",
+  "field": "Battery Recycling",
+  "advisor": "Dr. Atsuo Yamada",
+  "thesis": "Direct cathode regeneration from spent lithium-ion batteries",
+  "publications": 6,
+  "skills": [
+    "Hydrometallurgy",
+    "Materials Characterization",
+    "Process Engineering",
+    "Python",
+    "XRD/SEM",
+    "Life-Cycle Assessment"
+  ],
+  "transitionSignals": [
+    "Internship at a battery-recycling startup",
+    "Filed first patent on a regeneration process",
+    "Co-authored with recycling-industry engineers"
+  ],
+  "description": "Theo develops direct-regeneration routes that restore degraded cathode material without breaking it down to elements, slashing recycling costs. His process and characterization skills suit a battery-circularity company."
+}

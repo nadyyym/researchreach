@@ -1,0 +1,22 @@
+{
+  "name": "Fatima Al-Rashid",
+  "institution": "Imperial College London",
+  "field": "Carbon Capture",
+  "advisor": "Dr. Niall Mac Dowell",
+  "thesis": "Techno-economic optimization of direct air capture using amine-functionalized sorbents",
+  "publications": 8,
+  "skills": [
+    "Process Simulation (Aspen Plus)",
+    "Python",
+    "Techno-Economic Analysis",
+    "Sorbent Characterization",
+    "Life-Cycle Assessment",
+    "Pilot-Plant Operation"
+  ],
+  "transitionSignals": [
+    "Internship at Climeworks",
+    "Co-authored techno-economic report with industry consortium",
+    "Presented at carbon-removal investor day"
+  ],
+  "description": "Fatima models the cost trajectory of direct air capture and validates sorbent performance on a pilot rig. Her combination of process engineering and techno-economic analysis suits a climate-tech scale-up moving from pilot to commercial plant."
+}

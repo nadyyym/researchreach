@@ -1,0 +1,9 @@
+{
+  "name": "Ireland",
+  "code": "IE",
+  "topInstitutions": ["Trinity College Dublin", "University College Dublin", "University College Cork", "National University of Ireland Galway", "Royal College of Surgeons in Ireland"],
+  "topAgencies": ["Science Foundation Ireland", "Irish Research Council", "Enterprise Ireland"],
+  "researchOutput": 26000,
+  "topFields": ["Immunology", "Materials Science", "Genomics", "Artificial Intelligence", "Drug Discovery"],
+  "description": "Ireland has built a research base closely aligned with its concentration of pharmaceutical and technology multinationals. Science Foundation Ireland funds high-impact centers in nanomaterials, data analytics, and immunology, with Trinity College Dublin leading the country's scientific output."
+}

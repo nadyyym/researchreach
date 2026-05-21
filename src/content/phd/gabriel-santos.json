@@ -1,0 +1,22 @@
+{
+  "name": "Gabriel Santos",
+  "institution": "Federal University of Rio de Janeiro",
+  "field": "Mining Technology",
+  "advisor": "Dr. Luís Marcelo Tavares",
+  "thesis": "Sensor-based ore sorting using hyperspectral imaging and machine learning",
+  "publications": 6,
+  "skills": [
+    "Hyperspectral Imaging",
+    "Machine Learning",
+    "Python",
+    "Mineral Processing",
+    "Computer Vision",
+    "Process Optimization"
+  ],
+  "transitionSignals": [
+    "Internship at a mining-tech startup",
+    "Filed first patent on a sorting algorithm",
+    "Co-authored with mining-operations engineers"
+  ],
+  "description": "Gabriel builds vision systems that sort ore by mineral content in real time, cutting energy and waste in mineral processing. His imaging and ML skills fit a mining-technology company modernizing extraction."
+}

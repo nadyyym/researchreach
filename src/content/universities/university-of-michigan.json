@@ -1,0 +1,12 @@
+{
+  "name": "University of Michigan",
+  "country": "United States",
+  "city": "Ann Arbor",
+  "type": "public",
+  "researcherCount": 5000,
+  "avgHindex": 48,
+  "grantCount": 4200,
+  "departments": ["Engineering", "Medicine", "Computer Science and Engineering", "Chemistry", "Physics", "Public Health", "Materials Science and Engineering", "Biomedical Engineering"],
+  "topFields": ["Materials Science", "Artificial Intelligence", "Epidemiology", "Robotics", "Immunology"],
+  "description": "The University of Michigan is one of the largest public research universities in the United States, consistently ranking among the top in federal research expenditure. Its strengths span engineering, public health, and the life sciences, supported by an expansive medical center and engineering campus."
+}

@@ -1,0 +1,26 @@
+{
+  "name": "RWTH Aachen University",
+  "country": "Germany",
+  "city": "Aachen",
+  "type": "public",
+  "researcherCount": 5200,
+  "avgHindex": 40,
+  "grantCount": 3400,
+  "departments": [
+    "Mechanical Engineering",
+    "Electrical Engineering",
+    "Materials Science",
+    "Civil Engineering",
+    "Computer Science",
+    "Chemistry",
+    "Physics"
+  ],
+  "topFields": [
+    "Production Engineering",
+    "Materials Science",
+    "Energy Systems",
+    "Mobility",
+    "Automation"
+  ],
+  "description": "RWTH Aachen is one of Europe's largest technical universities and a magnet for industrial R&D partnerships. Its sprawling campus cluster co-locates Fraunhofer institutes and corporate labs, making it central to German engineering and energy-transition research."
+}

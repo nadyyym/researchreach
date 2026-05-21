@@ -1,0 +1,25 @@
+{
+  "name": "University of Padua",
+  "country": "Italy",
+  "city": "Padua",
+  "type": "public",
+  "researcherCount": 3300,
+  "avgHindex": 44,
+  "grantCount": 2000,
+  "departments": [
+    "Physics and Astronomy",
+    "Medicine",
+    "Biology",
+    "Chemistry",
+    "Engineering",
+    "Mathematics"
+  ],
+  "topFields": [
+    "Astronomy",
+    "Cardiology",
+    "Molecular Medicine",
+    "Particle Physics",
+    "Neuroscience"
+  ],
+  "description": "Founded in 1222, the University of Padua is where Galileo taught and remains a leading Italian research center. It is especially strong in astronomy, medicine, and the physical sciences, hosting major contributions to gravitational-wave detection."
+}

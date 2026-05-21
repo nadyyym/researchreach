@@ -1,0 +1,18 @@
+{
+  "name": "Andrew Ng",
+  "institution": "Stanford University",
+  "field": "Machine Learning",
+  "hindex": 150,
+  "grantCount": 35,
+  "patents": 25,
+  "publications": 300,
+  "orcid": "0000-0002-1889-3055",
+  "industryTies": [
+    "Coursera",
+    "Google Brain",
+    "Baidu",
+    "Landing AI",
+    "DeepLearning.AI"
+  ],
+  "description": "Andrew Ng co-founded Google Brain, led AI at Baidu, and democratized machine-learning education through Coursera. His research spans deep learning, reinforcement learning, and applied AI for manufacturing."
+}

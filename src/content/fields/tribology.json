@@ -1,0 +1,9 @@
+{
+  "name": "Tribology",
+  "subfields": ["Friction Science", "Lubrication Theory", "Wear Mechanics", "Contact Mechanics", "Nanotribology"],
+  "keyTechnologies": ["Atomic Force Microscopy", "Pin-on-Disk Tribometers", "Quartz Crystal Microbalance", "Surface Profilometry", "Molecular Dynamics Simulation"],
+  "topInstitutions": ["Imperial College London", "RWTH Aachen", "Tsinghua University", "Georgia Tech", "ETH Zurich"],
+  "researcherCount": 9000,
+  "avgFunding": "$290K",
+  "description": "Tribology is the science of interacting surfaces in relative motion, encompassing friction, wear, and lubrication. It is critical to energy efficiency, machine reliability, and the design of everything from artificial joints to spacecraft mechanisms."
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Volcanology",
+  "subfields": ["Physical Volcanology", "Volcano Geophysics", "Petrology of Magmas", "Volcanic Hazards", "Submarine Volcanism"],
+  "keyTechnologies": ["InSAR Deformation Monitoring", "Gas Spectrometry (DOAS)", "Seismic Tomography", "Thermal Infrared Imaging", "Tephra Geochemistry"],
+  "topInstitutions": ["University of Hawaii", "ETH Zurich", "University of Bristol", "Tokyo Institute of Technology", "GFZ Potsdam"],
+  "researcherCount": 5500,
+  "avgFunding": "$380K",
+  "description": "Volcanology is the study of volcanoes, magma, and the eruptive processes that shape the Earth's surface. It combines geophysics, geochemistry, and field observation to forecast eruptions and mitigate hazards to populations living near active volcanoes."
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Chemicals & Materials",
+  "companies": ["BASF", "Dow", "DuPont", "3M", "Covestro", "Solvay", "Celanese", "Carbon", "Mango Materials", "Evonik"],
+  "targetResearchers": "Polymer chemists, materials scientists, computational chemists, and chemical engineers working on specialty materials, catalysis, and sustainable polymers",
+  "marketSize": "$5.7T",
+  "useCases": ["Specialty-materials IP licensing", "Recruiting polymer and materials PhDs", "Sponsored research with university materials centers", "Computational-materials platform validation", "Joint development on sustainable polymers", "Academic consortium membership"],
+  "description": "The chemicals and materials industry commercializes university research in polymer science, catalysis, and computational materials discovery into coatings, composites, and specialty chemicals. Major players maintain long-running sponsored-research relationships with university materials centers and recruit steadily from chemistry and chemical-engineering PhD programs. Increasingly, machine-learning-driven materials discovery has tightened the loop between academic computational chemists and industrial R&D pipelines."
+}

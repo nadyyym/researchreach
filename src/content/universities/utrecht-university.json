@@ -1,0 +1,26 @@
+{
+  "name": "Utrecht University",
+  "country": "Netherlands",
+  "city": "Utrecht",
+  "type": "public",
+  "researcherCount": 3500,
+  "avgHindex": 48,
+  "grantCount": 2400,
+  "departments": [
+    "Physics",
+    "Chemistry",
+    "Biology",
+    "Geosciences",
+    "Medicine",
+    "Veterinary Medicine",
+    "Pharmacy"
+  ],
+  "topFields": [
+    "Climate Science",
+    "Chemistry",
+    "Developmental Biology",
+    "Veterinary Science",
+    "Pharmacology"
+  ],
+  "description": "Utrecht University consistently ranks among continental Europe's top research universities. It is particularly strong in climate science, chemistry, and the life sciences, and hosts the influential Hubrecht developmental-biology institute."
+}

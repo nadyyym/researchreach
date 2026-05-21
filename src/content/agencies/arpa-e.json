@@ -1,0 +1,8 @@
+{
+  "name": "ARPA-E",
+  "country": "United States",
+  "type": "government",
+  "budget": "$0.5B",
+  "programs": ["OPEN Funding Solicitations", "Focused Technology Programs", "SCALEUP", "Exploratory Topics", "Technology-to-Market"],
+  "description": "ARPA-E is the U.S. Department of Energy's advanced research agency for high-risk, high-reward energy technologies. It funds transformational projects in energy storage, generation, and efficiency that are too early for private investment."
+}

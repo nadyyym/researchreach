@@ -1,0 +1,22 @@
+{
+  "name": "Mariam Said",
+  "institution": "King Abdullah University of Science and Technology",
+  "field": "Desalination",
+  "advisor": "Dr. Gyorgy Szekely",
+  "thesis": "Solar-driven membrane distillation for brine-zero desalination",
+  "publications": 6,
+  "skills": [
+    "Membrane Fabrication",
+    "Thermal Modeling",
+    "Python",
+    "Water Chemistry",
+    "Pilot Testing",
+    "Process Optimization"
+  ],
+  "transitionSignals": [
+    "Internship at a desalination technology firm",
+    "Co-authored with utility R&D team",
+    "Presented at desalination industry conference"
+  ],
+  "description": "Mariam designs solar membrane-distillation systems that eliminate brine discharge in arid coastal regions. Her membrane and pilot-testing experience fits a water-technology company deploying sustainable desalination."
+}

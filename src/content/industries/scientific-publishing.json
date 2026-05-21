@@ -1,0 +1,8 @@
+{
+  "name": "Scientific Publishing",
+  "companies": ["Elsevier", "Springer Nature", "Wiley", "Clarivate", "Digital Science", "Frontiers", "PLOS", "MDPI", "ResearchGate", "Cambridge University Press"],
+  "targetResearchers": "Active publishing researchers, journal editors, peer reviewers, and lab heads who author, review, and recommend institutional subscriptions",
+  "marketSize": "$28B",
+  "useCases": ["Editorial board and reviewer recruitment", "Author acquisition for journals", "Institutional subscription influence mapping", "Research-tool and analytics product adoption", "KOL identification for special issues", "Open-access APC outreach to funded labs"],
+  "description": "The scientific publishing industry sells journals, databases, and research-analytics tools to the same academic researchers who author and review its content. Identifying productive, well-funded authors is essential for both editorial recruitment and product sales, since lab heads influence institutional subscription and tooling decisions. Targeting researchers by publication output, funding, and editorial activity is core to acquiring authors and growing analytics-product adoption."
+}

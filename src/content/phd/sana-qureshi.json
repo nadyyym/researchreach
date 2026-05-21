@@ -1,0 +1,22 @@
+{
+  "name": "Sana Qureshi",
+  "institution": "University of Toronto",
+  "field": "Medical Imaging AI",
+  "advisor": "Dr. Marzyeh Ghassemi",
+  "thesis": "Robust and fair deep learning for multi-site radiology deployment",
+  "publications": 9,
+  "skills": [
+    "PyTorch",
+    "Medical Image Analysis",
+    "Python",
+    "Domain Adaptation",
+    "Clinical Validation",
+    "Statistics"
+  ],
+  "transitionSignals": [
+    "Internship at a radiology-AI company",
+    "Co-authored with hospital partners",
+    "Presented at MICCAI clinical-translation workshop"
+  ],
+  "description": "Sana builds imaging models that maintain accuracy and fairness across hospitals with different scanners and populations. Her clinical-validation focus fits a medical-AI company navigating regulatory deployment."
+}

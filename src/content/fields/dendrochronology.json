@@ -1,0 +1,9 @@
+{
+  "name": "Dendrochronology",
+  "subfields": ["Dendroclimatology", "Dendroarchaeology", "Dendroecology", "Isotope Dendrochronology", "Fire History Reconstruction"],
+  "keyTechnologies": ["Tree-Ring Crossdating", "Stable Isotope Analysis", "X-ray Densitometry", "Increment Borers", "High-Resolution Ring Scanners"],
+  "topInstitutions": ["University of Arizona", "Swiss Federal Research Institute WSL", "Columbia University", "University of Cambridge", "Johannes Gutenberg University Mainz"],
+  "researcherCount": 2800,
+  "avgFunding": "$210K",
+  "description": "Dendrochronology is the science of dating and analyzing tree rings to reconstruct past environments and events. Its precisely dated records illuminate climate variability, drought, fire regimes, and the chronology of archaeological structures."
+}

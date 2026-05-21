@@ -1,0 +1,22 @@
+{
+  "name": "Grace Adeyemi",
+  "institution": "University of Oxford",
+  "field": "Synthetic Biology",
+  "advisor": "Dr. George-Wei Wang",
+  "thesis": "Cell-free biosensors for rapid environmental contaminant detection",
+  "publications": 7,
+  "skills": [
+    "Cell-Free Systems",
+    "Molecular Biology",
+    "Microfluidics",
+    "Python",
+    "Assay Development",
+    "Lyophilization"
+  ],
+  "transitionSignals": [
+    "Internship at a synthetic-biology startup",
+    "Filed first patent on a biosensor",
+    "Co-authored with industry scientists"
+  ],
+  "description": "Grace develops freeze-dried cell-free biosensors that detect water contaminants in the field within minutes. Her assay-development and microfluidics skills suit a synthetic-biology company commercializing diagnostic kits."
+}

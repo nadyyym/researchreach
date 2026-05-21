@@ -1,0 +1,12 @@
+{
+  "name": "KAIST",
+  "country": "South Korea",
+  "city": "Daejeon",
+  "type": "public",
+  "researcherCount": 2400,
+  "avgHindex": 42,
+  "grantCount": 1900,
+  "departments": ["Electrical Engineering", "Computer Science", "Mechanical Engineering", "Chemistry", "Bio and Brain Engineering", "Materials Science and Engineering", "Physics", "Aerospace Engineering"],
+  "topFields": ["Artificial Intelligence", "Robotics", "Materials Science", "Nanotechnology", "Quantum Computing"],
+  "description": "The Korea Advanced Institute of Science and Technology is South Korea's flagship research university for science and engineering. Established to drive national industrial innovation, it is a global leader in robotics, semiconductors, and artificial intelligence with deep ties to Korean industry."
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Serbia",
+  "code": "RS",
+  "topInstitutions": ["University of Belgrade", "University of Novi Sad", "Institute of Physics Belgrade", "Vinca Institute of Nuclear Sciences"],
+  "topAgencies": ["Science Fund of the Republic of Serbia", "Ministry of Science"],
+  "researchOutput": 13000,
+  "topFields": ["Physics", "Chemistry", "Mathematics", "Materials Science", "Biomedical Science"],
+  "description": "Serbia's research is anchored by the University of Belgrade and specialized institutes including the Vinca nuclear sciences center. It maintains strong traditions in physics, mathematics, and chemistry."
+}

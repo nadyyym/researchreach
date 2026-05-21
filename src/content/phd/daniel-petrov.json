@@ -1,0 +1,22 @@
+{
+  "name": "Daniel Petrov",
+  "institution": "Carnegie Mellon University",
+  "field": "Autonomous Systems",
+  "advisor": "Dr. Deva Ramanan",
+  "thesis": "Robust perception under sensor degradation for autonomous vehicles",
+  "publications": 9,
+  "skills": [
+    "C++",
+    "PyTorch",
+    "Sensor Fusion",
+    "LiDAR Processing",
+    "Simulation (CARLA)",
+    "Safety Validation"
+  ],
+  "transitionSignals": [
+    "Internship at Aurora Innovation",
+    "Co-authored with Waymo researchers",
+    "Holds a Kaggle perception competition medal"
+  ],
+  "description": "Daniel builds perception stacks that stay reliable when cameras are blinded by sun or rain, tested in high-fidelity simulation and on a research vehicle. His safety-validation focus suits an autonomous-driving company preparing for deployment."
+}

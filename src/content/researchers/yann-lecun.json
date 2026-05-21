@@ -1,0 +1,12 @@
+{
+  "name": "Yann LeCun",
+  "institution": "New York University",
+  "field": "Machine Learning",
+  "hindex": 165,
+  "grantCount": 25,
+  "patents": 30,
+  "publications": 380,
+  "orcid": "0000-0002-9259-9061",
+  "industryTies": ["Meta AI (FAIR)", "NYU Center for Data Science"],
+  "description": "Yann LeCun is a founding figure of deep learning who developed convolutional neural networks now ubiquitous in computer vision. He shared the 2018 Turing Award and leads fundamental AI research while championing self-supervised learning approaches."
+}

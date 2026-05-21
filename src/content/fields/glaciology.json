@@ -1,0 +1,9 @@
+{
+  "name": "Glaciology",
+  "subfields": ["Ice Sheet Dynamics", "Paleoclimatology", "Glacial Hydrology", "Sea-Ice Physics", "Subglacial Geology"],
+  "keyTechnologies": ["Ice Core Drilling", "Ground-Penetrating Radar", "Satellite Altimetry", "GPS Strain Networks", "Borehole Sensors"],
+  "topInstitutions": ["University of Cambridge", "University of Washington", "ETH Zurich", "University of Copenhagen", "Scripps Institution of Oceanography"],
+  "researcherCount": 6500,
+  "avgFunding": "$410K",
+  "description": "Glaciology is the study of ice in all its forms, from mountain glaciers to continental ice sheets. It is central to understanding sea-level rise, paleoclimate records preserved in ice cores, and the feedbacks between cryosphere and global climate."
+}

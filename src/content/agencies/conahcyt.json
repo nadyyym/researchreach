@@ -1,0 +1,8 @@
+{
+  "name": "National Council of Humanities, Sciences and Technologies (CONAHCYT)",
+  "country": "Mexico",
+  "type": "government",
+  "budget": "$1.5B",
+  "programs": ["National System of Researchers", "Frontier Science Grants", "Graduate Scholarships", "National Laboratories", "Pronaces Strategic Programmes", "Postdoctoral Stays"],
+  "description": "CONAHCYT, formerly CONACYT, is Mexico's federal agency for promoting scientific research and technological development. It administers the national researcher registry, graduate scholarships, and strategic programmes addressing national priorities."
+}

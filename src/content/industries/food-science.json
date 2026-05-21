@@ -1,0 +1,8 @@
+{
+  "name": "Food Science",
+  "companies": ["Nestlé R&D", "Danone", "Mondelez International", "Impossible Foods", "Perfect Day", "Motif FoodWorks", "Ginkgo Bioworks", "ADM", "Chr. Hansen", "Givaudan"],
+  "targetResearchers": "Food scientists, fermentation engineers, flavor chemists, and nutrition researchers working on alternative proteins, precision fermentation, and functional ingredients",
+  "marketSize": "$9.4T",
+  "useCases": ["Precision-fermentation strain licensing", "Recruiting food-science and fermentation PhDs", "Sponsored research with university food-science departments", "Sensory and nutrition study collaboration", "Alternative-protein platform co-development", "Ingredient IP partnerships"],
+  "description": "The food science industry turns academic work in fermentation, flavor chemistry, and nutrition into alternative proteins, functional ingredients, and reformulated products. Companies fund university food-science departments for sensory and nutrition studies and recruit fermentation and food-engineering PhDs as the alternative-protein and precision-fermentation categories scale. Strain and process IP frequently originates in academic labs before being licensed into commercial production."
+}

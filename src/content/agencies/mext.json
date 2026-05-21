@@ -1,0 +1,8 @@
+{
+  "name": "Japan Society for the Promotion of Science / MEXT Programs",
+  "country": "Japan",
+  "type": "government",
+  "budget": "$3.0B",
+  "programs": ["Grants-in-Aid for Scientific Research (KAKENHI)", "World Premier International Research Centers", "Leading Initiative for Excellent Young Researchers", "Top Global University Project", "Strategic Basic Research", "Tenure-Track Promotion"],
+  "description": "MEXT is Japan's ministry overseeing science, education, and technology policy and funding. Through KAKENHI and flagship centre programmes it underwrites the bulk of competitive academic research across Japanese universities and institutes."
+}

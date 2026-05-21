@@ -1,0 +1,25 @@
+{
+  "name": "Weizmann Institute of Science",
+  "country": "Israel",
+  "city": "Rehovot",
+  "type": "private",
+  "researcherCount": 1500,
+  "avgHindex": 58,
+  "grantCount": 1900,
+  "departments": [
+    "Physics",
+    "Chemistry",
+    "Mathematics and Computer Science",
+    "Biology",
+    "Biochemistry",
+    "Neuroscience"
+  ],
+  "topFields": [
+    "Structural Biology",
+    "Particle Physics",
+    "Immunology",
+    "Chemistry",
+    "Cryo-EM"
+  ],
+  "description": "The Weizmann Institute is one of the world's premier basic-research institutions, focused exclusively on the natural sciences. Despite its small size it produces extraordinarily high-impact work in structural biology, chemistry, and physics."
+}

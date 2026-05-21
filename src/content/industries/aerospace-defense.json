@@ -1,0 +1,8 @@
+{
+  "name": "Aerospace & Defense",
+  "companies": ["Lockheed Martin", "Boeing", "Northrop Grumman", "RTX (Raytheon)", "SpaceX", "Anduril Industries", "L3Harris", "BAE Systems", "Blue Origin", "Aerospace Corporation"],
+  "targetResearchers": "Aerospace engineers, control theorists, hypersonics and propulsion researchers, and applied physicists with security-cleared or clearance-eligible profiles",
+  "marketSize": "$430B",
+  "useCases": ["University Affiliated Research Center partnerships", "Recruiting aerospace and controls PhDs", "DARPA and AFRL-adjacent sponsored research", "Hypersonics and propulsion IP collaboration", "Autonomy and sensor-fusion talent pipelines", "Cleared-researcher recruitment"],
+  "description": "The aerospace and defense sector relies on academic engineering and applied-physics research for advances in propulsion, hypersonics, autonomy, and sensing. Primes and defense startups fund University Affiliated Research Centers, co-author on DARPA and AFRL programs, and recruit clearance-eligible PhDs through specialized pipelines. Because much of the work touches export control, identifying citizenship-eligible and clearance-ready researchers is a distinct prospecting challenge."
+}

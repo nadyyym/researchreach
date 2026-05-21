@@ -1,0 +1,11 @@
+{
+  "name": "Mei-Lin Tan",
+  "institution": "University of Cambridge",
+  "field": "Synthetic Biology",
+  "advisor": "Dr. Jim Haseloff",
+  "thesis": "Engineered genetic circuits for programmable biosensing in microbial consortia",
+  "publications": 7,
+  "skills": ["Molecular Cloning", "CRISPR", "Flow Cytometry", "Python", "Bioinformatics", "Fermentation"],
+  "transitionSignals": ["Internship at Ginkgo Bioworks", "Co-authored with industry scientists", "Won iGEM startup track"],
+  "description": "Mei-Lin designs synthetic gene circuits that let engineered microbes detect and report environmental signals. Her industrial internship and translational mindset make her well suited to a synthetic biology platform company."
+}

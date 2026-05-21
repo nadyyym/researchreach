@@ -1,0 +1,16 @@
+{
+  "name": "Steven Chu",
+  "institution": "Stanford University",
+  "field": "Atomic Physics",
+  "hindex": 110,
+  "grantCount": 52,
+  "patents": 12,
+  "publications": 420,
+  "orcid": "0000-0002-5223-9426",
+  "industryTies": [
+    "Bell Labs",
+    "US Department of Energy",
+    "Amprius"
+  ],
+  "description": "Steven Chu won the Nobel Prize for developing methods to cool and trap atoms with laser light, foundational to atomic clocks and quantum sensing. He later served as US Secretary of Energy and works on energy storage and climate technology."
+}

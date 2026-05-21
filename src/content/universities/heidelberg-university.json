@@ -1,0 +1,25 @@
+{
+  "name": "Heidelberg University",
+  "country": "Germany",
+  "city": "Heidelberg",
+  "type": "public",
+  "researcherCount": 3800,
+  "avgHindex": 48,
+  "grantCount": 2700,
+  "departments": [
+    "Medicine",
+    "Biosciences",
+    "Physics and Astronomy",
+    "Chemistry and Earth Sciences",
+    "Mathematics and Computer Science",
+    "Molecular Biology"
+  ],
+  "topFields": [
+    "Molecular Biology",
+    "Oncology",
+    "Astrophysics",
+    "Immunology",
+    "Organic Chemistry"
+  ],
+  "description": "Founded in 1386, Heidelberg University is Germany's oldest university and a powerhouse in the life sciences. Its proximity to EMBL and the DKFZ cancer center makes it a European hub for molecular biology and translational medical research."
+}

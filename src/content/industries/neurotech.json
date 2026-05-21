@@ -1,0 +1,25 @@
+{
+  "name": "Neurotech",
+  "companies": [
+    "Neuralink",
+    "Synchron",
+    "Paradromics",
+    "Precision Neuroscience",
+    "Blackrock Neurotech",
+    "Kernel",
+    "Cognixion",
+    "Motif Neurotech",
+    "Iota Biosciences",
+    "Forest Neurotech"
+  ],
+  "targetResearchers": "Neuroscientists and engineers in neural interfaces, signal processing, electrophysiology, and embedded systems",
+  "marketSize": "$20B",
+  "useCases": [
+    "Brain-computer-interface R&D recruitment",
+    "Neural-decoding partnerships",
+    "University neuroscience-lab collaborations",
+    "Implant-engineering talent pipeline",
+    "Clinical neurotech study alliances"
+  ],
+  "description": "Neurotech builds interfaces that read from and write to the nervous system for medical and human-augmentation applications. It recruits neuroscientists and engineers from academia and partners with university labs on decoding algorithms and implantable devices."
+}

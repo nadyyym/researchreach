@@ -1,0 +1,9 @@
+{
+  "name": "Saudi Arabia",
+  "code": "SA",
+  "topInstitutions": ["KAUST", "King Saud University", "King Abdulaziz University", "King Fahd University of Petroleum and Minerals"],
+  "topAgencies": ["KACST", "Ministry of Education", "KAUST"],
+  "researchOutput": 40000,
+  "topFields": ["Materials Science", "Catalysis", "Desalination", "Renewable Energy", "Petroleum Engineering"],
+  "description": "Saudi Arabia has rapidly scaled its research investment, led by the graduate-only KAUST and well-funded national universities. Its strengths concentrate in catalysis, water desalination, solar energy, and advanced materials."
+}

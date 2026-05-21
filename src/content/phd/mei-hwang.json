@@ -1,0 +1,22 @@
+{
+  "name": "Mei Hwang",
+  "institution": "KAIST",
+  "field": "Display Technology",
+  "advisor": "Dr. Jang-Hyun Kim",
+  "thesis": "Quantum-dot color-conversion layers for micro-LED displays",
+  "publications": 7,
+  "skills": [
+    "Nanomaterial Synthesis",
+    "Optical Characterization",
+    "Thin-Film Processing",
+    "Python",
+    "Device Fabrication",
+    "Color Science"
+  ],
+  "transitionSignals": [
+    "Internship at Samsung Display",
+    "Filed first patent on a color-conversion film",
+    "Co-authored with display-industry engineers"
+  ],
+  "description": "Mei develops quantum-dot films that deliver wide color gamut and high brightness for micro-LED displays. Her materials and device-fabrication skills fit a display-technology manufacturer."
+}
