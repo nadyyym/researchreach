@@ -2,33 +2,25 @@
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
-import { execFileSync } from "node:child_process";
-import { existsSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 
 const projectRoot = path.dirname(fileURLToPath(import.meta.url));
-const mtimeCache = new Map();
 
-function gitMtime(absPath) {
-  if (mtimeCache.has(absPath)) return mtimeCache.get(absPath);
-  let mtime = null;
-  try {
-    const out = execFileSync(
-      "git",
-      ["log", "-1", "--format=%aI", "--", absPath],
-      {
-        cwd: projectRoot,
-        encoding: "utf8",
-        stdio: ["ignore", "pipe", "ignore"],
-      },
-    ).trim();
-    mtime = out || null;
-  } catch {
-    mtime = null;
-  }
-  mtimeCache.set(absPath, mtime);
-  return mtime;
+// Per-source git edit dates, precomputed by scripts/gen-lastmod.mjs and
+// committed as src/data/lastmod.json. Read here instead of shelling out to
+// `git log` at build time, which would require a full clone (Vercel does a
+// shallow --depth=10 clone, and VERCEL_DEEP_CLONE=true breaks cloning on this
+// repo). Keyed by repo-relative POSIX path.
+const lastmodPath = path.join(projectRoot, "src/data/lastmod.json");
+const lastmodMap = existsSync(lastmodPath)
+  ? JSON.parse(readFileSync(lastmodPath, "utf8"))
+  : {};
+
+function lastmodFor(absPath) {
+  const rel = path.relative(projectRoot, absPath).split(path.sep).join("/");
+  return lastmodMap[rel] ?? null;
 }
 
 function resolveSourceForUrl(url) {
@@ -66,7 +58,7 @@ export default defineConfig({
         !page.includes("/404"),
       serialize(item) {
         const source = resolveSourceForUrl(item.url);
-        const mtime = source ? gitMtime(source) : null;
+        const mtime = source ? lastmodFor(source) : null;
         if (mtime) {
           item.lastmod = mtime;
         } else {

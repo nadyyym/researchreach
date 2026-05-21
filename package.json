@@ -6,7 +6,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lastmod": "node scripts/gen-lastmod.mjs",
+    "prebuild": "node scripts/gen-lastmod.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.0",
