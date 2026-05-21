@@ -1,0 +1,9 @@
+{
+  "name": "Glycobiology",
+  "subfields": ["Glycoprotein Structure", "Glycan-Mediated Cell Signaling", "Lectins and Carbohydrate Recognition", "Glycosaminoglycans", "Tumor Glycomics"],
+  "keyTechnologies": ["Glycan Microarrays", "Mass Spectrometry Glycoproteomics", "Cryo-EM of Glycoprotein Complexes", "Chemoenzymatic Glycan Synthesis", "Lectin Histochemistry"],
+  "topInstitutions": ["Scripps Research Institute", "Oxford Glycobiology Institute", "Sanford-Burnham Prebys Medical Discovery Institute", "UC San Diego", "Max Planck Institute of Colloids and Interfaces"],
+  "researcherCount": 5400,
+  "avgFunding": "$860K",
+  "description": "Glycobiology explores the structures, biosynthesis, and biological roles of glycans — the complex carbohydrate chains that coat virtually every cell surface and decorate secreted proteins. Long overshadowed by genomics and proteomics, the glycome is now recognized as a critical layer of biological information: glycans modulate protein folding, regulate immune checkpoints, mediate pathogen invasion, and carry cancer-specific signatures that are increasingly exploited as biomarkers. The SARS-CoV-2 spike protein's dense glycan shield, which camouflages it from antibodies, brought broad scientific attention to the field. Biopharmaceutical manufacturing critically depends on glycobiology because the glycan profile of a therapeutic antibody determines its half-life and effector functions. Researchers combine organic chemistry, structural biology, cell biology, and data-science approaches to decode what remains the most chemically complex layer of the cell."
+}

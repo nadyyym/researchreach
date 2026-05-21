@@ -1,0 +1,11 @@
+{
+  "name": "Lieven Vandenberghe",
+  "institution": "University of California, Los Angeles",
+  "field": "Optimization / Electrical Engineering",
+  "hindex": 68,
+  "grantCount": 25,
+  "patents": 8,
+  "publications": 230,
+  "industryTies": ["MOSEK ApS", "CVX Research", "Qualcomm Research"],
+  "description": "Lieven Vandenberghe co-authored with Stephen Boyd the seminal textbook Convex Optimization, which has become the definitive graduate-level reference and is downloaded millions of times annually from Stanford's server — credited with training an entire generation of engineers in interior-point methods and semidefinite programming. His research established efficient algorithms for linear matrix inequalities that are now embedded in MOSEK and CVXPY, the dominant open-source convex-optimization solvers used in everything from portfolio construction to neural-architecture search. Vandenberghe's current work on chordal sparsity exploitation in large-scale structured semidefinite programs has reduced solve times by orders of magnitude for power-grid optimization problems. He is a Fellow of the IEEE and has advised Qualcomm Research on beamforming optimization in 5G and 6G antenna systems. His CVXPY Python library consistently ranks among the most-depended-upon scientific computing packages on PyPI."
+}

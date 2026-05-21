@@ -1,0 +1,9 @@
+{
+  "name": "Cognitive Neuroscience",
+  "subfields": ["Memory and Learning", "Attention and Executive Control", "Social Cognition", "Language Processing", "Decision-Making and Reward"],
+  "keyTechnologies": ["Functional MRI", "EEG and MEG", "Transcranial Magnetic Stimulation", "Eye-Tracking", "Computational Modeling of Neural Circuits"],
+  "topInstitutions": ["MIT McGovern Institute", "UCL Gatsby Computational Neuroscience Unit", "Max Planck Institute for Human Cognitive and Brain Sciences", "Stanford Wu Tsai Neurosciences Institute", "Karolinska Institutet"],
+  "researcherCount": 28000,
+  "avgFunding": "$950K",
+  "description": "Cognitive neuroscience maps the neural substrates of mental functions — perception, memory, language, attention, and social reasoning — using a combination of neuroimaging, electrophysiology, lesion studies, and computational models. The field grew out of a productive collision between cognitive psychology and systems neuroscience in the 1980s and has since been transformed by non-invasive brain stimulation and high-density recording technologies. Current frontiers include large-scale connectome mapping, real-world naturalistic neuroimaging, and the mechanistic decoding of how the prefrontal cortex orchestrates goal-directed behavior. Its outputs directly inform the design of AI architectures, clinical diagnosis of dementias, and educational interventions. Researchers range from bench neuroscientists handling electrophysiology rigs to computational modelers working primarily in Python and MATLAB."
+}

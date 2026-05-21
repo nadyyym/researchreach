@@ -1,0 +1,26 @@
+{
+  "name": "University of Birmingham",
+  "country": "United Kingdom",
+  "city": "Birmingham",
+  "type": "public",
+  "researcherCount": 3800,
+  "avgHindex": 49,
+  "grantCount": 2500,
+  "departments": [
+    "Medicine",
+    "Engineering",
+    "Chemistry",
+    "Physics",
+    "Life Sciences",
+    "Computer Science",
+    "Social Sciences"
+  ],
+  "topFields": [
+    "Cancer Immunotherapy",
+    "Quantum Sensing",
+    "Particle Physics",
+    "Metallurgy",
+    "Infection Biology"
+  ],
+  "description": "The University of Birmingham is a UK Russell Group institution with particularly deep strengths in quantum technology and cancer immunology, hosting the UK National Quantum Technology Hub for Sensors and Timing that consolidates a multi-million-pound EPSRC investment across physics and engineering departments. Its Institute of Cancer and Genomic Sciences operates within the Queen Elizabeth Hospital campus — Europe's largest single-site teaching hospital — providing clinical trial infrastructure and translational research capacity that generate continuous demand for oncology reagents, sequencing platforms, and data management tools. The School of Metallurgy and Materials is globally recognized for nuclear materials and advanced alloy research, attracting Rolls-Royce and UKAEA co-funded programs that sustain specialist materials characterization equipment budgets. Birmingham's Midlands Engine region positioning gives it access to WMCA devolved R&D funding streams, supplementing UKRI grants and creating additional pathways for applied-science vendor partnerships."
+}

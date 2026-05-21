@@ -1,0 +1,26 @@
+{
+  "name": "Charles University",
+  "country": "Czech Republic",
+  "city": "Prague",
+  "type": "public",
+  "researcherCount": 3100,
+  "avgHindex": 38,
+  "grantCount": 1650,
+  "departments": [
+    "Medicine",
+    "Natural Sciences",
+    "Mathematics and Physics",
+    "Pharmacy",
+    "Law",
+    "Social Sciences",
+    "Humanities"
+  ],
+  "topFields": [
+    "Immunology",
+    "Particle Physics",
+    "Neuroscience",
+    "Structural Biology",
+    "Epidemiology"
+  ],
+  "description": "Charles University, founded in 1348, is the oldest university in Central Europe and houses the Czech Republic's highest concentration of biomedical and natural-science researchers, supported primarily through Czech Science Foundation grants and large EU structural-fund allocations. Its three medical faculties collectively operate the country's main teaching hospitals in Prague and run prolific clinical trial programs attracting pharma partnerships with Roche, Novartis, and other multinationals. The Faculty of Mathematics and Physics is a key partner in CERN experiments and ESA observational programs, making it an important venue for precision-instrument vendors. Horizon Europe funding has accelerated lab modernization since 2021, expanding the addressable market for analytical chemistry, imaging, and bioinformatics tools across multiple campuses."
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Slovakia",
+  "code": "SK",
+  "topInstitutions": ["Comenius University Bratislava", "Slovak University of Technology", "Slovak Academy of Sciences", "University of Žilina", "Technical University of Košice"],
+  "topAgencies": ["Slovak Research and Development Agency", "VEGA", "Slovak Academy of Sciences"],
+  "researchOutput": 12500,
+  "topFields": ["Materials Science", "Computer Science", "Chemistry", "Physics", "Environmental Engineering"],
+  "description": "Slovakia punches above its demographic weight in materials science and chemistry, with the Slovak Academy of Sciences maintaining dedicated institutes across more than thirty disciplines. Comenius University Bratislava is the oldest and most research-intensive university, known for molecular biology and chemistry at European level. EU Structural Funds have accelerated infrastructure investment since 2004 accession, funding large-scale research centers in Bratislava and Košice. The automotive manufacturing boom has driven applied R&D in advanced composites and polymer engineering. Slovakia's publication output has grown steadily, with a strong participation rate in Horizon Europe consortia placing it among the more globally integrated Central European systems."
+}

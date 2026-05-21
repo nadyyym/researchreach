@@ -1,0 +1,8 @@
+{
+  "name": "Cerence",
+  "industry": "AI / Software",
+  "rdSpend": "$0.2B",
+  "academicCollabs": 42,
+  "patents": 1700,
+  "description": "Cerence is the automotive AI company spun out of Nuance Communications in 2019, developing in-vehicle voice assistants and multimodal AI copilots for nearly every major automaker. Its core research program focuses on end-to-end speech recognition, large language model fine-tuning for domain-constrained automotive commands, and sensor-fusion for driver-monitoring systems. Academic partnerships concentrate on Carnegie Mellon's Language Technologies Institute, TU Munich's digital car lab, and several European NLP research groups under EU Horizon grants. Cerence recruits heavily from computational linguistics and acoustics PhD programs, specifically targeting graduates with experience in low-latency inference and on-device model compression. Academic-intelligence buyers covering the automotive-AI or embedded NLP spaces will find Cerence an underappreciated but technically dense employer node."
+}

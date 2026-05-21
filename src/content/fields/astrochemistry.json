@@ -1,0 +1,9 @@
+{
+  "name": "Astrochemistry",
+  "subfields": ["Interstellar Medium Chemistry", "Protoplanetary Disk Chemistry", "Cometary Chemistry", "Astrobiological Chemistry", "High-Redshift Molecular Spectroscopy"],
+  "keyTechnologies": ["Millimeter-Wave Radio Telescopes", "ALMA Interferometry", "Mass Spectrometry in Space", "Quantum Chemical Calculations", "Laboratory Ice Astrophysics"],
+  "topInstitutions": ["Max Planck Institute for Extraterrestrial Physics", "Harvard-Smithsonian Center for Astrophysics", "University of Leiden", "Caltech", "NASA Goddard Space Flight Center"],
+  "researcherCount": 4200,
+  "avgFunding": "$620K",
+  "description": "Astrochemistry investigates the formation, destruction, and abundance of molecules and ions in extraterrestrial environments — from the diffuse interstellar medium to the dense cores of molecular clouds and the atmospheres of exoplanets. It sits at the crossroads of astronomy, physical chemistry, and quantum mechanics, demanding both telescope time and cold-plasma laboratory setups that mimic the near-absolute-zero conditions of space. The field is currently propelled by ALMA's ability to detect complex organic molecules dozens of light-years away, and by JWST's infrared window into protostellar chemistry. Findings directly bear on the origins-of-life question, since the same precursor organics detected in comets are thought to have seeded early Earth. Researchers are typically theoretical and observational chemists who collaborate closely with radio astronomers."
+}

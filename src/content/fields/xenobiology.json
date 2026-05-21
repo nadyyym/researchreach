@@ -1,0 +1,9 @@
+{
+  "name": "Xenobiology",
+  "subfields": ["Synthetic Genetic Polymers (XNAs)", "Expanded Genetic Alphabets", "Orthogonal Ribosomes", "Non-Canonical Amino Acid Incorporation", "Minimal Cell Design"],
+  "keyTechnologies": ["Directed Evolution of Polymerases", "SELEX for XNA Aptamers", "Amber Codon Suppression", "Cell-Free Protein Synthesis Systems", "Next-Generation Sequencing of Synthetic Genomes"],
+  "topInstitutions": ["MRC Laboratory of Molecular Biology Cambridge", "Scripps Research Institute", "Harvard Medical School Church Lab", "ETH Zurich", "University of Copenhagen"],
+  "researcherCount": 1400,
+  "avgFunding": "$1.6M",
+  "description": "Xenobiology engineers living systems — or life-like molecular systems — that use chemistries orthogonal to the canonical DNA/RNA/protein alphabet, asking whether life could be instantiated in molecules with different backbones, base pairs, or amino-acid repertoires. Researchers have already demonstrated that synthetic genetic polymers (XNAs) like HNA and LNA can store information, evolve in directed-evolution campaigns, and encode functional aptamers, establishing that heredity and evolvability are not exclusive to natural nucleic acids. The expanded-alphabet work of the Romesberg and Benner groups pushed the genetic code beyond four bases to six, encoding new amino acids and enabling the synthesis of proteins with unprecedented side-chain chemistry. Biosafety motivates much of the field: orthogonal genetic systems that cannot exchange information with wild-type organisms represent a principled route to biocontainment of synthetic biology applications. Practitioners are a tight-knit community of chemical biologists and synthetic biologists working at the frontier where chemistry and the theory of life intersect."
+}

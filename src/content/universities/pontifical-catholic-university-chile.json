@@ -1,0 +1,26 @@
+{
+  "name": "Pontifical Catholic University of Chile",
+  "country": "Chile",
+  "city": "Santiago",
+  "type": "private",
+  "researcherCount": 2100,
+  "avgHindex": 38,
+  "grantCount": 1450,
+  "departments": [
+    "Engineering",
+    "Medicine",
+    "Physics",
+    "Chemistry",
+    "Computer Science",
+    "Biology",
+    "Mathematics"
+  ],
+  "topFields": [
+    "Astrophysics",
+    "Biomedical Engineering",
+    "Seismology",
+    "Materials Science",
+    "Environmental Science"
+  ],
+  "description": "Pontifical Catholic University of Chile (UC) is the country's leading private research institution and consistently ranks among Latin America's top five universities. Its Institute of Astrophysics benefits from Chile's exceptional Atacama sky access, making it a natural partner for ESO and ALMA observational campaigns. The engineering and medicine faculties together house over 60 active research groups, attracting ANID Millennium Institute grants and bilateral agreements with European agencies. Vendors serving experimental instrumentation, scientific software, or biomedical device markets will find dense clusters of mid-career PIs with substantial discretionary budgets, particularly in the physical and life sciences."
+}

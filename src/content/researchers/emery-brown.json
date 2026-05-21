@@ -1,0 +1,12 @@
+{
+  "name": "Emery Brown",
+  "institution": "Massachusetts General Hospital / MIT",
+  "field": "Anesthesiology / Computational Neuroscience",
+  "hindex": 95,
+  "grantCount": 52,
+  "patents": 16,
+  "publications": 430,
+  "orcid": "0000-0002-4672-7700",
+  "industryTies": ["Masimo Corporation", "Invacare", "Massachusetts General Physicians Organization"],
+  "description": "Emery Brown is both a practicing anesthesiologist and a statistical neuroscientist whose dual appointment at MGH and MIT has produced a body of work reconceptualizing anesthesia as a drug-induced coma whose neural mechanisms can be tracked and controlled in real time using EEG spectral signatures. His group's identification of the frontal-to-occipital alpha-power surge as a biomarker of loss of consciousness led to FDA-cleared monitoring protocols now used in operating rooms across the US. Brown also co-developed the state-space point-process framework for analyzing neural spike trains, a statistical toolkit that transformed how systems neuroscientists decode population activity. He is one of fewer than 20 researchers in American history elected to all three National Academies (Science, Engineering, Medicine) and is a MacArthur Fellow. His current focus is developing closed-loop anesthesia delivery systems that maintain precise unconsciousness depth while minimizing drug dosage and cognitive side effects."
+}

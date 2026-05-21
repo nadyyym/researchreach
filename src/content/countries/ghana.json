@@ -1,0 +1,9 @@
+{
+  "name": "Ghana",
+  "code": "GH",
+  "topInstitutions": ["University of Ghana", "Kwame Nkrumah University of Science and Technology", "University of Cape Coast", "Ghana Institute of Management and Public Administration", "Council for Scientific and Industrial Research"],
+  "topAgencies": ["CSIR Ghana", "National Council for Tertiary Education", "Ghana Research Fund"],
+  "researchOutput": 4200,
+  "topFields": ["Public Health", "Agronomy", "Environmental Science", "Materials Science", "Economics"],
+  "description": "Ghana has established itself as one of West Africa's most stable and internationally connected research systems, benefiting from English-language publication norms and strong diaspora networks. Kwame Nkrumah University of Science and Technology is a continental leader in engineering and applied sciences, regularly partnering with European and American universities on NIH- and Wellcome Trust–funded health trials. CSIR Ghana coordinates over a dozen specialist institutes covering food crops, forestry, water resources, and building materials. The country's growing oil and gas sector has stimulated fresh investment in petroleum engineering and environmental monitoring research. Output is expanding rapidly at roughly 8% per year, with WHO-affiliated programs anchoring global health work."
+}

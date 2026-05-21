@@ -1,0 +1,26 @@
+{
+  "name": "University of California, San Diego",
+  "country": "United States",
+  "city": "San Diego",
+  "type": "public",
+  "researcherCount": 5200,
+  "avgHindex": 56,
+  "grantCount": 3800,
+  "departments": [
+    "Medicine",
+    "Engineering",
+    "Biological Sciences",
+    "Physics",
+    "Neurosciences",
+    "Computer Science",
+    "Oceanography"
+  ],
+  "topFields": [
+    "Neuroscience",
+    "Marine Science",
+    "Nanoengineering",
+    "Genomics",
+    "Cancer Biology"
+  ],
+  "description": "UC San Diego is one of the top ten research universities in the United States by federal R&D expenditure, with a distinctive multidisciplinary culture shaped by its Scripps Institution of Oceanography, Salk Institute adjacency, and the Sanford Consortium for Regenerative Medicine — creating a dense cluster of high-budget life-science labs within walking distance of the main campus. Its Jacobs School of Engineering is a national leader in nanoengineering and photonics, attracting DARPA, NSF, and NIH grants that fund equipment procurement cycles well above peer institutions. The School of Medicine operates 27 research centers and institutes with combined annual research expenditure exceeding $700 million, sustaining one of the broadest consumable and capital equipment purchasing operations in the UC system. UCSD's La Jolla setting in the heart of San Diego's biotech corridor enables industry-sponsored research agreements with hundreds of local companies, giving vendors both academic and translational market access from a single relationship."
+}

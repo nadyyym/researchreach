@@ -1,0 +1,25 @@
+{
+  "name": "Digital Health",
+  "companies": [
+    "Tempus AI",
+    "Flatiron Health",
+    "Aetion",
+    "Nuvation Bio",
+    "Phreesia",
+    "Biofourmis",
+    "Kinsa Health",
+    "Hims & Hers Health",
+    "Sword Health",
+    "Current Health"
+  ],
+  "targetResearchers": "Clinical researchers, biostatisticians, and health informatics scientists working on real-world evidence, clinical NLP, remote patient monitoring, and causal inference in health data",
+  "marketSize": "$820B",
+  "useCases": [
+    "Clinical-NLP PhD recruitment for patient-phenotyping and EHR extraction teams",
+    "University partnerships for real-world evidence methodology research",
+    "Remote-monitoring algorithm development collaborations with clinical engineering programs",
+    "Causal-inference and health-econometrics talent pipeline",
+    "Digital biomarker validation and regulatory-submission R&D"
+  ],
+  "description": "Digital health companies apply data science, machine learning, and connected devices to clinical care, population health management, and pharmaceutical evidence generation. The industry recruits from a wide range of academic disciplines — clinical informatics, epidemiology, biostatistics, and human-computer interaction — that are predominantly trained in university hospitals and public-health programs. Companies like Flatiron Health and Aetion have built their core real-world evidence platforms on methodologies originally developed in academic health economics and pharmaco-epidemiology. Academic intelligence helps digital health firms identify clinical researchers who are publishing on specific disease areas, EHR phenotyping methods, or wearable-sensor validation before those researchers transition to industry or get locked into competing partnerships, enabling faster and more targeted business development."
+}

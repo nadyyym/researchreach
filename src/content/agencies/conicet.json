@@ -1,0 +1,8 @@
+{
+  "name": "CONICET — National Scientific and Technical Research Council",
+  "country": "Argentina",
+  "type": "government",
+  "budget": "$650M",
+  "programs": ["Career Researcher Program", "PICT Project Grants", "PDTS Technology Development", "CONICET–Industry Agreements", "Centro Científico Tecnológico Network"],
+  "description": "CONICET is Argentina's backbone research institution, employing over 12,000 career researchers and 11,000 graduate fellows distributed across a national network of research centers and university institutes. It is consistently ranked as Latin America's most productive research organization per researcher, with particularly strong citation impact in chemistry, materials science, and astrophysics. The career researcher program offers a permanent civil-service research track independent of university teaching loads, an unusual model in the region that has allowed deep specialization. CONICET's Centro Científico Tecnológico system embeds federal research infrastructure directly in provincial capitals, counterbalancing the historical concentration of scientific activity in Buenos Aires. Budget volatility under successive Argentine administrations has periodically disrupted fellowship cohorts, making CONICET research planning heavily dependent on macroeconomic stability."
+}

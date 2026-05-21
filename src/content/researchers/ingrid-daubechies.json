@@ -1,0 +1,12 @@
+{
+  "name": "Ingrid Daubechies",
+  "institution": "Duke University",
+  "field": "Applied Mathematics / Signal Processing",
+  "hindex": 82,
+  "grantCount": 30,
+  "patents": 6,
+  "publications": 280,
+  "orcid": "0000-0002-1831-7529",
+  "industryTies": ["Bell Labs (historical)", "JPEG 2000 Consortium", "National Gallery of Art"],
+  "description": "Ingrid Daubechies constructed the first family of compactly-supported orthonormal wavelets — known as Daubechies wavelets — providing a mathematical basis that transformed digital signal processing, image compression (underpinning JPEG 2000), and medical imaging from the early 1990s onward. She was the first female president of the International Mathematical Union and the first woman to receive the William Benter Prize in Applied Mathematics. Her more recent collaborations with art conservators use wavelet-based X-ray analysis to distinguish a master painter's brushstrokes from over-painting and restorations, work done with the National Gallery of Art and the Prado. Daubechies also applies geometric topology and manifold-learning techniques to paleontology, quantifying tooth-shape variation across primate evolution. She holds membership in the US National Academy of Sciences and the Belgian Royal Academy of Sciences."
+}

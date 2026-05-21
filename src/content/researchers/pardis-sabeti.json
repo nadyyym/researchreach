@@ -1,0 +1,12 @@
+{
+  "name": "Pardis Sabeti",
+  "institution": "Harvard University / Broad Institute",
+  "field": "Computational Genomics / Infectious Disease",
+  "hindex": 74,
+  "grantCount": 38,
+  "patents": 15,
+  "publications": 260,
+  "orcid": "0000-0002-4748-1287",
+  "industryTies": ["Sherlock Biosciences", "Verily Life Sciences", "Chan Zuckerberg Biohub"],
+  "description": "Pardis Sabeti developed BEEHIVE, iSAFE, and related statistical algorithms for detecting recent positive selection in the human genome, identifying hundreds of loci that reveal how human populations have adapted to infectious disease, diet, and climate over the last 100,000 years. Her team was the first to use real-time genomic sequencing to track the evolution of Ebola virus during the 2014 West Africa epidemic, publishing transmission networks in Science while the outbreak was still active — a model for genomic epidemiology now used in every subsequent outbreak response. Sabeti co-founded Sherlock Biosciences to commercialize SHERLOCK, a CRISPR-based nucleic acid detection platform descended from her laboratory's work that received FDA Emergency Use Authorization during COVID-19. A MacArthur Fellow and Howard Hughes Medical Investigator, she also fronts the rock band Thousand Days, using music to communicate science. The Broad Institute's Sabeti Lab runs one of the world's largest functional genomics datasets for hemorrhagic fever viruses."
+}

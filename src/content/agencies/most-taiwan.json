@@ -1,0 +1,8 @@
+{
+  "name": "National Science and Technology Council (NSTC)",
+  "country": "Taiwan",
+  "type": "government",
+  "budget": "$2.1B",
+  "programs": ["Academia Sinica Research Projects", "Young Scholar Columbus Program", "Deep Technology Moonshot", "Taiwan–US Science Cooperation", "AI Innovation Research Centers"],
+  "description": "Taiwan's National Science and Technology Council (formerly MOST) is the primary government body coordinating civilian research funding and national science strategy across universities, national laboratories, and Academia Sinica. It administers the thematic research centers program that has built critical mass in semiconductor physics, display technology, and biomedical engineering aligned with Taiwan's industrial strengths. The Young Scholar Columbus Program has been credited with reversing brain-drain trends in STEM by offering globally competitive starting packages to repatriated postdoctoral researchers. NSTC's Moonshot program targets ten deep-technology frontiers including quantum materials, next-generation AI chips, and precision oncology. Taiwan's high semiconductor IP density gives NSTC-funded research unusual industry-to-academia transfer leverage, compressing the path from publication to commercialization."
+}

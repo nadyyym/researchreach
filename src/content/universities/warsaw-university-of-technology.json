@@ -1,0 +1,26 @@
+{
+  "name": "Warsaw University of Technology",
+  "country": "Poland",
+  "city": "Warsaw",
+  "type": "public",
+  "researcherCount": 2600,
+  "avgHindex": 34,
+  "grantCount": 1300,
+  "departments": [
+    "Electronics",
+    "Mechanical Engineering",
+    "Chemistry",
+    "Physics",
+    "Computer Science",
+    "Civil Engineering",
+    "Biotechnology"
+  ],
+  "topFields": [
+    "Power Electronics",
+    "Robotics",
+    "Chemical Engineering",
+    "Photonics",
+    "Civil Infrastructure"
+  ],
+  "description": "Warsaw University of Technology is Poland's most research-productive technical university and a primary beneficiary of EU Horizon Europe grants channelled through Poland's NCN and NCBR funding agencies. Its faculty of Electronics and Information Technology houses several photonics and telecommunications laboratories whose equipment budgets scale with ongoing EU infrastructure co-financing. The strong engineering culture spans power systems, advanced materials, and robotics — fields that attract significant industry co-funding from European automotive and energy companies operating R&D centers in Warsaw. Vendors targeting Central European technical universities will find WUT's procurement process relatively streamlined thanks to EU public-tender frameworks, and its large postdoctoral community sustains demand for consumables and specialized software licenses year-round."
+}

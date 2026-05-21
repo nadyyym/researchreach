@@ -1,0 +1,9 @@
+{
+  "name": "Sri Lanka",
+  "code": "LK",
+  "topInstitutions": ["University of Colombo", "University of Peradeniya", "University of Moratuwa", "Sri Lanka Institute of Nanotechnology", "Postgraduate Institute of Agriculture"],
+  "topAgencies": ["National Research Council of Sri Lanka", "National Science Foundation", "Industrial Technology Institute"],
+  "researchOutput": 5600,
+  "topFields": ["Agriculture", "Computer Science", "Chemistry", "Public Health", "Materials Science"],
+  "description": "Sri Lanka has a research base punching above its regional weight in agriculture, ayurvedic medicine, and computer science, supported by a long-standing tradition of English-medium tertiary education and high literacy rates. The Postgraduate Institute of Agriculture at Peradeniya coordinates applied research on tea, rubber, and rice — three crops of national economic significance — and maintains active technology-transfer links with the plantation industry. University of Moratuwa is the acknowledged engineering and ICT research leader, regularly placing among Asia's top technology universities. The Sri Lanka Institute of Nanotechnology operates as a government-funded applied research hub targeting export-facing industrial problems. External funding constraints following the 2022 economic crisis slowed research activity significantly, but a recovery plan backed by the Asian Development Bank aims to restore pre-crisis trajectories by 2027."
+}

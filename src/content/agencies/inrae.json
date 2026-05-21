@@ -1,0 +1,8 @@
+{
+  "name": "INRAE — National Research Institute for Agriculture, Food and Environment",
+  "country": "France",
+  "type": "government",
+  "budget": "$1.3B",
+  "programs": ["AgroEcosystems Research", "Food Science and Nutrition", "Climate Adaptation in Agriculture", "MetaProgrammes", "Digital Agriculture"],
+  "description": "INRAE was formed in 2020 through the merger of INRA and IRSTEA, creating France's largest public research organization dedicated to agriculture, food, and the environment and one of the world's leading agroscience institutions by publication output. It operates over 200 research units distributed across fourteen centers spanning metropolitan France and the overseas territories, giving it unique ecological breadth from alpine to tropical environments. Its MetaProgramme architecture funds large interdisciplinary challenges such as livestock microbiome health, organic farming transitions, and biodiversity-inclusive viticulture. INRAE's food science division coordinates clinical nutrition trials and dietary modeling studies that directly inform French and EU food policy. International partnerships span over eighty countries, with flagship joint laboratories in China, Brazil, and Morocco focused on sustainable food systems research."
+}

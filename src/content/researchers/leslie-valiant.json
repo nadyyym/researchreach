@@ -1,0 +1,12 @@
+{
+  "name": "Leslie Valiant",
+  "institution": "Harvard University",
+  "field": "Theoretical Computer Science",
+  "hindex": 78,
+  "grantCount": 22,
+  "patents": 3,
+  "publications": 180,
+  "orcid": "0000-0002-1650-4024",
+  "industryTies": ["IBM Research", "Microsoft Research"],
+  "description": "Leslie Valiant is the inventor of the Probably Approximately Correct (PAC) learning framework, which provided the first rigorous mathematical foundation for machine learning and has shaped computational learning theory for four decades. He introduced the permanent of a matrix as a #P-complete problem, establishing deep connections between counting complexity and algebra. His work on parallel computation through the bulk synchronous parallel (BSP) model influenced the design of distributed systems. Valiant received the Turing Award in 2010 and the Nevanlinna Prize, and he has been central to questions about how the brain could implement computational circuits. His theoretical contributions bridge logic, algorithms, and neuroscience in ways that continue to influence AI research."
+}

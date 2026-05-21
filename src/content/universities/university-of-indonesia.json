@@ -1,0 +1,26 @@
+{
+  "name": "University of Indonesia",
+  "country": "Indonesia",
+  "city": "Depok",
+  "type": "public",
+  "researcherCount": 3200,
+  "avgHindex": 33,
+  "grantCount": 1750,
+  "departments": [
+    "Medicine",
+    "Engineering",
+    "Science",
+    "Public Health",
+    "Dentistry",
+    "Pharmacy",
+    "Economics"
+  ],
+  "topFields": [
+    "Tropical Epidemiology",
+    "Materials Engineering",
+    "Natural Product Chemistry",
+    "Environmental Sciences",
+    "Biomedical Engineering"
+  ],
+  "description": "The University of Indonesia (UI) is the country's highest-ranked research institution, operating the largest medical education complex in Southeast Asia and running clinical research programs that cover one of the world's most diverse and epidemiologically significant patient populations. Its Faculty of Engineering in Depok houses laboratories in advanced materials, chemical engineering, and environmental systems funded through the National Research and Innovation Agency (BRIN) and competitive LPDP grants that have grown substantially since 2020. UI's Faculty of Public Health manages multi-site disease surveillance programs spanning Indonesian archipelago communities, creating demand for field-deployable diagnostic tools, genomic sequencing equipment, and data management platforms. The university's government-enterprise research park (UI Research Park) bridges academic and industry procurement, offering vendors a structured partnership pathway into Indonesia's rapidly expanding university R&D budget."
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Department of Science and Technology (DST)",
+  "country": "India",
+  "type": "government",
+  "budget": "$1.5B",
+  "programs": ["SERB National Science Chair", "WOS Women Scientist Scheme", "INSPIRE Program", "Technology Development Fund", "National Geospatial Program", "FICCI Innovation"],
+  "description": "India's Department of Science and Technology is the apex government body for the civilian science system, setting national research priorities and channeling grants through a portfolio of programs that collectively reach over 30,000 active researchers. DST established the Science and Engineering Research Board as a statutory body to manage competitive extramural grants, separating peer review from ministerial decision-making in a structural reform that raised research quality. The INSPIRE program — Innovation in Science Pursuit for Inspired Research — provides a continuum of fellowships from school level through postdoctoral career stages, creating one of the world's largest science-talent pipelines. DST's Women Scientist Scheme addresses re-entry for women who have taken career breaks, offering bridge grants that have funded over 2,500 returning researchers. The Technology Development Fund distributes risk capital to SMEs and start-ups commercializing publicly funded research, linking DST's academic grants to the national innovation ecosystem."
+}

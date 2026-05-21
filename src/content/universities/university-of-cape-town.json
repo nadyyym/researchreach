@@ -1,0 +1,26 @@
+{
+  "name": "University of Cape Town",
+  "country": "South Africa",
+  "city": "Cape Town",
+  "type": "public",
+  "researcherCount": 2400,
+  "avgHindex": 41,
+  "grantCount": 1500,
+  "departments": [
+    "Medicine",
+    "Engineering",
+    "Science",
+    "Commerce",
+    "Law",
+    "Humanities",
+    "Health Sciences"
+  ],
+  "topFields": [
+    "Infectious Disease",
+    "Cardiovascular Medicine",
+    "Mining and Mineral Processing",
+    "Astrophysics",
+    "Biodiversity Conservation"
+  ],
+  "description": "The University of Cape Town is Africa's highest-ranked research university and the continent's primary generator of internationally peer-reviewed publications, supported by NRF South Africa funding, Wellcome Trust grants, and a growing portfolio of Bill & Melinda Gates Foundation-backed health programs. Its Institute of Infectious Disease and Molecular Medicine is a globally recognized center for HIV, TB, and malaria research that operates Phase I–III clinical trials and demands a steady supply of high-throughput diagnostics, flow cytometry, and molecular biology consumables. UCT's Faculty of Engineering & the Built Environment houses mineral processing and hydrometallurgy groups serving the South African mining sector, which provides industry-sponsored research budgets supplementing government grants. The Square Kilometre Array precursor telescope MeerKAT sits within UCT's astrophysics research orbit, making it an important node for radio astronomy instrumentation partnerships."
+}

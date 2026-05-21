@@ -1,0 +1,9 @@
+{
+  "name": "Psychophysics",
+  "subfields": ["Signal Detection Theory", "Perceptual Threshold Measurement", "Multisensory Integration", "Temporal Perception", "Haptics and Tactile Psychophysics"],
+  "keyTechnologies": ["Adaptive Staircase Procedures", "Forced-Choice Paradigms", "High-Frame-Rate Display Systems", "Laser Doppler Tactile Stimulators", "Bayesian Psychometric Fitting"],
+  "topInstitutions": ["UCL Institute of Ophthalmology", "University of Rochester Center for Visual Science", "MIT Research Laboratory of Electronics", "Karolinska Institutet", "Max Planck Institute for Empirical Aesthetics"],
+  "researcherCount": 9500,
+  "avgFunding": "$410K",
+  "description": "Psychophysics is the quantitative science of how physical stimuli are translated into subjective sensory experiences, providing the bridge between the measurable properties of the external world — light intensity, sound frequency, pressure — and the perception those properties evoke in observers. Founded by Fechner and Weber in the nineteenth century, the field has been mathematically rigorous from its inception: signal detection theory, developed in the mid-twentieth century, is now a standard analytic tool across neuroscience, radiology, and machine learning evaluation. Contemporary psychophysics drives the design of displays, audio systems, surgical haptic feedback devices, and virtual reality environments by specifying the perceptual resolution limits that hardware must exceed or that can be safely traded off. Clinical applications include visual field testing in glaucoma management and auditory threshold mapping for hearing-aid fitting. Researchers tend to be experimental psychologists or sensory neuroscientists with strong quantitative and programming skills."
+}

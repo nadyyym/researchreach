@@ -1,0 +1,9 @@
+{
+  "name": "Geophysics",
+  "subfields": ["Seismic Exploration", "Geomagnetism", "Gravity Field Modeling", "Geodesy", "Rock Physics"],
+  "keyTechnologies": ["3D Seismic Reflection Surveys", "GRACE Satellite Gravimetry", "Magnetotellurics", "GPS/GNSS Networks", "Full-Waveform Inversion"],
+  "topInstitutions": ["Woods Hole Oceanographic Institution", "GFZ German Research Centre for Geosciences", "Caltech Seismological Laboratory", "University of Texas Institute for Geophysics", "ETH Zurich Swiss Seismological Service"],
+  "researcherCount": 19000,
+  "avgFunding": "$1.1M",
+  "description": "Geophysics uses the methods of physics — seismology, electromagnetics, gravity, and heat flow — to probe the structure and dynamics of the Earth's interior and its surface processes. The field powers both academic understanding of plate tectonics and mantle convection and the commercial detection of hydrocarbon reservoirs, geothermal resources, and mineral deposits. Full-waveform inversion, a computationally intensive technique that matches synthetic seismograms to real recordings, is reshaping subsurface imaging at a resolution once thought impossible without drilling. Climate science increasingly depends on geophysical satellite missions to track ice-mass loss, sea-level change, and groundwater depletion. Geophysicists are typically quantitative scientists comfortable in field environments and high-performance computing clusters alike."
+}

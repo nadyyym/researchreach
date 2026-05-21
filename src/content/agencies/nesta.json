@@ -1,0 +1,8 @@
+{
+  "name": "Nesta",
+  "country": "United Kingdom",
+  "type": "foundation",
+  "budget": "$110M",
+  "programs": ["Challenge Prizes", "Innovation Growth Lab", "Health Lab", "Education Innovation", "Collective Intelligence"],
+  "description": "Nesta is the UK's innovation foundation, operating at the intersection of applied research, experimental funding mechanisms, and public-policy influence across health, education, and democratic participation. It pioneered the large-scale use of challenge prizes in the UK public sector, designing and managing competitions that attracted thousands of applicants competing for defined outcomes rather than process compliance. The Innovation Growth Lab is a collaborative research program that runs randomized controlled trials on business-support interventions with academic partners across eight countries. Nesta's Collective Intelligence program develops methods for using participatory data — citizen sensing, crowdsourcing, and distributed deliberation — to improve public-service design. While smaller than most government funders, Nesta's influence on UK science and innovation policy has been disproportionate, shaping the design of Innovate UK programs and EU Horizon innovation-prize instruments."
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Uzbekistan",
+  "code": "UZ",
+  "topInstitutions": ["National University of Uzbekistan", "Tashkent State Technical University", "Academy of Sciences of Uzbekistan", "Samarkand State University", "Turin Polytechnic University in Tashkent"],
+  "topAgencies": ["Ministry of Innovative Development", "Academy of Sciences of Uzbekistan", "Technology Park Yashnabad"],
+  "researchOutput": 5100,
+  "topFields": ["Chemistry", "Physics", "Agriculture", "Geology", "Materials Science"],
+  "description": "Uzbekistan is undergoing the most rapid science-system transformation in Central Asia, driven by a government modernization agenda that since 2019 has doubled the state science budget and opened several international branch campuses. The Academy of Sciences retains a Soviet-inherited network of specialized institutes in chemistry, physics, and geology, many of which are now being restructured under market-oriented mandates. Agriculture research is strategically important given Uzbekistan's role as a top-five global cotton and apricot exporter, with breeders targeting drought tolerance and salinity resistance. A growing number of Uzbek researchers publish in Scopus-indexed journals following incentive reforms that tie faculty promotion to indexed publications. Turin Polytechnic University in Tashkent represents a novel international partnership model that has attracted engineering talent from across the region."
+}

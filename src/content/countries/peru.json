@@ -1,0 +1,9 @@
+{
+  "name": "Peru",
+  "code": "PE",
+  "topInstitutions": ["Pontificia Universidad Católica del Perú", "Universidad Nacional Mayor de San Marcos", "Universidad Peruana Cayetano Heredia", "Universidad Nacional de Ingeniería", "Universidad Nacional Agraria La Molina"],
+  "topAgencies": ["CONCYTEC", "FONDECYT Peru", "Innovate Peru"],
+  "researchOutput": 9500,
+  "topFields": ["Biodiversity", "Agriculture", "Mining Engineering", "Public Health", "Ecology"],
+  "description": "Peru occupies one of the world's most biodiverse regions, making it a natural hub for ecological, botanical, and agricultural research. The national science council CONCYTEC has significantly expanded competitive grants since 2015, anchoring a growing academic publication base. Universidad Peruana Cayetano Heredia leads in tropical medicine and infectious disease research, drawing international collaborations. Mining engineering and mineral processing research benefit from Peru's position as one of the world's top copper and silver producers. Output remains concentrated in Lima but regional universities are increasingly productive, supported by World Bank–backed programs in science education."
+}

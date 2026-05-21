@@ -1,0 +1,9 @@
+{
+  "name": "Magnetohydrodynamics",
+  "subfields": ["Stellar and Solar MHD", "Fusion Plasma MHD", "Liquid Metal MHD", "Astrophysical Jet Formation", "MHD Turbulence and Dynamo Theory"],
+  "keyTechnologies": ["Tokamak and Stellarator Diagnostics", "Spectropolarimetry", "Liquid Sodium Dynamo Experiments", "High-Performance MHD Simulation Codes", "Hall-Effect Sensors"],
+  "topInstitutions": ["Princeton Plasma Physics Laboratory", "Max Planck Institute for Plasma Physics", "MIT Plasma Science and Fusion Center", "Uppsala University", "Observatoire de Paris"],
+  "researcherCount": 7200,
+  "avgFunding": "$2.3M",
+  "description": "Magnetohydrodynamics (MHD) describes the behavior of electrically conducting fluids — plasmas, liquid metals, and ionized gases — under the influence of magnetic fields, where the fluid flow and the electromagnetic field mutually shape each other. On the astrophysical scale, MHD explains the dynamo processes that generate planetary and stellar magnetic fields, the formation of relativistic jets from black holes, and the coronal heating problem on the Sun. In the laboratory, MHD stability analysis is the central discipline in fusion energy research, governing how magnetic confinement devices like ITER must be designed to suppress disruptions that could quench a burning plasma. Industrial MHD has practical roles in metallurgy, where electromagnetic stirring controls the solidification microstructure of steel and aluminum. The field demands strong fluency in both continuum mechanics and electrodynamics, drawing researchers from physics and aerospace engineering."
+}

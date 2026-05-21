@@ -1,0 +1,26 @@
+{
+  "name": "University of Pretoria",
+  "country": "South Africa",
+  "city": "Pretoria",
+  "type": "public",
+  "researcherCount": 2900,
+  "avgHindex": 37,
+  "grantCount": 1700,
+  "departments": [
+    "Natural and Agricultural Sciences",
+    "Engineering",
+    "Veterinary Science",
+    "Health Sciences",
+    "Economics",
+    "Education",
+    "Information Technology"
+  ],
+  "topFields": [
+    "Veterinary Medicine",
+    "Plant Pathology",
+    "Metallurgy",
+    "Wildlife Conservation",
+    "Food Science"
+  ],
+  "description": "The University of Pretoria is South Africa's largest residential university by research output and hosts the continent's most reputable veterinary faculty, the Onderstepoort Veterinary Academic Hospital, which attracts national and Pan-African wildlife disease surveillance grants. Its natural and agricultural science faculties have strong plant pathology and soil science programs linked to South Africa's export-oriented agricultural industry, generating demand for greenhouse infrastructure, growth chambers, and precision analytics. The Hatfield campus houses well-equipped materials and metallurgy laboratories that collaborate directly with South African state-owned enterprises such as Denel and Transnet. NRF DSI-rated researchers at UP maintain competitive grant portfolios, and the university's research office provides vendor-accessible directories of active grant holders, simplifying prospecting for science suppliers."
+}

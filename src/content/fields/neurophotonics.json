@@ -1,0 +1,9 @@
+{
+  "name": "Neurophotonics",
+  "subfields": ["Two-Photon Calcium Imaging", "Fiber Photometry", "Voltage Imaging", "Optogenetics Actuators", "Implantable Optical Probes"],
+  "keyTechnologies": ["Two-Photon Microscopy", "Miniscope Head-Mounted Imagers", "GCaMP and GEVI Genetically Encoded Indicators", "Spatial Light Modulators", "Photoacoustic Tomography"],
+  "topInstitutions": ["Howard Hughes Medical Institute Janelia Research Campus", "Allen Institute for Brain Science", "École Polytechnique Fédérale de Lausanne", "University College London", "Stanford Deisseroth Lab"],
+  "researcherCount": 8500,
+  "avgFunding": "$1.3M",
+  "description": "Neurophotonics develops and applies light-based tools to read out and perturb neural activity with cellular and subcellular resolution, overcoming the fundamental sampling limits of electrode-based electrophysiology. Two-photon microscopy through cranial windows now routinely tracks thousands of individually identified neurons across weeks in behaving mice, revealing the population codes underlying navigation, decision-making, and motor learning. Voltage imaging — the holy grail of the field — aims to capture sub-millisecond action potentials in genetically specified neurons across large tissue volumes, a challenge that has driven rapid innovation in both organic and protein-based fluorescent sensors. The neurotechnology industry draws on neurophotonics for the development of high-bandwidth brain-machine interfaces and photostimulation therapies for blindness and Parkinson's disease. Researchers span optics engineering, synthetic biology, and systems neuroscience, often organized around large collaborative platform grants."
+}

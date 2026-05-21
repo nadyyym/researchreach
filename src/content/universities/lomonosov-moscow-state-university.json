@@ -1,0 +1,26 @@
+{
+  "name": "Lomonosov Moscow State University",
+  "country": "Russia",
+  "city": "Moscow",
+  "type": "public",
+  "researcherCount": 5500,
+  "avgHindex": 44,
+  "grantCount": 2700,
+  "departments": [
+    "Physics",
+    "Chemistry",
+    "Biology",
+    "Mathematics",
+    "Mechanics",
+    "Geography",
+    "Computer Science"
+  ],
+  "topFields": [
+    "Theoretical Physics",
+    "Organic Chemistry",
+    "Computational Mathematics",
+    "Space Physics",
+    "Molecular Biology"
+  ],
+  "description": "Moscow State University remains Russia's flagship research institution, operating a unique campus-city with 40 faculties, more than 300 university departments, and numerous affiliated research institutes that blur the line between university and national laboratory. Its physics and chemistry faculties have sustained world-class output in theoretical and computational areas with relatively modest instrumentation spend, but experimental groups in materials, spectroscopy, and space physics maintain significant equipment budgets sourced via Russian Science Foundation grants and federal targeted programs. The Skobeltsyn Institute of Nuclear Physics and Shirshov Institute of Oceanology are affiliated units that extend the university's footprint into big-facility science. International vendors navigating post-2022 restrictions increasingly work through domestic distributors or regional offices; understanding these intermediary channels is essential before approaching MSU procurement."
+}

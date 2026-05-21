@@ -1,0 +1,26 @@
+{
+  "name": "National Autonomous University of Mexico",
+  "country": "Mexico",
+  "city": "Mexico City",
+  "type": "public",
+  "researcherCount": 5800,
+  "avgHindex": 42,
+  "grantCount": 3200,
+  "departments": [
+    "Physics",
+    "Chemistry",
+    "Biology",
+    "Medicine",
+    "Engineering",
+    "Mathematics",
+    "Earth Sciences"
+  ],
+  "topFields": [
+    "Particle Physics",
+    "Biodiversity",
+    "Geophysics",
+    "Nanotechnology",
+    "Astronomy"
+  ],
+  "description": "UNAM is the largest research university in Latin America, operating more than 40 research institutes spread across Mexico City and regional campuses, making it a sprawling but highly structured prospect for science vendors. Its Institute of Physics houses Mexico's principal high-energy particle-physics group, collaborating with CERN experiments, while the Institute of Biology manages one of the world's largest neotropical biodiversity collections. UNAM receives the majority of Mexico's CONAHCyT competitive grant funding in the natural sciences, and its annual research budget exceeds that of any other institution in the region. Field sales teams find decision-making distributed across institutes, each with independent procurement committees, requiring a research-first approach rather than a central purchasing strategy."
+}

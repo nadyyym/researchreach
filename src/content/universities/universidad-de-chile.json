@@ -1,0 +1,26 @@
+{
+  "name": "Universidad de Chile",
+  "country": "Chile",
+  "city": "Santiago",
+  "type": "public",
+  "researcherCount": 2800,
+  "avgHindex": 40,
+  "grantCount": 1800,
+  "departments": [
+    "Medicine",
+    "Engineering",
+    "Natural Sciences",
+    "Chemistry",
+    "Physics",
+    "Social Sciences",
+    "Agronomy"
+  ],
+  "topFields": [
+    "Public Health",
+    "Seismology",
+    "Astronomy",
+    "Computational Biology",
+    "Mining Engineering"
+  ],
+  "description": "Universidad de Chile is the country's oldest and largest public research university, anchoring the national science system with deep ties to ANID (formerly CONICYT) funding streams and government health policy. Its Faculty of Medicine runs four teaching hospitals and generates the largest volume of biomedical publications in the country, while the Faculty of Physical and Mathematical Sciences leads structural engineering research relevant to one of the world's most seismically active regions. The university hosts multiple FONDAP research centers covering genomics, climate, and energy, providing vendors with clearly structured purchasing channels across well-funded multi-disciplinary consortia. Strong industry engagement in mining and energy sectors creates additional pathways for applied-science instrument and software sales."
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Duke University",
+  "country": "United States",
+  "city": "Durham",
+  "type": "private",
+  "researcherCount": 3700,
+  "avgHindex": 54,
+  "grantCount": 2800,
+  "departments": [
+    "Medicine",
+    "Engineering",
+    "Biology",
+    "Chemistry",
+    "Physics",
+    "Public Policy",
+    "Environment"
+  ],
+  "topFields": [
+    "Biomedical Engineering",
+    "Global Health",
+    "Primate Neuroscience",
+    "Energy Innovation",
+    "Cancer Medicine"
+  ],
+  "description": "Duke University in Durham, North Carolina is a top-ten US private research university with one of the country's most integrated medicine-engineering research cultures, epitomized by the Pratt School of Engineering's ranked biomedical engineering program which shares faculty, labs, and clinical trial infrastructure directly with Duke University Medical Center. Its Duke Global Health Institute manages research programs across more than 40 countries, generating demand for portable diagnostics, cold-chain logistics tools, and field-deployable sequencing platforms that serve both academic and public-health procurement channels. The Nicholas School of the Environment operates Duke Forest and marine stations that sustain active ecology, climate, and atmospheric chemistry research with substantial NSF and DOE funding. Duke's Triangle Research Park location — shared with UNC-Chapel Hill and NC State — creates one of the US's densest research corridors, enabling vendors to efficiently cover multiple high-value accounts from a single regional presence."
+}

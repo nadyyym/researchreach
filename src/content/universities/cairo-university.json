@@ -1,0 +1,26 @@
+{
+  "name": "Cairo University",
+  "country": "Egypt",
+  "city": "Giza",
+  "type": "public",
+  "researcherCount": 4200,
+  "avgHindex": 31,
+  "grantCount": 1600,
+  "departments": [
+    "Medicine",
+    "Engineering",
+    "Science",
+    "Pharmacy",
+    "Agriculture",
+    "Veterinary Medicine",
+    "Computer Science"
+  ],
+  "topFields": [
+    "Oncology",
+    "Pharmaceutical Sciences",
+    "Civil Engineering",
+    "Natural Product Chemistry",
+    "Environmental Microbiology"
+  ],
+  "description": "Cairo University is the Arab world's largest and most historically significant research university, operating Egypt's primary medical complex with Kasr Al-Ainy Hospital and running clinical research at a scale that makes it one of Africa's top sites for WHO-sponsored and multinational pharmaceutical trials. Its Faculty of Science hosts significant chemistry and physics research groups funded through the Academy of Scientific Research and Technology (ASRT) and bilateral science agreements with the EU and Japan, providing a durable funding base beyond domestic budget cycles. The Faculty of Engineering, one of the oldest in Africa, houses active research in water resources, structural engineering, and telecommunications aligned with Egypt's national infrastructure investment programs. For vendors, Cairo University's procurement framework is driven primarily by government tender rules through the Egyptian Ministry of Higher Education, making authorized local distributors and framework contracts the primary commercial pathway."
+}
