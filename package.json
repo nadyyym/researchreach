@@ -8,7 +8,9 @@
     "preview": "astro preview",
     "astro": "astro",
     "lastmod": "node scripts/gen-lastmod.mjs",
-    "prebuild": "node scripts/gen-lastmod.mjs"
+    "prebuild": "node scripts/gen-lastmod.mjs",
+    "indexnow": "node scripts/indexnow.mjs",
+    "postbuild": "node scripts/indexnow.mjs --only-prod"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.0",
