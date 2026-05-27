@@ -5,7 +5,7 @@
 
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
-import { plainTextResponse } from '../lib/markdown-export';
+import { plainTextResponse, betonNetwork } from '../lib/markdown-export';
 
 const SITE = 'https://selltoscientists.com';
 
@@ -155,6 +155,9 @@ export const GET: APIRoute = async () => {
       `- [${p.data.title}](${SITE}/blog/${p.slug}.md) (${p.data.date}): ${p.data.description}`,
     );
   });
+  lines.push('');
+
+  lines.push(betonNetwork());
   lines.push('');
 
   lines.push('## Links');
