@@ -6,6 +6,7 @@ import type { APIRoute } from 'astro';
 import { getCollection, getEntry } from 'astro:content';
 import {
   agencyToMarkdown,
+  betonNetwork,
   blogPostToMarkdown,
   companyToMarkdown,
   countryToMarkdown,
@@ -145,6 +146,8 @@ export const GET: APIRoute = async () => {
     lines.push('---');
     lines.push('');
   }
+
+  lines.push(betonNetwork());
 
   return plainTextResponse(lines.join('\n').trimEnd() + '\n');
 };
