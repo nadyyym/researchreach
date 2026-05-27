@@ -58,6 +58,7 @@ export function webpageSchema(
   title: string,
   description: string,
   speakableSelectors?: string[],
+  mainEntityId?: string,
 ) {
   const root = idRoot(url);
   return {
@@ -70,6 +71,12 @@ export function webpageSchema(
     publisher: { '@id': `${SITE}/#organization` },
     primaryImageOfPage: { '@id': `${SITE}/#primaryimage` },
     inLanguage: 'en-US',
+    // Link the page to the primary entity it is ABOUT, so Google can tie
+    // the WebPage node to the entity node within the same @graph.
+    ...(mainEntityId && {
+      mainEntity: { '@id': mainEntityId },
+      about: { '@id': mainEntityId },
+    }),
     speakable: {
       '@type': 'SpeakableSpecification',
       cssSelector: speakableSelectors && speakableSelectors.length > 0
@@ -182,24 +189,37 @@ export function profilePageSchema(args: {
   name: string;
   jobTitle?: string;
   affiliation?: string;
+  affiliationUrl?: string;
   description?: string;
   sameAs?: string[];
   expertise?: string[];
 }) {
+  const url = args.url.startsWith('http') ? args.url : `${SITE}${args.url}`;
+  const personId = `${idRoot(url)}/#person`;
   const person: Record<string, unknown> = {
     '@type': 'Person',
+    '@id': personId,
     name: args.name,
     ...(args.jobTitle && { jobTitle: args.jobTitle }),
     ...(args.affiliation && {
-      affiliation: { '@type': 'Organization', name: args.affiliation },
+      affiliation: {
+        '@type': 'CollegeOrUniversity',
+        name: args.affiliation,
+        // Link the person to their institution detail page when one exists.
+        ...(args.affiliationUrl && {
+          url: args.affiliationUrl.startsWith('http')
+            ? args.affiliationUrl
+            : `${SITE}${args.affiliationUrl}`,
+        }),
+      },
     }),
     ...(args.description && { description: args.description }),
     ...(args.sameAs && args.sameAs.length > 0 && { sameAs: args.sameAs }),
     ...(args.expertise && args.expertise.length > 0 && {
       knowsAbout: args.expertise,
     }),
+    mainEntityOfPage: { '@id': `${idRoot(url)}/#webpage` },
   };
-  const url = args.url.startsWith('http') ? args.url : `${SITE}${args.url}`;
   return {
     '@type': 'ProfilePage',
     '@id': `${idRoot(url)}/#profilepage`,
@@ -207,6 +227,13 @@ export function profilePageSchema(args: {
     mainEntity: person,
     isPartOf: { '@id': `${SITE}/#website` },
   };
+}
+
+// Stable @id for the Person node a ProfilePage wraps, so the WebPage can
+// reference the actual entity (the person) via mainEntity/about.
+export function profilePersonId(url: string): string {
+  const abs = url.startsWith('http') ? url : `${SITE}${url}`;
+  return `${idRoot(abs)}/#person`;
 }
 
 export function articleSchema(args: {
@@ -246,13 +273,21 @@ export function articleSchema(args: {
 export function entityOrgSchema(args: {
   name: string;
   url?: string;
+  // Page this entity is described on; used to mint a stable @id and to link
+  // back to the WebPage via mainEntityOfPage/subjectOf.
+  pageUrl?: string;
   description?: string;
   type?: string; // e.g. 'CollegeOrUniversity', 'GovernmentOrganization', 'Corporation'
   address?: { country?: string; city?: string };
+  areaServed?: string;
   sameAs?: string[];
 }) {
+  const pageRoot = args.pageUrl
+    ? idRoot(args.pageUrl.startsWith('http') ? args.pageUrl : `${SITE}${args.pageUrl}`)
+    : undefined;
   return {
     '@type': args.type || 'Organization',
+    ...(pageRoot && { '@id': entityOrgId(args.pageUrl!) }),
     name: args.name,
     ...(args.url && { url: args.url }),
     ...(args.description && { description: args.description }),
@@ -263,8 +298,60 @@ export function entityOrgSchema(args: {
         ...(args.address.city && { addressLocality: args.address.city }),
       },
     }),
+    ...(args.areaServed && { areaServed: args.areaServed }),
     ...(args.sameAs && args.sameAs.length > 0 && { sameAs: args.sameAs }),
+    ...(pageRoot && {
+      mainEntityOfPage: { '@id': `${pageRoot}/#webpage` },
+      subjectOf: { '@id': `${pageRoot}/#webpage` },
+    }),
   };
+}
+
+// Stable @id for an entity Organization node, derived from its page URL.
+export function entityOrgId(pageUrl: string): string {
+  const abs = pageUrl.startsWith('http') ? pageUrl : `${SITE}${pageUrl}`;
+  return `${idRoot(abs)}/#entity`;
+}
+
+// CollectionPage + ItemList for index-like detail pages that have no single
+// natural entity type (fields, countries, industries). The page IS a curated
+// collection of linked entities, so we mark it up as one. Returns both the
+// CollectionPage node and a helper id so the WebPage can reference it.
+export function collectionPageSchema(args: {
+  pageUrl: string;
+  name: string;
+  description: string;
+  items: { name: string; url: string; description?: string }[];
+}) {
+  const pageRoot = idRoot(
+    args.pageUrl.startsWith('http') ? args.pageUrl : `${SITE}${args.pageUrl}`,
+  );
+  const id = `${pageRoot}/#collection`;
+  return {
+    '@type': 'CollectionPage',
+    '@id': id,
+    name: args.name,
+    description: args.description,
+    isPartOf: { '@id': `${SITE}/#website` },
+    mainEntityOfPage: { '@id': `${pageRoot}/#webpage` },
+    mainEntity: {
+      '@type': 'ItemList',
+      name: args.name,
+      numberOfItems: args.items.length,
+      itemListElement: args.items.map((it, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: it.name,
+        url: it.url.startsWith('http') ? it.url : `${SITE}${it.url}`,
+        ...(it.description && { description: it.description }),
+      })),
+    },
+  };
+}
+
+export function collectionPageId(pageUrl: string): string {
+  const abs = pageUrl.startsWith('http') ? pageUrl : `${SITE}${pageUrl}`;
+  return `${idRoot(abs)}/#collection`;
 }
 
 // HowTo schema for step-by-step pages (/features/ pipeline, /developers/

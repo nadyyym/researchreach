@@ -4,6 +4,7 @@ import Base from '../../layouts/Base.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import TerminalMockup from '../../components/TerminalMockup.astro';
 import BottomCTA from '../../components/BottomCTA.astro';
+import { collectionPageSchema, collectionPageId } from '../../lib/seo';
 import '../../styles/global.css';
 
 export async function getStaticPaths() {
@@ -37,9 +38,23 @@ const d = entry.data;
 
 const pageTitle = `${d.name} — Selling to Scientists — Sci-Buy`;
 const pageDesc = `${d.name} industry: ${d.marketSize} market. ${d.companies.length} key companies, ${d.useCases.length} use cases. Target researchers: ${d.targetResearchers}.`;
+
+// ItemList of the key companies that resolve to an internal company page.
+const pageUrl = `/industries/${entry.id}/`;
+const listItems = companyLinks
+  .filter((c) => c.slug)
+  .map((c) => ({ name: c.name, url: `/companies/${c.slug}/` }));
+const extraSchemas = listItems.length > 0
+  ? [collectionPageSchema({
+      pageUrl,
+      name: `${d.name} — key companies`,
+      description: pageDesc,
+      items: listItems,
+    })]
+  : [];
 ---
 
-<Base title={pageTitle} description={pageDesc}>
+<Base title={pageTitle} description={pageDesc} extraSchemas={extraSchemas} mainEntityId={listItems.length > 0 ? collectionPageId(pageUrl) : undefined}>
   <Breadcrumb items={[
     { name: 'Industries', url: '/industries/' },
     { name: d.name, url: `/industries/${entry.id}/` },
