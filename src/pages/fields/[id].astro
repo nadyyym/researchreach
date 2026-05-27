@@ -4,6 +4,7 @@ import Base from '../../layouts/Base.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import TerminalMockup from '../../components/TerminalMockup.astro';
 import BottomCTA from '../../components/BottomCTA.astro';
+import { collectionPageSchema, collectionPageId } from '../../lib/seo';
 import '../../styles/global.css';
 
 export async function getStaticPaths() {
@@ -24,9 +25,32 @@ const relatedResearchers = allResearchers.filter(r => r.data.field.toLowerCase()
 
 const pageTitle = `${d.name} Research — Scientists, Institutions & Funding — Sci-Buy`;
 const pageDesc = `Explore ${d.name} research: ${d.researcherCount.toLocaleString()} researchers, top institutions, key technologies, and funding sources. ${d.avgFunding} average funding.`;
+
+// Build an ItemList from the entities actually linked on this page: top
+// institutions that resolve to a university detail page, plus related
+// researchers. Only real, internally-linked entities are included.
+const pageUrl = `/fields/${entry.id}/`;
+const listItems = [
+  ...d.topInstitutions
+    .map((inst) => ({ name: inst, slug: uniSlugMap.get(inst.toLowerCase()) }))
+    .filter((x) => x.slug)
+    .map((x) => ({ name: x.name, url: `/universities/${x.slug}/` })),
+  ...relatedResearchers.map((r) => ({
+    name: r.data.name,
+    url: `/researchers/${r.id}/`,
+  })),
+];
+const extraSchemas = listItems.length > 0
+  ? [collectionPageSchema({
+      pageUrl,
+      name: `${d.name} — researchers and institutions`,
+      description: pageDesc,
+      items: listItems,
+    })]
+  : [];
 ---
 
-<Base title={pageTitle} description={pageDesc}>
+<Base title={pageTitle} description={pageDesc} extraSchemas={extraSchemas} mainEntityId={listItems.length > 0 ? collectionPageId(pageUrl) : undefined}>
   <Breadcrumb items={[
     { name: 'Fields', url: '/fields/' },
     { name: d.name, url: `/fields/${entry.id}/` },

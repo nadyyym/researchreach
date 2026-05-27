@@ -4,6 +4,7 @@ import Base from '../../layouts/Base.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import TerminalMockup from '../../components/TerminalMockup.astro';
 import BottomCTA from '../../components/BottomCTA.astro';
+import { collectionPageSchema, collectionPageId } from '../../lib/seo';
 import '../../styles/global.css';
 
 export async function getStaticPaths() {
@@ -31,9 +32,35 @@ const flagCodePoints = [...d.code.toUpperCase()].map(
   (c) => 0x1f1e6 + c.charCodeAt(0) - 65
 );
 const flag = String.fromCodePoint(...flagCodePoints);
+
+// ItemList of the entities linked on this page: institutions, fields and
+// agencies that resolve to internal detail pages.
+const pageUrl = `/countries/${entry.id}/`;
+const listItems = [
+  ...d.topInstitutions
+    .map((n) => ({ name: n, slug: uniSlugMap.get(n.toLowerCase()) }))
+    .filter((x) => x.slug)
+    .map((x) => ({ name: x.name, url: `/universities/${x.slug}/` })),
+  ...d.topFields
+    .map((n) => ({ name: n, slug: fieldSlugMap.get(n.toLowerCase()) }))
+    .filter((x) => x.slug)
+    .map((x) => ({ name: x.name, url: `/fields/${x.slug}/` })),
+  ...d.topAgencies
+    .map((n) => ({ name: n, slug: agencySlugMap.get(n.toLowerCase()) }))
+    .filter((x) => x.slug)
+    .map((x) => ({ name: x.name, url: `/agencies/${x.slug}/` })),
+];
+const extraSchemas = listItems.length > 0
+  ? [collectionPageSchema({
+      pageUrl,
+      name: `${d.name} — research institutions, fields and funding agencies`,
+      description: pageDesc,
+      items: listItems,
+    })]
+  : [];
 ---
 
-<Base title={pageTitle} description={pageDesc}>
+<Base title={pageTitle} description={pageDesc} extraSchemas={extraSchemas} mainEntityId={listItems.length > 0 ? collectionPageId(pageUrl) : undefined}>
   <Breadcrumb items={[
     { name: 'Countries', url: '/countries/' },
     { name: d.name, url: `/countries/${entry.id}/` },

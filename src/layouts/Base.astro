@@ -9,6 +9,9 @@ interface Props {
   robots?: string;
   extraSchemas?: Record<string, unknown>[];
   speakableSelectors?: string[];
+  // @id of the primary entity this page is ABOUT (Person, Organization,
+  // CollectionPage, …). Linked from the WebPage via mainEntity/about.
+  mainEntityId?: string;
 }
 
 const {
@@ -17,6 +20,7 @@ const {
   robots = "index, follow",
   extraSchemas = [],
   speakableSelectors,
+  mainEntityId,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -35,7 +39,7 @@ const jsonLd = buildJsonLd(
   organizationSchema(),
   websiteSchema(),
   imageObjectSchema(),
-  webpageSchema(canonicalURL.href, title, description, speakableSelectors),
+  webpageSchema(canonicalURL.href, title, description, speakableSelectors, mainEntityId),
   ...extraSchemas,
 );
 ---

@@ -4,7 +4,7 @@ import Base from '../../layouts/Base.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import TerminalMockup from '../../components/TerminalMockup.astro';
 import BottomCTA from '../../components/BottomCTA.astro';
-import { profilePageSchema } from '../../lib/seo';
+import { profilePageSchema, profilePersonId } from '../../lib/seo';
 import '../../styles/global.css';
 
 export async function getStaticPaths() {
@@ -29,13 +29,15 @@ const fieldSlug = fieldSlugMap.get(d.field.toLowerCase());
 const pageTitle = `${d.name} — ${d.institution} — Sci-Buy`;
 const pageDesc = `${d.name} at ${d.institution}. H-index ${d.hindex}, ${d.publications} publications, ${d.grantCount} grants, ${d.patents} patents. Research in ${d.field}.`;
 
+const pageUrl = `/researchers/${entry.id}/`;
 const orcidUrl = d.orcid ? `https://orcid.org/${d.orcid}` : undefined;
 const extraSchemas = [
   profilePageSchema({
-    url: `/researchers/${entry.id}/`,
+    url: pageUrl,
     name: d.name,
     jobTitle: 'Researcher',
     affiliation: d.institution,
+    affiliationUrl: uniSlug ? `/universities/${uniSlug}/` : undefined,
     description: d.description,
     sameAs: orcidUrl ? [orcidUrl] : [],
     expertise: [d.field, ...d.industryTies].filter(Boolean),
@@ -43,7 +45,7 @@ const extraSchemas = [
 ];
 ---
 
-<Base title={pageTitle} description={pageDesc} extraSchemas={extraSchemas}>
+<Base title={pageTitle} description={pageDesc} extraSchemas={extraSchemas} mainEntityId={profilePersonId(pageUrl)}>
   <Breadcrumb items={[
     { name: 'Researchers', url: '/researchers/' },
     { name: d.name, url: `/researchers/${entry.id}/` },
