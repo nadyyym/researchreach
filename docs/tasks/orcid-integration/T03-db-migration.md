@@ -17,7 +17,7 @@ Use the project's **native** tool only: `supabase migration new orcid_tables` th
 - `orcid_work`: `id`, `researcher_slug`, `put_code`, `title`, `type`, `year int`, `doi text`, `url text`. Unique `(researcher_slug, put_code)`.
 - `orcid_url`: `id`, `researcher_slug`, `name text`, `url text`.
 - `orcid_email`: `id`, `researcher_slug`, `email text`, `display_allowed boolean default false`. Unique `(researcher_slug, email)`.
-- Grant `service_role` SELECT/INSERT/UPDATE/DELETE on all (mirror the existing `0001_grant_service_role_seo_generated_pages.sql` pattern), and grant `anon`/publishable SELECT (the Astro loader reads with the publishable key).
+- **Security (anti-scraping — supersedes the earlier draft):** enable RLS on all six with **no** anon/authenticated policy, and `REVOKE ALL … FROM anon, authenticated`; `GRANT ALL … TO service_role`. The publishable/anon key must NOT be able to read ORCID data over PostgREST — otherwise anyone could scrape it. ORCID data is therefore **never** read at build time; it is served only at request time by the entitlement-gated unlock endpoint using the service-role key. (This reflects the "don't put ORCID in HTML" decision; it overrides the original plan of granting anon SELECT for a build-time loader.)
 
 ## Acceptance
 - Migration file created via CLI and applied with `db push --linked`.
