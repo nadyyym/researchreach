@@ -1,8 +1,73 @@
 import { defineCollection, z } from 'astro:content';
 import { PostgrestClient } from '@supabase/postgrest-js';
 
+// Shared PostgREST-over-REST helper for the DB-driven pillar collections.
+// Identical strategy to the `researchers` loader below: read rows from the GTM
+// Supabase project (uezyvflphqcizcbfklla) at build time over REST only, never
+// instantiating the full supabase-js createClient (which pulls in a
+// RealtimeClient needing a WebSocket constructor that Node < 22 lacks and would
+// crash the build). Reads RESEARCHERS_SUPABASE_URL / RESEARCHERS_SUPABASE_ANON_KEY.
+// Returns one content-layer entry per row with id = slug; each collection's
+// existing Zod schema (unchanged) still validates every entry.
+function pillarLoader<T extends Record<string, unknown>>(
+  table: string,
+  columns: string,
+  orderColumn: string,
+  map: (row: Record<string, any>) => T & { id: string },
+) {
+  return async () => {
+    const supabaseUrl = import.meta.env.RESEARCHERS_SUPABASE_URL;
+    const supabaseKey = import.meta.env.RESEARCHERS_SUPABASE_ANON_KEY;
+
+    if (!supabaseUrl || !supabaseKey) {
+      throw new Error(
+        `${table} loader: missing RESEARCHERS_SUPABASE_URL or RESEARCHERS_SUPABASE_ANON_KEY env vars`,
+      );
+    }
+
+    const rest = supabaseUrl.replace(/\/$/, '') + '/rest/v1';
+    const supabase = new PostgrestClient(rest, {
+      headers: {
+        apikey: supabaseKey,
+        Authorization: `Bearer ${supabaseKey}`,
+      },
+    });
+
+    const { data, error } = await supabase
+      .from(table)
+      .select(columns)
+      .order(orderColumn, { ascending: true });
+
+    if (error) {
+      throw new Error(`${table} loader: Supabase query failed — ${error.message}`);
+    }
+    if (!data || data.length === 0) {
+      throw new Error(`${table} loader: Supabase returned no rows`);
+    }
+
+    return data.map((row) => map(row as Record<string, any>));
+  };
+}
+
 const universities = defineCollection({
-  type: 'data',
+  loader: pillarLoader(
+    'universities',
+    'slug, name, country, city, type, "researcherCount", "avgHindex", "grantCount", departments, "topFields", description',
+    'slug',
+    (row) => ({
+      id: row.slug,
+      name: row.name,
+      country: row.country,
+      city: row.city,
+      type: row.type,
+      researcherCount: Number(row.researcherCount),
+      avgHindex: Number(row.avgHindex),
+      grantCount: Number(row.grantCount),
+      departments: row.departments ?? [],
+      topFields: row.topFields ?? [],
+      description: row.description,
+    }),
+  ),
   schema: z.object({
     name: z.string(),
     country: z.string(),
@@ -18,7 +83,21 @@ const universities = defineCollection({
 });
 
 const fields = defineCollection({
-  type: 'data',
+  loader: pillarLoader(
+    'fields',
+    'slug, name, subfields, "keyTechnologies", "topInstitutions", "researcherCount", "avgFunding", description',
+    'slug',
+    (row) => ({
+      id: row.slug,
+      name: row.name,
+      subfields: row.subfields ?? [],
+      keyTechnologies: row.keyTechnologies ?? [],
+      topInstitutions: row.topInstitutions ?? [],
+      researcherCount: Number(row.researcherCount),
+      avgFunding: row.avgFunding,
+      description: row.description,
+    }),
+  ),
   schema: z.object({
     name: z.string(),
     subfields: z.array(z.string()),
@@ -106,7 +185,23 @@ const researchers = defineCollection({
 });
 
 const phd = defineCollection({
-  type: 'data',
+  loader: pillarLoader(
+    'phd',
+    'slug, name, institution, field, advisor, thesis, publications, skills, "transitionSignals", description',
+    'slug',
+    (row) => ({
+      id: row.slug,
+      name: row.name,
+      institution: row.institution,
+      field: row.field,
+      advisor: row.advisor,
+      thesis: row.thesis,
+      publications: Number(row.publications),
+      skills: row.skills ?? [],
+      transitionSignals: row.transitionSignals ?? [],
+      description: row.description,
+    }),
+  ),
   schema: z.object({
     name: z.string(),
     institution: z.string(),
@@ -121,7 +216,21 @@ const phd = defineCollection({
 });
 
 const countries = defineCollection({
-  type: 'data',
+  loader: pillarLoader(
+    'countries',
+    'slug, name, code, "topInstitutions", "topAgencies", "researchOutput", "topFields", description',
+    'slug',
+    (row) => ({
+      id: row.slug,
+      name: row.name,
+      code: row.code,
+      topInstitutions: row.topInstitutions ?? [],
+      topAgencies: row.topAgencies ?? [],
+      researchOutput: Number(row.researchOutput),
+      topFields: row.topFields ?? [],
+      description: row.description,
+    }),
+  ),
   schema: z.object({
     name: z.string(),
     code: z.string(),
@@ -146,7 +255,20 @@ const agencies = defineCollection({
 });
 
 const companies = defineCollection({
-  type: 'data',
+  loader: pillarLoader(
+    'companies',
+    'slug, name, industry, "rdSpend", "academicCollabs", patents, description',
+    'slug',
+    (row) => ({
+      id: row.slug,
+      name: row.name,
+      industry: row.industry,
+      rdSpend: row.rdSpend,
+      academicCollabs: Number(row.academicCollabs),
+      patents: Number(row.patents),
+      description: row.description,
+    }),
+  ),
   schema: z.object({
     name: z.string(),
     industry: z.string(),
@@ -158,7 +280,20 @@ const companies = defineCollection({
 });
 
 const industries = defineCollection({
-  type: 'data',
+  loader: pillarLoader(
+    'industries',
+    'slug, name, companies, "targetResearchers", "marketSize", "useCases", description',
+    'slug',
+    (row) => ({
+      id: row.slug,
+      name: row.name,
+      companies: row.companies ?? [],
+      targetResearchers: row.targetResearchers,
+      marketSize: row.marketSize,
+      useCases: row.useCases ?? [],
+      description: row.description,
+    }),
+  ),
   schema: z.object({
     name: z.string(),
     companies: z.array(z.string()),
