@@ -1,19 +1,18 @@
 {
-  "synced_at": "2026-06-02T12:25:00Z",
-  "total": 150,
+  "synced_at": "2026-06-03T12:00:00Z",
+  "total": 175,
+  "pillar": "fields",
   "added": [
-    "akshay-venkatesh", "alain-connes", "aleksey-yekimov", "anne-l-huillier",
-    "ardem-patapoutian", "avi-wigderson", "benjamin-list", "bernard-feringa",
-    "caucher-birkar", "charles-rice", "claudia-goldin", "david-julius",
-    "david-macmillan", "eric-betzig", "ferenc-krausz", "fraser-stoddart",
-    "gary-ruvkun", "giorgio-parisi", "gregg-semenza", "harvey-alter",
-    "hugo-duminil-copin", "jacques-dubochet", "jean-pierre-sauvage", "jeffrey-hall",
-    "joachim-frank", "john-hopfield", "june-huh", "k-barry-sharpless",
-    "klaus-hasselmann", "louis-brus", "manjul-bhargava", "maryna-viazovska",
-    "michael-houghton", "michael-levin", "michael-rosbash", "michael-w-young",
-    "morten-meldal", "moungi-bawendi", "peter-ratcliffe", "peter-scholze",
-    "pierre-agostini", "reinhard-genzel", "richard-henderson", "stefan-hell",
-    "syukuro-manabe", "takaaki-kajita", "tasuku-honjo", "victor-ambros",
-    "william-kaelin", "william-moerner", "yoshinori-ohsumi", "zhenan-bao"
+    "agroecology", "analytical-chemistry", "archaeometry", "astrogeology",
+    "biocatalysis", "bioenergetics", "biomimetics", "biophysics",
+    "cancer-immunology", "catalysis", "chronopharmacology", "colloid-science",
+    "computational-physics", "cosmology", "data-science", "ecophysiology",
+    "endocrinology", "food-science", "functional-genomics", "geochronology",
+    "hydrometeorology", "immunogenomics", "macroecology", "marine-chemistry",
+    "mechanobiology", "membrane-science", "metabolic-engineering", "microbiome-research",
+    "nanoelectronics", "neuroimmunology", "nuclear-medicine", "quantum-biology",
+    "quantum-optics", "radiobiology", "redox-biology", "soft-matter-physics",
+    "soil-microbiology", "solid-state-chemistry", "surface-science", "thermoelectrics",
+    "toxicology", "tropical-medicine", "vaccinology", "vascular-biology", "palynology"
   ]
 }
