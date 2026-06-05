@@ -1,0 +1,2 @@
+seo-sync: country pillar run 2026-06-05
+11 new countries inserted into public.countries (Supabase)
