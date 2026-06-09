@@ -1,1 +1,22 @@
-ewogICJzeW5jZWRfYXQiOiAiMjAyNi0wNi0wOFQxMjowMDowMFoiLAogICJ0b3RhbCI6IDI4NiwKICAicGlsbGFyIjogInJlc2VhcmNoZXIiLAogICJhZGRlZCI6IFsKICAgICJsaW5kYS1idWNrIiwgInJpY2hhcmQtYXhlbCIsICJyb2dlci1rb3JuYmVyZyIsICJhbmRyZXctZmlyZSIsICJjcmFpZy1tZWxsbyIsCiAgICAicGV0ZXItYWdyZSIsICJyb2Rlcmljay1tYWNraW5ub24iLCAiYWFyb24tY2llY2hhbm92ZXIiLCAiYXZyYW0taGVyc2hrbyIsICJpcndpbi1yb3NlIiwKICAgICJzdGFubGV5LXBydXNpbmVyIiwgInBhdWwtbnVyc2UiLCAibGVsYW5kLWhhcnR3ZWxsIiwgInRpbS1odW50IiwgInN5ZG5leS1icmVubmVyIiwKICAgICJqb2huLXN1bHN0b24iLCAicm9iZXJ0LWhvcnZpdHoiLCAiaGFyb2xkLXZhcm11cyIsICJqLW1pY2hhZWwtYmlzaG9wIiwgImVyaWMta2FuZGVsIiwKICAgICJwYXVsLWdyZWVuZ2FyZCIsICJhcnZpZC1jYXJsc3NvbiIsICJndW50ZXItYmxvYmVsIiwgInBoaWxsaXAtc2hhcnAiLCAidGhvbWFzLXN0ZWl0eiIsCiAgICAidGhvbWFzLWNlY2giLCAic2lkbmV5LWFsdG1hbiIsICJmcmFuY29pc2UtYmFycmUtc2lub3VzaXMiLCAidGhvbWFzLWxpbmRhaGwiLAogICAgInBhdWwtbW9kcmljaCIsICJheml6LXNhbmNhciIsICJzYXRvc2hpLW9tdXJhIiwgIndhbHRlci1naWxiZXJ0IiwgImthcnktbXVsbGlzIiwKICAgICJtaWNoYWVsLXNtaXRoIiwgImh1ZGEtem9naGJpIiwgInNhbmdlZXRhLWJoYXRpYSIsICJhbGljZS10aW5nIiwKICAgICJnb3JkYW5hLXZ1bmphai1ub3Zha292aWMiLCAicmFmYWVsLXl1c3RlIiwgImp1ZGl0aC1jYW1waXNpIiwgInlpbG9uZy1tYSIsCiAgICAibmFvbWktaGFsYXMiLCAieWktY3VpIiwgImNoYXJsZXMtbGllYmVyIiwgImFuZ2VsYS1iZWxjaGVyIiwgIm1hcmt1cy1jb3ZlcnQiLAogICAgImx1LXdlaSIsICJzdXJ5YS1iaGF0dCIsICJjZWNpbGlhLXZvZW5hIgogIF0KfQo=
+{
+  "synced_at": "2026-06-09T00:00:00Z",
+  "pillar": "university",
+  "added": [
+    "vietnam-national-university-hanoi",
+    "vietnam-national-university-ho-chi-minh-city",
+    "universitas-gadjah-mada",
+    "bandung-institute-of-technology",
+    "mahidol-university",
+    "kasetsart-university",
+    "chiang-mai-university",
+    "king-mongkuts-institute-technology-ladkrabang",
+    "king-mongkuts-university-technology-thonburi",
+    "university-of-philippines-diliman",
+    "university-of-ibadan",
+    "university-of-lagos",
+    "university-of-ghana",
+    "pontificia-universidad-javeriana",
+    "universidad-nacional-colombia"
+  ],
+  "total": 122
+}
