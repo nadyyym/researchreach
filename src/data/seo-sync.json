@@ -1,22 +1,22 @@
 {
-  "synced_at": "2026-06-09T00:00:00Z",
-  "pillar": "university",
+  "synced_at": "2026-06-12T00:00:00Z",
+  "pillar": "country",
   "added": [
-    "vietnam-national-university-hanoi",
-    "vietnam-national-university-ho-chi-minh-city",
-    "universitas-gadjah-mada",
-    "bandung-institute-of-technology",
-    "mahidol-university",
-    "kasetsart-university",
-    "chiang-mai-university",
-    "king-mongkuts-institute-technology-ladkrabang",
-    "king-mongkuts-university-technology-thonburi",
-    "university-of-philippines-diliman",
-    "university-of-ibadan",
-    "university-of-lagos",
-    "university-of-ghana",
-    "pontificia-universidad-javeriana",
-    "universidad-nacional-colombia"
+    "tunisia",
+    "lebanon",
+    "uganda",
+    "rwanda",
+    "kuwait",
+    "oman",
+    "latvia",
+    "lithuania",
+    "luxembourg",
+    "nepal",
+    "mongolia",
+    "senegal",
+    "panama",
+    "malta",
+    "bolivia"
   ],
-  "total": 122
+  "total": 137
 }
