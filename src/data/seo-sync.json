@@ -1,22 +1,17 @@
 {
-  "synced_at": "2026-06-12T00:00:00Z",
-  "pillar": "country",
+  "synced_at": "2026-06-14T00:00:00Z",
+  "pillar": "industry",
   "added": [
-    "tunisia",
-    "lebanon",
-    "uganda",
-    "rwanda",
-    "kuwait",
-    "oman",
-    "latvia",
-    "lithuania",
-    "luxembourg",
-    "nepal",
-    "mongolia",
-    "senegal",
-    "panama",
-    "malta",
-    "bolivia"
+    "microfluidics",
+    "precision-medicine",
+    "multi-omics",
+    "wearable-biosensors",
+    "algae-biotech",
+    "3d-bioprinting",
+    "biodefense",
+    "longevity-research",
+    "exosome-therapeutics",
+    "lidar-remote-sensing"
   ],
-  "total": 137
+  "total": 147
 }
