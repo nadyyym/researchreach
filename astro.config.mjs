@@ -2,6 +2,7 @@
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
+import vercel from "@astrojs/vercel";
 import { existsSync, readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
@@ -50,6 +51,10 @@ function resolveSourceForUrl(url) {
 export default defineConfig({
   site: "https://selltoscientists.com",
   trailingSlash: "always",
+  // Default static build + per-route `export const prerender = false` for the
+  // ORCID unlock endpoint (Astro 5 hybrid). The Vercel adapter is required so
+  // that one server route can run at request time; every other page stays SSG.
+  adapter: vercel(),
   integrations: [
     sitemap({
       filter: (page) =>

@@ -55,6 +55,10 @@ const extraSchemas = [
   <section class="border-b border-line">
     <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr] grid-lines">
       <div class="p-8 md:p-12">
+        {/* Taxonomy nav (field chip + institution links) stays FUNCTIONAL and
+            unblurred — these are internal-linking SEO, not sensitive profile
+            data. Deliberate, revisitable choice: if we later decide these leak
+            too much, gate them like the profile fields below. */}
         <div class="flex items-center gap-3 mb-4">
           {fieldSlug ? (
             <a href={`/fields/${fieldSlug}/`} class="font-mono text-[9px] tracking-[3px] uppercase text-accent no-underline hover:text-text-bright transition-colors">{d.field}</a>
@@ -69,7 +73,7 @@ const extraSchemas = [
           )}
         </div>
         <h1 class="text-3xl md:text-4xl font-light text-text-bright tracking-tight mb-3">
-          {d.name}
+          <span class="fp-blur" data-blur-field="name" title="Unlock to reveal">{d.name}</span>
         </h1>
         <p class="text-[13px] text-text-dim mb-4">
           {uniSlug ? (
@@ -77,18 +81,18 @@ const extraSchemas = [
           ) : d.institution}
         </p>
         <p class="text-[13px] text-text leading-relaxed max-w-[520px]">
-          {d.description}
+          <span class="fp-blur" data-blur-field="description" title="Unlock to reveal">{d.description}</span>
         </p>
       </div>
       <div class="p-8 md:p-12 accent-top-red">
         <div class="space-y-6">
           <div>
             <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-1">H-INDEX</p>
-            <p class="text-2xl font-light text-text-bright">{d.hindex}</p>
+            <p class="text-2xl font-light text-text-bright"><span class="fp-blur" data-blur-field="hindex" title="Unlock to reveal">{d.hindex}</span></p>
           </div>
           <div>
             <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-1">PUBLICATIONS</p>
-            <p class="text-2xl font-light text-text-bright">{d.publications}</p>
+            <p class="text-2xl font-light text-text-bright"><span class="fp-blur" data-blur-field="publications" title="Unlock to reveal">{d.publications}</span></p>
           </div>
           <div>
             <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-1">FIELD</p>
@@ -107,19 +111,19 @@ const extraSchemas = [
   <section class="border-b border-line">
     <div class="grid grid-cols-2 md:grid-cols-4 grid-lines">
       <div class="p-6 text-center accent-top-blue">
-        <p class="text-2xl font-light text-text-bright">{d.hindex}</p>
+        <p class="text-2xl font-light text-text-bright"><span class="fp-blur" data-blur-field="hindex" title="Unlock to reveal">{d.hindex}</span></p>
         <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mt-1">H-INDEX</p>
       </div>
       <div class="p-6 text-center accent-top-yellow">
-        <p class="text-2xl font-light text-text-bright">{d.publications}</p>
+        <p class="text-2xl font-light text-text-bright"><span class="fp-blur" data-blur-field="publications" title="Unlock to reveal">{d.publications}</span></p>
         <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mt-1">PUBLICATIONS</p>
       </div>
       <div class="p-6 text-center accent-top-red">
-        <p class="text-2xl font-light text-text-bright">{d.grantCount}</p>
+        <p class="text-2xl font-light text-text-bright"><span class="fp-blur" data-blur-field="grantCount" title="Unlock to reveal">{d.grantCount}</span></p>
         <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mt-1">GRANTS</p>
       </div>
       <div class="p-6 text-center accent-top-blue">
-        <p class="text-2xl font-light text-text-bright">{d.patents}</p>
+        <p class="text-2xl font-light text-text-bright"><span class="fp-blur" data-blur-field="patents" title="Unlock to reveal">{d.patents}</span></p>
         <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mt-1">PATENTS</p>
       </div>
     </div>
@@ -135,6 +139,52 @@ const extraSchemas = [
             <p class="text-[13px] text-text">{tie}</p>
           </div>
         ))}
+      </div>
+    </section>
+  )}
+
+  <!-- ORCID RECORD (gated) -->
+  {d.orcid && (
+    <section class="border-b border-line p-8 md:p-12" data-orcid-section>
+      <div class="flex items-center gap-3 mb-2">
+        <p class="font-mono text-[9px] tracking-[3px] uppercase text-text-muted">ORCID RECORD</p>
+        <a href={`https://orcid.org/${d.orcid}`} rel="nofollow noopener" target="_blank" class="font-mono text-[9px] tracking-[2px] uppercase text-accent no-underline hover:text-text-bright transition-colors">{d.orcid} ↗</a>
+      </div>
+      <p class="text-[12px] text-text-dim mb-6 max-w-[520px]">
+        Verified employment, education, publications and profile data sourced from ORCID. Locked — unlock to view.
+      </p>
+      {/*
+        LOCKED placeholders only. The real ORCID values are NOT in this HTML and
+        must not be — at build time we have none, and serving them statically
+        would let anyone scrape ORCID data. Each block is filled client-side by
+        the reveal script from /api/researchers/<slug>/unlock/ for entitled
+        viewers. data-locked-field carries the contract key.
+      */}
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-line">
+        <div class="bg-bg p-5">
+          <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-3">EMPLOYMENT</p>
+          <div class="fp-locked" data-locked-field="orcid.employments">Unlock to view</div>
+        </div>
+        <div class="bg-bg p-5">
+          <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-3">EDUCATION</p>
+          <div class="fp-locked" data-locked-field="orcid.educations">Unlock to view</div>
+        </div>
+        <div class="bg-bg p-5">
+          <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-3">WORKS</p>
+          <div class="fp-locked" data-locked-field="orcid.works">Unlock to view</div>
+        </div>
+        <div class="bg-bg p-5">
+          <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-3">BIOGRAPHY</p>
+          <div class="fp-locked" data-locked-field="orcid.biography">Unlock to view</div>
+        </div>
+        <div class="bg-bg p-5">
+          <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-3">KEYWORDS</p>
+          <div class="fp-locked" data-locked-field="orcid.keywords">Unlock to view</div>
+        </div>
+        <div class="bg-bg p-5">
+          <p class="font-mono text-[9px] tracking-[2px] uppercase text-text-muted mb-3">LINKS</p>
+          <div class="fp-locked" data-locked-field="orcid.urls">Unlock to view</div>
+        </div>
       </div>
     </section>
   )}
@@ -157,3 +207,137 @@ const extraSchemas = [
 
   <BottomCTA />
 </Base>
+
+<script define:vars={{ slug: entry.id }}>
+  // Reveal gated researcher data for entitled viewers. The server validates the
+  // entitlement cookie (sts_annual=1) and returns the locked ORCID fields only
+  // to entitled viewers; everyone else keeps the blurred fields + locked
+  // placeholders (the ORCID values were never in this HTML). Ported from
+  // ui-data-atlas CompanyDetail.astro's reveal script.
+  (async () => {
+    const blurs = document.querySelectorAll("[data-blur-field]");
+    const locks = document.querySelectorAll("[data-locked-field]");
+    if (!blurs.length && !locks.length) return;
+
+    let entitled = false;
+    let fields = {};
+    try {
+      const res = await fetch(`/api/researchers/${slug}/unlock/`, { credentials: "include" });
+      if (!res.ok) return; // 402 = not entitled → stay blurred/locked
+      const body = await res.json();
+      entitled = !!body.entitled;
+      fields = body.fields || {};
+    } catch {
+      return; // offline / no api → stay blurred/locked
+    }
+    if (!entitled) return;
+
+    // Blurred: value is already present — just unblur it.
+    blurs.forEach((el) => el.classList.add("fp-revealed"));
+
+    const esc = (s) => String(s == null ? "" : s);
+    const yearRange = (a, b) => {
+      const s = a ? String(a) : "";
+      const e = b ? String(b) : (a ? "present" : "");
+      return s || e ? `${s}${s && e ? "–" : ""}${e}` : "";
+    };
+
+    // Locked: value was never in the HTML — build DOM from the API payload.
+    locks.forEach((el) => {
+      const key = el.getAttribute("data-locked-field");
+      const val = fields[key];
+      const wrap = document.createElement("div");
+      wrap.className = "space-y-2";
+
+      const empty = () => {
+        const p = document.createElement("p");
+        p.className = "text-[12px] text-text-muted";
+        p.textContent = "Not disclosed";
+        wrap.appendChild(p);
+      };
+
+      if (key === "orcid.employments" || key === "orcid.educations") {
+        const rows = Array.isArray(val) ? val : [];
+        if (!rows.length) { empty(); }
+        rows.forEach((r) => {
+          const item = document.createElement("div");
+          const org = document.createElement("p");
+          org.className = "text-[13px] text-text-bright";
+          org.textContent = esc(r.organization) || "—";
+          const meta = document.createElement("p");
+          meta.className = "text-[11px] text-text-dim";
+          const bits = [esc(r.role_title), esc(r.department), yearRange(r.start_year, r.end_year)].filter(Boolean);
+          meta.textContent = bits.join(" · ");
+          item.appendChild(org);
+          if (bits.length) item.appendChild(meta);
+          wrap.appendChild(item);
+        });
+      } else if (key === "orcid.works") {
+        const rows = Array.isArray(val) ? val : [];
+        if (!rows.length) { empty(); }
+        rows.forEach((w) => {
+          const item = document.createElement("div");
+          const title = document.createElement("p");
+          title.className = "text-[13px] text-text-bright";
+          title.textContent = esc(w.title) || "—";
+          item.appendChild(title);
+          const meta = document.createElement("p");
+          meta.className = "text-[11px] text-text-dim";
+          const yr = w.year ? String(w.year) : "";
+          if (yr) meta.appendChild(document.createTextNode(yr));
+          if (w.doi) {
+            if (yr) meta.appendChild(document.createTextNode(" · "));
+            const a = document.createElement("a");
+            a.href = `https://doi.org/${esc(w.doi)}`;
+            a.rel = "nofollow noopener";
+            a.target = "_blank";
+            a.className = "text-accent no-underline hover:text-text-bright";
+            a.textContent = `doi:${esc(w.doi)}`;
+            meta.appendChild(a);
+          }
+          if (yr || w.doi) item.appendChild(meta);
+          wrap.appendChild(item);
+        });
+      } else if (key === "orcid.biography") {
+        const text = typeof val === "string" ? val : "";
+        if (!text) { empty(); }
+        else {
+          const p = document.createElement("p");
+          p.className = "text-[13px] text-text leading-relaxed";
+          p.textContent = text;
+          wrap.appendChild(p);
+        }
+      } else if (key === "orcid.keywords") {
+        const kws = Array.isArray(val) ? val : [];
+        if (!kws.length) { empty(); }
+        else {
+          const row = document.createElement("div");
+          row.className = "flex flex-wrap gap-1.5";
+          kws.forEach((k) => {
+            const chip = document.createElement("span");
+            chip.className = "font-mono text-[10px] tracking-[1px] uppercase text-text-dim border border-line px-2 py-1";
+            chip.textContent = esc(k);
+            row.appendChild(chip);
+          });
+          wrap.appendChild(row);
+        }
+      } else if (key === "orcid.urls") {
+        const urls = Array.isArray(val) ? val : [];
+        if (!urls.length) { empty(); }
+        urls.forEach((u) => {
+          const a = document.createElement("a");
+          a.href = esc(u.url);
+          a.rel = "nofollow noopener";
+          a.target = "_blank";
+          a.className = "block text-[13px] text-accent no-underline hover:text-text-bright";
+          a.textContent = esc(u.name) || esc(u.url);
+          wrap.appendChild(a);
+        });
+      } else {
+        empty();
+      }
+
+      el.replaceWith(wrap);
+    });
+  })();
+</script>

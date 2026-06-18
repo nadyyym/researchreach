@@ -69,3 +69,43 @@
 .accent-top-red { border-top: 1px solid var(--color-red-dim); }
 .accent-top-blue { border-top: 1px solid var(--color-accent-dim); }
 .accent-top-yellow { border-top: 1px solid var(--color-yellow-dim); }
+
+/* ── ORCID gating (ported from ui-data-atlas) ──────────────────────────────
+   "blurred" treatment — value IS in the HTML (SEO-visible) but visually
+   obscured + unselectable until an entitled viewer unblurs it client-side. */
+.fp-blur {
+  filter: blur(5px);
+  user-select: none;
+  cursor: pointer;
+}
+.fp-blur.fp-revealed {
+  filter: none;
+  user-select: auto;
+  cursor: auto;
+}
+
+/* "locked" placeholder cell — the real ORCID value is NEVER in this HTML; it is
+   inserted client-side from the unlock API for entitled viewers. Styled for the
+   dark constructivist theme: a subtle dashed box with a small lock affordance. */
+.fp-locked {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 120px;
+  padding: 6px 10px;
+  border: 1px dashed var(--color-line-accent);
+  background: var(--color-bg-raised);
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  user-select: none;
+}
+.fp-locked::before {
+  content: "\1F512"; /* lock glyph — affordance only, decorative */
+  font-size: 11px;
+  line-height: 1;
+}
+/* Once revealed, the placeholder is replaced wholesale by real DOM (see the
+   page reveal script), so no .fp-revealed state is needed here. */
